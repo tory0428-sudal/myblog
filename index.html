@@ -13,6 +13,21 @@
   <button class="theme-toggle" aria-label="테마 전환"></button>
 </header>
 <main>
+  <section class="app-section">
+    <h2 class="section-title">미니 웹앱</h2>
+    <ul class="app-list">
+      <li class="app-item">
+        <a class="app-preview" href="app/2048/index.html" tabindex="-1" aria-hidden="true">
+          <iframe src="app/2048/index.html" tabindex="-1" loading="lazy"></iframe>
+        </a>
+        <div class="app-info">
+          <a class="app-title" href="app/2048/index.html">2048</a>
+          <p class="app-desc">방향키로 숫자 타일을 밀어서 합치는 퍼즐 게임. 점수판 포함.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
   <ul id="post-list" class="post-list">
     <li class="empty-state">불러오는 중...</li>
   </ul>

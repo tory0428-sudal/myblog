@@ -1,0 +1,357 @@
+/* style.css — 2048 게임 전용 스타일 (블로그 CSS와 독립적, 자체 완결) */
+
+:root {
+  --color-bg: #faf8ef;
+  --color-fg: #776e65;
+  --color-muted: #8f8a81;
+  --color-board-bg: #bbada0;
+  --color-cell-bg: rgba(238, 228, 218, 0.35);
+  --color-panel-bg: #eee4da;
+  --color-accent: #8f7a66;
+  --color-accent-fg: #f9f6f2;
+  --color-overlay-bg: rgba(250, 248, 239, 0.85);
+
+  --tile-2-bg: #eee4da;
+  --tile-2-fg: #776e65;
+  --tile-4-bg: #ede0c8;
+  --tile-4-fg: #776e65;
+  --tile-8-bg: #f2b179;
+  --tile-8-fg: #f9f6f2;
+  --tile-16-bg: #f59563;
+  --tile-16-fg: #f9f6f2;
+  --tile-32-bg: #f67c5f;
+  --tile-32-fg: #f9f6f2;
+  --tile-64-bg: #f65e3b;
+  --tile-64-fg: #f9f6f2;
+  --tile-128-bg: #edcf72;
+  --tile-128-fg: #f9f6f2;
+  --tile-256-bg: #edcc61;
+  --tile-256-fg: #f9f6f2;
+  --tile-512-bg: #edc850;
+  --tile-512-fg: #f9f6f2;
+  --tile-1024-bg: #edc53f;
+  --tile-1024-fg: #f9f6f2;
+  --tile-2048-bg: #edc22e;
+  --tile-2048-fg: #f9f6f2;
+  --tile-super-bg: #3c3a32;
+  --tile-super-fg: #f9f6f2;
+
+  --board-gap: 12px;
+  --board-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1a1a;
+    --color-fg: #e8e6e3;
+    --color-muted: #a7a29c;
+    --color-board-bg: #26232a;
+    --color-cell-bg: rgba(255, 255, 255, 0.06);
+    --color-panel-bg: #2c2933;
+    --color-accent: #6f6259;
+    --color-accent-fg: #f4f1ec;
+    --color-overlay-bg: rgba(26, 26, 26, 0.85);
+
+    --tile-2-bg: #3a3730;
+    --tile-2-fg: #eee4da;
+    --tile-4-bg: #4a4330;
+    --tile-4-fg: #ede0c8;
+  }
+}
+
+/* data-theme 속성을 통한 수동 토글을 위한 확장 지점 (현재는 미사용, 향후 확장 여지) */
+:root[data-theme="dark"] {
+  --color-bg: #1a1a1a;
+  --color-fg: #e8e6e3;
+  --color-muted: #a7a29c;
+  --color-board-bg: #26232a;
+  --color-cell-bg: rgba(255, 255, 255, 0.06);
+  --color-panel-bg: #2c2933;
+  --color-accent: #6f6259;
+  --color-accent-fg: #f4f1ec;
+  --color-overlay-bg: rgba(26, 26, 26, 0.85);
+  --tile-2-bg: #3a3730;
+  --tile-2-fg: #eee4da;
+  --tile-4-bg: #4a4330;
+  --tile-4-fg: #ede0c8;
+}
+
+:root[data-theme="light"] {
+  --color-bg: #faf8ef;
+  --color-fg: #776e65;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px 48px;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+header.app-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 6vw, 2.5rem);
+  font-weight: 700;
+}
+
+.app-header p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.top-bar {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 8px;
+  flex: 1 1 auto;
+}
+
+.score-box {
+  background: var(--color-panel-bg);
+  border-radius: 6px;
+  padding: 8px 16px;
+  min-width: 80px;
+  text-align: center;
+  flex: 1 1 0;
+}
+
+.score-box .label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.score-box .value {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-fg);
+}
+
+.new-game-btn {
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+  border: none;
+  border-radius: 6px;
+  padding: 0 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.new-game-btn:hover,
+.new-game-btn:focus-visible {
+  filter: brightness(1.08);
+}
+
+.board-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.board {
+  width: 100%;
+  height: 100%;
+  background: var(--color-board-bg);
+  border-radius: var(--board-radius);
+  padding: var(--board-gap);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: var(--board-gap);
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.cell {
+  background: var(--color-cell-bg);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: clamp(1rem, 7vw, 2.2rem);
+  line-height: 1;
+}
+
+.tile-2 {
+  background: var(--tile-2-bg);
+  color: var(--tile-2-fg);
+}
+.tile-4 {
+  background: var(--tile-4-bg);
+  color: var(--tile-4-fg);
+}
+.tile-8 {
+  background: var(--tile-8-bg);
+  color: var(--tile-8-fg);
+}
+.tile-16 {
+  background: var(--tile-16-bg);
+  color: var(--tile-16-fg);
+}
+.tile-32 {
+  background: var(--tile-32-bg);
+  color: var(--tile-32-fg);
+}
+.tile-64 {
+  background: var(--tile-64-bg);
+  color: var(--tile-64-fg);
+}
+.tile-128 {
+  background: var(--tile-128-bg);
+  color: var(--tile-128-fg);
+  font-size: clamp(0.9rem, 6vw, 1.9rem);
+}
+.tile-256 {
+  background: var(--tile-256-bg);
+  color: var(--tile-256-fg);
+  font-size: clamp(0.9rem, 6vw, 1.9rem);
+}
+.tile-512 {
+  background: var(--tile-512-bg);
+  color: var(--tile-512-fg);
+  font-size: clamp(0.9rem, 6vw, 1.9rem);
+}
+.tile-1024 {
+  background: var(--tile-1024-bg);
+  color: var(--tile-1024-fg);
+  font-size: clamp(0.8rem, 5vw, 1.6rem);
+}
+.tile-2048 {
+  background: var(--tile-2048-bg);
+  color: var(--tile-2048-fg);
+  font-size: clamp(0.8rem, 5vw, 1.6rem);
+}
+.tile-super {
+  background: var(--tile-super-bg);
+  color: var(--tile-super-fg);
+  font-size: clamp(0.7rem, 4.5vw, 1.4rem);
+}
+
+.game-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay-bg);
+  border-radius: var(--board-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  padding: 16px;
+}
+
+.game-overlay.hidden {
+  display: none;
+}
+
+.game-overlay h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 7vw, 2.2rem);
+}
+
+.overlay-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.overlay-actions button {
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+  border: none;
+  border-radius: 6px;
+  padding: 0 18px;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.overlay-actions button:hover,
+.overlay-actions button:focus-visible {
+  filter: brightness(1.1);
+}
+
+.overlay-actions .hidden {
+  display: none;
+}
+
+.instructions {
+  margin: 0;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 380px) {
+  .scoreboard {
+    gap: 6px;
+  }
+
+  .score-box {
+    padding: 6px 8px;
+    min-width: 64px;
+  }
+
+  .top-bar {
+    gap: 8px;
+  }
+}
