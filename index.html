@@ -3,16 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My Blog</title>
+<title>토리의 기록</title>
 <link rel="stylesheet" href="css/style.css">
 <script src="js/theme.js"></script>
 </head>
 <body>
 <header class="site-header">
-  <a class="site-title" href="index.html">My Blog</a>
+  <a class="site-title" href="index.html">토리의 기록</a>
   <button class="theme-toggle" aria-label="테마 전환"></button>
 </header>
 <main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">MY BLOG</p>
+      <h1 class="hero-title">토리의 기록</h1>
+      <p class="hero-subtitle">밥벌이 · 취미 · 일상 · 이것저것 · 클로드, 하루하루를 남깁니다</p>
+    </div>
+    <div class="hero-image-slot" aria-hidden="true">
+      <!-- 배너 이미지가 준비되면 아래 span을 지우고
+           <img src="images/hero.jpg" alt=""> 로 교체하세요 -->
+      <span>이미지 추가 예정</span>
+    </div>
+  </section>
+
+  <nav class="category-nav" aria-label="카테고리">
+    <a class="category-card" href="index.html" data-cat="">
+      <span class="category-label">전체보기</span>
+      <span class="category-sub">모든 글</span>
+    </a>
+    <a class="category-card" href="index.html?cat=home-building" data-cat="home-building">
+      <span class="category-label">내 밥벌이 이야기</span>
+      <span class="category-sub">주택 건축</span>
+    </a>
+    <a class="category-card" href="index.html?cat=computer" data-cat="computer">
+      <span class="category-label">내 취미 생활</span>
+      <span class="category-sub">컴퓨터 이야기</span>
+    </a>
+    <a class="category-card" href="index.html?cat=daily-life" data-cat="daily-life">
+      <span class="category-label">하루하루 삶</span>
+      <span class="category-sub">여행, 일상</span>
+    </a>
+    <a class="category-card" href="index.html?cat=etc" data-cat="etc">
+      <span class="category-label">이것저것</span>
+      <span class="category-sub">아무거나 이것저것</span>
+    </a>
+    <a class="category-card" href="index.html?cat=claude-life" data-cat="claude-life">
+      <span class="category-label">클로드 생활</span>
+      <span class="category-sub">클로드 정리</span>
+    </a>
+  </nav>
+
   <section class="app-section">
     <h2 class="section-title">미니 웹앱</h2>
     <ul class="app-list">
@@ -28,10 +68,12 @@
     </ul>
   </section>
 
+  <h2 id="list-heading" class="list-heading"></h2>
   <ul id="post-list" class="post-list">
     <li class="empty-state">불러오는 중...</li>
   </ul>
 </main>
+<script src="js/categories.js"></script>
 <script src="js/list.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 (function () {
   var titleEl = document.getElementById("post-title");
   var dateEl = document.getElementById("post-date");
+  var categoryEl = document.getElementById("post-category");
   var contentEl = document.getElementById("post-content");
 
   var params = new URLSearchParams(window.location.search);
@@ -28,6 +29,14 @@
       document.title = meta.title;
       titleEl.textContent = meta.title;
       dateEl.textContent = formatDate(meta.date);
+
+      var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(meta.category) : null;
+      if (cat && categoryEl) {
+        categoryEl.textContent = cat.label;
+        categoryEl.href = "index.html?cat=" + encodeURIComponent(cat.slug);
+      } else if (categoryEl) {
+        categoryEl.style.display = "none";
+      }
 
       return fetch("posts/" + encodeURIComponent(slug) + ".md")
         .then(function (res) {
