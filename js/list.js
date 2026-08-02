@@ -36,13 +36,15 @@
           var badge = cat
             ? '<a class="post-item-category" href="index.html?cat=' + encodeURIComponent(cat.slug) + '">' + escapeHtml(cat.label) + "</a>"
             : "";
+          var href = "post.html?slug=" + encodeURIComponent(post.slug);
           return (
             '<li>' +
-            '<a class="post-item" href="post.html?slug=' + encodeURIComponent(post.slug) + '">' +
-            '<h2 class="post-item-title">' + escapeHtml(post.title) + "</h2>" +
+            '<div class="post-item">' +
+            '<a class="post-item-cover" href="' + href + '" aria-hidden="true" tabindex="-1"></a>' +
+            '<h2 class="post-item-title"><a href="' + href + '">' + escapeHtml(post.title) + "</a></h2>" +
             '<div class="post-item-meta">' + badge + '<span class="post-item-date">' + formatDate(post.date) + "</span></div>" +
             '<p class="post-item-excerpt">' + escapeHtml(post.excerpt || "") + "</p>" +
-            "</a>" +
+            "</div>" +
             "</li>"
           );
         })

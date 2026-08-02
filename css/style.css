@@ -277,29 +277,45 @@ main {
 }
 
 .post-item {
+  position: relative;
   display: block;
   padding: 1.25rem 0;
   border-bottom: 1px solid var(--border);
-  text-decoration: none;
-  color: inherit;
 }
 
 .post-item:last-child {
   border-bottom: none;
 }
 
+.post-item-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 .post-item-title {
+  position: relative;
+  z-index: 1;
   margin: 0 0 0.35rem;
   font-size: 1.1rem;
   font-weight: 600;
+  pointer-events: none;
+}
+
+.post-item-title a {
   color: var(--fg);
+  text-decoration: none;
+  pointer-events: auto;
 }
 
 .post-item-meta {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.4rem;
+  pointer-events: none;
 }
 
 .post-item-date {
@@ -308,6 +324,8 @@ main {
 }
 
 .post-item-category {
+  position: relative;
+  z-index: 1;
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--accent);
@@ -315,6 +333,7 @@ main {
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 0.1rem 0.55rem;
+  pointer-events: auto;
 }
 
 .post-item-category:hover {
