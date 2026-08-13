@@ -1,61 +1,92 @@
 (function () {
   var listEl = document.getElementById("post-list");
   var headingEl = document.getElementById("list-heading");
+  var manifestPromise = null;
 
-  var params = new URLSearchParams(window.location.search);
-  var catSlug = params.get("cat") || "";
-
-  markActiveCategory(catSlug);
-
-  fetch("posts/manifest.json")
-    .then(function (res) {
-      if (!res.ok) throw new Error("manifest load failed");
-      return res.json();
-    })
-    .then(function (posts) {
-      if (catSlug) {
-        posts = posts.filter(function (p) {
-          return p.category === catSlug;
-        });
-      }
-
-      renderHeading(catSlug, posts.length);
-
-      if (!posts.length) {
-        listEl.innerHTML = '<li class="empty-state">아직 작성된 글이 없습니다.</li>';
-        return;
-      }
-
-      posts.sort(function (a, b) {
-        return new Date(b.date) - new Date(a.date);
+  function getManifest() {
+    if (!manifestPromise) {
+      manifestPromise = fetch("posts/manifest.json").then(function (res) {
+        if (!res.ok) throw new Error("manifest load failed");
+        return res.json();
       });
+    }
+    return manifestPromise;
+  }
 
-      listEl.innerHTML = posts
-        .map(function (post) {
-          var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(post.category) : null;
-          var badge = cat
-            ? '<a class="post-item-category" href="index.html?cat=' + encodeURIComponent(cat.slug) + '">' + escapeHtml(cat.label) + "</a>"
-            : "";
-          var image = post.image || (cat && cat.image) || "";
-          var href = "post.html?slug=" + encodeURIComponent(post.slug);
-          return (
-            '<li class="post-item">' +
-            '<a class="post-item-image" href="' + href + '" tabindex="-1" aria-hidden="true">' +
-            (image ? '<img src="' + image + '" alt="">' : "") +
-            "</a>" +
-            '<div class="post-item-body">' +
-            '<div class="post-item-meta">' + badge + '<span class="post-item-date">' + formatDate(post.date) + "</span></div>" +
-            '<h2 class="post-item-title"><a href="' + href + '">' + escapeHtml(post.title) + "</a></h2>" +
-            '<p class="post-item-excerpt">' + escapeHtml(post.excerpt || "") + "</p>" +
-            "</div>" +
-            "</li>"
-          );
-        })
-        .join("");
-    })
-    .catch(function () {
-      listEl.innerHTML = '<li class="empty-state">글 목록을 불러오지 못했습니다.</li>';
-    });
+  function currentSlug() {
+    var params = new URLSearchParams(window.location.search);
+    return params.get("cat") || "";
+  }
+
+  function render(catSlug) {
+    markActiveCategory(catSlug);
+    listEl.innerHTML = '<li class="empty-state">불러오는 중...</li>';
+
+    getManifest()
+      .then(function (allPosts) {
+        var posts = catSlug
+          ? allPosts.filter(function (p) {
+              return p.category === catSlug;
+            })
+          : allPosts.slice();
+
+        renderHeading(catSlug, posts.length);
+
+        if (!posts.length) {
+          listEl.innerHTML = '<li class="empty-state">아직 작성된 글이 없습니다.</li>';
+          return;
+        }
+
+        posts.sort(function (a, b) {
+          return new Date(b.date) - new Date(a.date);
+        });
+
+        listEl.innerHTML = posts
+          .map(function (post) {
+            var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(post.category) : null;
+            var badge = cat
+              ? '<a class="post-item-category" href="index.html?cat=' + encodeURIComponent(cat.slug) + '" data-cat="' + escapeHtml(cat.slug) + '">' + escapeHtml(cat.label) + "</a>"
+              : "";
+            var image = post.image || (cat && cat.image) || "";
+            var href = "post.html?slug=" + encodeURIComponent(post.slug);
+            return (
+              '<li class="post-item">' +
+              '<a class="post-item-image" href="' + href + '" tabindex="-1" aria-hidden="true">' +
+              (image ? '<img src="' + image + '" alt="">' : "") +
+              "</a>" +
+              '<div class="post-item-body">' +
+              '<div class="post-item-meta">' + badge + '<span class="post-item-date">' + formatDate(post.date) + "</span></div>" +
+              '<h2 class="post-item-title"><a href="' + href + '">' + escapeHtml(post.title) + "</a></h2>" +
+              '<p class="post-item-excerpt">' + escapeHtml(post.excerpt || "") + "</p>" +
+              "</div>" +
+              "</li>"
+            );
+          })
+          .join("");
+      })
+      .catch(function () {
+        listEl.innerHTML = '<li class="empty-state">글 목록을 불러오지 못했습니다.</li>';
+      });
+  }
+
+  render(currentSlug());
+
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest("a[data-cat]");
+    if (!link) return;
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+    e.preventDefault();
+    var slug = link.getAttribute("data-cat") || "";
+    if (slug === currentSlug()) return;
+    var newUrl = slug ? "index.html?cat=" + encodeURIComponent(slug) : "index.html";
+    history.pushState({ cat: slug }, "", newUrl);
+    render(slug);
+  });
+
+  window.addEventListener("popstate", function () {
+    render(currentSlug());
+  });
 
   function renderHeading(slug, count) {
     if (!headingEl) return;
@@ -70,9 +101,7 @@
   function markActiveCategory(slug) {
     var cards = document.querySelectorAll(".category-card");
     cards.forEach(function (card) {
-      if (card.getAttribute("data-cat") === slug) {
-        card.classList.add("is-active");
-      }
+      card.classList.toggle("is-active", card.getAttribute("data-cat") === slug);
     });
   }
 
