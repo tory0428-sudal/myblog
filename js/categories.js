@@ -2,7 +2,7 @@
 var BLOG_CATEGORIES = [
   {
     slug: "home-building",
-    label: "내 밥벌이 이야기",
+    label: "내 주택 건축 이야기",
     sub: "주택 건축",
     desc: "주택 건축 현장에서 있었던 하루하루의 일과 사진을 정리하는 페이지.",
     image: "images/categories/home-building.svg"
