@@ -538,6 +538,70 @@ main {
   color: var(--accent);
 }
 
+.post-nav {
+  display: flex;
+  gap: 1rem;
+  margin: 2.5rem 0 1.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.post-nav-link {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--fg);
+  min-width: 0;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.post-nav-link:hover {
+  background: var(--card-hover);
+  border-color: var(--accent);
+}
+
+.post-nav-next {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.post-nav-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.post-nav-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.post-list-link {
+  display: block;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 480px) {
+  .post-nav {
+    flex-direction: column;
+  }
+
+  .post-nav-next {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
 .post-content a {
   color: var(--accent);
 }

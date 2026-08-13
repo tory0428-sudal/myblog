@@ -3,6 +3,8 @@
   var dateEl = document.getElementById("post-date");
   var categoryEl = document.getElementById("post-category");
   var contentEl = document.getElementById("post-content");
+  var prevEl = document.getElementById("post-nav-prev");
+  var nextEl = document.getElementById("post-nav-next");
 
   var params = new URLSearchParams(window.location.search);
   var slug = params.get("slug");
@@ -29,6 +31,7 @@
       document.title = meta.title;
       titleEl.textContent = meta.title;
       dateEl.textContent = formatDate(meta.date);
+      renderNav(posts, slug);
 
       var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(meta.category) : null;
       if (cat && categoryEl) {
@@ -50,6 +53,34 @@
     .catch(function () {
       showNotFound();
     });
+
+  function renderNav(posts, currentSlug) {
+    if (!prevEl || !nextEl) return;
+
+    var sorted = posts.slice().sort(function (a, b) {
+      return new Date(b.date) - new Date(a.date);
+    });
+    var index = sorted.findIndex(function (p) {
+      return p.slug === currentSlug;
+    });
+    if (index === -1) return;
+
+    var newer = index > 0 ? sorted[index - 1] : null;
+    var older = index < sorted.length - 1 ? sorted[index + 1] : null;
+
+    setNavLink(prevEl, older);
+    setNavLink(nextEl, newer);
+  }
+
+  function setNavLink(el, post) {
+    if (!post) {
+      el.hidden = true;
+      return;
+    }
+    el.hidden = false;
+    el.href = "post.html?slug=" + encodeURIComponent(post.slug);
+    el.querySelector(".post-nav-title").textContent = post.title;
+  }
 
   function showNotFound() {
     titleEl.textContent = "글을 찾을 수 없습니다";
