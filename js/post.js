@@ -5,6 +5,8 @@
   var contentEl = document.getElementById("post-content");
   var prevEl = document.getElementById("post-nav-prev");
   var nextEl = document.getElementById("post-nav-next");
+  var backLinkEl = document.getElementById("post-back-link");
+  var listLinkEl = document.getElementById("post-list-link");
 
   var params = new URLSearchParams(window.location.search);
   var slug = params.get("slug");
@@ -31,12 +33,16 @@
       document.title = meta.title;
       titleEl.textContent = meta.title;
       dateEl.textContent = formatDate(meta.date);
-      renderNav(posts, slug);
+      renderNav(posts, meta);
 
       var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(meta.category) : null;
+      var listHref = cat ? "index.html?cat=" + encodeURIComponent(cat.slug) : "index.html";
+      if (backLinkEl) backLinkEl.href = listHref;
+      if (listLinkEl) listLinkEl.href = listHref;
+
       if (cat && categoryEl) {
         categoryEl.textContent = cat.label;
-        categoryEl.href = "index.html?cat=" + encodeURIComponent(cat.slug);
+        categoryEl.href = listHref;
       } else if (categoryEl) {
         categoryEl.style.display = "none";
       }
@@ -54,14 +60,17 @@
       showNotFound();
     });
 
-  function renderNav(posts, currentSlug) {
+  function renderNav(posts, currentMeta) {
     if (!prevEl || !nextEl) return;
 
-    var sorted = posts.slice().sort(function (a, b) {
+    var sameCategory = posts.filter(function (p) {
+      return p.category === currentMeta.category;
+    });
+    var sorted = sameCategory.slice().sort(function (a, b) {
       return new Date(b.date) - new Date(a.date);
     });
     var index = sorted.findIndex(function (p) {
-      return p.slug === currentSlug;
+      return p.slug === currentMeta.slug;
     });
     if (index === -1) return;
 
