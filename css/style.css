@@ -207,11 +207,12 @@ main {
 
 .category-card {
   display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.65rem;
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 0.7rem 0.85rem 0.9rem;
+  padding: 0.65rem 0.85rem;
   text-decoration: none;
   color: var(--fg);
   overflow: hidden;
@@ -229,13 +230,19 @@ main {
 }
 
 .category-thumb {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  flex: none;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   border-radius: 8px;
-  margin: -0.7rem -0.85rem 0.6rem;
-  width: calc(100% + 1.7rem);
   display: block;
+}
+
+.category-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
 }
 
 .category-label {
