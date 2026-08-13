@@ -18,13 +18,15 @@
     "title": "목조주택 시공 순서, 큰 그림부터 잡아보기",
     "date": "2026-08-02",
     "excerpt": "기초부터 외부공사까지, 목조주택이 지어지는 전체 공정 순서를 큰 흐름으로 정리했다.",
-    "category": "home-building"
+    "category": "home-building",
+    "image": "posts/images/wood-house-construction-order/02-frame.jpg"
   },
   {
     "slug": "family-trip-day1",
     "title": "가족여행 1일차",
     "date": "2026-08-02",
     "excerpt": "화양휴게소에서 아침을 먹고 고성 통일전망대를 거쳐 숙소에 도착, 저녁은 유명한 금화정 막국수에서.",
-    "category": "daily-life"
+    "category": "daily-life",
+    "image": "posts/images/family-trip-day1/go2.jpg"
   }
 ]
