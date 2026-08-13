@@ -36,13 +36,16 @@
           var badge = cat
             ? '<a class="post-item-category" href="index.html?cat=' + encodeURIComponent(cat.slug) + '">' + escapeHtml(cat.label) + "</a>"
             : "";
+          var image = post.image || (cat && cat.image) || "";
           var href = "post.html?slug=" + encodeURIComponent(post.slug);
           return (
-            '<li>' +
-            '<div class="post-item">' +
-            '<a class="post-item-cover" href="' + href + '" aria-hidden="true" tabindex="-1"></a>' +
-            '<h2 class="post-item-title"><a href="' + href + '">' + escapeHtml(post.title) + "</a></h2>" +
+            '<li class="post-item">' +
+            '<a class="post-item-image" href="' + href + '" tabindex="-1" aria-hidden="true">' +
+            (image ? '<img src="' + image + '" alt="">' : "") +
+            "</a>" +
+            '<div class="post-item-body">' +
             '<div class="post-item-meta">' + badge + '<span class="post-item-date">' + formatDate(post.date) + "</span></div>" +
+            '<h2 class="post-item-title"><a href="' + href + '">' + escapeHtml(post.title) + "</a></h2>" +
             '<p class="post-item-excerpt">' + escapeHtml(post.excerpt || "") + "</p>" +
             "</div>" +
             "</li>"

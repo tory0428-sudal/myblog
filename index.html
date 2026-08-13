@@ -8,15 +8,26 @@
 <script src="js/theme.js"></script>
 </head>
 <body>
-<header class="site-header">
+<header class="site-header home-header">
   <a class="site-title" href="index.html">토리의 기록</a>
   <button class="theme-toggle" aria-label="테마 전환"></button>
 </header>
-<main>
+<main class="home-main">
   <section class="hero">
     <h1 class="sr-only">토리의 기록</h1>
     <img class="hero-banner" src="images/hero.jpg" alt="토리's 목조주택, Make a Home">
-    <p class="hero-subtitle">밥벌이 · 취미 · 일상 · 이것저것 · 클로드, 하루하루를 남깁니다</p>
+    <div class="hero-copy">
+      <p class="hero-subtitle">밥벌이 · 취미 · 일상 · 이것저것 · 클로드, 하루하루를 남깁니다</p>
+      <a class="hero-cta" href="#list-heading">글 둘러보기</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="intro-avatar" aria-hidden="true">토리</div>
+    <div class="intro-body">
+      <h2 class="intro-title">안녕하세요, 토리입니다</h2>
+      <p class="intro-desc">주택 건축 현장에서 일하며 보고 겪은 것들, 그리고 컴퓨터·일상·클로드까지 이것저것 기록하는 개인 블로그입니다.</p>
+    </div>
   </section>
 
   <nav class="category-nav" aria-label="카테고리">
@@ -25,22 +36,27 @@
       <span class="category-sub">모든 글</span>
     </a>
     <a class="category-card" href="index.html?cat=home-building" data-cat="home-building">
+      <img class="category-thumb" src="images/categories/home-building.svg" alt="">
       <span class="category-label">내 밥벌이 이야기</span>
       <span class="category-sub">주택 건축</span>
     </a>
     <a class="category-card" href="index.html?cat=computer" data-cat="computer">
+      <img class="category-thumb" src="images/categories/computer.svg" alt="">
       <span class="category-label">내 취미 생활</span>
       <span class="category-sub">컴퓨터 이야기</span>
     </a>
     <a class="category-card" href="index.html?cat=daily-life" data-cat="daily-life">
+      <img class="category-thumb" src="images/categories/daily-life.svg" alt="">
       <span class="category-label">하루하루 삶</span>
       <span class="category-sub">여행, 일상</span>
     </a>
     <a class="category-card" href="index.html?cat=etc" data-cat="etc">
+      <img class="category-thumb" src="images/categories/etc.svg" alt="">
       <span class="category-label">이것저것</span>
       <span class="category-sub">아무거나 이것저것</span>
     </a>
     <a class="category-card" href="index.html?cat=claude-life" data-cat="claude-life">
+      <img class="category-thumb" src="images/categories/claude-life.svg" alt="">
       <span class="category-label">클로드 생활</span>
       <span class="category-sub">클로드 정리</span>
     </a>
@@ -64,6 +80,12 @@
         </div>
       </li>
     </ul>
+  </section>
+
+  <section class="contact-section">
+    <h2 class="section-title">연락하기</h2>
+    <p class="contact-desc">글에 대한 의견이나 하고 싶은 이야기가 있으면 편하게 메일 주세요.</p>
+    <a class="contact-cta" href="mailto:youremail@example.com">이메일 보내기</a>
   </section>
 </main>
 <script src="js/categories.js"></script>
