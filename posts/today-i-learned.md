@@ -1,5 +1,7 @@
 # 오늘 배운것
 
+![블로그를 직접 만들며 HTML·CSS·JS를 정리하는 모습](posts/images/today-i-learned/today.jpg)
+
 클로드 코드로 이 블로그를 직접 만들어보면서, HTML·CSS·자바스크립트가 각각 어떤 역할을 하는지 다시 정리해봤다.
 
 ## HTML — 구조와 뼈대

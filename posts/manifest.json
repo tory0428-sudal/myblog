@@ -4,7 +4,8 @@
     "title": "오늘 배운것",
     "date": "2026-07-26",
     "excerpt": "클로드 코드로 블로그를 만들면서 정리한 HTML, CSS, 자바스크립트의 역할.",
-    "category": "claude-life"
+    "category": "claude-life",
+    "image": "posts/images/today-i-learned/today.jpg"
   },
   {
     "slug": "multitasker-in-company",
