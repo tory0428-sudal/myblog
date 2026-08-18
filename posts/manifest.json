@@ -32,19 +32,19 @@
     "image": "posts/images/family-trip-day1/go2.jpg"
   },
   {
-    "slug": "samsung-odyssey-g7-4k-monitor-review",
-    "title": "삼성 오디세이 G7 G75F LS37FG750 4K UHD 165Hz 커브드 모니터 사용 후기",
-    "date": "2026-08-18",
-    "excerpt": "34인치에서 37인치 4K 커브드로 업그레이드, 개봉부터 조립·비교·사용기까지 정리한 후기.",
-    "category": "computer",
-    "image": "posts/images/samsung-odyssey-g7-4k-monitor-review/04-in-use-1.jpg"
-  },
-  {
     "slug": "roof-tile-types",
     "title": "지붕재의 기본, 기와의 종류",
     "date": "2026-08-18",
     "excerpt": "스페니쉬, 모니어(갈로로만), 평기와까지 국산·토기질 기와 세 가지 종류의 특징을 정리했다.",
     "category": "home-building",
     "image": "posts/images/roof-tile-types/02-spanish-finished-1.jpg"
+  },
+  {
+    "slug": "samsung-odyssey-g7-4k-monitor-review",
+    "title": "삼성 오디세이 G7 G75F LS37FG750 4K UHD 165Hz 커브드 모니터 사용 후기",
+    "date": "2026-08-18",
+    "excerpt": "34인치에서 37인치 4K 커브드로 업그레이드, 개봉부터 조립·비교·사용기까지 정리한 후기.",
+    "category": "computer",
+    "image": "posts/images/samsung-odyssey-g7-4k-monitor-review/04-in-use-1.jpg"
   }
 ]
