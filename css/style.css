@@ -135,9 +135,16 @@ main {
 .hero-banner {
   display: block;
   width: 100%;
-  height: auto;
+  height: 450px;
+  object-fit: cover;
   border-radius: 14px;
   border: 1px solid var(--border);
+}
+
+@media (max-width: 640px) {
+  .hero-banner {
+    height: 240px;
+  }
 }
 
 .hero-copy {
