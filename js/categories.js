@@ -29,11 +29,11 @@ var BLOG_CATEGORIES = [
     image: "images/categories/etc.svg"
   },
   {
-    slug: "claude-life",
-    label: "클로드 생활",
-    sub: "클로드 정리",
-    desc: "클로드를 공부하며 생긴 의문이나 사용 팁, 흔적을 정리하는 페이지.",
-    image: "images/categories/claude-life.svg"
+    slug: "project-cases",
+    label: "프로젝트 사례",
+    sub: "미니 웹앱 프로젝트",
+    desc: "미니 웹앱으로 만든 프로젝트들을 소개하는 페이지.",
+    image: "images/categories/project-cases.svg"
   }
 ];
 

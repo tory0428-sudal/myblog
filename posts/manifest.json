@@ -4,7 +4,7 @@
     "title": "오늘 배운것",
     "date": "2026-07-26",
     "excerpt": "클로드 코드로 블로그를 만들면서 정리한 HTML, CSS, 자바스크립트의 역할.",
-    "category": "claude-life",
+    "category": "etc",
     "image": "posts/images/today-i-learned/today.jpg"
   },
   {
@@ -46,5 +46,12 @@
     "excerpt": "34인치에서 37인치 4K 커브드로 업그레이드, 개봉부터 조립·비교·사용기까지 정리한 후기.",
     "category": "computer",
     "image": "posts/images/samsung-odyssey-g7-4k-monitor-review/04-in-use-1.jpg"
+  },
+  {
+    "slug": "2048-mini-web-app",
+    "title": "클로드 코드로 2048 미니 게임을 만들어봤다",
+    "date": "2026-08-19",
+    "excerpt": "기획-구현-검증을 나눠서 진행한 2048 미니 웹앱 제작기. 플레이 링크 포함.",
+    "category": "etc"
   }
 ]
