@@ -3,8 +3,8 @@ var BLOG_CATEGORIES = [
   {
     slug: "home-building",
     label: "내 주택 건축 이야기",
-    sub: "주택 건축",
-    desc: "주택 건축 현장에서 있었던 하루하루의 일과 사진을 정리하는 페이지.",
+    sub: "자재와 시공 방법",
+    desc: "주택 자재와 시공 방법을 현장 경험을 바탕으로 정리해 소개하는 페이지.",
     image: "images/categories/home-building.svg"
   },
   {
@@ -31,8 +31,8 @@ var BLOG_CATEGORIES = [
   {
     slug: "project-cases",
     label: "주택시공프로젝트",
-    sub: "주택 시공 사례",
-    desc: "완성된 주택 시공 프로젝트 사례를 소개하는 페이지.",
+    sub: "완성 프로젝트 모음",
+    desc: "완공까지 마친 주택 시공 프로젝트들을 사례별로 정리해 소개하는 페이지.",
     image: "images/categories/project-cases.svg"
   }
 ];
