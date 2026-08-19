@@ -260,7 +260,7 @@ html[data-theme="dark"] {
   display: block;
   position: relative;
   width: 100%;
-  padding-top: 60%;
+  padding-top: 75%;
   overflow: hidden;
   background: var(--code-bg);
 }
