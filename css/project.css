@@ -240,9 +240,3 @@ html[data-theme="dark"] {
     height: 100px;
   }
 }
-
-/* project card — reuses .post-item/.post-item-* from style.css so it looks
-   identical to a blog post card; only the excerpt needs line breaks + indents. */
-.project-item-excerpt {
-  white-space: pre-wrap;
-}

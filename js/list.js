@@ -42,7 +42,7 @@
       '<div class="post-item-body">' +
       '<div class="post-item-meta">' + badge + '<span class="post-item-date">준공 : ' + escapeHtml(project.completedDate) + "</span></div>" +
       '<h2 class="post-item-title"><a href="' + href + '">' + escapeHtml(project.title) + "</a></h2>" +
-      '<p class="post-item-excerpt project-item-excerpt">' + escapeHtml(project.specs) + "</p>" +
+      '<p class="post-item-excerpt">' + escapeHtml(project.excerpt) + "</p>" +
       "</div>" +
       "</li>"
     );
