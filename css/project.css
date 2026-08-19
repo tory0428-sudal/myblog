@@ -63,7 +63,7 @@ html[data-theme="dark"] {
   padding: 0.7rem 1rem;
   border-radius: 8px;
   line-height: 1.8;
-  white-space: pre-line;
+  white-space: pre-wrap;
 }
 
 .project-intro {
@@ -242,7 +242,7 @@ html[data-theme="dark"] {
 }
 
 /* project card — reuses .post-item/.post-item-* from style.css so it looks
-   identical to a blog post card; only the excerpt needs line breaks. */
+   identical to a blog post card; only the excerpt needs line breaks + indents. */
 .project-item-excerpt {
-  white-space: pre-line;
+  white-space: pre-wrap;
 }
