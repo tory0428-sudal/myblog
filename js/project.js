@@ -81,6 +81,35 @@
       '<div class="phase-list">' + phases + gallerySection(data.gallery) + "</div>";
   }
 
+  function setupLightbox() {
+    var overlay = document.createElement("div");
+    overlay.className = "lightbox";
+    overlay.innerHTML = '<button type="button" class="lightbox-close" aria-label="닫기">&times;</button><img alt="">';
+    document.body.appendChild(overlay);
+    var overlayImg = overlay.querySelector("img");
+
+    function close() {
+      overlay.classList.remove("is-open");
+      overlayImg.src = "";
+    }
+
+    overlay.addEventListener("click", close);
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") close();
+    });
+
+    root.addEventListener("click", function (e) {
+      var img = e.target.closest(".phase-photo img, .gallery-item img, .project-cover img");
+      if (!img) return;
+      overlayImg.src = img.src;
+      overlayImg.alt = img.alt || "";
+      overlay.classList.add("is-open");
+    });
+  }
+
+  setupLightbox();
+
   var slug = slugFromQuery();
   if (!slug) {
     root.innerHTML = '<p class="empty-state">프로젝트를 찾을 수 없습니다.</p>';
