@@ -19,6 +19,16 @@
 
 이 카테고리 체계는 블로그 글쓰기에 관한 것이며, 아래 "작업 사이클"(미니 웹앱 제작)과는 별개다. 미니 웹앱 서브에이전트는 이 섹션이나 `posts/`, `index.html`의 히어로/카테고리 영역을 건드리지 않는다.
 
+### 주택시공프로젝트 (`project-cases`)
+`project-cases` 카테고리는 `posts/manifest.json`에 글을 넣지 않는다. 대신 완전히 별도 데이터/템플릿을 쓴다:
+- `projects/manifest.json` — 프로젝트 카드 목록(slug, title, cover, specs)
+- `projects/{slug}.json` — 프로젝트 상세 데이터(intro, conditions, phases[](공사 단계별 사진 4장+설명), gallery(완성 사진))
+- `project.html` + `js/project.js` — 상세 페이지 렌더러 (쿼리 `?slug=`)
+- `css/project.css` — 블로그 글과 다른 전용 디자인(포트폴리오 톤, 타임라인 마커, 테라코타 accent). `css/style.css`의 CSS 변수(다크모드 등)를 그대로 공유하되 자체 accent 변수를 추가로 정의.
+- `js/list.js`가 `cat=project-cases`일 때와 홈 화면 `.app-list`(구 미니 웹앱 섹션, 현재 "주택시공프로젝트"로 표시)에 `projects/manifest.json`을 불러와 프로젝트 카드를 렌더링한다.
+
+새 시공 프로젝트를 추가할 때는 `projects/manifest.json`에 카드 항목을 추가하고 `projects/{slug}.json`을 새로 작성한다. 사진은 `projects/images/{slug}/{phase-slug}/01.jpg…`로 압축(기본 1600px/품질82) 후 배치.
+
 
 ## 작업 사이클
 사용자가 웹앱 주제를 요청하면 다음 순서로 진행한다

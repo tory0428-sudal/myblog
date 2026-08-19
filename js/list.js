@@ -18,9 +18,57 @@
     return params.get("cat") || "";
   }
 
+  var projectsManifestPromise = null;
+
+  function getProjectsManifest() {
+    if (!projectsManifestPromise) {
+      projectsManifestPromise = fetch("projects/manifest.json").then(function (res) {
+        if (!res.ok) throw new Error("projects manifest load failed");
+        return res.json();
+      });
+    }
+    return projectsManifestPromise;
+  }
+
+  function projectCardHtml(project) {
+    var href = "project.html?slug=" + encodeURIComponent(project.slug);
+    return (
+      '<li>' +
+      '<a class="project-card" href="' + href + '">' +
+      '<span class="project-card-image"><img src="' + project.cover + '" alt="' + escapeHtml(project.title) + '"></span>' +
+      '<span class="project-card-body">' +
+      '<span class="project-card-label">' + escapeHtml(project.title) + "</span>" +
+      '<span class="project-card-specs">' + escapeHtml(project.specs) + "</span>" +
+      "</span>" +
+      "</a>" +
+      "</li>"
+    );
+  }
+
+  function renderProjectCases() {
+    if (headingEl) headingEl.textContent = "";
+    getProjectsManifest()
+      .then(function (projects) {
+        if (headingEl) headingEl.textContent = "주택시공프로젝트 (" + projects.length + "개)";
+        if (!projects.length) {
+          listEl.innerHTML = '<li class="empty-state">아직 등록된 프로젝트가 없습니다.</li>';
+          return;
+        }
+        listEl.innerHTML = projects.map(projectCardHtml).join("");
+      })
+      .catch(function () {
+        listEl.innerHTML = '<li class="empty-state">프로젝트를 불러오지 못했습니다.</li>';
+      });
+  }
+
   function render(catSlug) {
     markActiveCategory(catSlug);
     listEl.innerHTML = '<li class="empty-state">불러오는 중...</li>';
+
+    if (catSlug === "project-cases") {
+      renderProjectCases();
+      return;
+    }
 
     getManifest()
       .then(function (allPosts) {
@@ -70,6 +118,16 @@
   }
 
   render(currentSlug());
+
+  var appListEl = document.querySelector(".app-list");
+  if (appListEl) {
+    getProjectsManifest()
+      .then(function (projects) {
+        if (!projects.length) return;
+        appListEl.innerHTML = projects.map(projectCardHtml).join("");
+      })
+      .catch(function () {});
+  }
 
   document.addEventListener("click", function (e) {
     var link = e.target.closest("a[data-cat]");

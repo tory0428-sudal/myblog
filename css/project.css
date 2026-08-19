@@ -1,0 +1,292 @@
+/* project case page — distinct look from blog posts, shares tokens from style.css */
+:root {
+  --proj-accent: #a8532f;
+  --proj-accent-bg: #f7ece5;
+  --proj-ink: #2b2420;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --proj-accent: #e2916a;
+    --proj-accent-bg: #33241c;
+    --proj-ink: #f3ece6;
+  }
+}
+
+html[data-theme="light"] {
+  --proj-accent: #a8532f;
+  --proj-accent-bg: #f7ece5;
+  --proj-ink: #2b2420;
+}
+
+html[data-theme="dark"] {
+  --proj-accent: #e2916a;
+  --proj-accent-bg: #33241c;
+  --proj-ink: #f3ece6;
+}
+
+.project-page {
+  font-family: Georgia, "Noto Serif KR", "Nanum Myeongjo", serif;
+}
+
+.project-cover {
+  margin: 0 0 1.5rem;
+}
+
+.project-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.project-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--proj-accent);
+}
+
+.project-header h1 {
+  margin: 0 0 0.6rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.project-specs {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.85rem;
+  color: var(--proj-accent);
+  background: var(--proj-accent-bg);
+  display: inline-block;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  line-height: 1.7;
+}
+
+.project-intro {
+  margin-bottom: 2.5rem;
+}
+
+.project-intro > p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--proj-ink);
+}
+
+.conditions-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.conditions-list {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding-left: 1.3rem;
+  font-size: 0.92rem;
+  line-height: 1.9;
+  color: var(--proj-ink);
+}
+
+.conditions-list li::marker {
+  color: var(--proj-accent);
+  font-weight: 700;
+}
+
+.phase-list {
+  border-left: 2px solid var(--border);
+  margin-left: 0.9rem;
+}
+
+.phase {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  padding: 0 0 2.75rem 1.75rem;
+}
+
+.phase-marker {
+  position: absolute;
+  left: -1.1rem;
+  top: 0;
+}
+
+.phase-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--proj-accent);
+  color: var(--proj-accent);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.phase-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.phase-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0.2rem 0 0.9rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--proj-ink);
+}
+
+.phase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.phase-photo {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+}
+
+.phase-photo img {
+  display: block;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.phase-photo-caption {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--muted);
+  padding: 0.3rem 0.2rem;
+  border-top: 1px solid var(--border);
+}
+
+.phase-desc {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.phase-desc strong {
+  color: var(--proj-accent);
+}
+
+.gallery-section .phase-num {
+  background: var(--proj-accent);
+  color: var(--bg);
+  border-color: var(--proj-accent);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+@media (min-width: 640px) {
+  .phase-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .phase {
+    padding-left: 1.4rem;
+  }
+
+  .phase-photo img {
+    height: 100px;
+  }
+}
+
+/* project card — used on the project-cases category listing and homepage app-section */
+.project-card {
+  display: block;
+  text-decoration: none;
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--proj-accent);
+}
+
+.project-card-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 60%;
+  overflow: hidden;
+  background: var(--code-bg);
+}
+
+.project-card-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-body {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.project-card-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.project-card-specs {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
