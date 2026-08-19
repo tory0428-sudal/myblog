@@ -21,13 +21,21 @@
 
 ### 주택시공프로젝트 (`project-cases`)
 `project-cases` 카테고리는 `posts/manifest.json`에 글을 넣지 않는다. 대신 완전히 별도 데이터/템플릿을 쓴다:
-- `projects/manifest.json` — 프로젝트 카드 목록(slug, title, cover, specs)
-- `projects/{slug}.json` — 프로젝트 상세 데이터(intro, conditions, phases[](공사 단계별 사진 4장+설명), gallery(완성 사진))
-- `project.html` + `js/project.js` — 상세 페이지 렌더러 (쿼리 `?slug=`)
-- `css/project.css` — 블로그 글과 다른 전용 디자인(포트폴리오 톤, 타임라인 마커, 테라코타 accent). `css/style.css`의 CSS 변수(다크모드 등)를 그대로 공유하되 자체 accent 변수를 추가로 정의.
-- `js/list.js`가 `cat=project-cases`일 때와 홈 화면 `.app-list`(구 미니 웹앱 섹션, 현재 "주택시공프로젝트"로 표시)에 `projects/manifest.json`을 불러와 프로젝트 카드를 렌더링한다.
+- `projects/manifest.json` — 프로젝트 카드 목록. 필드: `slug`, `title`(카드 제목, 짧게), `completedDate`("2025년 11월" 형식, 카드 뱃지 옆에 "준공 : "이 붙어 표시됨), `cover`, `excerpt`(카드용 짧은 한 문장 요약 — 블로그 글 excerpt와 동일 취급, 줄바꿈 없이 자연스럽게 wrap).
+- `projects/{slug}.json` — 상세 페이지 데이터: `title`, `cover`, `specs`(상세페이지 전용 — `•` 불릿으로 항목별 한 줄씩: 구조/외장마감/평수/특징, `\n`으로 줄바꿈), `intro`, `conditions`(건축주 조건 배열), `phases[]`(공사단계별 `key`/`label`/`desc`/`images[]` 4장, 도면 단계만 `captions[]` 추가), `gallery`(완성 사진, `label`+`images[]`).
+- `project.html` + `js/project.js` — 상세 페이지 렌더러(쿼리 `?slug=`), 사진 클릭 시 확대되는 라이트박스 내장(추가 작업 불필요).
+- `css/project.css` — 블로그 글과 다른 전용 디자인(세리프 폰트, 타임라인 마커, 테라코타 accent) — **상세 페이지에만** 적용. 홈/카테고리 목록에 뜨는 **카드는 반대로 블로그 글 카드(`.post-item`)와 완전히 동일한 디자인**을 그대로 재사용한다(뱃지+날짜, 굵은 제목, 짧은 excerpt) — 카드 폭이 250px로 좁아서 상세페이지용 불릿 서식을 넣으면 깨지므로 절대 넣지 말 것.
+- `js/list.js`의 `updateAppSection()`이 카테고리 필터가 없을 때(전체보기)만 홈 화면 `.app-section`("주택시공프로젝트")을 보여주고, 어떤 카테고리든 선택되면 숨긴다(중복 노출 방지).
 
-새 시공 프로젝트를 추가할 때는 `projects/manifest.json`에 카드 항목을 추가하고 `projects/{slug}.json`을 새로 작성한다. 사진은 `projects/images/{slug}/{phase-slug}/01.jpg…`로 압축(기본 1600px/품질82) 후 배치.
+**새 시공 프로젝트 추가 워크플로 (2026-08-19 계룡패시브하우스로 확립, 검증됨):**
+1. 사용자에게 원본 사진이 있는 폴더 경로를 받는다(보통 `G:\내 드라이브\현장사진\{현장명}\{공사단계별 하위폴더}`). 폴더 이름으로 공사 순서를 정리해 사용자에게 먼저 확인받는다.
+2. Python + PIL로 각 폴더 이미지의 EXIF Orientation을 보정해 실제 세로/가로 판별 → 폴더별 contact sheet(그리드 썸네일 + 인덱스 번호)를 만들어 Read 도구로 직접 보고 좋은 사진을 인덱스로 골라낸다(세로 사진 제외, 공사단계당 4장, 도면은 배치도/1층평면도/2층평면도/지붕평면도 4장 지정, 완성 사진은 20장 안팎+외관 4장 정도).
+3. 사용자에게 공사단계별 코멘트(라벨+설명), 소개글, 건축주 조건 목록, 스펙(구조/외장마감/평수/특징), 준공 시기를 받는다.
+4. 선정한 사진을 **품질 90**(기본 1600px, 품질 82가 아님 — 벽돌/징크/나무결 같은 반복 텍스처는 82에서 블록 노이즈가 눈에 띄게 보임)로 압축해 `projects/images/{slug}/{phase-slug}/01.jpg…`에 배치. 도면은 텍스트 가독성을 위해 품질 93 정도로.
+5. `projects/manifest.json`에 카드 항목 추가(`excerpt`는 짧은 한 문장으로), `projects/{slug}.json` 새로 작성.
+6. `python -m http.server`로 로컬 검증 — 스크린샷보다 `getBoundingClientRect`/`getComputedStyle`/`textContent` 같은 가벼운 DOM 값 확인을 우선한다(무거운 캡처는 세션을 느리게 만듦). 브라우저 캐시 때문에 링크/스크립트 태그를 새로 주입하거나(`?bust=` 쿼리) 새 탭을 열어서 재확인.
+7. css/js 파일을 하나라도 고쳤으면 `index.html`/`post.html`/`project.html`의 모든 `?v=` 캐시 버스팅 쿼리를 한 단계 올린다(현재 버전은 파일에서 확인).
+8. 로컬 커밋 후 **사용자에게 push 확인을 받고** push한다(공개 배포라 매번 확인 필요).
 
 
 ## 작업 사이클
