@@ -64,8 +64,29 @@
       });
   }
 
+  var appSectionEl = document.querySelector(".app-section");
+
+  function updateAppSection(catSlug) {
+    if (!appSectionEl) return;
+    if (catSlug) {
+      appSectionEl.style.display = "none";
+      return;
+    }
+    appSectionEl.style.display = "";
+    var appListEl = appSectionEl.querySelector(".app-list");
+    if (!appListEl || appListEl.dataset.loaded) return;
+    getProjectsManifest()
+      .then(function (projects) {
+        if (!projects.length) return;
+        appListEl.innerHTML = projects.map(projectCardHtml).join("");
+        appListEl.dataset.loaded = "1";
+      })
+      .catch(function () {});
+  }
+
   function render(catSlug) {
     markActiveCategory(catSlug);
+    updateAppSection(catSlug);
     listEl.innerHTML = '<li class="empty-state">불러오는 중...</li>';
 
     if (catSlug === "project-cases") {
@@ -121,16 +142,6 @@
   }
 
   render(currentSlug());
-
-  var appListEl = document.querySelector(".app-list");
-  if (appListEl) {
-    getProjectsManifest()
-      .then(function (projects) {
-        if (!projects.length) return;
-        appListEl.innerHTML = projects.map(projectCardHtml).join("");
-      })
-      .catch(function () {});
-  }
 
   document.addEventListener("click", function (e) {
     var link = e.target.closest("a[data-cat]");
