@@ -30,9 +30,9 @@ var BLOG_CATEGORIES = [
   },
   {
     slug: "project-cases",
-    label: "프로젝트 사례",
-    sub: "미니 웹앱 프로젝트",
-    desc: "미니 웹앱으로 만든 프로젝트들을 소개하는 페이지.",
+    label: "주택시공프로젝트",
+    sub: "주택 시공 사례",
+    desc: "완성된 주택 시공 프로젝트 사례를 소개하는 페이지.",
     image: "images/categories/project-cases.svg"
   }
 ];
