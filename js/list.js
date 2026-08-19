@@ -32,15 +32,18 @@
 
   function projectCardHtml(project) {
     var href = "project.html?slug=" + encodeURIComponent(project.slug);
+    var badge =
+      '<a class="post-item-category" href="index.html?cat=project-cases" data-cat="project-cases">주택시공프로젝트</a>';
     return (
-      '<li>' +
-      '<a class="project-card" href="' + href + '">' +
-      '<span class="project-card-image"><img src="' + project.cover + '" alt="' + escapeHtml(project.title) + '"></span>' +
-      '<span class="project-card-body">' +
-      '<span class="project-card-label">' + escapeHtml(project.title) + "</span>" +
-      '<span class="project-card-specs">' + escapeHtml(project.specs) + "</span>" +
-      "</span>" +
+      '<li class="post-item">' +
+      '<a class="post-item-image" href="' + href + '" tabindex="-1" aria-hidden="true">' +
+      '<img src="' + project.cover + '" alt="">' +
       "</a>" +
+      '<div class="post-item-body">' +
+      '<div class="post-item-meta">' + badge + '<span class="post-item-date">' + formatDate(project.date) + "</span></div>" +
+      '<h2 class="post-item-title"><a href="' + href + '">' + escapeHtml(project.title) + "</a></h2>" +
+      '<p class="post-item-excerpt project-item-excerpt">' + escapeHtml(project.specs) + "</p>" +
+      "</div>" +
       "</li>"
     );
   }
