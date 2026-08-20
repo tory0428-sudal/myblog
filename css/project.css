@@ -59,11 +59,11 @@ html[data-theme="dark"] {
   font-size: 0.85rem;
   color: var(--proj-accent);
   background: var(--proj-accent-bg);
-  display: inline-block;
+  display: block;
   padding: 0.7rem 1rem;
   border-radius: 8px;
   line-height: 1.8;
-  white-space: pre-wrap;
+  white-space: pre-line;
 }
 
 .project-intro {
