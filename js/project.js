@@ -89,22 +89,40 @@
     document.body.appendChild(overlay);
     var overlayImg = overlay.querySelector("img");
 
+    var group = [];
+    var currentIndex = -1;
+
+    function show(index) {
+      if (!group.length) return;
+      currentIndex = (index + group.length) % group.length;
+      var img = group[currentIndex];
+      overlayImg.src = img.src;
+      overlayImg.alt = img.alt || "";
+    }
+
     function close() {
       overlay.classList.remove("is-open");
       overlayImg.src = "";
+      group = [];
+      currentIndex = -1;
     }
 
     overlay.addEventListener("click", close);
 
     document.addEventListener("keydown", function (e) {
+      if (!overlay.classList.contains("is-open")) return;
       if (e.key === "Escape") close();
+      else if (e.key === "ArrowRight") show(currentIndex + 1);
+      else if (e.key === "ArrowLeft") show(currentIndex - 1);
     });
 
     root.addEventListener("click", function (e) {
       var img = e.target.closest(".phase-photo img, .gallery-item img, .project-cover img");
       if (!img) return;
-      overlayImg.src = img.src;
-      overlayImg.alt = img.alt || "";
+      var container = img.closest(".phase-grid, .gallery-grid");
+      group = container ? Array.prototype.slice.call(container.querySelectorAll("img")) : [img];
+      currentIndex = group.indexOf(img);
+      show(currentIndex);
       overlay.classList.add("is-open");
     });
   }
