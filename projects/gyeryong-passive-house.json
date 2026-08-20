@@ -20,7 +20,11 @@
         "projects/images/gyeryong-passive-house/before-site/01.jpg",
         "projects/images/gyeryong-passive-house/before-site/02.jpg",
         "projects/images/gyeryong-passive-house/before-site/03.jpg",
-        "projects/images/gyeryong-passive-house/before-site/04.jpg"
+        "projects/images/gyeryong-passive-house/before-site/04.jpg",
+        "projects/images/gyeryong-passive-house/before-site/05.jpg",
+        "projects/images/gyeryong-passive-house/before-site/06.jpg",
+        "projects/images/gyeryong-passive-house/before-site/07.jpg",
+        "projects/images/gyeryong-passive-house/before-site/08.jpg"
       ]
     },
     {
@@ -33,7 +37,12 @@
         "projects/images/gyeryong-passive-house/drawings/03-2f-plan.jpg",
         "projects/images/gyeryong-passive-house/drawings/04-roof-plan.jpg"
       ],
-      "captions": ["배치도", "1층평면도", "2층평면도", "지붕평면도"]
+      "captions": [
+        "배치도",
+        "1층평면도",
+        "2층평면도",
+        "지붕평면도"
+      ]
     },
     {
       "key": "foundation",
@@ -43,7 +52,11 @@
         "projects/images/gyeryong-passive-house/foundation/01.jpg",
         "projects/images/gyeryong-passive-house/foundation/02.jpg",
         "projects/images/gyeryong-passive-house/foundation/03.jpg",
-        "projects/images/gyeryong-passive-house/foundation/04.jpg"
+        "projects/images/gyeryong-passive-house/foundation/04.jpg",
+        "projects/images/gyeryong-passive-house/foundation/05.jpg",
+        "projects/images/gyeryong-passive-house/foundation/06.jpg",
+        "projects/images/gyeryong-passive-house/foundation/07.jpg",
+        "projects/images/gyeryong-passive-house/foundation/08.jpg"
       ]
     },
     {
@@ -54,7 +67,11 @@
         "projects/images/gyeryong-passive-house/frame/01.jpg",
         "projects/images/gyeryong-passive-house/frame/02.jpg",
         "projects/images/gyeryong-passive-house/frame/03.jpg",
-        "projects/images/gyeryong-passive-house/frame/04.jpg"
+        "projects/images/gyeryong-passive-house/frame/04.jpg",
+        "projects/images/gyeryong-passive-house/frame/05.jpg",
+        "projects/images/gyeryong-passive-house/frame/06.jpg",
+        "projects/images/gyeryong-passive-house/frame/07.jpg",
+        "projects/images/gyeryong-passive-house/frame/08.jpg"
       ]
     },
     {
@@ -65,7 +82,11 @@
         "projects/images/gyeryong-passive-house/mep/01.jpg",
         "projects/images/gyeryong-passive-house/mep/02.jpg",
         "projects/images/gyeryong-passive-house/mep/03.jpg",
-        "projects/images/gyeryong-passive-house/mep/04.jpg"
+        "projects/images/gyeryong-passive-house/mep/04.jpg",
+        "projects/images/gyeryong-passive-house/mep/05.jpg",
+        "projects/images/gyeryong-passive-house/mep/06.jpg",
+        "projects/images/gyeryong-passive-house/mep/07.jpg",
+        "projects/images/gyeryong-passive-house/mep/08.jpg"
       ]
     },
     {
@@ -76,7 +97,11 @@
         "projects/images/gyeryong-passive-house/exterior-wall/01.jpg",
         "projects/images/gyeryong-passive-house/exterior-wall/02.jpg",
         "projects/images/gyeryong-passive-house/exterior-wall/03.jpg",
-        "projects/images/gyeryong-passive-house/exterior-wall/04.jpg"
+        "projects/images/gyeryong-passive-house/exterior-wall/04.jpg",
+        "projects/images/gyeryong-passive-house/exterior-wall/05.jpg",
+        "projects/images/gyeryong-passive-house/exterior-wall/06.jpg",
+        "projects/images/gyeryong-passive-house/exterior-wall/07.jpg",
+        "projects/images/gyeryong-passive-house/exterior-wall/08.jpg"
       ]
     },
     {
@@ -87,7 +112,11 @@
         "projects/images/gyeryong-passive-house/mortar/01.jpg",
         "projects/images/gyeryong-passive-house/mortar/02.jpg",
         "projects/images/gyeryong-passive-house/mortar/03.jpg",
-        "projects/images/gyeryong-passive-house/mortar/04.jpg"
+        "projects/images/gyeryong-passive-house/mortar/04.jpg",
+        "projects/images/gyeryong-passive-house/mortar/05.jpg",
+        "projects/images/gyeryong-passive-house/mortar/06.jpg",
+        "projects/images/gyeryong-passive-house/mortar/07.jpg",
+        "projects/images/gyeryong-passive-house/mortar/08.jpg"
       ]
     },
     {
@@ -98,7 +127,11 @@
         "projects/images/gyeryong-passive-house/airtightness/01.jpg",
         "projects/images/gyeryong-passive-house/airtightness/02.jpg",
         "projects/images/gyeryong-passive-house/airtightness/03.jpg",
-        "projects/images/gyeryong-passive-house/airtightness/04.jpg"
+        "projects/images/gyeryong-passive-house/airtightness/04.jpg",
+        "projects/images/gyeryong-passive-house/airtightness/05.jpg",
+        "projects/images/gyeryong-passive-house/airtightness/06.jpg",
+        "projects/images/gyeryong-passive-house/airtightness/07.jpg",
+        "projects/images/gyeryong-passive-house/airtightness/08.jpg"
       ]
     },
     {
@@ -109,7 +142,11 @@
         "projects/images/gyeryong-passive-house/interior-carpentry/01.jpg",
         "projects/images/gyeryong-passive-house/interior-carpentry/02.jpg",
         "projects/images/gyeryong-passive-house/interior-carpentry/03.jpg",
-        "projects/images/gyeryong-passive-house/interior-carpentry/04.jpg"
+        "projects/images/gyeryong-passive-house/interior-carpentry/04.jpg",
+        "projects/images/gyeryong-passive-house/interior-carpentry/05.jpg",
+        "projects/images/gyeryong-passive-house/interior-carpentry/06.jpg",
+        "projects/images/gyeryong-passive-house/interior-carpentry/07.jpg",
+        "projects/images/gyeryong-passive-house/interior-carpentry/08.jpg"
       ]
     },
     {
@@ -120,7 +157,11 @@
         "projects/images/gyeryong-passive-house/electrical-lighting/01.jpg",
         "projects/images/gyeryong-passive-house/electrical-lighting/02.jpg",
         "projects/images/gyeryong-passive-house/electrical-lighting/03.jpg",
-        "projects/images/gyeryong-passive-house/electrical-lighting/04.jpg"
+        "projects/images/gyeryong-passive-house/electrical-lighting/04.jpg",
+        "projects/images/gyeryong-passive-house/electrical-lighting/05.jpg",
+        "projects/images/gyeryong-passive-house/electrical-lighting/06.jpg",
+        "projects/images/gyeryong-passive-house/electrical-lighting/07.jpg",
+        "projects/images/gyeryong-passive-house/electrical-lighting/08.jpg"
       ]
     },
     {
@@ -131,7 +172,11 @@
         "projects/images/gyeryong-passive-house/waterproofing/01.jpg",
         "projects/images/gyeryong-passive-house/waterproofing/02.jpg",
         "projects/images/gyeryong-passive-house/waterproofing/03.jpg",
-        "projects/images/gyeryong-passive-house/waterproofing/04.jpg"
+        "projects/images/gyeryong-passive-house/waterproofing/04.jpg",
+        "projects/images/gyeryong-passive-house/waterproofing/05.jpg",
+        "projects/images/gyeryong-passive-house/waterproofing/06.jpg",
+        "projects/images/gyeryong-passive-house/waterproofing/07.jpg",
+        "projects/images/gyeryong-passive-house/waterproofing/08.jpg"
       ]
     },
     {
@@ -142,7 +187,11 @@
         "projects/images/gyeryong-passive-house/tile/01.jpg",
         "projects/images/gyeryong-passive-house/tile/02.jpg",
         "projects/images/gyeryong-passive-house/tile/03.jpg",
-        "projects/images/gyeryong-passive-house/tile/04.jpg"
+        "projects/images/gyeryong-passive-house/tile/04.jpg",
+        "projects/images/gyeryong-passive-house/tile/05.jpg",
+        "projects/images/gyeryong-passive-house/tile/06.jpg",
+        "projects/images/gyeryong-passive-house/tile/07.jpg",
+        "projects/images/gyeryong-passive-house/tile/08.jpg"
       ]
     },
     {
@@ -153,7 +202,11 @@
         "projects/images/gyeryong-passive-house/wallpaper/01.jpg",
         "projects/images/gyeryong-passive-house/wallpaper/02.jpg",
         "projects/images/gyeryong-passive-house/wallpaper/03.jpg",
-        "projects/images/gyeryong-passive-house/wallpaper/04.jpg"
+        "projects/images/gyeryong-passive-house/wallpaper/04.jpg",
+        "projects/images/gyeryong-passive-house/wallpaper/05.jpg",
+        "projects/images/gyeryong-passive-house/wallpaper/06.jpg",
+        "projects/images/gyeryong-passive-house/wallpaper/07.jpg",
+        "projects/images/gyeryong-passive-house/wallpaper/08.jpg"
       ]
     },
     {
@@ -174,7 +227,11 @@
         "projects/images/gyeryong-passive-house/exterior-plumbing/01.jpg",
         "projects/images/gyeryong-passive-house/exterior-plumbing/02.jpg",
         "projects/images/gyeryong-passive-house/exterior-plumbing/03.jpg",
-        "projects/images/gyeryong-passive-house/exterior-plumbing/04.jpg"
+        "projects/images/gyeryong-passive-house/exterior-plumbing/04.jpg",
+        "projects/images/gyeryong-passive-house/exterior-plumbing/05.jpg",
+        "projects/images/gyeryong-passive-house/exterior-plumbing/06.jpg",
+        "projects/images/gyeryong-passive-house/exterior-plumbing/07.jpg",
+        "projects/images/gyeryong-passive-house/exterior-plumbing/08.jpg"
       ]
     },
     {
@@ -185,7 +242,11 @@
         "projects/images/gyeryong-passive-house/furniture/01.jpg",
         "projects/images/gyeryong-passive-house/furniture/02.jpg",
         "projects/images/gyeryong-passive-house/furniture/03.jpg",
-        "projects/images/gyeryong-passive-house/furniture/04.jpg"
+        "projects/images/gyeryong-passive-house/furniture/04.jpg",
+        "projects/images/gyeryong-passive-house/furniture/05.jpg",
+        "projects/images/gyeryong-passive-house/furniture/06.jpg",
+        "projects/images/gyeryong-passive-house/furniture/07.jpg",
+        "projects/images/gyeryong-passive-house/furniture/08.jpg"
       ]
     },
     {
@@ -196,7 +257,11 @@
         "projects/images/gyeryong-passive-house/final-cleaning/01.jpg",
         "projects/images/gyeryong-passive-house/final-cleaning/02.jpg",
         "projects/images/gyeryong-passive-house/final-cleaning/03.jpg",
-        "projects/images/gyeryong-passive-house/final-cleaning/04.jpg"
+        "projects/images/gyeryong-passive-house/final-cleaning/04.jpg",
+        "projects/images/gyeryong-passive-house/final-cleaning/05.jpg",
+        "projects/images/gyeryong-passive-house/final-cleaning/06.jpg",
+        "projects/images/gyeryong-passive-house/final-cleaning/07.jpg",
+        "projects/images/gyeryong-passive-house/final-cleaning/08.jpg"
       ]
     },
     {
@@ -207,7 +272,11 @@
         "projects/images/gyeryong-passive-house/stairs-railing/01.jpg",
         "projects/images/gyeryong-passive-house/stairs-railing/02.jpg",
         "projects/images/gyeryong-passive-house/stairs-railing/03.jpg",
-        "projects/images/gyeryong-passive-house/stairs-railing/04.jpg"
+        "projects/images/gyeryong-passive-house/stairs-railing/04.jpg",
+        "projects/images/gyeryong-passive-house/stairs-railing/05.jpg",
+        "projects/images/gyeryong-passive-house/stairs-railing/06.jpg",
+        "projects/images/gyeryong-passive-house/stairs-railing/07.jpg",
+        "projects/images/gyeryong-passive-house/stairs-railing/08.jpg"
       ]
     },
     {
@@ -218,7 +287,11 @@
         "projects/images/gyeryong-passive-house/film/01.jpg",
         "projects/images/gyeryong-passive-house/film/02.jpg",
         "projects/images/gyeryong-passive-house/film/03.jpg",
-        "projects/images/gyeryong-passive-house/film/04.jpg"
+        "projects/images/gyeryong-passive-house/film/04.jpg",
+        "projects/images/gyeryong-passive-house/film/05.jpg",
+        "projects/images/gyeryong-passive-house/film/06.jpg",
+        "projects/images/gyeryong-passive-house/film/07.jpg",
+        "projects/images/gyeryong-passive-house/film/08.jpg"
       ]
     },
     {
@@ -229,7 +302,11 @@
         "projects/images/gyeryong-passive-house/exterior-stone/01.jpg",
         "projects/images/gyeryong-passive-house/exterior-stone/02.jpg",
         "projects/images/gyeryong-passive-house/exterior-stone/03.jpg",
-        "projects/images/gyeryong-passive-house/exterior-stone/04.jpg"
+        "projects/images/gyeryong-passive-house/exterior-stone/04.jpg",
+        "projects/images/gyeryong-passive-house/exterior-stone/05.jpg",
+        "projects/images/gyeryong-passive-house/exterior-stone/06.jpg",
+        "projects/images/gyeryong-passive-house/exterior-stone/07.jpg",
+        "projects/images/gyeryong-passive-house/exterior-stone/08.jpg"
       ]
     }
   ],
@@ -260,7 +337,64 @@
       "projects/images/gyeryong-passive-house/finished/21.jpg",
       "projects/images/gyeryong-passive-house/finished/22.jpg",
       "projects/images/gyeryong-passive-house/finished/23.jpg",
-      "projects/images/gyeryong-passive-house/finished/24.jpg"
+      "projects/images/gyeryong-passive-house/finished/24.jpg",
+      "projects/images/gyeryong-passive-house/finished/25.jpg",
+      "projects/images/gyeryong-passive-house/finished/26.jpg",
+      "projects/images/gyeryong-passive-house/finished/27.jpg",
+      "projects/images/gyeryong-passive-house/finished/28.jpg",
+      "projects/images/gyeryong-passive-house/finished/29.jpg",
+      "projects/images/gyeryong-passive-house/finished/30.jpg",
+      "projects/images/gyeryong-passive-house/finished/31.jpg",
+      "projects/images/gyeryong-passive-house/finished/32.jpg",
+      "projects/images/gyeryong-passive-house/finished/33.jpg",
+      "projects/images/gyeryong-passive-house/finished/34.jpg",
+      "projects/images/gyeryong-passive-house/finished/35.jpg",
+      "projects/images/gyeryong-passive-house/finished/36.jpg",
+      "projects/images/gyeryong-passive-house/finished/37.jpg",
+      "projects/images/gyeryong-passive-house/finished/38.jpg",
+      "projects/images/gyeryong-passive-house/finished/39.jpg",
+      "projects/images/gyeryong-passive-house/finished/40.jpg",
+      "projects/images/gyeryong-passive-house/finished/41.jpg",
+      "projects/images/gyeryong-passive-house/finished/42.jpg",
+      "projects/images/gyeryong-passive-house/finished/43.jpg",
+      "projects/images/gyeryong-passive-house/finished/44.jpg",
+      "projects/images/gyeryong-passive-house/finished/45.jpg",
+      "projects/images/gyeryong-passive-house/finished/46.jpg",
+      "projects/images/gyeryong-passive-house/finished/47.jpg",
+      "projects/images/gyeryong-passive-house/finished/48.jpg",
+      "projects/images/gyeryong-passive-house/finished/49.jpg",
+      "projects/images/gyeryong-passive-house/finished/50.jpg",
+      "projects/images/gyeryong-passive-house/finished/51.jpg",
+      "projects/images/gyeryong-passive-house/finished/52.jpg",
+      "projects/images/gyeryong-passive-house/finished/53.jpg",
+      "projects/images/gyeryong-passive-house/finished/54.jpg",
+      "projects/images/gyeryong-passive-house/finished/55.jpg",
+      "projects/images/gyeryong-passive-house/finished/56.jpg",
+      "projects/images/gyeryong-passive-house/finished/57.jpg",
+      "projects/images/gyeryong-passive-house/finished/58.jpg",
+      "projects/images/gyeryong-passive-house/finished/59.jpg",
+      "projects/images/gyeryong-passive-house/finished/60.jpg",
+      "projects/images/gyeryong-passive-house/finished/61.jpg",
+      "projects/images/gyeryong-passive-house/finished/62.jpg",
+      "projects/images/gyeryong-passive-house/finished/63.jpg",
+      "projects/images/gyeryong-passive-house/finished/64.jpg",
+      "projects/images/gyeryong-passive-house/finished/65.jpg",
+      "projects/images/gyeryong-passive-house/finished/66.jpg",
+      "projects/images/gyeryong-passive-house/finished/67.jpg",
+      "projects/images/gyeryong-passive-house/finished/68.jpg",
+      "projects/images/gyeryong-passive-house/finished/69.jpg",
+      "projects/images/gyeryong-passive-house/finished/70.jpg",
+      "projects/images/gyeryong-passive-house/finished/71.jpg",
+      "projects/images/gyeryong-passive-house/finished/72.jpg",
+      "projects/images/gyeryong-passive-house/finished/73.jpg",
+      "projects/images/gyeryong-passive-house/finished/74.jpg",
+      "projects/images/gyeryong-passive-house/finished/75.jpg",
+      "projects/images/gyeryong-passive-house/finished/76.jpg",
+      "projects/images/gyeryong-passive-house/finished/77.jpg",
+      "projects/images/gyeryong-passive-house/finished/78.jpg",
+      "projects/images/gyeryong-passive-house/finished/79.jpg",
+      "projects/images/gyeryong-passive-house/finished/80.jpg",
+      "projects/images/gyeryong-passive-house/finished/81.jpg"
     ]
   }
 }
