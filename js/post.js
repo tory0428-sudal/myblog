@@ -54,6 +54,8 @@
         })
         .then(function (md) {
           contentEl.innerHTML = marked.parse(md);
+          var firstH1 = contentEl.querySelector("h1:first-child");
+          if (firstH1) firstH1.remove();
         });
     })
     .catch(function () {
