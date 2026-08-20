@@ -49,6 +49,7 @@
       '<div class="phase-body">' +
       '<h2 class="phase-title">' + escapeHtml(gallery.label) + "</h2>" +
       '<div class="gallery-grid">' + imgs + "</div>" +
+      (gallery.desc ? '<p class="phase-desc"><strong>' + escapeHtml(gallery.label) + "</strong> &mdash; " + escapeHtml(gallery.desc) + "</p>" : "") +
       "</div>" +
       "</section>"
     );
