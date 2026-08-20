@@ -59,10 +59,42 @@ html[data-theme="dark"] {
   font-size: 0.85rem;
   color: var(--proj-accent);
   background: var(--proj-accent-bg);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.35rem;
   padding: 0.7rem 1rem;
   border-radius: 8px;
-  line-height: 1.8;
+  line-height: 1.6;
+}
+
+.spec-row {
+  display: flex;
+  align-items: baseline;
+}
+
+.spec-row::before {
+  content: "•";
+  flex: none;
+  margin-right: 0.4em;
+}
+
+.spec-label {
+  display: inline-block;
+  flex: none;
+  width: 4.2em;
+  text-align: justify;
+  text-align-last: justify;
+  text-justify: inter-character;
+  white-space: nowrap;
+}
+
+.spec-colon {
+  flex: none;
+  margin: 0 0.4em;
+}
+
+.spec-value {
+  flex: 1;
   white-space: pre-line;
 }
 

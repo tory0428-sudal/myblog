@@ -66,13 +66,25 @@
 
     var phases = data.phases.map(phaseSection).join("");
 
+    var specs = data.specs
+      .map(function (s) {
+        return (
+          '<div class="spec-row">' +
+          '<span class="spec-label">' + escapeHtml(s.label) + "</span>" +
+          '<span class="spec-colon">:</span>' +
+          '<span class="spec-value">' + escapeHtml(s.value) + "</span>" +
+          "</div>"
+        );
+      })
+      .join("");
+
     root.innerHTML =
       '<figure class="project-cover">' +
       '<img src="' + data.cover + '" alt="' + escapeHtml(data.title) + '">' +
       "</figure>" +
       '<header class="project-header">' +
       "<h1>" + escapeHtml(data.title) + "</h1>" +
-      '<p class="project-specs">' + escapeHtml(data.specs) + "</p>" +
+      '<div class="project-specs">' + specs + "</div>" +
       "</header>" +
       '<section class="project-intro">' +
       "<p>" + escapeHtml(data.intro) + "</p>" +
