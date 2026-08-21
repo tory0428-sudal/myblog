@@ -33,3 +33,11 @@
 | 내진 성능 | 가볍고 유연해 진동 흡수 우수 | 무겁고 강한 내진설계 필요 |
 
 목조주택이 화재나 벌레에 유독 약하다는 인식은, 매뉴얼대로 안 지어진 일부 부실시공 사례나 오래된 한옥 이미지가 강하게 남아있어서인 것 같다. 규정대로 방습, 방화, 방부 시공만 제대로 하면 오히려 지진에도 강하고 단열도 좋은 구조라는 걸, 현장에서 직접 겪으며 다시 한번 확인했다.
+
+---
+
+**참고자료**
+- 산림청, ["국내 처음 목조건축 2시간 내화성능 확인"](http://www.wooddesign.or.kr/sub/sub04_03.php?mNum=4&sNum=3&boardid=techinfo&mode=view&idx=6)
+- 전자신문, ["대형 목조건축시대 온다···구조용 집성재 내화시험 없이 12층까지"](https://m.etnews.com/20210104000078) (2021.01.04)
+- 국민일보, ["'구조용 집성재' 내화구조 표준 인정···목조건축시대 열린다"](https://www.kmib.co.kr/article/view.asp?arcid=0015389203)
+- 김남훈 외, ["국가지정 목조건축문화재의 흰개미(R. speratus kyushuensis) 피해 현황 분석"](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002848862), 헤리티지: 역사와 과학, 2022 — 국립문화재연구원 2016~2019년 조사(362건, 1,104동) 기반
