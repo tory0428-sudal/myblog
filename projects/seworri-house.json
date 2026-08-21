@@ -1,0 +1,387 @@
+{
+  "slug": "seworri-house",
+  "title": "세월리 단층 주택프로젝트",
+  "cover": "projects/images/seworri-house/cover.jpg",
+  "specs": [
+    { "label": "구조", "value": "목구조" },
+    { "label": "외장마감", "value": "롱브릭, 아스팔트슁글" },
+    { "label": "평수", "value": "1층 53평" },
+    { "label": "특징", "value": "넓은 대지에 단층으로 중정 형태의 구조로 만든 전원주택" }
+  ],
+  "intro": "처음 만났을 때 건축주님이 밭으로 쓰고 계신 땅에 건축을 의뢰하셔서 현장을 방문하여 부지 토목공사부터 다시 시작하여 전체적으로 배치계획을 수립한 주택입니다. 건축주님의 아버님과 어머님도 함께 사는 집이라 넓고, 가운데 현관을 중심으로 왼쪽은 아버님·어머님 공간, 오른쪽은 건축주님 부부와 자녀들의 공간으로 구성한 넓고 멋진 전원주택입니다.",
+  "conditions": [
+    "한 집에서 각 세대별로 공간 구성",
+    "넓은 서재와 책꽂이 필요 — 서재 공간이 가장 중요",
+    "단층이지만 2층과 같이 층고가 높고 외관에서의 높이도 높게",
+    "중정공간이 필요 — 프라이빗한 공간 구성",
+    "토지의 활용을 위해 전반적인 토목공사 병행"
+  ],
+  "phases": [
+    {
+      "key": "before-site",
+      "label": "공사 전 현장사진",
+      "desc": "건축주님이 밭으로 쓰던 땅을 그대로 방문해 대지 형태와 향을 확인. 전체적인 배치계획을 새로 수립하기 위한 첫 답사.",
+      "images": [
+        "projects/images/seworri-house/before-site/01.jpg",
+        "projects/images/seworri-house/before-site/02.jpg",
+        "projects/images/seworri-house/before-site/03.jpg",
+        "projects/images/seworri-house/before-site/04.jpg",
+        "projects/images/seworri-house/before-site/05.jpg",
+        "projects/images/seworri-house/before-site/06.jpg",
+        "projects/images/seworri-house/before-site/07.jpg",
+        "projects/images/seworri-house/before-site/08.jpg"
+      ]
+    },
+    {
+      "key": "drawings",
+      "label": "도면",
+      "desc": "1층평면도와 전기콘센트·창호 계획, 지붕평면도로 배치를 확정. 중앙 현관을 기준으로 왼쪽엔 부모님 공간, 오른쪽엔 건축주 부부와 자녀들의 공간을 배치해 세대별 독립성을 살린 설계.",
+      "images": [
+        "projects/images/seworri-house/drawings/01-1f-plan.jpg",
+        "projects/images/seworri-house/drawings/02-1f-electrical.jpg",
+        "projects/images/seworri-house/drawings/03-1f-window.jpg",
+        "projects/images/seworri-house/drawings/04-roof-plan.jpg"
+      ],
+      "captions": ["1층평면도", "1층 전기콘센트", "1층창호도", "지붕평면도"]
+    },
+    {
+      "key": "earthwork",
+      "label": "토목공사",
+      "desc": "원래 밭으로 쓰던 땅이라 토지 활용을 위한 토목공사부터 새로 시작. 옹벽 블록으로 대지 높이를 다듬고 배수 관로를 매설해 전체 배치계획의 기초를 다짐.",
+      "images": [
+        "projects/images/seworri-house/earthwork/01.jpg",
+        "projects/images/seworri-house/earthwork/02.jpg",
+        "projects/images/seworri-house/earthwork/03.jpg",
+        "projects/images/seworri-house/earthwork/04.jpg",
+        "projects/images/seworri-house/earthwork/05.jpg",
+        "projects/images/seworri-house/earthwork/06.jpg",
+        "projects/images/seworri-house/earthwork/07.jpg",
+        "projects/images/seworri-house/earthwork/08.jpg"
+      ]
+    },
+    {
+      "key": "foundation",
+      "label": "기초",
+      "desc": "넓은 대지에 단층으로 펼쳐지는 구조인 만큼 기초 면적도 넓게 확보. 터파기와 철근 배근, 콘크리트 타설로 견고한 슬래브를 완성.",
+      "images": [
+        "projects/images/seworri-house/foundation/01.jpg",
+        "projects/images/seworri-house/foundation/02.jpg",
+        "projects/images/seworri-house/foundation/03.jpg",
+        "projects/images/seworri-house/foundation/04.jpg",
+        "projects/images/seworri-house/foundation/05.jpg",
+        "projects/images/seworri-house/foundation/06.jpg",
+        "projects/images/seworri-house/foundation/07.jpg",
+        "projects/images/seworri-house/foundation/08.jpg"
+      ]
+    },
+    {
+      "key": "frame",
+      "label": "골조",
+      "desc": "목구조로 골조를 진행. 단층이지만 2층 같은 높은 층고를 원한 건축주의 요청에 맞춰 벽체와 지붕 트러스를 높게 세움.",
+      "images": [
+        "projects/images/seworri-house/frame/01.jpg",
+        "projects/images/seworri-house/frame/02.jpg",
+        "projects/images/seworri-house/frame/03.jpg",
+        "projects/images/seworri-house/frame/04.jpg",
+        "projects/images/seworri-house/frame/05.jpg",
+        "projects/images/seworri-house/frame/06.jpg",
+        "projects/images/seworri-house/frame/07.jpg",
+        "projects/images/seworri-house/frame/08.jpg"
+      ]
+    },
+    {
+      "key": "mep",
+      "label": "전기설비공사",
+      "desc": "골조 상태에서 전기 배선과 설비 배관을 매립 시공. 좌우로 나뉜 두 공간 각각의 전기 계통을 고려해 배선.",
+      "images": [
+        "projects/images/seworri-house/mep/01.jpg",
+        "projects/images/seworri-house/mep/02.jpg",
+        "projects/images/seworri-house/mep/03.jpg",
+        "projects/images/seworri-house/mep/04.jpg",
+        "projects/images/seworri-house/mep/05.jpg",
+        "projects/images/seworri-house/mep/06.jpg",
+        "projects/images/seworri-house/mep/07.jpg",
+        "projects/images/seworri-house/mep/08.jpg"
+      ]
+    },
+    {
+      "key": "windows",
+      "label": "창호공사",
+      "desc": "골조에 맞춰 창호를 설치. 높은 층고와 함께 채광을 살릴 수 있도록 창의 위치와 크기를 결정.",
+      "images": [
+        "projects/images/seworri-house/windows/01.jpg",
+        "projects/images/seworri-house/windows/02.jpg",
+        "projects/images/seworri-house/windows/03.jpg",
+        "projects/images/seworri-house/windows/04.jpg",
+        "projects/images/seworri-house/windows/05.jpg",
+        "projects/images/seworri-house/windows/06.jpg",
+        "projects/images/seworri-house/windows/07.jpg",
+        "projects/images/seworri-house/windows/08.jpg"
+      ]
+    },
+    {
+      "key": "roof",
+      "label": "지붕공사",
+      "desc": "타이벡 방습지 시공 후 아스팔트 슁글로 지붕을 마감. 외관에서도 높이감이 느껴지도록 지붕 라인을 세심하게 시공.",
+      "images": [
+        "projects/images/seworri-house/roof/01.jpg",
+        "projects/images/seworri-house/roof/02.jpg",
+        "projects/images/seworri-house/roof/03.jpg",
+        "projects/images/seworri-house/roof/04.jpg",
+        "projects/images/seworri-house/roof/05.jpg",
+        "projects/images/seworri-house/roof/06.jpg",
+        "projects/images/seworri-house/roof/07.jpg",
+        "projects/images/seworri-house/roof/08.jpg"
+      ]
+    },
+    {
+      "key": "heating",
+      "label": "난방공사",
+      "desc": "단열재 시공 후 바닥에 온수온돌 배관을 깔고 몰탈로 마감. 넓은 평면 전체에 난방을 고르게 확보.",
+      "images": [
+        "projects/images/seworri-house/heating/01.jpg",
+        "projects/images/seworri-house/heating/02.jpg",
+        "projects/images/seworri-house/heating/03.jpg",
+        "projects/images/seworri-house/heating/04.jpg",
+        "projects/images/seworri-house/heating/05.jpg",
+        "projects/images/seworri-house/heating/06.jpg",
+        "projects/images/seworri-house/heating/07.jpg",
+        "projects/images/seworri-house/heating/08.jpg"
+      ]
+    },
+    {
+      "key": "exterior-wall",
+      "label": "외장공사",
+      "desc": "롱브릭으로 외벽을 마감. 단층 주택임에도 규모감 있고 중후한 외관을 완성.",
+      "images": [
+        "projects/images/seworri-house/exterior-wall/01.jpg",
+        "projects/images/seworri-house/exterior-wall/02.jpg",
+        "projects/images/seworri-house/exterior-wall/03.jpg",
+        "projects/images/seworri-house/exterior-wall/04.jpg",
+        "projects/images/seworri-house/exterior-wall/05.jpg",
+        "projects/images/seworri-house/exterior-wall/06.jpg",
+        "projects/images/seworri-house/exterior-wall/07.jpg",
+        "projects/images/seworri-house/exterior-wall/08.jpg"
+      ]
+    },
+    {
+      "key": "interior-carpentry",
+      "label": "목공사",
+      "desc": "높은 층고를 살린 경사천장과 몰딩 등 내부 목공 마감을 진행. 건축주가 가장 중요하게 생각한 서재 공간의 책장 골격도 이 단계에서 함께 짜 넣음.",
+      "images": [
+        "projects/images/seworri-house/interior-carpentry/01.jpg",
+        "projects/images/seworri-house/interior-carpentry/02.jpg",
+        "projects/images/seworri-house/interior-carpentry/03.jpg",
+        "projects/images/seworri-house/interior-carpentry/04.jpg",
+        "projects/images/seworri-house/interior-carpentry/05.jpg",
+        "projects/images/seworri-house/interior-carpentry/06.jpg",
+        "projects/images/seworri-house/interior-carpentry/07.jpg",
+        "projects/images/seworri-house/interior-carpentry/08.jpg"
+      ]
+    },
+    {
+      "key": "waterproofing-paint",
+      "label": "방수도장공사",
+      "desc": "넓은 서재의 책장을 비롯한 붙박이장과 수납장을 짜 넣고 도장으로 깔끔하게 마감.",
+      "images": [
+        "projects/images/seworri-house/waterproofing-paint/01.jpg",
+        "projects/images/seworri-house/waterproofing-paint/02.jpg",
+        "projects/images/seworri-house/waterproofing-paint/03.jpg",
+        "projects/images/seworri-house/waterproofing-paint/04.jpg",
+        "projects/images/seworri-house/waterproofing-paint/05.jpg",
+        "projects/images/seworri-house/waterproofing-paint/06.jpg",
+        "projects/images/seworri-house/waterproofing-paint/07.jpg",
+        "projects/images/seworri-house/waterproofing-paint/08.jpg"
+      ]
+    },
+    {
+      "key": "electrical-tapping",
+      "label": "전기공사(타공)",
+      "desc": "도배 전 조명과 콘센트 위치에 맞춰 천장과 벽에 타공 작업을 진행.",
+      "images": [
+        "projects/images/seworri-house/electrical-tapping/01.jpg",
+        "projects/images/seworri-house/electrical-tapping/02.jpg",
+        "projects/images/seworri-house/electrical-tapping/03.jpg",
+        "projects/images/seworri-house/electrical-tapping/04.jpg",
+        "projects/images/seworri-house/electrical-tapping/05.jpg",
+        "projects/images/seworri-house/electrical-tapping/06.jpg",
+        "projects/images/seworri-house/electrical-tapping/07.jpg",
+        "projects/images/seworri-house/electrical-tapping/08.jpg"
+      ]
+    },
+    {
+      "key": "tile",
+      "label": "타일공사",
+      "desc": "욕실 타일 시공. 세대별 공간에 맞춰 욕조와 세면대 자리를 꼼꼼하게 마감.",
+      "images": [
+        "projects/images/seworri-house/tile/01.jpg",
+        "projects/images/seworri-house/tile/02.jpg",
+        "projects/images/seworri-house/tile/03.jpg",
+        "projects/images/seworri-house/tile/04.jpg",
+        "projects/images/seworri-house/tile/05.jpg",
+        "projects/images/seworri-house/tile/06.jpg",
+        "projects/images/seworri-house/tile/07.jpg",
+        "projects/images/seworri-house/tile/08.jpg"
+      ]
+    },
+    {
+      "key": "wallpaper",
+      "label": "도배공사",
+      "desc": "전체 실내 벽과 천장 도배 마감.",
+      "images": [
+        "projects/images/seworri-house/wallpaper/01.jpg",
+        "projects/images/seworri-house/wallpaper/02.jpg",
+        "projects/images/seworri-house/wallpaper/03.jpg",
+        "projects/images/seworri-house/wallpaper/04.jpg",
+        "projects/images/seworri-house/wallpaper/05.jpg",
+        "projects/images/seworri-house/wallpaper/06.jpg",
+        "projects/images/seworri-house/wallpaper/07.jpg",
+        "projects/images/seworri-house/wallpaper/08.jpg"
+      ]
+    },
+    {
+      "key": "lighting",
+      "label": "전기공사(조명)",
+      "desc": "매입등과 간접조명을 설치해 높은 층고의 공간감을 살리는 조명 연출을 완성.",
+      "images": [
+        "projects/images/seworri-house/lighting/01.jpg",
+        "projects/images/seworri-house/lighting/02.jpg",
+        "projects/images/seworri-house/lighting/03.jpg",
+        "projects/images/seworri-house/lighting/04.jpg",
+        "projects/images/seworri-house/lighting/05.jpg",
+        "projects/images/seworri-house/lighting/06.jpg",
+        "projects/images/seworri-house/lighting/07.jpg",
+        "projects/images/seworri-house/lighting/08.jpg"
+      ]
+    },
+    {
+      "key": "exterior-plumbing",
+      "label": "외부배관공사",
+      "desc": "오수관·우수관 등 외부 배관을 매설. 넓은 대지 전체의 배수 계획까지 마무리.",
+      "images": [
+        "projects/images/seworri-house/exterior-plumbing/01.jpg",
+        "projects/images/seworri-house/exterior-plumbing/02.jpg",
+        "projects/images/seworri-house/exterior-plumbing/03.jpg",
+        "projects/images/seworri-house/exterior-plumbing/04.jpg",
+        "projects/images/seworri-house/exterior-plumbing/05.jpg",
+        "projects/images/seworri-house/exterior-plumbing/06.jpg",
+        "projects/images/seworri-house/exterior-plumbing/07.jpg",
+        "projects/images/seworri-house/exterior-plumbing/08.jpg"
+      ]
+    },
+    {
+      "key": "flooring",
+      "label": "마루공사",
+      "desc": "바닥 마루 시공으로 따뜻하고 자연스러운 바닥 마감을 완성.",
+      "images": [
+        "projects/images/seworri-house/flooring/01.jpg",
+        "projects/images/seworri-house/flooring/02.jpg",
+        "projects/images/seworri-house/flooring/03.jpg",
+        "projects/images/seworri-house/flooring/04.jpg",
+        "projects/images/seworri-house/flooring/05.jpg",
+        "projects/images/seworri-house/flooring/06.jpg",
+        "projects/images/seworri-house/flooring/07.jpg",
+        "projects/images/seworri-house/flooring/08.jpg"
+      ]
+    },
+    {
+      "key": "furniture",
+      "label": "가구공사",
+      "desc": "주방 가구와 붙박이장을 시공해 세대별 공간의 수납과 동선을 정리.",
+      "images": [
+        "projects/images/seworri-house/furniture/01.jpg",
+        "projects/images/seworri-house/furniture/02.jpg",
+        "projects/images/seworri-house/furniture/03.jpg",
+        "projects/images/seworri-house/furniture/04.jpg",
+        "projects/images/seworri-house/furniture/05.jpg",
+        "projects/images/seworri-house/furniture/06.jpg",
+        "projects/images/seworri-house/furniture/07.jpg",
+        "projects/images/seworri-house/furniture/08.jpg"
+      ]
+    }
+  ],
+  "gallery": {
+    "label": "완성 후 내외부",
+    "desc": "밭이었던 넓은 대지에 토목공사부터 새로 시작해 완성한 세월리 단층 주택. 중앙 현관을 기준으로 부모님과 건축주 부부·자녀의 공간을 나누고, 프라이빗한 중정과 높은 층고로 전원주택의 개방감을 살렸다.",
+    "images": [
+      "projects/images/seworri-house/finished/01.jpg",
+      "projects/images/seworri-house/finished/02.jpg",
+      "projects/images/seworri-house/finished/03.jpg",
+      "projects/images/seworri-house/finished/04.jpg",
+      "projects/images/seworri-house/finished/05.jpg",
+      "projects/images/seworri-house/finished/06.jpg",
+      "projects/images/seworri-house/finished/07.jpg",
+      "projects/images/seworri-house/finished/08.jpg",
+      "projects/images/seworri-house/finished/09.jpg",
+      "projects/images/seworri-house/finished/10.jpg",
+      "projects/images/seworri-house/finished/11.jpg",
+      "projects/images/seworri-house/finished/12.jpg",
+      "projects/images/seworri-house/finished/13.jpg",
+      "projects/images/seworri-house/finished/14.jpg",
+      "projects/images/seworri-house/finished/15.jpg",
+      "projects/images/seworri-house/finished/16.jpg",
+      "projects/images/seworri-house/finished/17.jpg",
+      "projects/images/seworri-house/finished/18.jpg",
+      "projects/images/seworri-house/finished/19.jpg",
+      "projects/images/seworri-house/finished/20.jpg",
+      "projects/images/seworri-house/finished/21.jpg",
+      "projects/images/seworri-house/finished/22.jpg",
+      "projects/images/seworri-house/finished/23.jpg",
+      "projects/images/seworri-house/finished/24.jpg",
+      "projects/images/seworri-house/finished/25.jpg",
+      "projects/images/seworri-house/finished/26.jpg",
+      "projects/images/seworri-house/finished/27.jpg",
+      "projects/images/seworri-house/finished/28.jpg",
+      "projects/images/seworri-house/finished/29.jpg",
+      "projects/images/seworri-house/finished/30.jpg",
+      "projects/images/seworri-house/finished/31.jpg",
+      "projects/images/seworri-house/finished/32.jpg",
+      "projects/images/seworri-house/finished/33.jpg",
+      "projects/images/seworri-house/finished/34.jpg",
+      "projects/images/seworri-house/finished/35.jpg",
+      "projects/images/seworri-house/finished/36.jpg",
+      "projects/images/seworri-house/finished/37.jpg",
+      "projects/images/seworri-house/finished/38.jpg",
+      "projects/images/seworri-house/finished/39.jpg",
+      "projects/images/seworri-house/finished/40.jpg",
+      "projects/images/seworri-house/finished/41.jpg",
+      "projects/images/seworri-house/finished/42.jpg",
+      "projects/images/seworri-house/finished/43.jpg",
+      "projects/images/seworri-house/finished/44.jpg",
+      "projects/images/seworri-house/finished/45.jpg",
+      "projects/images/seworri-house/finished/46.jpg",
+      "projects/images/seworri-house/finished/47.jpg",
+      "projects/images/seworri-house/finished/48.jpg",
+      "projects/images/seworri-house/finished/49.jpg",
+      "projects/images/seworri-house/finished/50.jpg",
+      "projects/images/seworri-house/finished/51.jpg",
+      "projects/images/seworri-house/finished/52.jpg",
+      "projects/images/seworri-house/finished/53.jpg",
+      "projects/images/seworri-house/finished/54.jpg",
+      "projects/images/seworri-house/finished/55.jpg",
+      "projects/images/seworri-house/finished/56.jpg",
+      "projects/images/seworri-house/finished/57.jpg",
+      "projects/images/seworri-house/finished/58.jpg",
+      "projects/images/seworri-house/finished/59.jpg",
+      "projects/images/seworri-house/finished/60.jpg",
+      "projects/images/seworri-house/finished/61.jpg",
+      "projects/images/seworri-house/finished/62.jpg",
+      "projects/images/seworri-house/finished/63.jpg",
+      "projects/images/seworri-house/finished/64.jpg",
+      "projects/images/seworri-house/finished/65.jpg",
+      "projects/images/seworri-house/finished/66.jpg",
+      "projects/images/seworri-house/finished/67.jpg",
+      "projects/images/seworri-house/finished/68.jpg",
+      "projects/images/seworri-house/finished/69.jpg",
+      "projects/images/seworri-house/finished/70.jpg",
+      "projects/images/seworri-house/finished/71.jpg",
+      "projects/images/seworri-house/finished/72.jpg",
+      "projects/images/seworri-house/finished/73.jpg",
+      "projects/images/seworri-house/finished/74.jpg",
+      "projects/images/seworri-house/finished/75.jpg",
+      "projects/images/seworri-house/finished/76.jpg",
+      "projects/images/seworri-house/finished/77.jpg",
+      "projects/images/seworri-house/finished/78.jpg"
+    ]
+  }
+}

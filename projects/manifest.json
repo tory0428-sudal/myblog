@@ -1,5 +1,12 @@
 [
   {
+    "slug": "seworri-house",
+    "title": "세월리 단층 주택프로젝트",
+    "completedDate": "2024년 10월",
+    "cover": "projects/images/seworri-house/cover.jpg",
+    "excerpt": "목구조에 롱브릭·아스팔트슁글 외장, 1층 53평 규모의 중정 형태 단층 전원주택."
+  },
+  {
     "slug": "yangju-okjeong-rc-house",
     "title": "옥정 RC구조 주택프로젝트",
     "completedDate": "2026년 7월",
