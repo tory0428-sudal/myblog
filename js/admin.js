@@ -257,12 +257,20 @@
         renderImageReplacer(coverGroup, currentData.cover);
         imagesWrap.appendChild(coverGroup);
 
-        (currentData.phases || []).forEach(function (phase) {
+        (currentData.phases || []).forEach(function (phase, phaseIndex) {
           var details = document.createElement("details");
           details.className = "image-group-collapsible";
           var summary = document.createElement("summary");
           summary.textContent = phase.label + " (" + (phase.images || []).length + "장)";
           details.appendChild(summary);
+
+          var descTextarea = document.createElement("textarea");
+          descTextarea.className = "admin-textarea phase-desc-edit";
+          descTextarea.rows = 3;
+          descTextarea.value = phase.desc || "";
+          descTextarea.dataset.phaseIndex = phaseIndex;
+          details.appendChild(descTextarea);
+
           var grid = document.createElement("div");
           grid.className = "image-grid";
           (phase.images || []).forEach(function (p) {
@@ -278,6 +286,13 @@
           var summary = document.createElement("summary");
           summary.textContent = (currentData.gallery.label || "완성 갤러리") + " (" + (currentData.gallery.images || []).length + "장)";
           details.appendChild(summary);
+
+          var galleryDescTextarea = document.createElement("textarea");
+          galleryDescTextarea.className = "admin-textarea gallery-desc-edit";
+          galleryDescTextarea.rows = 3;
+          galleryDescTextarea.value = currentData.gallery.desc || "";
+          details.appendChild(galleryDescTextarea);
+
           var grid = document.createElement("div");
           grid.className = "image-grid";
           (currentData.gallery.images || []).forEach(function (p) {
@@ -303,10 +318,18 @@
         var field = inp.dataset.specField;
         currentData.specs[i][field] = inp.value;
       });
+      imagesWrap.querySelectorAll(".phase-desc-edit").forEach(function (ta) {
+        var i = Number(ta.dataset.phaseIndex);
+        currentData.phases[i].desc = ta.value;
+      });
+      var galleryDescEl = imagesWrap.querySelector(".gallery-desc-edit");
+      if (galleryDescEl && currentData.gallery) {
+        currentData.gallery.desc = galleryDescEl.value;
+      }
       var text = JSON.stringify(currentData, null, 2) + "\n";
       saveBtn.disabled = true;
       setStatus(statusEl, "저장 중...");
-      GH.ghPutText(currentPath, text, currentSha, "관리자 페이지: " + select.value + " 소개글/스펙 수정")
+      GH.ghPutText(currentPath, text, currentSha, "관리자 페이지: " + select.value + " 소개글/스펙/공정코멘트 수정")
         .then(function (res) {
           currentSha = res.content.sha;
           setStatus(statusEl, "저장 완료! 1~3분 후 사이트에 반영됩니다.");

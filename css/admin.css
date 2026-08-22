@@ -238,6 +238,12 @@
   margin-top: 0.8rem;
 }
 
+.image-group-collapsible .phase-desc-edit,
+.image-group-collapsible .gallery-desc-edit {
+  margin-top: 0.6rem;
+  font-size: 0.82rem;
+}
+
 /* categories */
 .category-edit-list {
   display: flex;
