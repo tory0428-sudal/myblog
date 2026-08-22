@@ -55,8 +55,25 @@
     );
   }
 
+  function updateMeta(data) {
+    var imageUrl = "https://toryhome.kr/" + data.cover;
+    var pageUrl = "https://toryhome.kr/project.html?slug=" + encodeURIComponent(data.slug);
+    var desc = data.intro ? data.intro.slice(0, 120) + (data.intro.length > 120 ? "..." : "") : "";
+    setMeta("meta-description", desc);
+    setMeta("meta-og-title", data.title + " · 토리의 주택이야기");
+    setMeta("meta-og-description", desc);
+    setMeta("meta-og-image", imageUrl);
+    setMeta("meta-og-url", pageUrl);
+  }
+
+  function setMeta(id, value) {
+    var el = document.getElementById(id);
+    if (el) el.setAttribute("content", value);
+  }
+
   function render(data) {
     document.title = data.title + " · 토리의 주택이야기";
+    updateMeta(data);
 
     var conditions = data.conditions
       .map(function (c) {

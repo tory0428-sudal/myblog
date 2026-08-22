@@ -32,6 +32,7 @@
 
       document.title = meta.title;
       titleEl.textContent = meta.title;
+      updateMeta(meta);
       dateEl.textContent = formatDate(meta.date);
       renderNav(posts, meta);
 
@@ -91,6 +92,21 @@
     el.hidden = false;
     el.href = "post.html?slug=" + encodeURIComponent(post.slug);
     el.querySelector(".post-nav-title").textContent = post.title;
+  }
+
+  function updateMeta(meta) {
+    var imageUrl = "https://toryhome.kr/" + meta.image;
+    var pageUrl = "https://toryhome.kr/post.html?slug=" + encodeURIComponent(meta.slug);
+    setMeta("meta-description", meta.excerpt);
+    setMeta("meta-og-title", meta.title);
+    setMeta("meta-og-description", meta.excerpt);
+    setMeta("meta-og-image", imageUrl);
+    setMeta("meta-og-url", pageUrl);
+  }
+
+  function setMeta(id, value) {
+    var el = document.getElementById(id);
+    if (el) el.setAttribute("content", value);
   }
 
   function showNotFound() {
