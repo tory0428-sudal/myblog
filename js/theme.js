@@ -7,6 +7,7 @@
   window.addEventListener("DOMContentLoaded", function () {
     var btn = document.querySelector(".theme-toggle");
     if (!btn) return;
+    var label = document.querySelector(".theme-toggle-label");
 
     function currentIsDark() {
       var attr = document.documentElement.getAttribute("data-theme");
@@ -16,6 +17,7 @@
 
     function updateLabel() {
       btn.textContent = currentIsDark() ? "☀️" : "🌙";
+      if (label) label.textContent = currentIsDark() ? "라이트모드 보기" : "다크모드 보기";
     }
 
     btn.addEventListener("click", function () {
