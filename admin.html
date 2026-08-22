@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>관리자 - 토리의 주택이야기</title>
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/style.css?v=18">
+<link rel="stylesheet" href="css/admin.css?v=1">
+<script src="js/theme.js?v=18"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="site-title" href="index.html">
+    <span class="site-title-top">
+      <img class="site-icon" src="images/favicon.svg" alt="">
+      <span class="site-title-main">관리자 페이지</span>
+    </span>
+    <span class="site-title-sub">Admin</span>
+  </a>
+  <div class="theme-toggle-wrap">
+    <button class="theme-toggle" aria-label="테마 전환"></button>
+    <span class="theme-toggle-label">다크모드 보기</span>
+  </div>
+</header>
+
+<main class="admin-main">
+
+  <section id="admin-gate">
+    <h2>관리자 로그인</h2>
+    <p class="admin-hint">
+      GitHub 개인 액세스 토큰(PAT)을 입력하세요. 이 저장소(myblog)에 대해 <strong>Contents: Read and write</strong> 권한만 있는
+      fine-grained 토큰을 발급받아 사용하는 걸 권장해요.
+      <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">토큰 발급하러 가기 &rarr;</a>
+    </p>
+    <form id="admin-login-form" class="admin-login-form">
+      <input type="password" id="admin-token-input" placeholder="GitHub Personal Access Token" autocomplete="off">
+      <button type="submit" class="hero-cta">로그인</button>
+    </form>
+    <p class="admin-hint">토큰은 이 브라우저에만 저장되고, 서버로 전송되지 않아요 (GitHub API에 직접 요청).</p>
+  </section>
+
+  <section id="admin-app" hidden>
+    <div class="admin-topbar">
+      <nav class="admin-tabs">
+        <button type="button" class="admin-tab-btn active" data-panel="panel-posts">글 편집</button>
+        <button type="button" class="admin-tab-btn" data-panel="panel-projects">프로젝트 편집</button>
+        <button type="button" class="admin-tab-btn" data-panel="panel-categories">카테고리 편집</button>
+      </nav>
+      <button type="button" id="admin-logout" class="btn-small">로그아웃</button>
+    </div>
+
+    <div id="panel-posts" class="admin-panel">
+      <h2>글 편집</h2>
+      <select id="post-select">
+        <option value="">글을 선택하세요</option>
+      </select>
+      <div id="post-editor" class="admin-editor" hidden>
+        <textarea id="post-body" class="admin-textarea" rows="18"></textarea>
+        <h3>본문 이미지</h3>
+        <div id="post-images" class="image-grid"></div>
+        <div class="admin-save-row">
+          <button type="button" id="post-save" class="hero-cta">저장</button>
+          <span id="post-status" class="admin-status"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="panel-projects" class="admin-panel" hidden>
+      <h2>프로젝트 편집</h2>
+      <select id="project-select">
+        <option value="">프로젝트를 선택하세요</option>
+      </select>
+      <div id="project-editor" class="admin-editor" hidden>
+        <h3>스펙</h3>
+        <div id="project-specs" class="specs-edit-list"></div>
+        <h3>사진</h3>
+        <div id="project-images"></div>
+        <div class="admin-save-row">
+          <button type="button" id="project-save" class="hero-cta">스펙 저장</button>
+          <span id="project-status" class="admin-status"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="panel-categories" class="admin-panel" hidden>
+      <h2>카테고리 편집</h2>
+      <p class="admin-hint">각 카테고리 설명과 썸네일 이미지를 수정할 수 있어요. 항목별로 개별 저장돼요.</p>
+      <div id="category-list" class="category-edit-list"></div>
+      <span id="category-status" class="admin-status"></span>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/admin-github.js?v=1"></script>
+<script src="js/admin.js?v=1"></script>
+</body>
+</html>
