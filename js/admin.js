@@ -190,6 +190,7 @@
   function initProjects() {
     var select = document.getElementById("project-select");
     var editorWrap = document.getElementById("project-editor");
+    var introTextarea = document.getElementById("project-intro");
     var specsWrap = document.getElementById("project-specs");
     var imagesWrap = document.getElementById("project-images");
     var saveBtn = document.getElementById("project-save");
@@ -220,6 +221,8 @@
       GH.ghGet(currentPath).then(function (res) {
         currentSha = res.sha;
         currentData = JSON.parse(GH.base64ToUtf8(res.content));
+
+        introTextarea.value = currentData.intro || "";
 
         specsWrap.innerHTML = "";
         (currentData.specs || []).forEach(function (spec, i) {
@@ -293,6 +296,7 @@
 
     saveBtn.addEventListener("click", function () {
       if (!currentPath || !currentData) return;
+      currentData.intro = introTextarea.value;
       var inputs = specsWrap.querySelectorAll("input");
       inputs.forEach(function (inp) {
         var i = Number(inp.dataset.specIndex);
@@ -302,7 +306,7 @@
       var text = JSON.stringify(currentData, null, 2) + "\n";
       saveBtn.disabled = true;
       setStatus(statusEl, "저장 중...");
-      GH.ghPutText(currentPath, text, currentSha, "관리자 페이지: " + select.value + " 스펙 수정")
+      GH.ghPutText(currentPath, text, currentSha, "관리자 페이지: " + select.value + " 소개글/스펙 수정")
         .then(function (res) {
           currentSha = res.content.sha;
           setStatus(statusEl, "저장 완료! 1~3분 후 사이트에 반영됩니다.");
