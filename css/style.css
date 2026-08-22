@@ -111,6 +111,32 @@ main {
   max-width: 1100px;
 }
 
+.site-footer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.25rem 2rem;
+  text-align: right;
+}
+
+.home-footer {
+  max-width: 1100px;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.footer-text a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
 .home-header {
   max-width: 1100px;
 }
