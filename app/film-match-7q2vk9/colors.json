@@ -1,8 +1,17 @@
 {
   "meta": {
-    "manufacturer": "예림도어",
-    "product_line": "인테리어필름 HEIM",
-    "source_file": "2039376550_zu1C8h6w_20251222082438.pdf"
+    "manufacturers": [
+      {
+        "name": "예림도어",
+        "product_line": "인테리어필름 HEIM",
+        "count": 232
+      },
+      {
+        "name": "영림도어",
+        "product_line": "인테리어필름",
+        "count": 150
+      }
+    ]
   },
   "items": [
     {
@@ -6268,6 +6277,3606 @@
       "full": "thumbs_full/HF2206.jpg",
       "manufacturer": "예림도어",
       "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "PS155",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "std": 0.0,
+      "texture": {
+        "glcm_contrast": 0.41,
+        "edge_density": 0.91,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.566,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PS155.jpg",
+      "full": "thumbs_full/PS155.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림194",
+      "hex": "#FBFAF9",
+      "rgb": [
+        251,
+        250,
+        249
+      ],
+      "std": 0.8,
+      "texture": {
+        "glcm_contrast": 0.46,
+        "edge_density": 0.94,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.578,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림194.jpg",
+      "full": "thumbs_full/영림194.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림15",
+      "hex": "#F6F8F8",
+      "rgb": [
+        246,
+        248,
+        248
+      ],
+      "std": 0.9,
+      "texture": {
+        "glcm_contrast": 0.3,
+        "edge_density": 1.0,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.606,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림15.jpg",
+      "full": "thumbs_full/영림15.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS100",
+      "hex": "#FBFBFB",
+      "rgb": [
+        251,
+        251,
+        251
+      ],
+      "std": 3.2,
+      "texture": {
+        "glcm_contrast": 0.67,
+        "edge_density": 3.27,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.297,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PS100.jpg",
+      "full": "thumbs_full/PS100.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS10",
+      "hex": "#FAF9F4",
+      "rgb": [
+        250,
+        249,
+        244
+      ],
+      "std": 4.5,
+      "texture": {
+        "glcm_contrast": 1.1,
+        "edge_density": 3.54,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.265,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PS10.jpg",
+      "full": "thumbs_full/PS10.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS102",
+      "hex": "#F6F6EF",
+      "rgb": [
+        246,
+        246,
+        239
+      ],
+      "std": 4.9,
+      "texture": {
+        "glcm_contrast": 0.8,
+        "edge_density": 3.55,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.275,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PS102.jpg",
+      "full": "thumbs_full/PS102.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX454-2",
+      "hex": "#F6F5F0",
+      "rgb": [
+        246,
+        245,
+        240
+      ],
+      "std": 9.0,
+      "texture": {
+        "glcm_contrast": 2.71,
+        "edge_density": 7.97,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.28,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PX454-2.jpg",
+      "full": "thumbs_full/PX454-2.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림716",
+      "hex": "#FEFEFE",
+      "rgb": [
+        254,
+        254,
+        254
+      ],
+      "std": 0.0,
+      "texture": {
+        "glcm_contrast": 0.6,
+        "edge_density": 1.01,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.521,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림716.jpg",
+      "full": "thumbs_full/영림716.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림168",
+      "hex": "#F6F7F1",
+      "rgb": [
+        246,
+        247,
+        241
+      ],
+      "std": 2.6,
+      "texture": {
+        "glcm_contrast": 0.53,
+        "edge_density": 1.01,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.54,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림168.jpg",
+      "full": "thumbs_full/영림168.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림08",
+      "hex": "#F8F8EA",
+      "rgb": [
+        248,
+        248,
+        234
+      ],
+      "std": 6.6,
+      "texture": {
+        "glcm_contrast": 0.52,
+        "edge_density": 1.04,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.555,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림08.jpg",
+      "full": "thumbs_full/영림08.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSO98",
+      "hex": "#F7F7F2",
+      "rgb": [
+        247,
+        247,
+        242
+      ],
+      "std": 5.7,
+      "texture": {
+        "glcm_contrast": 1.32,
+        "edge_density": 4.79,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.271,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PSO98.jpg",
+      "full": "thumbs_full/PSO98.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS099",
+      "hex": "#F5F5EC",
+      "rgb": [
+        245,
+        245,
+        236
+      ],
+      "std": 6.6,
+      "texture": {
+        "glcm_contrast": 1.35,
+        "edge_density": 4.63,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.275,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PS099.jpg",
+      "full": "thumbs_full/PS099.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX45",
+      "hex": "#F7F6F5",
+      "rgb": [
+        247,
+        246,
+        245
+      ],
+      "std": 2.9,
+      "texture": {
+        "glcm_contrast": 0.87,
+        "edge_density": 2.61,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.284,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PX45.jpg",
+      "full": "thumbs_full/PX45.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림175",
+      "hex": "#F5F4F2",
+      "rgb": [
+        245,
+        244,
+        242
+      ],
+      "std": 4.6,
+      "texture": {
+        "glcm_contrast": 0.85,
+        "edge_density": 3.81,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.253,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림175.jpg",
+      "full": "thumbs_full/영림175.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM190",
+      "hex": "#FEFDFC",
+      "rgb": [
+        254,
+        253,
+        252
+      ],
+      "std": 0.8,
+      "texture": {
+        "glcm_contrast": 0.68,
+        "edge_density": 1.34,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.512,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PSM190.jpg",
+      "full": "thumbs_full/PSM190.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM199",
+      "hex": "#FEFEFE",
+      "rgb": [
+        254,
+        254,
+        254
+      ],
+      "std": 0.0,
+      "texture": {
+        "glcm_contrast": 0.5,
+        "edge_density": 1.13,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.52,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PSM199.jpg",
+      "full": "thumbs_full/PSM199.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM18",
+      "hex": "#FDFDF1",
+      "rgb": [
+        253,
+        253,
+        241
+      ],
+      "std": 5.7,
+      "texture": {
+        "glcm_contrast": 0.5,
+        "edge_density": 1.18,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.52,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PSM18.jpg",
+      "full": "thumbs_full/PSM18.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX451",
+      "hex": "#ECEBE6",
+      "rgb": [
+        236,
+        235,
+        230
+      ],
+      "std": 7.6,
+      "texture": {
+        "glcm_contrast": 2.01,
+        "edge_density": 6.98,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.252,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PX451.jpg",
+      "full": "thumbs_full/PX451.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림90",
+      "hex": "#FDFDFB",
+      "rgb": [
+        253,
+        253,
+        251
+      ],
+      "std": 1.4,
+      "texture": {
+        "glcm_contrast": 0.49,
+        "edge_density": 1.65,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.39,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림90.jpg",
+      "full": "thumbs_full/영림90.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림167",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "std": 1.1,
+      "texture": {
+        "glcm_contrast": 0.4,
+        "edge_density": 1.65,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.397,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림167.jpg",
+      "full": "thumbs_full/영림167.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM191",
+      "hex": "#F6F5EB",
+      "rgb": [
+        246,
+        245,
+        235
+      ],
+      "std": 5.0,
+      "texture": {
+        "glcm_contrast": 0.41,
+        "edge_density": 0.84,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.552,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PSM191.jpg",
+      "full": "thumbs_full/PSM191.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림133",
+      "hex": "#F9FAF7",
+      "rgb": [
+        249,
+        250,
+        247
+      ],
+      "std": 2.7,
+      "texture": {
+        "glcm_contrast": 0.74,
+        "edge_density": 2.41,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.425,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림133.jpg",
+      "full": "thumbs_full/영림133.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS094",
+      "hex": "#F1F0E7",
+      "rgb": [
+        241,
+        240,
+        231
+      ],
+      "std": 5.4,
+      "texture": {
+        "glcm_contrast": 0.62,
+        "edge_density": 2.84,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.407,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PS094.jpg",
+      "full": "thumbs_full/PS094.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림50",
+      "hex": "#E8E9E4",
+      "rgb": [
+        232,
+        233,
+        228
+      ],
+      "std": 3.1,
+      "texture": {
+        "glcm_contrast": 0.59,
+        "edge_density": 2.12,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.39,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/영림50.jpg",
+      "full": "thumbs_full/영림50.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX445-2",
+      "hex": "#F2F0EA",
+      "rgb": [
+        242,
+        240,
+        234
+      ],
+      "std": 5.6,
+      "texture": {
+        "glcm_contrast": 0.67,
+        "edge_density": 3.37,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.261,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Personal White",
+      "page": 9,
+      "thumb": "thumbs/PX445-2.jpg",
+      "full": "thumbs_full/PX445-2.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림169",
+      "hex": "#FFFEF7",
+      "rgb": [
+        255,
+        254,
+        247
+      ],
+      "std": 3.6,
+      "texture": {
+        "glcm_contrast": 0.31,
+        "edge_density": 0.84,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.514,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/영림169.jpg",
+      "full": "thumbs_full/영림169.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS047",
+      "hex": "#DDDDDE",
+      "rgb": [
+        221,
+        221,
+        222
+      ],
+      "std": 0.5,
+      "texture": {
+        "glcm_contrast": 0.09,
+        "edge_density": 0.5,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.544,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS047.jpg",
+      "full": "thumbs_full/PS047.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS061",
+      "hex": "#E8E9E8",
+      "rgb": [
+        232,
+        233,
+        232
+      ],
+      "std": 0.5,
+      "texture": {
+        "glcm_contrast": 0.18,
+        "edge_density": 0.59,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.55,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS061.jpg",
+      "full": "thumbs_full/PS061.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS156",
+      "hex": "#EFECDF",
+      "rgb": [
+        239,
+        236,
+        223
+      ],
+      "std": 6.9,
+      "texture": {
+        "glcm_contrast": 0.17,
+        "edge_density": 0.53,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.499,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS156.jpg",
+      "full": "thumbs_full/PS156.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS136",
+      "hex": "#DFD7CD",
+      "rgb": [
+        223,
+        215,
+        205
+      ],
+      "std": 7.4,
+      "texture": {
+        "glcm_contrast": 0.09,
+        "edge_density": 0.57,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.517,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS136.jpg",
+      "full": "thumbs_full/PS136.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS025",
+      "hex": "#C2BDBB",
+      "rgb": [
+        194,
+        189,
+        187
+      ],
+      "std": 2.9,
+      "texture": {
+        "glcm_contrast": 0.02,
+        "edge_density": 0.13,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.508,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS025.jpg",
+      "full": "thumbs_full/PS025.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS038",
+      "hex": "#D8D7D4",
+      "rgb": [
+        216,
+        215,
+        212
+      ],
+      "std": 1.7,
+      "texture": {
+        "glcm_contrast": 0.03,
+        "edge_density": 0.3,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.513,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS038.jpg",
+      "full": "thumbs_full/PS038.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림196",
+      "hex": "#DDD8CC",
+      "rgb": [
+        221,
+        216,
+        204
+      ],
+      "std": 7.1,
+      "texture": {
+        "glcm_contrast": 0.04,
+        "edge_density": 0.36,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.608,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/영림196.jpg",
+      "full": "thumbs_full/영림196.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS063",
+      "hex": "#D0C7B7",
+      "rgb": [
+        208,
+        199,
+        183
+      ],
+      "std": 10.3,
+      "texture": {
+        "glcm_contrast": 0.09,
+        "edge_density": 0.36,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.883,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS063.jpg",
+      "full": "thumbs_full/PS063.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS138",
+      "hex": "#B7B6AD",
+      "rgb": [
+        183,
+        182,
+        173
+      ],
+      "std": 4.5,
+      "texture": {
+        "glcm_contrast": 0.02,
+        "edge_density": 0.27,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.615,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS138.jpg",
+      "full": "thumbs_full/PS138.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS137",
+      "hex": "#B9BAB7",
+      "rgb": [
+        185,
+        186,
+        183
+      ],
+      "std": 1.2,
+      "texture": {
+        "glcm_contrast": 0.02,
+        "edge_density": 0.24,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.531,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS137.jpg",
+      "full": "thumbs_full/PS137.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS139",
+      "hex": "#A3998D",
+      "rgb": [
+        163,
+        153,
+        141
+      ],
+      "std": 9.0,
+      "texture": {
+        "glcm_contrast": 0.15,
+        "edge_density": 0.56,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.924,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 10,
+      "thumb": "thumbs/PS139.jpg",
+      "full": "thumbs_full/PS139.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS062",
+      "hex": "#FBF9E9",
+      "rgb": [
+        251,
+        249,
+        233
+      ],
+      "std": 8.1,
+      "texture": {
+        "glcm_contrast": 0.55,
+        "edge_density": 1.08,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.506,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS062.jpg",
+      "full": "thumbs_full/PS062.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS151",
+      "hex": "#FFFBC7",
+      "rgb": [
+        255,
+        251,
+        199
+      ],
+      "std": 25.5,
+      "texture": {
+        "glcm_contrast": 0.52,
+        "edge_density": 1.03,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.499,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS151.jpg",
+      "full": "thumbs_full/PS151.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS126",
+      "hex": "#F6C9CE",
+      "rgb": [
+        246,
+        201,
+        206
+      ],
+      "std": 20.1,
+      "texture": {
+        "glcm_contrast": 0.3,
+        "edge_density": 0.74,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.614,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS126.jpg",
+      "full": "thumbs_full/PS126.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS150",
+      "hex": "#FCE6DD",
+      "rgb": [
+        252,
+        230,
+        221
+      ],
+      "std": 13.0,
+      "texture": {
+        "glcm_contrast": 0.44,
+        "edge_density": 0.96,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.536,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS150.jpg",
+      "full": "thumbs_full/PS150.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS039",
+      "hex": "#DED6D1",
+      "rgb": [
+        222,
+        214,
+        209
+      ],
+      "std": 5.4,
+      "texture": {
+        "glcm_contrast": 0.17,
+        "edge_density": 0.77,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.65,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS039.jpg",
+      "full": "thumbs_full/PS039.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS121",
+      "hex": "#B4B28F",
+      "rgb": [
+        180,
+        178,
+        143
+      ],
+      "std": 17.0,
+      "texture": {
+        "glcm_contrast": 0.43,
+        "edge_density": 0.84,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.54,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS121.jpg",
+      "full": "thumbs_full/PS121.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS127",
+      "hex": "#AFBB9D",
+      "rgb": [
+        175,
+        187,
+        157
+      ],
+      "std": 12.3,
+      "texture": {
+        "glcm_contrast": 0.38,
+        "edge_density": 0.81,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.508,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS127.jpg",
+      "full": "thumbs_full/PS127.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS14",
+      "hex": "#AEBCB0",
+      "rgb": [
+        174,
+        188,
+        176
+      ],
+      "std": 6.2,
+      "texture": {
+        "glcm_contrast": 0.34,
+        "edge_density": 0.82,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.506,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS14.jpg",
+      "full": "thumbs_full/PS14.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS153",
+      "hex": "#F5EED8",
+      "rgb": [
+        245,
+        238,
+        216
+      ],
+      "std": 12.4,
+      "texture": {
+        "glcm_contrast": 0.46,
+        "edge_density": 0.94,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.539,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS153.jpg",
+      "full": "thumbs_full/PS153.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS157",
+      "hex": "#FDE9B0",
+      "rgb": [
+        253,
+        233,
+        176
+      ],
+      "std": 32.6,
+      "texture": {
+        "glcm_contrast": 0.39,
+        "edge_density": 0.94,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.503,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS157.jpg",
+      "full": "thumbs_full/PS157.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS142",
+      "hex": "#E3BAB9",
+      "rgb": [
+        227,
+        186,
+        185
+      ],
+      "std": 19.6,
+      "texture": {
+        "glcm_contrast": 0.25,
+        "edge_density": 0.67,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.711,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS142.jpg",
+      "full": "thumbs_full/PS142.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS032",
+      "hex": "#D4AF9C",
+      "rgb": [
+        212,
+        175,
+        156
+      ],
+      "std": 23.3,
+      "texture": {
+        "glcm_contrast": 0.27,
+        "edge_density": 0.73,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.77,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS032.jpg",
+      "full": "thumbs_full/PS032.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS043",
+      "hex": "#C4AD9D",
+      "rgb": [
+        196,
+        173,
+        157
+      ],
+      "std": 16.0,
+      "texture": {
+        "glcm_contrast": 0.42,
+        "edge_density": 0.94,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.833,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS043.jpg",
+      "full": "thumbs_full/PS043.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS041",
+      "hex": "#808572",
+      "rgb": [
+        128,
+        133,
+        114
+      ],
+      "std": 8.0,
+      "texture": {
+        "glcm_contrast": 1.35,
+        "edge_density": 1.95,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.602,
+        "label": "선형결(가로결)",
+        "direction": "가로결"
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS041.jpg",
+      "full": "thumbs_full/PS041.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSO58",
+      "hex": "#7EA08D",
+      "rgb": [
+        126,
+        160,
+        141
+      ],
+      "std": 13.9,
+      "texture": {
+        "glcm_contrast": 1.05,
+        "edge_density": 1.63,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.627,
+        "label": "선형결(가로결)",
+        "direction": "가로결"
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PSO58.jpg",
+      "full": "thumbs_full/PSO58.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS154",
+      "hex": "#E9DCC1",
+      "rgb": [
+        233,
+        220,
+        193
+      ],
+      "std": 16.7,
+      "texture": {
+        "glcm_contrast": 0.19,
+        "edge_density": 0.7,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.611,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS154.jpg",
+      "full": "thumbs_full/PS154.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSO30",
+      "hex": "#F9DDAB",
+      "rgb": [
+        249,
+        221,
+        171
+      ],
+      "std": 32.3,
+      "texture": {
+        "glcm_contrast": 0.31,
+        "edge_density": 0.89,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.517,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PSO30.jpg",
+      "full": "thumbs_full/PSO30.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS143",
+      "hex": "#D59C91",
+      "rgb": [
+        213,
+        156,
+        145
+      ],
+      "std": 29.8,
+      "texture": {
+        "glcm_contrast": 0.21,
+        "edge_density": 0.55,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.674,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS143.jpg",
+      "full": "thumbs_full/PS143.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS147",
+      "hex": "#B46D54",
+      "rgb": [
+        180,
+        109,
+        84
+      ],
+      "std": 40.7,
+      "texture": {
+        "glcm_contrast": 0.69,
+        "edge_density": 1.34,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.539,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS147.jpg",
+      "full": "thumbs_full/PS147.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS057",
+      "hex": "#C4AD95",
+      "rgb": [
+        196,
+        173,
+        149
+      ],
+      "std": 19.2,
+      "texture": {
+        "glcm_contrast": 0.05,
+        "edge_density": 0.31,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.514,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS057.jpg",
+      "full": "thumbs_full/PS057.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS046",
+      "hex": "#8B8572",
+      "rgb": [
+        139,
+        133,
+        114
+      ],
+      "std": 10.7,
+      "texture": {
+        "glcm_contrast": 0.59,
+        "edge_density": 1.27,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.579,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS046.jpg",
+      "full": "thumbs_full/PS046.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS146",
+      "hex": "#757E62",
+      "rgb": [
+        117,
+        126,
+        98
+      ],
+      "std": 11.7,
+      "texture": {
+        "glcm_contrast": 0.8,
+        "edge_density": 1.56,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.568,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS146.jpg",
+      "full": "thumbs_full/PS146.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS125",
+      "hex": "#5D6D65",
+      "rgb": [
+        93,
+        109,
+        101
+      ],
+      "std": 6.5,
+      "texture": {
+        "glcm_contrast": 1.11,
+        "edge_density": 1.79,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.563,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS125.jpg",
+      "full": "thumbs_full/PS125.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS132",
+      "hex": "#C8B186",
+      "rgb": [
+        200,
+        177,
+        134
+      ],
+      "std": 27.4,
+      "texture": {
+        "glcm_contrast": 0.05,
+        "edge_density": 0.35,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.512,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS132.jpg",
+      "full": "thumbs_full/PS132.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSO54",
+      "hex": "#FFE860",
+      "rgb": [
+        255,
+        232,
+        96
+      ],
+      "std": 70.2,
+      "texture": {
+        "glcm_contrast": 0.16,
+        "edge_density": 0.58,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.721,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PSO54.jpg",
+      "full": "thumbs_full/PSO54.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS015",
+      "hex": "#EE7F3E",
+      "rgb": [
+        238,
+        127,
+        62
+      ],
+      "std": 72.7,
+      "texture": {
+        "glcm_contrast": 0.29,
+        "edge_density": 0.85,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.515,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS015.jpg",
+      "full": "thumbs_full/PS015.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS013",
+      "hex": "#CB3C3B",
+      "rgb": [
+        203,
+        60,
+        59
+      ],
+      "std": 67.6,
+      "texture": {
+        "glcm_contrast": 0.65,
+        "edge_density": 1.51,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.517,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS013.jpg",
+      "full": "thumbs_full/PS013.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS145",
+      "hex": "#B8ADD4",
+      "rgb": [
+        184,
+        173,
+        212
+      ],
+      "std": 16.4,
+      "texture": {
+        "glcm_contrast": 0.19,
+        "edge_density": 0.57,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.683,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS145.jpg",
+      "full": "thumbs_full/PS145.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS144",
+      "hex": "#7C71B2",
+      "rgb": [
+        124,
+        113,
+        178
+      ],
+      "std": 28.4,
+      "texture": {
+        "glcm_contrast": 0.7,
+        "edge_density": 1.25,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.518,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS144.jpg",
+      "full": "thumbs_full/PS144.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS064",
+      "hex": "#3F5F3F",
+      "rgb": [
+        63,
+        95,
+        63
+      ],
+      "std": 15.1,
+      "texture": {
+        "glcm_contrast": 1.96,
+        "edge_density": 2.45,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.517,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS064.jpg",
+      "full": "thumbs_full/PS064.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS02",
+      "hex": "#104790",
+      "rgb": [
+        16,
+        71,
+        144
+      ],
+      "std": 52.4,
+      "texture": {
+        "glcm_contrast": 2.02,
+        "edge_density": 2.4,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.518,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS02.jpg",
+      "full": "thumbs_full/PS02.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS023",
+      "hex": "#C7B79E",
+      "rgb": [
+        199,
+        183,
+        158
+      ],
+      "std": 16.9,
+      "texture": {
+        "glcm_contrast": 0.4,
+        "edge_density": 0.85,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.803,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS023.jpg",
+      "full": "thumbs_full/PS023.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS133",
+      "hex": "#8E7859",
+      "rgb": [
+        142,
+        120,
+        89
+      ],
+      "std": 21.7,
+      "texture": {
+        "glcm_contrast": 1.57,
+        "edge_density": 2.02,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.577,
+        "label": "선형결(가로결)",
+        "direction": "가로결"
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS133.jpg",
+      "full": "thumbs_full/PS133.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS152",
+      "hex": "#B27147",
+      "rgb": [
+        178,
+        113,
+        71
+      ],
+      "std": 44.0,
+      "texture": {
+        "glcm_contrast": 1.21,
+        "edge_density": 1.78,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.633,
+        "label": "선형결(가로결)",
+        "direction": "가로결"
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS152.jpg",
+      "full": "thumbs_full/PS152.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS068",
+      "hex": "#5C2F30",
+      "rgb": [
+        92,
+        47,
+        48
+      ],
+      "std": 21.0,
+      "texture": {
+        "glcm_contrast": 2.93,
+        "edge_density": 2.86,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.573,
+        "label": "선형결(가로결)",
+        "direction": "가로결"
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS068.jpg",
+      "full": "thumbs_full/PS068.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS024",
+      "hex": "#5A4F3D",
+      "rgb": [
+        90,
+        79,
+        61
+      ],
+      "std": 12.0,
+      "texture": {
+        "glcm_contrast": 2.06,
+        "edge_density": 2.38,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.545,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS024.jpg",
+      "full": "thumbs_full/PS024.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS134",
+      "hex": "#514F46",
+      "rgb": [
+        81,
+        79,
+        70
+      ],
+      "std": 4.8,
+      "texture": {
+        "glcm_contrast": 2.34,
+        "edge_density": 2.55,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.51,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS134.jpg",
+      "full": "thumbs_full/PS134.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS022",
+      "hex": "#243D2D",
+      "rgb": [
+        36,
+        61,
+        45
+      ],
+      "std": 10.3,
+      "texture": {
+        "glcm_contrast": 3.52,
+        "edge_density": 3.07,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.503,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS022.jpg",
+      "full": "thumbs_full/PS022.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS148",
+      "hex": "#283732",
+      "rgb": [
+        40,
+        55,
+        50
+      ],
+      "std": 6.2,
+      "texture": {
+        "glcm_contrast": 3.23,
+        "edge_density": 3.06,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.503,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 11,
+      "thumb": "thumbs/PS148.jpg",
+      "full": "thumbs_full/PS148.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM192",
+      "hex": "#C8AB9A",
+      "rgb": [
+        200,
+        171,
+        154
+      ],
+      "std": 19.0,
+      "texture": {
+        "glcm_contrast": 0.48,
+        "edge_density": 0.94,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.607,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "소프트 매트",
+      "page": 13,
+      "thumb": "thumbs/PSM192.jpg",
+      "full": "thumbs_full/PSM192.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM184",
+      "hex": "#9A9B94",
+      "rgb": [
+        154,
+        155,
+        148
+      ],
+      "std": 3.1,
+      "texture": {
+        "glcm_contrast": 0.46,
+        "edge_density": 0.94,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.761,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "소프트 매트",
+      "page": 13,
+      "thumb": "thumbs/PSM184.jpg",
+      "full": "thumbs_full/PSM184.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM185",
+      "hex": "#676464",
+      "rgb": [
+        103,
+        100,
+        100
+      ],
+      "std": 1.4,
+      "texture": {
+        "glcm_contrast": 1.41,
+        "edge_density": 1.71,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.556,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "소프트 매트",
+      "page": 13,
+      "thumb": "thumbs/PSM185.jpg",
+      "full": "thumbs_full/PSM185.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM186",
+      "hex": "#202C3B",
+      "rgb": [
+        32,
+        44,
+        59
+      ],
+      "std": 11.0,
+      "texture": {
+        "glcm_contrast": 2.08,
+        "edge_density": 2.14,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.542,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "소프트 매트",
+      "page": 13,
+      "thumb": "thumbs/PSM186.jpg",
+      "full": "thumbs_full/PSM186.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM194",
+      "hex": "#203B37",
+      "rgb": [
+        32,
+        59,
+        55
+      ],
+      "std": 11.9,
+      "texture": {
+        "glcm_contrast": 1.85,
+        "edge_density": 2.09,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.544,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "소프트 매트",
+      "page": 13,
+      "thumb": "thumbs/PSM194.jpg",
+      "full": "thumbs_full/PSM194.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSM189",
+      "hex": "#1C1618",
+      "rgb": [
+        28,
+        22,
+        24
+      ],
+      "std": 2.5,
+      "texture": {
+        "glcm_contrast": 3.28,
+        "edge_density": 2.9,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.508,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "소프트 매트",
+      "page": 13,
+      "thumb": "thumbs/PSM189.jpg",
+      "full": "thumbs_full/PSM189.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS101",
+      "hex": "#FAF9F4",
+      "rgb": [
+        250,
+        249,
+        244
+      ],
+      "std": 4.6,
+      "texture": {
+        "glcm_contrast": 1.07,
+        "edge_density": 3.69,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.284,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PS101.jpg",
+      "full": "thumbs_full/PS101.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS072",
+      "hex": "#E5DBC5",
+      "rgb": [
+        229,
+        219,
+        197
+      ],
+      "std": 13.9,
+      "texture": {
+        "glcm_contrast": 0.78,
+        "edge_density": 2.53,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.44,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PS072.jpg",
+      "full": "thumbs_full/PS072.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS073",
+      "hex": "#C3C0BB",
+      "rgb": [
+        195,
+        192,
+        187
+      ],
+      "std": 5.0,
+      "texture": {
+        "glcm_contrast": 0.74,
+        "edge_density": 2.22,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.483,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PS073.jpg",
+      "full": "thumbs_full/PS073.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS097",
+      "hex": "#B0AEA5",
+      "rgb": [
+        176,
+        174,
+        165
+      ],
+      "std": 5.6,
+      "texture": {
+        "glcm_contrast": 0.34,
+        "edge_density": 1.9,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.526,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PS097.jpg",
+      "full": "thumbs_full/PS097.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS083",
+      "hex": "#CEC4B2",
+      "rgb": [
+        206,
+        196,
+        178
+      ],
+      "std": 12.2,
+      "texture": {
+        "glcm_contrast": 0.43,
+        "edge_density": 2.19,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.286,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PS083.jpg",
+      "full": "thumbs_full/PS083.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS082",
+      "hex": "#575C5A",
+      "rgb": [
+        87,
+        92,
+        90
+      ],
+      "std": 2.8,
+      "texture": {
+        "glcm_contrast": 1.03,
+        "edge_density": 2.4,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.408,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PS082.jpg",
+      "full": "thumbs_full/PS082.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS077",
+      "hex": "#414545",
+      "rgb": [
+        65,
+        69,
+        69
+      ],
+      "std": 4.1,
+      "texture": {
+        "glcm_contrast": 1.99,
+        "edge_density": 3.92,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.409,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PS077.jpg",
+      "full": "thumbs_full/PS077.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS078",
+      "hex": "#252E3B",
+      "rgb": [
+        37,
+        46,
+        59
+      ],
+      "std": 9.7,
+      "texture": {
+        "glcm_contrast": 3.29,
+        "edge_density": 4.77,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.383,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PS078.jpg",
+      "full": "thumbs_full/PS078.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PW836-1",
+      "hex": "#262523",
+      "rgb": [
+        38,
+        37,
+        35
+      ],
+      "std": 3.4,
+      "texture": {
+        "glcm_contrast": 2.94,
+        "edge_density": 4.1,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.408,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PW836-1.jpg",
+      "full": "thumbs_full/PW836-1.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림134",
+      "hex": "#1E1D1B",
+      "rgb": [
+        30,
+        29,
+        27
+      ],
+      "std": 3.7,
+      "texture": {
+        "glcm_contrast": 3.73,
+        "edge_density": 4.14,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.464,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/영림134.jpg",
+      "full": "thumbs_full/영림134.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSO94",
+      "hex": "#F1F0E7",
+      "rgb": [
+        241,
+        240,
+        231
+      ],
+      "std": 5.7,
+      "texture": {
+        "glcm_contrast": 0.45,
+        "edge_density": 2.64,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.384,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PSO94.jpg",
+      "full": "thumbs_full/PSO94.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PS095",
+      "hex": "#E4E5E1",
+      "rgb": [
+        228,
+        229,
+        225
+      ],
+      "std": 3.5,
+      "texture": {
+        "glcm_contrast": 0.63,
+        "edge_density": 2.12,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.461,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PS095.jpg",
+      "full": "thumbs_full/PS095.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PSO96",
+      "hex": "#C0C1BE",
+      "rgb": [
+        192,
+        193,
+        190
+      ],
+      "std": 4.0,
+      "texture": {
+        "glcm_contrast": 0.87,
+        "edge_density": 2.79,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.437,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Solid Emboss",
+      "page": 14,
+      "thumb": "thumbs/PSO96.jpg",
+      "full": "thumbs_full/PSO96.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림73",
+      "hex": "#C5B69C",
+      "rgb": [
+        197,
+        182,
+        156
+      ],
+      "std": 45.8,
+      "texture": {
+        "glcm_contrast": 0.78,
+        "edge_density": 2.55,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.578,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Premium Wood",
+      "page": 22,
+      "thumb": "thumbs/영림73.jpg",
+      "full": "thumbs_full/영림73.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림123",
+      "hex": "#F8EDDC",
+      "rgb": [
+        248,
+        237,
+        220
+      ],
+      "std": 12.7,
+      "texture": {
+        "glcm_contrast": 0.28,
+        "edge_density": 1.87,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.618,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Premium Wood",
+      "page": 22,
+      "thumb": "thumbs/영림123.jpg",
+      "full": "thumbs_full/영림123.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림87",
+      "hex": "#2C261E",
+      "rgb": [
+        44,
+        38,
+        30
+      ],
+      "std": 10.3,
+      "texture": {
+        "glcm_contrast": 1.62,
+        "edge_density": 5.18,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.264,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Premium Wood",
+      "page": 22,
+      "thumb": "thumbs/영림87.jpg",
+      "full": "thumbs_full/영림87.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림187",
+      "hex": "#B3A187",
+      "rgb": [
+        179,
+        161,
+        135
+      ],
+      "std": 33.2,
+      "texture": {
+        "glcm_contrast": 1.8,
+        "edge_density": 6.12,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.396,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "New",
+      "page": 24,
+      "thumb": "thumbs/영림187.jpg",
+      "full": "thumbs_full/영림187.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림186",
+      "hex": "#D2C0A4",
+      "rgb": [
+        210,
+        192,
+        164
+      ],
+      "std": 27.5,
+      "texture": {
+        "glcm_contrast": 0.93,
+        "edge_density": 4.02,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.399,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "New",
+      "page": 24,
+      "thumb": "thumbs/영림186.jpg",
+      "full": "thumbs_full/영림186.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림189",
+      "hex": "#9D8B76",
+      "rgb": [
+        157,
+        139,
+        118
+      ],
+      "std": 20.6,
+      "texture": {
+        "glcm_contrast": 2.97,
+        "edge_density": 8.56,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.342,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "New",
+      "page": 24,
+      "thumb": "thumbs/영림189.jpg",
+      "full": "thumbs_full/영림189.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림203",
+      "hex": "#B59E83",
+      "rgb": [
+        181,
+        158,
+        131
+      ],
+      "std": 23.8,
+      "texture": {
+        "glcm_contrast": 2.54,
+        "edge_density": 7.27,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.742,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "New",
+      "page": 25,
+      "thumb": "thumbs/영림203.jpg",
+      "full": "thumbs_full/영림203.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림204",
+      "hex": "#BAA380",
+      "rgb": [
+        186,
+        163,
+        128
+      ],
+      "std": 26.7,
+      "texture": {
+        "glcm_contrast": 2.56,
+        "edge_density": 7.03,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.729,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "New",
+      "page": 25,
+      "thumb": "thumbs/영림204.jpg",
+      "full": "thumbs_full/영림204.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림205",
+      "hex": "#AA8C60",
+      "rgb": [
+        170,
+        140,
+        96
+      ],
+      "std": 32.2,
+      "texture": {
+        "glcm_contrast": 2.42,
+        "edge_density": 6.75,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.696,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "New",
+      "page": 25,
+      "thumb": "thumbs/영림205.jpg",
+      "full": "thumbs_full/영림205.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림207",
+      "hex": "#98734D",
+      "rgb": [
+        152,
+        115,
+        77
+      ],
+      "std": 32.7,
+      "texture": {
+        "glcm_contrast": 2.51,
+        "edge_density": 6.93,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.737,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "New",
+      "page": 28,
+      "thumb": "thumbs/영림207.jpg",
+      "full": "thumbs_full/영림207.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림206",
+      "hex": "#AD8765",
+      "rgb": [
+        173,
+        135,
+        101
+      ],
+      "std": 31.7,
+      "texture": {
+        "glcm_contrast": 2.16,
+        "edge_density": 6.64,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.741,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "New",
+      "page": 28,
+      "thumb": "thumbs/영림206.jpg",
+      "full": "thumbs_full/영림206.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림208",
+      "hex": "#392C20",
+      "rgb": [
+        57,
+        44,
+        32
+      ],
+      "std": 14.8,
+      "texture": {
+        "glcm_contrast": 2.27,
+        "edge_density": 6.12,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.645,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "New",
+      "page": 28,
+      "thumb": "thumbs/영림208.jpg",
+      "full": "thumbs_full/영림208.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림183",
+      "hex": "#A98F6C",
+      "rgb": [
+        169,
+        143,
+        108
+      ],
+      "std": 46.1,
+      "texture": {
+        "glcm_contrast": 1.41,
+        "edge_density": 4.56,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.408,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 29,
+      "thumb": "thumbs/영림183.jpg",
+      "full": "thumbs_full/영림183.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림184",
+      "hex": "#6F5332",
+      "rgb": [
+        111,
+        83,
+        50
+      ],
+      "std": 55.5,
+      "texture": {
+        "glcm_contrast": 1.43,
+        "edge_density": 3.77,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.426,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 29,
+      "thumb": "thumbs/영림184.jpg",
+      "full": "thumbs_full/영림184.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림185",
+      "hex": "#342413",
+      "rgb": [
+        52,
+        36,
+        19
+      ],
+      "std": 14.8,
+      "texture": {
+        "glcm_contrast": 1.95,
+        "edge_density": 3.84,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.448,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 29,
+      "thumb": "thumbs/영림185.jpg",
+      "full": "thumbs_full/영림185.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림163",
+      "hex": "#E9E1D1",
+      "rgb": [
+        233,
+        225,
+        209
+      ],
+      "std": 14.0,
+      "texture": {
+        "glcm_contrast": 0.5,
+        "edge_density": 2.08,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.368,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 31,
+      "thumb": "thumbs/영림163.jpg",
+      "full": "thumbs_full/영림163.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림171",
+      "hex": "#F1EEE6",
+      "rgb": [
+        241,
+        238,
+        230
+      ],
+      "std": 8.2,
+      "texture": {
+        "glcm_contrast": 0.16,
+        "edge_density": 1.03,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.582,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 31,
+      "thumb": "thumbs/영림171.jpg",
+      "full": "thumbs_full/영림171.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림129",
+      "hex": "#EBDFCB",
+      "rgb": [
+        235,
+        223,
+        203
+      ],
+      "std": 13.9,
+      "texture": {
+        "glcm_contrast": 0.16,
+        "edge_density": 1.05,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.488,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 31,
+      "thumb": "thumbs/영림129.jpg",
+      "full": "thumbs_full/영림129.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림53",
+      "hex": "#E9DFCA",
+      "rgb": [
+        233,
+        223,
+        202
+      ],
+      "std": 19.9,
+      "texture": {
+        "glcm_contrast": 0.99,
+        "edge_density": 2.68,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.378,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 32,
+      "thumb": "thumbs/영림53.jpg",
+      "full": "thumbs_full/영림53.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림158",
+      "hex": "#E0DAD2",
+      "rgb": [
+        224,
+        218,
+        210
+      ],
+      "std": 17.0,
+      "texture": {
+        "glcm_contrast": 0.21,
+        "edge_density": 1.05,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.506,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 32,
+      "thumb": "thumbs/영림158.jpg",
+      "full": "thumbs_full/영림158.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림135",
+      "hex": "#E4D8C4",
+      "rgb": [
+        228,
+        216,
+        196
+      ],
+      "std": 18.7,
+      "texture": {
+        "glcm_contrast": 0.49,
+        "edge_density": 2.72,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.534,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 32,
+      "thumb": "thumbs/영림135.jpg",
+      "full": "thumbs_full/영림135.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PW962",
+      "hex": "#D9C198",
+      "rgb": [
+        217,
+        193,
+        152
+      ],
+      "std": 32.8,
+      "texture": {
+        "glcm_contrast": 0.68,
+        "edge_density": 2.57,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.534,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 34,
+      "thumb": "thumbs/PW962.jpg",
+      "full": "thumbs_full/PW962.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림103",
+      "hex": "#EAE0C6",
+      "rgb": [
+        234,
+        224,
+        198
+      ],
+      "std": 16.4,
+      "texture": {
+        "glcm_contrast": 0.33,
+        "edge_density": 2.05,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.642,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "우드",
+      "page": 34,
+      "thumb": "thumbs/영림103.jpg",
+      "full": "thumbs_full/영림103.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PW963",
+      "hex": "#AF9067",
+      "rgb": [
+        175,
+        144,
+        103
+      ],
+      "std": 31.1,
+      "texture": {
+        "glcm_contrast": 1.16,
+        "edge_density": 4.52,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.481,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 34,
+      "thumb": "thumbs/PW963.jpg",
+      "full": "thumbs_full/PW963.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림40",
+      "hex": "#D3C1A0",
+      "rgb": [
+        211,
+        193,
+        160
+      ],
+      "std": 29.1,
+      "texture": {
+        "glcm_contrast": 1.58,
+        "edge_density": 4.5,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.733,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "우드",
+      "page": 35,
+      "thumb": "thumbs/영림40.jpg",
+      "full": "thumbs_full/영림40.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림89",
+      "hex": "#CCBD9A",
+      "rgb": [
+        204,
+        189,
+        154
+      ],
+      "std": 29.7,
+      "texture": {
+        "glcm_contrast": 1.34,
+        "edge_density": 4.29,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.754,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "우드",
+      "page": 35,
+      "thumb": "thumbs/영림89.jpg",
+      "full": "thumbs_full/영림89.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림06",
+      "hex": "#C0A57A",
+      "rgb": [
+        192,
+        165,
+        122
+      ],
+      "std": 31.0,
+      "texture": {
+        "glcm_contrast": 1.62,
+        "edge_density": 5.9,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.782,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "우드",
+      "page": 35,
+      "thumb": "thumbs/영림06.jpg",
+      "full": "thumbs_full/영림06.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림108",
+      "hex": "#AF9A76",
+      "rgb": [
+        175,
+        154,
+        118
+      ],
+      "std": 27.7,
+      "texture": {
+        "glcm_contrast": 2.83,
+        "edge_density": 7.8,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.697,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "우드",
+      "page": 35,
+      "thumb": "thumbs/영림108.jpg",
+      "full": "thumbs_full/영림108.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림166",
+      "hex": "#BEA27E",
+      "rgb": [
+        190,
+        162,
+        126
+      ],
+      "std": 43.3,
+      "texture": {
+        "glcm_contrast": 0.72,
+        "edge_density": 2.27,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.724,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "우드",
+      "page": 35,
+      "thumb": "thumbs/영림166.jpg",
+      "full": "thumbs_full/영림166.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림10",
+      "hex": "#DEB16A",
+      "rgb": [
+        222,
+        177,
+        106
+      ],
+      "std": 52.4,
+      "texture": {
+        "glcm_contrast": 1.31,
+        "edge_density": 3.89,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.442,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 39,
+      "thumb": "thumbs/영림10.jpg",
+      "full": "thumbs_full/영림10.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림04",
+      "hex": "#AC8655",
+      "rgb": [
+        172,
+        134,
+        85
+      ],
+      "std": 48.2,
+      "texture": {
+        "glcm_contrast": 1.6,
+        "edge_density": 3.95,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.469,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 39,
+      "thumb": "thumbs/영림04.jpg",
+      "full": "thumbs_full/영림04.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림97",
+      "hex": "#AF9775",
+      "rgb": [
+        175,
+        151,
+        117
+      ],
+      "std": 38.9,
+      "texture": {
+        "glcm_contrast": 1.87,
+        "edge_density": 6.22,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.523,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 39,
+      "thumb": "thumbs/영림97.jpg",
+      "full": "thumbs_full/영림97.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림02",
+      "hex": "#9F7C50",
+      "rgb": [
+        159,
+        124,
+        80
+      ],
+      "std": 33.5,
+      "texture": {
+        "glcm_contrast": 1.17,
+        "edge_density": 4.64,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.54,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 39,
+      "thumb": "thumbs/영림02.jpg",
+      "full": "thumbs_full/영림02.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림20",
+      "hex": "#946C43",
+      "rgb": [
+        148,
+        108,
+        67
+      ],
+      "std": 33.9,
+      "texture": {
+        "glcm_contrast": 1.18,
+        "edge_density": 4.14,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.518,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 39,
+      "thumb": "thumbs/영림20.jpg",
+      "full": "thumbs_full/영림20.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림23",
+      "hex": "#977555",
+      "rgb": [
+        151,
+        117,
+        85
+      ],
+      "std": 46.5,
+      "texture": {
+        "glcm_contrast": 2.46,
+        "edge_density": 6.08,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.678,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "우드",
+      "page": 40,
+      "thumb": "thumbs/영림23.jpg",
+      "full": "thumbs_full/영림23.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림22",
+      "hex": "#825A3F",
+      "rgb": [
+        130,
+        90,
+        63
+      ],
+      "std": 50.3,
+      "texture": {
+        "glcm_contrast": 2.01,
+        "edge_density": 4.39,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.495,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 40,
+      "thumb": "thumbs/영림22.jpg",
+      "full": "thumbs_full/영림22.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림57",
+      "hex": "#6E5843",
+      "rgb": [
+        110,
+        88,
+        67
+      ],
+      "std": 19.6,
+      "texture": {
+        "glcm_contrast": 1.33,
+        "edge_density": 4.42,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.647,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "우드",
+      "page": 40,
+      "thumb": "thumbs/영림57.jpg",
+      "full": "thumbs_full/영림57.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림24",
+      "hex": "#7C4B34",
+      "rgb": [
+        124,
+        75,
+        52
+      ],
+      "std": 30.5,
+      "texture": {
+        "glcm_contrast": 0.89,
+        "edge_density": 2.87,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.504,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "우드",
+      "page": 40,
+      "thumb": "thumbs/영림24.jpg",
+      "full": "thumbs_full/영림24.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "영림19",
+      "hex": "#704B36",
+      "rgb": [
+        112,
+        75,
+        54
+      ],
+      "std": 24.7,
+      "texture": {
+        "glcm_contrast": 1.07,
+        "edge_density": 2.5,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.647,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "우드",
+      "page": 40,
+      "thumb": "thumbs/영림19.jpg",
+      "full": "thumbs_full/영림19.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX452",
+      "hex": "#E4E0D5",
+      "rgb": [
+        228,
+        224,
+        213
+      ],
+      "std": 17.5,
+      "texture": {
+        "glcm_contrast": 6.73,
+        "edge_density": 13.24,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.184,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 48,
+      "thumb": "thumbs/PX452.jpg",
+      "full": "thumbs_full/PX452.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX452-1",
+      "hex": "#CDC8C0",
+      "rgb": [
+        205,
+        200,
+        192
+      ],
+      "std": 17.0,
+      "texture": {
+        "glcm_contrast": 6.61,
+        "edge_density": 13.06,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.183,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 48,
+      "thumb": "thumbs/PX452-1.jpg",
+      "full": "thumbs_full/PX452-1.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "S453",
+      "hex": "#BBB8AF",
+      "rgb": [
+        187,
+        184,
+        175
+      ],
+      "std": 31.9,
+      "texture": {
+        "glcm_contrast": 5.29,
+        "edge_density": 11.04,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.224,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 48,
+      "thumb": "thumbs/S453.jpg",
+      "full": "thumbs_full/S453.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX446",
+      "hex": "#EEE8DA",
+      "rgb": [
+        238,
+        232,
+        218
+      ],
+      "std": 9.6,
+      "texture": {
+        "glcm_contrast": 0.45,
+        "edge_density": 2.81,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.272,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 48,
+      "thumb": "thumbs/PX446.jpg",
+      "full": "thumbs_full/PX446.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX446-1",
+      "hex": "#CDC7BA",
+      "rgb": [
+        205,
+        199,
+        186
+      ],
+      "std": 9.8,
+      "texture": {
+        "glcm_contrast": 0.54,
+        "edge_density": 3.22,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.278,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 48,
+      "thumb": "thumbs/PX446-1.jpg",
+      "full": "thumbs_full/PX446-1.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "S453-1",
+      "hex": "#6C6864",
+      "rgb": [
+        108,
+        104,
+        100
+      ],
+      "std": 46.3,
+      "texture": {
+        "glcm_contrast": 4.01,
+        "edge_density": 8.91,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.215,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 48,
+      "thumb": "thumbs/S453-1.jpg",
+      "full": "thumbs_full/S453-1.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PHA419",
+      "hex": "#E3DCCF",
+      "rgb": [
+        227,
+        220,
+        207
+      ],
+      "std": 21.6,
+      "texture": {
+        "glcm_contrast": 0.47,
+        "edge_density": 2.1,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.285,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Marble",
+      "page": 50,
+      "thumb": "thumbs/PHA419.jpg",
+      "full": "thumbs_full/PHA419.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX448",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "std": 5.7,
+      "texture": {
+        "glcm_contrast": 0.34,
+        "edge_density": 0.8,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.711,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Marble",
+      "page": 50,
+      "thumb": "thumbs/PX448.jpg",
+      "full": "thumbs_full/PX448.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PHA421",
+      "hex": "#25180E",
+      "rgb": [
+        37,
+        24,
+        14
+      ],
+      "std": 39.9,
+      "texture": {
+        "glcm_contrast": 4.85,
+        "edge_density": 9.68,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.209,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Marble",
+      "page": 50,
+      "thumb": "thumbs/PHA421.jpg",
+      "full": "thumbs_full/PHA421.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PX448-1",
+      "hex": "#F6F5F3",
+      "rgb": [
+        246,
+        245,
+        243
+      ],
+      "std": 10.1,
+      "texture": {
+        "glcm_contrast": 0.53,
+        "edge_density": 1.33,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.404,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Marble",
+      "page": 50,
+      "thumb": "thumbs/PX448-1.jpg",
+      "full": "thumbs_full/PX448-1.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PHA420",
+      "hex": "#090404",
+      "rgb": [
+        9,
+        4,
+        4
+      ],
+      "std": 3.5,
+      "texture": {
+        "glcm_contrast": 2.06,
+        "edge_density": 1.63,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.66,
+        "label": "선형결(가로결)",
+        "direction": "가로결"
+      },
+      "category": "Marble",
+      "page": 50,
+      "thumb": "thumbs/PHA420.jpg",
+      "full": "thumbs_full/PHA420.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PMT325-1",
+      "hex": "#D8C6A9",
+      "rgb": [
+        216,
+        198,
+        169
+      ],
+      "std": 30.0,
+      "texture": {
+        "glcm_contrast": 1.3,
+        "edge_density": 3.83,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.255,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Metal",
+      "page": 52,
+      "thumb": "thumbs/PMT325-1.jpg",
+      "full": "thumbs_full/PMT325-1.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PMS336",
+      "hex": "#A8A9A2",
+      "rgb": [
+        168,
+        169,
+        162
+      ],
+      "std": 33.0,
+      "texture": {
+        "glcm_contrast": 1.03,
+        "edge_density": 2.13,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.311,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Metal",
+      "page": 52,
+      "thumb": "thumbs/PMS336.jpg",
+      "full": "thumbs_full/PMS336.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PMS337",
+      "hex": "#C8C2AC",
+      "rgb": [
+        200,
+        194,
+        172
+      ],
+      "std": 21.9,
+      "texture": {
+        "glcm_contrast": 0.22,
+        "edge_density": 0.87,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.444,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Metal",
+      "page": 52,
+      "thumb": "thumbs/PMS337.jpg",
+      "full": "thumbs_full/PMS337.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PMT324",
+      "hex": "#8E908C",
+      "rgb": [
+        142,
+        144,
+        140
+      ],
+      "std": 22.7,
+      "texture": {
+        "glcm_contrast": 12.11,
+        "edge_density": 18.65,
+        "dominant_angle_deg": 45.0,
+        "dominant_strength": 0.243,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Metal",
+      "page": 52,
+      "thumb": "thumbs/PMT324.jpg",
+      "full": "thumbs_full/PMT324.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
+    },
+    {
+      "code": "PMS329",
+      "hex": "#6E6D6B",
+      "rgb": [
+        110,
+        109,
+        107
+      ],
+      "std": 15.6,
+      "texture": {
+        "glcm_contrast": 4.62,
+        "edge_density": 10.64,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.195,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Metal",
+      "page": 52,
+      "thumb": "thumbs/PMS329.jpg",
+      "full": "thumbs_full/PMS329.jpg",
+      "manufacturer": "영림도어",
+      "product_line": "인테리어필름"
     }
   ]
 }

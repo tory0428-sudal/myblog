@@ -19,7 +19,11 @@
   #uploadPreview { max-width:220px; max-height:220px; border-radius:8px; display:none; }
   #uploadInfo { font-size:13px; color:#ccc; line-height:1.7; }
   #uploadInfo .swatch { display:inline-block; width:14px; height:14px; border-radius:3px; vertical-align:middle; margin-right:6px; border:1px solid #444; }
-  #results { display:flex; gap:16px; flex-wrap:wrap; margin-top:28px; }
+  .brand-group { margin-top:28px; }
+  .brand-group h2 { font-size:15px; margin:0 0 10px; color:#ddd; font-weight:600; }
+  .brand-group h2 .count { color:#777; font-weight:400; font-size:12px; }
+  #results { display:flex; flex-direction:column; gap:8px; }
+  .cards-row { display:flex; gap:16px; flex-wrap:wrap; }
   .card {
     width:180px; background:#1e1e1e; border-radius:10px; overflow:hidden;
     box-shadow:0 2px 8px rgba(0,0,0,.3);
@@ -91,12 +95,17 @@
 let CATALOG = [];
 let CATALOG_META = {};
 
+const RESULTS_PER_BRAND = 4;
+
 fetch('colors.json').then(r => r.json()).then(data => {
   CATALOG_META = data.meta || {};
   CATALOG = data.items.map(d => ({ ...d, lab: rgbToLab(...d.rgb) }));
+  const brands = CATALOG_META.manufacturers
+    ? CATALOG_META.manufacturers.map(m => `${m.name}(${m.count})`).join(' · ')
+    : '';
   document.getElementById('status').textContent = `카탈로그 ${CATALOG.length}종 로드 완료`;
   document.getElementById('catalogSub').textContent =
-    `${CATALOG_META.manufacturer || ''} · ${CATALOG_META.product_line || ''} 카탈로그 ${CATALOG.length}종 중 색상+텍스처가 가장 유사한 4종을 추천합니다.`;
+    `${brands} 카탈로그 ${CATALOG.length}종 중, 브랜드별로 색상+텍스처가 가장 유사한 ${RESULTS_PER_BRAND}종씩 추천합니다.`;
 }).catch(err => {
   document.getElementById('status').textContent = 'colors.json 로드 실패: ' + err;
 });
@@ -295,27 +304,52 @@ function renderResults(rgb, texClass) {
     const score = texMatch ? de * 0.85 : de;
     return { ...item, de, score, texMatch };
   });
-  scored.sort((a, b) => a.score - b.score);
-  const top = scored.slice(0, 4);
 
-  document.getElementById('status').textContent = `상위 4종 추천 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`;
+  // 제조사별로 그룹 지어 각 브랜드에서 상위 N개씩 추천.
+  // 새 브랜드를 추가해도(colors.json에 manufacturer만 채워서 합치면) 이 로직이 자동으로 대응한다.
+  const byBrand = new Map();
+  for (const item of scored) {
+    const key = item.manufacturer || '기타';
+    if (!byBrand.has(key)) byBrand.set(key, []);
+    byBrand.get(key).push(item);
+  }
+  for (const list of byBrand.values()) list.sort((a, b) => a.score - b.score);
 
-  window.__lastTop = top;
+  const brandOrder = CATALOG_META.manufacturers
+    ? CATALOG_META.manufacturers.map(m => m.name).filter(name => byBrand.has(name))
+    : [...byBrand.keys()];
 
+  document.getElementById('status').textContent = `브랜드별 상위 ${RESULTS_PER_BRAND}종 추천 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`;
+
+  const flatTop = [];
   const results = document.getElementById('results');
-  results.innerHTML = top.map((r, i) => `
-    <div class="card" data-idx="${i}">
-      <img class="thumb" src="${r.thumb || ''}" onerror="this.style.display='none'">
-      <div class="swatch" style="background:${r.hex}"></div>
-      <div class="meta">
-        <span class="rank">#${i + 1}</span> <span class="code">${r.code}</span><br>
-        ${r.hex} · <span class="de">ΔE ${r.de.toFixed(1)}</span><br>
-        <span class="tex">${r.texture.label}${r.texMatch ? ' ✓일치' : ''}</span><br>
-        <span class="cat">${r.category || ''}</span> · p.${r.page}<br>
-        <span class="brand">${r.manufacturer || ''} ${r.product_line || ''}</span>
+  results.innerHTML = brandOrder.map(brandName => {
+    const top = byBrand.get(brandName).slice(0, RESULTS_PER_BRAND);
+    const startIdx = flatTop.length;
+    flatTop.push(...top);
+    const productLine = top[0] ? top[0].product_line : '';
+
+    const cards = top.map((r, i) => `
+      <div class="card" data-idx="${startIdx + i}">
+        <img class="thumb" src="${r.thumb || ''}" onerror="this.style.display='none'">
+        <div class="swatch" style="background:${r.hex}"></div>
+        <div class="meta">
+          <span class="rank">#${i + 1}</span> <span class="code">${r.code}</span><br>
+          ${r.hex} · <span class="de">ΔE ${r.de.toFixed(1)}</span><br>
+          <span class="tex">${r.texture.label}${r.texMatch ? ' ✓일치' : ''}</span><br>
+          <span class="cat">${r.category || ''}</span> · p.${r.page}
+        </div>
       </div>
-    </div>
-  `).join('');
+    `).join('');
+
+    return `
+      <div class="brand-group">
+        <h2>${brandName} <span class="count">${productLine} · ${top.length}종</span></h2>
+        <div class="cards-row">${cards}</div>
+      </div>`;
+  }).join('');
+
+  window.__lastTop = flatTop;
 }
 
 // ---------- 라이트박스(크게 보기) ----------
