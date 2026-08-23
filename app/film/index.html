@@ -27,6 +27,16 @@
   .brand-group { margin-top:20px; }
   .brand-group h2 { font-size:15px; margin:0 0 10px; color:#ddd; font-weight:600; }
   .brand-group h2 .count { color:#777; font-weight:400; font-size:12px; }
+  .more-label { font-size:12px; color:#888; margin:14px 0 8px; padding-top:10px; border-top:1px dashed #333; }
+  .select-btn {
+    margin-top:8px; width:100%; padding:6px 0; font-size:11.5px;
+    border:1px solid #444; background:#252525; color:#ccc; border-radius:6px; cursor:pointer;
+  }
+  .select-btn:hover { border-color:#6cf; color:#fff; }
+  .select-btn.selected { background:#2d5a3d; border-color:#4a4; color:#bfb; }
+  .card-selected { outline:2px solid #4a4; }
+  .hint { margin-top:20px; font-size:13px; color:#999; }
+  .summary-card .meta { text-align:center; }
   #results { display:flex; flex-direction:column; gap:8px; }
   .cards-row { display:flex; gap:16px; flex-wrap:wrap; }
   .card {
@@ -251,7 +261,9 @@ dropzone.addEventListener('drop', e => {
 });
 fileInput.addEventListener('change', e => { if (e.target.files.length) handleFile(e.target.files[0]); });
 document.getElementById('texToggle').addEventListener('change', () => {
-  if (window.__lastAnalysis) renderResults(window.__lastAnalysis.rgb, window.__lastAnalysis.tex);
+  if (!window.__uploadRGB) return;
+  rescoreFilm();
+  renderAll();
 });
 
 function handleFile(file) {
@@ -291,14 +303,25 @@ function analyzeImage(img) {
   const tex = textureFeatures(gray, w, h);
   const texClass = classifyTexture(tex);
 
-  window.__lastAnalysis = { rgb, tex: texClass };
+  window.__uploadRGB = rgb;
+  window.__uploadTex = texClass;
+  SELECTION = { film: null, wallpaper: null, flooring: null };
 
   const info = document.getElementById('uploadInfo');
   info.innerHTML = `
     <span class="swatch" style="background:${rgbToHex(...rgb)}"></span> ${rgbToHex(...rgb)}<br>
     텍스처: <b>${texClass.label}</b> (edge=${tex.edgeDensity.toFixed(2)}, 방향성=${tex.domStrength.toFixed(2)})`;
 
-  renderResults(rgb, texClass);
+  rescoreFilm();
+  renderAll();
+}
+
+function rescoreFilm() {
+  if (!window.__uploadRGB) return;
+  const useTexture = document.getElementById('texToggle').checked;
+  const uploadLab = rgbToLab(...window.__uploadRGB);
+  const filmItems = CATALOG.filter(i => i.material === '필름');
+  window.__filmScored = scoreItems(uploadLab, window.__uploadTex, useTexture, filmItems);
 }
 
 function scoreItems(lab, texClass, useTexture, items) {
@@ -310,10 +333,24 @@ function scoreItems(lab, texClass, useTexture, items) {
   }).sort((a, b) => a.score - b.score);
 }
 
-function cardHtml(r, idx, rank) {
-  const rankBadge = rank != null ? `<span class="rank">#${rank}</span> ` : '';
+// ---------- 선택 상태 (필름을 고르면 그 필름을 기준으로 벽지/마루를 추천) ----------
+let SELECTION = { film: null, wallpaper: null, flooring: null };
+const MATERIAL_SLOT = { '필름': 'film', '벽지': 'wallpaper', '마루': 'flooring' };
+const RENDERED = new Map(); // "material::code" -> 현재 화면에 그려진 스코어 포함 아이템 (라이트박스/선택 조회용)
+
+function itemKey(r) { return `${r.material}::${r.code}`; }
+
+function cardHtml(r, opts) {
+  const key = itemKey(r);
+  RENDERED.set(key, r);
+  const slot = opts.slot;
+  const isSelected = slot && SELECTION[slot] && itemKey(SELECTION[slot]) === key;
+  const rankBadge = opts.rank != null ? `<span class="rank">#${opts.rank}</span> ` : '';
+  const selectBtn = slot
+    ? `<button class="select-btn ${isSelected ? 'selected' : ''}" data-key="${key}" data-slot="${slot}">${isSelected ? '✓ 선택됨' : '이걸로 선택'}</button>`
+    : '';
   return `
-    <div class="card" data-idx="${idx}">
+    <div class="card ${isSelected ? 'card-selected' : ''}" data-key="${key}">
       <img class="thumb" src="${r.thumb || ''}" onerror="this.style.display='none'">
       <div class="swatch" style="background:${r.hex}"></div>
       <div class="meta">
@@ -321,13 +358,15 @@ function cardHtml(r, idx, rank) {
         ${r.hex} · <span class="de">ΔE ${r.de.toFixed(1)}</span><br>
         <span class="tex">${r.texture.label}${r.texMatch ? ' ✓일치' : ''}</span><br>
         <span class="cat">${r.category || ''}</span> · p.${r.page}
+        ${selectBtn}
       </div>
     </div>`;
 }
 
-function renderBrandGroups(byMaterialName, materialName, flatTop, opts) {
+function renderBrandGroups(scoredItems, materialName, opts) {
+  const slot = MATERIAL_SLOT[materialName];
   const byBrand = new Map();
-  for (const item of byMaterialName) {
+  for (const item of scoredItems) {
     const key = item.manufacturer || '기타';
     if (!byBrand.has(key)) byBrand.set(key, []);
     byBrand.get(key).push(item);
@@ -339,97 +378,122 @@ function renderBrandGroups(byMaterialName, materialName, flatTop, opts) {
 
   return brandOrder.map(brandName => {
     const all = byBrand.get(brandName);
-    const shown = opts.showAll ? all : all.slice(0, RESULTS_PER_BRAND);
-    const startIdx = flatTop.length;
-    flatTop.push(...shown);
-    const productLine = shown[0] ? shown[0].product_line : '';
+    const top = all.slice(0, RESULTS_PER_BRAND);
+    const rest = opts.showAll ? all.slice(RESULTS_PER_BRAND) : [];
+    const productLine = all[0] ? all[0].product_line : '';
 
-    const cards = shown.map((r, i) => cardHtml(r, startIdx + i, opts.showAll ? (i < RESULTS_PER_BRAND ? i + 1 : null) : i + 1)).join('');
-    const extraNote = opts.showAll && all.length > RESULTS_PER_BRAND
-      ? `<div class="more-note">상위 ${RESULTS_PER_BRAND}개는 추천순, 나머지 ${all.length - RESULTS_PER_BRAND}개는 전체 목록입니다.</div>` : '';
+    const topCards = top.map((r, i) => cardHtml(r, { rank: i + 1, slot })).join('');
+    const restCards = rest.map(r => cardHtml(r, { slot })).join('');
+    // 추천 4개와 나머지 전체 목록은 줄을 나눠서(별도 cards-row) 구분되게 보여준다.
+    const restBlock = rest.length
+      ? `<div class="more-label">그 외 ${brandName} (${rest.length}종)</div><div class="cards-row">${restCards}</div>`
+      : '';
 
     return `
       <div class="brand-group">
-        <h2>${brandName} <span class="count">${productLine} · ${shown.length}${opts.showAll ? `/${all.length}` : ''}종</span></h2>
-        ${extraNote}
-        <div class="cards-row">${cards}</div>
+        <h2>${brandName} <span class="count">${productLine} · ${top.length}${opts.showAll ? `/${all.length}` : ''}종</span></h2>
+        <div class="cards-row">${topCards}</div>
+        ${restBlock}
       </div>`;
   }).join('');
 }
 
-function renderResults(rgb, texClass) {
-  if (!CATALOG.length) { document.getElementById('status').textContent = '카탈로그 로딩 대기 중...'; return; }
-  const uploadLab = rgbToLab(...rgb);
+function renderAll() {
+  if (!CATALOG.length || !window.__filmScored) { document.getElementById('status').textContent = '카탈로그 로딩 대기 중...'; return; }
   const useTexture = document.getElementById('texToggle').checked;
-
-  const byMaterialAll = new Map();
-  for (const item of CATALOG) {
-    const key = item.material || '기타';
-    if (!byMaterialAll.has(key)) byMaterialAll.set(key, []);
-    byMaterialAll.get(key).push(item);
-  }
-  const materialOrder = CATALOG_META.categories
-    ? CATALOG_META.categories.map(c => c.name).filter(name => byMaterialAll.has(name))
-    : [...byMaterialAll.keys()];
-
-  const flatTop = [];
   const sections = [];
 
-  // 1) 필름: 업로드 사진과 비슷한 것을 그대로 매칭 (기존 방식 유지)
-  const filmScored = scoreItems(uploadLab, texClass, useTexture, byMaterialAll.get('필름') || []);
-  const anchor = filmScored[0]; // 가장 잘 맞은 필름을 다른 재질 추천의 기준(앵커)으로 사용
-  if (filmScored.length) {
-    sections.push(`
-      <div class="material-group">
-        <h1 class="material-title">필름</h1>
-        <div class="section-note">업로드 이미지와 색상+텍스처가 가장 비슷한 필름입니다.</div>
-        ${renderBrandGroups(filmScored, '필름', flatTop, { showAll: false })}
-      </div>`);
+  // 1) 필름: 업로드 사진과 비슷한 순서로 후보를 보여주고, 사용자가 그중 하나를 직접 선택.
+  sections.push(`
+    <div class="material-group">
+      <h1 class="material-title">필름</h1>
+      <div class="section-note">업로드 이미지와 색상+텍스처가 가장 비슷한 필름입니다. 원하는 걸 <b>선택</b>하면 아래에 어울리는 벽지·마루가 추천됩니다.</div>
+      ${renderBrandGroups(window.__filmScored, '필름', { showAll: false })}
+    </div>`);
+
+  // 2) 벽지/마루: 필름을 선택하기 전엔 표시하지 않고, 선택한 필름을 기준(앵커)으로만 추천.
+  if (SELECTION.film) {
+    const anchor = SELECTION.film;
+    const byMaterialAll = new Map();
+    for (const item of CATALOG) {
+      const key = item.material || '기타';
+      if (!byMaterialAll.has(key)) byMaterialAll.set(key, []);
+      byMaterialAll.get(key).push(item);
+    }
+    const materialOrder = CATALOG_META.categories
+      ? CATALOG_META.categories.map(c => c.name).filter(n => n !== '필름' && byMaterialAll.has(n))
+      : [...byMaterialAll.keys()].filter(n => n !== '필름');
+
+    for (const matName of materialOrder) {
+      const items = byMaterialAll.get(matName);
+      if (!items || !items.length) continue;
+      const scored = scoreItems(anchor.lab, anchor.texture, useTexture, items);
+      const showAll = matName === '마루'; // 마루는 추천 외 다른 옵션도 다 보이게
+      sections.push(`
+        <div class="material-group">
+          <h1 class="material-title">${matName}</h1>
+          <div class="section-note"><b>${anchor.code}</b> 필름과 어울리는 순서로 추천합니다${showAll ? ' (아래는 그 외 전체 목록)' : ''}.</div>
+          ${renderBrandGroups(scored, matName, { showAll })}
+        </div>`);
+    }
+  } else {
+    sections.push(`<div class="hint">☝️ 필름을 선택하면 이어서 벽지·마루 추천이 나타납니다.</div>`);
   }
 
-  // 2) 벽지/마루 등: "업로드 사진"이 아니라 "위에서 매칭된 필름(앵커)"과 어울리는 것을 추천.
-  //    실제 인테리어 룩북/매치업 자료 학습 결과 색상 궁합이 톤온톤(비슷한 밝기·톤) 위주라
-  //    ΔE(색+텍스처 유사도)를 그대로 재사용하되 기준점만 필름 쪽 색으로 바꾼다.
-  const anchorLab = anchor ? anchor.lab : uploadLab;
-  const anchorTex = anchor ? anchor.texture : texClass;
-
-  for (const matName of materialOrder) {
-    if (matName === '필름') continue;
-    const items = byMaterialAll.get(matName);
-    if (!items || !items.length) continue;
-    const scored = scoreItems(anchorLab, anchorTex, useTexture, items);
-    const showAll = matName === '마루'; // 마루는 추천 외 다른 옵션도 다 보이게
-    const noteText = anchor
-      ? `<b>${anchor.code}</b> 필름과 어울리는 순서로 추천합니다${showAll ? ' (그 아래는 전체 목록)' : ''}.`
-      : '필름을 먼저 찾아야 어울림 추천이 가능합니다.';
-    sections.push(`
-      <div class="material-group">
-        <h1 class="material-title">${matName}</h1>
-        <div class="section-note">${noteText}</div>
-        ${renderBrandGroups(scored, matName, flatTop, { showAll })}
-      </div>`);
-  }
-
-  document.getElementById('status').textContent = anchor
-    ? `필름 매칭 → 벽지/마루는 "${anchor.code}" 필름과 어울리는 순으로 추천 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`
-    : `상위 ${RESULTS_PER_BRAND}종 추천 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`;
-
+  sections.push('<div id="summaryPanel"></div>');
   document.getElementById('results').innerHTML = sections.join('');
-  window.__lastTop = flatTop;
+  renderSummary();
+
+  document.getElementById('status').textContent = SELECTION.film
+    ? `"${SELECTION.film.code}" 필름 기준으로 벽지·마루 추천 중 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`
+    : `필름 후보를 확인하고 선택해주세요 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`;
 }
 
-// ---------- 라이트박스(크게 보기) ----------
+function renderSummary() {
+  const panel = document.getElementById('summaryPanel');
+  if (!panel) return;
+  const { film, wallpaper, flooring } = SELECTION;
+  if (!(film && wallpaper && flooring)) { panel.innerHTML = ''; return; }
+  const items = [film, wallpaper, flooring];
+  panel.innerHTML = `
+    <div class="material-group">
+      <h1 class="material-title">선택 완료</h1>
+      <div class="section-note">필름·벽지·마루를 모두 선택했습니다. (선택한 조합을 한 이미지로 보여주는 목업 합성은 다음 단계에서 추가될 예정입니다)</div>
+      <div class="cards-row">
+        ${items.map(r => `
+          <div class="card summary-card">
+            <img class="thumb" src="${r.thumb || ''}" onerror="this.style.display='none'">
+            <div class="swatch" style="background:${r.hex}"></div>
+            <div class="meta"><b>${r.material}</b><br>${r.code}<br>${r.hex}<br><span class="brand">${r.manufacturer}</span></div>
+          </div>`).join('')}
+      </div>
+    </div>`;
+}
+
+// ---------- 카드 클릭: 선택 버튼 / 라이트박스(크게 보기) ----------
 const lightbox = document.getElementById('lightbox');
 document.getElementById('results').addEventListener('click', e => {
+  const selectBtn = e.target.closest('.select-btn');
+  if (selectBtn) {
+    const item = RENDERED.get(selectBtn.dataset.key);
+    const slot = selectBtn.dataset.slot;
+    if (item) {
+      SELECTION[slot] = item;
+      if (slot === 'film') { SELECTION.wallpaper = null; SELECTION.flooring = null; }
+      renderAll();
+    }
+    return;
+  }
   const card = e.target.closest('.card');
   if (!card) return;
-  const r = window.__lastTop[Number(card.dataset.idx)];
+  const r = RENDERED.get(card.dataset.key);
+  if (!r) return;
   document.getElementById('lbImg').src = r.full || r.thumb || '';
   document.getElementById('lbMeta').innerHTML = `
     <span class="lb-swatch" style="background:${r.hex}"></span>
     <span class="code">${r.code}</span><br>
     ${r.hex} · ΔE ${r.de.toFixed(1)}<br>
-    텍스처: ${r.texture.label}${r.texMatch ? ' (업로드 이미지와 일치)' : ''}<br>
+    텍스처: ${r.texture.label}${r.texMatch ? ' (기준과 일치)' : ''}<br>
     ${r.category ? r.category + ' · ' : ''}카탈로그 p.${r.page}<br>
     <span class="brand">${r.material || ''} · 제조사: ${r.manufacturer || ''} (${r.product_line || ''})</span>`;
   lightbox.classList.add('open');
