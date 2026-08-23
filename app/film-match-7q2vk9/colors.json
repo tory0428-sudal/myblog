@@ -1,0 +1,6273 @@
+{
+  "meta": {
+    "manufacturer": "예림도어",
+    "product_line": "인테리어필름 HEIM",
+    "source_file": "2039376550_zu1C8h6w_20251222082438.pdf"
+  },
+  "items": [
+    {
+      "code": "HP530",
+      "hex": "#FFFCF8",
+      "rgb": [
+        255,
+        252,
+        248
+      ],
+      "std": 3.3,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 0.9991,
+        "directionality": 0.263,
+        "edge_density": 0.24,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.4,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Paint",
+      "page": 21,
+      "thumb": "thumbs/HP530.jpg",
+      "full": "thumbs_full/HP530.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP521",
+      "hex": "#F3F1EB",
+      "rgb": [
+        243,
+        241,
+        235
+      ],
+      "std": 3.5,
+      "texture": {
+        "glcm_contrast": 0.44,
+        "glcm_homogeneity": 0.778,
+        "glcm_energy": 0.5188,
+        "directionality": 0.095,
+        "edge_density": 0.84,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.251,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Paint",
+      "page": 22,
+      "thumb": "thumbs/HP521.jpg",
+      "full": "thumbs_full/HP521.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP522",
+      "hex": "#EDEBE1",
+      "rgb": [
+        237,
+        235,
+        225
+      ],
+      "std": 5.8,
+      "texture": {
+        "glcm_contrast": 0.28,
+        "glcm_homogeneity": 0.862,
+        "glcm_energy": 0.5947,
+        "directionality": 0.162,
+        "edge_density": 1.33,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.328,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Paint",
+      "page": 22,
+      "thumb": "thumbs/HP522.jpg",
+      "full": "thumbs_full/HP522.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP540",
+      "hex": "#FAF6EB",
+      "rgb": [
+        250,
+        246,
+        235
+      ],
+      "std": 6.5,
+      "texture": {
+        "glcm_contrast": 0.02,
+        "glcm_homogeneity": 0.988,
+        "glcm_energy": 0.9733,
+        "directionality": 0.082,
+        "edge_density": 0.7,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.368,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Paint",
+      "page": 22,
+      "thumb": "thumbs/HP540.jpg",
+      "full": "thumbs_full/HP540.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP523",
+      "hex": "#E7E7E9",
+      "rgb": [
+        231,
+        231,
+        233
+      ],
+      "std": 2.0,
+      "texture": {
+        "glcm_contrast": 0.16,
+        "glcm_homogeneity": 0.92,
+        "glcm_energy": 0.8069,
+        "directionality": 0.118,
+        "edge_density": 0.99,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.325,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Paint",
+      "page": 22,
+      "thumb": "thumbs/HP523.jpg",
+      "full": "thumbs_full/HP523.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP524",
+      "hex": "#AA958C",
+      "rgb": [
+        170,
+        149,
+        140
+      ],
+      "std": 12.5,
+      "texture": {
+        "glcm_contrast": 0.15,
+        "glcm_homogeneity": 0.926,
+        "glcm_energy": 0.7599,
+        "directionality": 0.117,
+        "edge_density": 0.57,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.315,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 23,
+      "thumb": "thumbs/HP524.jpg",
+      "full": "thumbs_full/HP524.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP526",
+      "hex": "#F5E4BE",
+      "rgb": [
+        245,
+        228,
+        190
+      ],
+      "std": 23.4,
+      "texture": {
+        "glcm_contrast": 0.16,
+        "glcm_homogeneity": 0.923,
+        "glcm_energy": 0.8491,
+        "directionality": 0.033,
+        "edge_density": 1.97,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.195,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 23,
+      "thumb": "thumbs/HP526.jpg",
+      "full": "thumbs_full/HP526.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP525",
+      "hex": "#D3BDB1",
+      "rgb": [
+        211,
+        189,
+        177
+      ],
+      "std": 14.5,
+      "texture": {
+        "glcm_contrast": 0.47,
+        "glcm_homogeneity": 0.779,
+        "glcm_energy": 0.4948,
+        "directionality": 0.087,
+        "edge_density": 2.29,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.221,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 23,
+      "thumb": "thumbs/HP525.jpg",
+      "full": "thumbs_full/HP525.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP527",
+      "hex": "#CDD9CC",
+      "rgb": [
+        205,
+        217,
+        204
+      ],
+      "std": 6.1,
+      "texture": {
+        "glcm_contrast": 0.25,
+        "glcm_homogeneity": 0.876,
+        "glcm_energy": 0.5814,
+        "directionality": 0.08,
+        "edge_density": 1.02,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.26,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 23,
+      "thumb": "thumbs/HP527.jpg",
+      "full": "thumbs_full/HP527.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS004",
+      "hex": "#FAF8ED",
+      "rgb": [
+        250,
+        248,
+        237
+      ],
+      "std": 5.7,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS004.jpg",
+      "full": "thumbs_full/HS004.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS007",
+      "hex": "#E4E4DD",
+      "rgb": [
+        228,
+        228,
+        221
+      ],
+      "std": 3.3,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS007.jpg",
+      "full": "thumbs_full/HS007.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS028",
+      "hex": "#757A7E",
+      "rgb": [
+        117,
+        122,
+        126
+      ],
+      "std": 3.7,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS028.jpg",
+      "full": "thumbs_full/HS028.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS052",
+      "hex": "#FAF8F4",
+      "rgb": [
+        250,
+        248,
+        244
+      ],
+      "std": 2.5,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS052.jpg",
+      "full": "thumbs_full/HS052.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS001",
+      "hex": "#FCFCFA",
+      "rgb": [
+        252,
+        252,
+        250
+      ],
+      "std": 0.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS001.jpg",
+      "full": "thumbs_full/HS001.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS048",
+      "hex": "#B1B1AA",
+      "rgb": [
+        177,
+        177,
+        170
+      ],
+      "std": 3.3,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS048.jpg",
+      "full": "thumbs_full/HS048.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS053",
+      "hex": "#EEE9DC",
+      "rgb": [
+        238,
+        233,
+        220
+      ],
+      "std": 7.6,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS053.jpg",
+      "full": "thumbs_full/HS053.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS051",
+      "hex": "#312B2A",
+      "rgb": [
+        49,
+        43,
+        42
+      ],
+      "std": 3.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS051.jpg",
+      "full": "thumbs_full/HS051.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS032",
+      "hex": "#908D7F",
+      "rgb": [
+        144,
+        141,
+        127
+      ],
+      "std": 7.4,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS032.jpg",
+      "full": "thumbs_full/HS032.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS046",
+      "hex": "#EBE6E1",
+      "rgb": [
+        235,
+        230,
+        225
+      ],
+      "std": 4.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS046.jpg",
+      "full": "thumbs_full/HS046.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS038",
+      "hex": "#777370",
+      "rgb": [
+        119,
+        115,
+        112
+      ],
+      "std": 2.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS038.jpg",
+      "full": "thumbs_full/HS038.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS029",
+      "hex": "#3A3B45",
+      "rgb": [
+        58,
+        59,
+        69
+      ],
+      "std": 5.0,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS029.jpg",
+      "full": "thumbs_full/HS029.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS002",
+      "hex": "#F8F5EC",
+      "rgb": [
+        248,
+        245,
+        236
+      ],
+      "std": 5.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS002.jpg",
+      "full": "thumbs_full/HS002.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS034",
+      "hex": "#595A54",
+      "rgb": [
+        89,
+        90,
+        84
+      ],
+      "std": 2.6,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS034.jpg",
+      "full": "thumbs_full/HS034.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS030",
+      "hex": "#1F1F2E",
+      "rgb": [
+        31,
+        31,
+        46
+      ],
+      "std": 7.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS030.jpg",
+      "full": "thumbs_full/HS030.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS005",
+      "hex": "#FBF9E7",
+      "rgb": [
+        251,
+        249,
+        231
+      ],
+      "std": 9.0,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS005.jpg",
+      "full": "thumbs_full/HS005.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS037",
+      "hex": "#393F43",
+      "rgb": [
+        57,
+        63,
+        67
+      ],
+      "std": 4.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS037.jpg",
+      "full": "thumbs_full/HS037.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS031",
+      "hex": "#1F212A",
+      "rgb": [
+        31,
+        33,
+        42
+      ],
+      "std": 4.8,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS031.jpg",
+      "full": "thumbs_full/HS031.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS010",
+      "hex": "#817D7E",
+      "rgb": [
+        129,
+        125,
+        126
+      ],
+      "std": 1.7,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS010.jpg",
+      "full": "thumbs_full/HS010.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS011",
+      "hex": "#6B6B6B",
+      "rgb": [
+        107,
+        107,
+        107
+      ],
+      "std": 0.0,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS011.jpg",
+      "full": "thumbs_full/HS011.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS009",
+      "hex": "#9C9898",
+      "rgb": [
+        156,
+        152,
+        152
+      ],
+      "std": 1.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS009.jpg",
+      "full": "thumbs_full/HS009.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS013",
+      "hex": "#2F2F2E",
+      "rgb": [
+        47,
+        47,
+        46
+      ],
+      "std": 0.5,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS013.jpg",
+      "full": "thumbs_full/HS013.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS014",
+      "hex": "#2B2C2B",
+      "rgb": [
+        43,
+        44,
+        43
+      ],
+      "std": 0.5,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS014.jpg",
+      "full": "thumbs_full/HS014.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS015",
+      "hex": "#161717",
+      "rgb": [
+        22,
+        23,
+        23
+      ],
+      "std": 0.5,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Solid",
+      "page": 24,
+      "thumb": "thumbs/HS015.jpg",
+      "full": "thumbs_full/HS015.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS023",
+      "hex": "#BB9297",
+      "rgb": [
+        187,
+        146,
+        151
+      ],
+      "std": 18.3,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS023.jpg",
+      "full": "thumbs_full/HS023.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS039",
+      "hex": "#948377",
+      "rgb": [
+        148,
+        131,
+        119
+      ],
+      "std": 11.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS039.jpg",
+      "full": "thumbs_full/HS039.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS041",
+      "hex": "#E6DD20",
+      "rgb": [
+        230,
+        221,
+        32
+      ],
+      "std": 91.3,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS041.jpg",
+      "full": "thumbs_full/HS041.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS018",
+      "hex": "#DAA695",
+      "rgb": [
+        218,
+        166,
+        149
+      ],
+      "std": 29.4,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS018.jpg",
+      "full": "thumbs_full/HS018.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS022",
+      "hex": "#E7CFD2",
+      "rgb": [
+        231,
+        207,
+        210
+      ],
+      "std": 10.7,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS022.jpg",
+      "full": "thumbs_full/HS022.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS019",
+      "hex": "#926559",
+      "rgb": [
+        146,
+        101,
+        89
+      ],
+      "std": 24.5,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS019.jpg",
+      "full": "thumbs_full/HS019.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS008",
+      "hex": "#938C87",
+      "rgb": [
+        147,
+        140,
+        135
+      ],
+      "std": 4.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS008.jpg",
+      "full": "thumbs_full/HS008.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS045",
+      "hex": "#EDEBA3",
+      "rgb": [
+        237,
+        235,
+        163
+      ],
+      "std": 34.4,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS045.jpg",
+      "full": "thumbs_full/HS045.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS042",
+      "hex": "#C7E3DB",
+      "rgb": [
+        199,
+        227,
+        219
+      ],
+      "std": 11.8,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS042.jpg",
+      "full": "thumbs_full/HS042.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS049",
+      "hex": "#F6916C",
+      "rgb": [
+        246,
+        145,
+        108
+      ],
+      "std": 58.3,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS049.jpg",
+      "full": "thumbs_full/HS049.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS021",
+      "hex": "#553F38",
+      "rgb": [
+        85,
+        63,
+        56
+      ],
+      "std": 12.4,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS021.jpg",
+      "full": "thumbs_full/HS021.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS050",
+      "hex": "#FDDA7A",
+      "rgb": [
+        253,
+        218,
+        122
+      ],
+      "std": 55.4,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS050.jpg",
+      "full": "thumbs_full/HS050.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS020",
+      "hex": "#A45540",
+      "rgb": [
+        164,
+        85,
+        64
+      ],
+      "std": 43.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS020.jpg",
+      "full": "thumbs_full/HS020.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS024",
+      "hex": "#7D4E55",
+      "rgb": [
+        125,
+        78,
+        85
+      ],
+      "std": 20.7,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS024.jpg",
+      "full": "thumbs_full/HS024.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS017",
+      "hex": "#E2C79F",
+      "rgb": [
+        226,
+        199,
+        159
+      ],
+      "std": 27.5,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS017.jpg",
+      "full": "thumbs_full/HS017.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS044",
+      "hex": "#852527",
+      "rgb": [
+        133,
+        37,
+        39
+      ],
+      "std": 44.8,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS044.jpg",
+      "full": "thumbs_full/HS044.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS025",
+      "hex": "#351314",
+      "rgb": [
+        53,
+        19,
+        20
+      ],
+      "std": 15.8,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS025.jpg",
+      "full": "thumbs_full/HS025.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS040",
+      "hex": "#FAC262",
+      "rgb": [
+        250,
+        194,
+        98
+      ],
+      "std": 62.8,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS040.jpg",
+      "full": "thumbs_full/HS040.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS027",
+      "hex": "#8E9498",
+      "rgb": [
+        142,
+        148,
+        152
+      ],
+      "std": 4.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS027.jpg",
+      "full": "thumbs_full/HS027.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS043",
+      "hex": "#B7B3D7",
+      "rgb": [
+        183,
+        179,
+        215
+      ],
+      "std": 16.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS043.jpg",
+      "full": "thumbs_full/HS043.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS033",
+      "hex": "#6D786D",
+      "rgb": [
+        109,
+        120,
+        109
+      ],
+      "std": 5.2,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS033.jpg",
+      "full": "thumbs_full/HS033.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS035",
+      "hex": "#384F3B",
+      "rgb": [
+        56,
+        79,
+        59
+      ],
+      "std": 10.2,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS035.jpg",
+      "full": "thumbs_full/HS035.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS036",
+      "hex": "#223224",
+      "rgb": [
+        34,
+        50,
+        36
+      ],
+      "std": 7.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS036.jpg",
+      "full": "thumbs_full/HS036.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HS026",
+      "hex": "#34282D",
+      "rgb": [
+        52,
+        40,
+        45
+      ],
+      "std": 4.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HS022",
+      "page": 25,
+      "thumb": "thumbs/HS026.jpg",
+      "full": "thumbs_full/HS026.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM27",
+      "hex": "#E2D6CC",
+      "rgb": [
+        226,
+        214,
+        204
+      ],
+      "std": 9.0,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 27,
+      "thumb": "thumbs/HSM27.jpg",
+      "full": "thumbs_full/HSM27.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM29",
+      "hex": "#ECE4DD",
+      "rgb": [
+        236,
+        228,
+        221
+      ],
+      "std": 6.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 29,
+      "thumb": "thumbs/HSM29.jpg",
+      "full": "thumbs_full/HSM29.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM30",
+      "hex": "#EFECE4",
+      "rgb": [
+        239,
+        236,
+        228
+      ],
+      "std": 4.6,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 29,
+      "thumb": "thumbs/HSM30.jpg",
+      "full": "thumbs_full/HSM30.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM28",
+      "hex": "#E8E4D8",
+      "rgb": [
+        232,
+        228,
+        216
+      ],
+      "std": 6.8,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 29,
+      "thumb": "thumbs/HSM28.jpg",
+      "full": "thumbs_full/HSM28.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM34",
+      "hex": "#ABC5E3",
+      "rgb": [
+        171,
+        197,
+        227
+      ],
+      "std": 22.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 31,
+      "thumb": "thumbs/HSM34.jpg",
+      "full": "thumbs_full/HSM34.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM25",
+      "hex": "#353642",
+      "rgb": [
+        53,
+        54,
+        66
+      ],
+      "std": 5.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.497,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 31,
+      "thumb": "thumbs/HSM25.jpg",
+      "full": "thumbs_full/HSM25.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM31",
+      "hex": "#D3D0C8",
+      "rgb": [
+        211,
+        208,
+        200
+      ],
+      "std": 4.6,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 31,
+      "thumb": "thumbs/HSM31.jpg",
+      "full": "thumbs_full/HSM31.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM16",
+      "hex": "#FEF5DE",
+      "rgb": [
+        254,
+        245,
+        222
+      ],
+      "std": 13.5,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HSM16.jpg",
+      "full": "thumbs_full/HSM16.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM21",
+      "hex": "#B8B2A9",
+      "rgb": [
+        184,
+        178,
+        169
+      ],
+      "std": 6.2,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HSM21.jpg",
+      "full": "thumbs_full/HSM21.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM02",
+      "hex": "#FAF9F3",
+      "rgb": [
+        250,
+        249,
+        243
+      ],
+      "std": 3.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HSM02.jpg",
+      "full": "thumbs_full/HSM02.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM01",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "std": 0.0,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HSM01.jpg",
+      "full": "thumbs_full/HSM01.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM03",
+      "hex": "#DDD5BF",
+      "rgb": [
+        221,
+        213,
+        191
+      ],
+      "std": 12.7,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HSM03.jpg",
+      "full": "thumbs_full/HSM03.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM04",
+      "hex": "#D2C4B5",
+      "rgb": [
+        210,
+        196,
+        181
+      ],
+      "std": 11.8,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HSM04.jpg",
+      "full": "thumbs_full/HSM04.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM20",
+      "hex": "#BABBB1",
+      "rgb": [
+        186,
+        187,
+        177
+      ],
+      "std": 4.5,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HSM20.jpg",
+      "full": "thumbs_full/HSM20.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM06",
+      "hex": "#958F8D",
+      "rgb": [
+        149,
+        143,
+        141
+      ],
+      "std": 3.4,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HSM06.jpg",
+      "full": "thumbs_full/HSM06.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM07",
+      "hex": "#56524E",
+      "rgb": [
+        86,
+        82,
+        78
+      ],
+      "std": 3.3,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HSM07.jpg",
+      "full": "thumbs_full/HSM07.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HA911",
+      "hex": "#AEAAA1",
+      "rgb": [
+        174,
+        170,
+        161
+      ],
+      "std": 5.4,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Super Matt",
+      "page": 32,
+      "thumb": "thumbs/HA911.jpg",
+      "full": "thumbs_full/HA911.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM11",
+      "hex": "#354555",
+      "rgb": [
+        53,
+        69,
+        85
+      ],
+      "std": 13.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": null,
+        "dominant_strength": 0.0,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 33,
+      "thumb": "thumbs/HSM11.jpg",
+      "full": "thumbs_full/HSM11.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HSM10",
+      "hex": "#2A3E44",
+      "rgb": [
+        42,
+        62,
+        68
+      ],
+      "std": 11.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.0,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.491,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 33,
+      "thumb": "thumbs/HSM10.jpg",
+      "full": "thumbs_full/HSM10.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP511",
+      "hex": "#F3D89D",
+      "rgb": [
+        243,
+        216,
+        157
+      ],
+      "std": 35.7,
+      "texture": {
+        "glcm_contrast": 0.17,
+        "glcm_homogeneity": 0.914,
+        "glcm_energy": 0.7662,
+        "directionality": 0.279,
+        "edge_density": 1.14,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.49,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP511.jpg",
+      "full": "thumbs_full/HP511.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP515",
+      "hex": "#E7CCB5",
+      "rgb": [
+        231,
+        204,
+        181
+      ],
+      "std": 20.5,
+      "texture": {
+        "glcm_contrast": 0.13,
+        "glcm_homogeneity": 0.937,
+        "glcm_energy": 0.8243,
+        "directionality": 0.344,
+        "edge_density": 0.95,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.637,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP515.jpg",
+      "full": "thumbs_full/HP515.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP507",
+      "hex": "#C4BCA6",
+      "rgb": [
+        196,
+        188,
+        166
+      ],
+      "std": 13.3,
+      "texture": {
+        "glcm_contrast": 0.4,
+        "glcm_homogeneity": 0.813,
+        "glcm_energy": 0.515,
+        "directionality": 0.148,
+        "edge_density": 2.05,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.311,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP507.jpg",
+      "full": "thumbs_full/HP507.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP508",
+      "hex": "#B1ADA7",
+      "rgb": [
+        177,
+        173,
+        167
+      ],
+      "std": 4.2,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 0.999,
+        "glcm_energy": 0.9973,
+        "directionality": 0.522,
+        "edge_density": 0.36,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.58,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP508.jpg",
+      "full": "thumbs_full/HP508.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP519",
+      "hex": "#A19B8D",
+      "rgb": [
+        161,
+        155,
+        141
+      ],
+      "std": 8.6,
+      "texture": {
+        "glcm_contrast": 0.18,
+        "glcm_homogeneity": 0.913,
+        "glcm_energy": 0.6643,
+        "directionality": 0.137,
+        "edge_density": 0.82,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.209,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP519.jpg",
+      "full": "thumbs_full/HP519.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP505",
+      "hex": "#F6F5F4",
+      "rgb": [
+        246,
+        245,
+        244
+      ],
+      "std": 2.9,
+      "texture": {
+        "glcm_contrast": 0.45,
+        "glcm_homogeneity": 0.8,
+        "glcm_energy": 0.5996,
+        "directionality": 0.038,
+        "edge_density": 2.19,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.206,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP505.jpg",
+      "full": "thumbs_full/HP505.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP518",
+      "hex": "#F5F4EF",
+      "rgb": [
+        245,
+        244,
+        239
+      ],
+      "std": 2.7,
+      "texture": {
+        "glcm_contrast": 0.04,
+        "glcm_homogeneity": 0.978,
+        "glcm_energy": 0.9424,
+        "directionality": 0.102,
+        "edge_density": 0.58,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.307,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP518.jpg",
+      "full": "thumbs_full/HP518.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP506",
+      "hex": "#F0EDE5",
+      "rgb": [
+        240,
+        237,
+        229
+      ],
+      "std": 4.7,
+      "texture": {
+        "glcm_contrast": 0.01,
+        "glcm_homogeneity": 0.997,
+        "glcm_energy": 0.9913,
+        "directionality": 0.501,
+        "edge_density": 0.13,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.702,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP506.jpg",
+      "full": "thumbs_full/HP506.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP501",
+      "hex": "#EBE8E0",
+      "rgb": [
+        235,
+        232,
+        224
+      ],
+      "std": 4.8,
+      "texture": {
+        "glcm_contrast": 0.01,
+        "glcm_homogeneity": 0.993,
+        "glcm_energy": 0.9814,
+        "directionality": 0.286,
+        "edge_density": 0.41,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.661,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP501.jpg",
+      "full": "thumbs_full/HP501.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP512",
+      "hex": "#DABCB7",
+      "rgb": [
+        218,
+        188,
+        183
+      ],
+      "std": 15.2,
+      "texture": {
+        "glcm_contrast": 0.03,
+        "glcm_homogeneity": 0.983,
+        "glcm_energy": 0.9603,
+        "directionality": 0.327,
+        "edge_density": 0.83,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.682,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Painted Wood",
+      "page": 34,
+      "thumb": "thumbs/HP512.jpg",
+      "full": "thumbs_full/HP512.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP510",
+      "hex": "#635E54",
+      "rgb": [
+        99,
+        94,
+        84
+      ],
+      "std": 6.7,
+      "texture": {
+        "glcm_contrast": 0.03,
+        "glcm_homogeneity": 0.986,
+        "glcm_energy": 0.9724,
+        "directionality": 0.01,
+        "edge_density": 1.03,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.35,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP510.jpg",
+      "full": "thumbs_full/HP510.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP502",
+      "hex": "#988C86",
+      "rgb": [
+        152,
+        140,
+        134
+      ],
+      "std": 7.4,
+      "texture": {
+        "glcm_contrast": 0.1,
+        "glcm_homogeneity": 0.949,
+        "glcm_energy": 0.8621,
+        "directionality": 0.366,
+        "edge_density": 0.81,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.603,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP502.jpg",
+      "full": "thumbs_full/HP502.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP516",
+      "hex": "#6C6664",
+      "rgb": [
+        108,
+        102,
+        100
+      ],
+      "std": 3.7,
+      "texture": {
+        "glcm_contrast": 0.23,
+        "glcm_homogeneity": 0.885,
+        "glcm_energy": 0.5792,
+        "directionality": 0.367,
+        "edge_density": 0.52,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.606,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP516.jpg",
+      "full": "thumbs_full/HP516.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP520",
+      "hex": "#4D4F57",
+      "rgb": [
+        77,
+        79,
+        87
+      ],
+      "std": 4.7,
+      "texture": {
+        "glcm_contrast": 0.32,
+        "glcm_homogeneity": 0.844,
+        "glcm_energy": 0.6132,
+        "directionality": 0.148,
+        "edge_density": 1.6,
+        "dominant_angle_deg": 45.0,
+        "dominant_strength": 0.241,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP520.jpg",
+      "full": "thumbs_full/HP520.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP514",
+      "hex": "#403A3A",
+      "rgb": [
+        64,
+        58,
+        58
+      ],
+      "std": 3.1,
+      "texture": {
+        "glcm_contrast": 0.06,
+        "glcm_homogeneity": 0.971,
+        "glcm_energy": 0.9406,
+        "directionality": 0.032,
+        "edge_density": 1.13,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.267,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP514.jpg",
+      "full": "thumbs_full/HP514.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP513",
+      "hex": "#6D6059",
+      "rgb": [
+        109,
+        96,
+        89
+      ],
+      "std": 8.7,
+      "texture": {
+        "glcm_contrast": 0.14,
+        "glcm_homogeneity": 0.932,
+        "glcm_energy": 0.8433,
+        "directionality": 0.276,
+        "edge_density": 0.81,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.536,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP513.jpg",
+      "full": "thumbs_full/HP513.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP509",
+      "hex": "#5E6565",
+      "rgb": [
+        94,
+        101,
+        101
+      ],
+      "std": 3.4,
+      "texture": {
+        "glcm_contrast": 0.02,
+        "glcm_homogeneity": 0.989,
+        "glcm_energy": 0.9758,
+        "directionality": 0.141,
+        "edge_density": 0.52,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.492,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP509.jpg",
+      "full": "thumbs_full/HP509.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP504",
+      "hex": "#3A414A",
+      "rgb": [
+        58,
+        65,
+        74
+      ],
+      "std": 7.1,
+      "texture": {
+        "glcm_contrast": 0.27,
+        "glcm_homogeneity": 0.866,
+        "glcm_energy": 0.6969,
+        "directionality": 0.166,
+        "edge_density": 1.66,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.333,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP504.jpg",
+      "full": "thumbs_full/HP504.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP503",
+      "hex": "#4F4B4C",
+      "rgb": [
+        79,
+        75,
+        76
+      ],
+      "std": 2.7,
+      "texture": {
+        "glcm_contrast": 0.14,
+        "glcm_homogeneity": 0.932,
+        "glcm_energy": 0.8511,
+        "directionality": 0.132,
+        "edge_density": 1.46,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.404,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP503.jpg",
+      "full": "thumbs_full/HP503.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HP517",
+      "hex": "#181617",
+      "rgb": [
+        24,
+        22,
+        23
+      ],
+      "std": 2.2,
+      "texture": {
+        "glcm_contrast": 0.28,
+        "glcm_homogeneity": 0.862,
+        "glcm_energy": 0.613,
+        "directionality": 0.199,
+        "edge_density": 1.19,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.351,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HP502",
+      "page": 35,
+      "thumb": "thumbs/HP517.jpg",
+      "full": "thumbs_full/HP517.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HE404",
+      "hex": "#BCAF9A",
+      "rgb": [
+        188,
+        175,
+        154
+      ],
+      "std": 14.0,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 0.9999,
+        "directionality": 0.003,
+        "edge_density": 0.16,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.456,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 37,
+      "thumb": "thumbs/HE404.jpg",
+      "full": "thumbs_full/HE404.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HE406",
+      "hex": "#5F534C",
+      "rgb": [
+        95,
+        83,
+        76
+      ],
+      "std": 7.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 0.9999,
+        "directionality": 0.003,
+        "edge_density": 0.16,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.411,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 37,
+      "thumb": "thumbs/HE406.jpg",
+      "full": "thumbs_full/HE406.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HE402",
+      "hex": "#171415",
+      "rgb": [
+        23,
+        20,
+        21
+      ],
+      "std": 4.1,
+      "texture": {
+        "glcm_contrast": 0.59,
+        "glcm_homogeneity": 0.778,
+        "glcm_energy": 0.5624,
+        "directionality": 0.039,
+        "edge_density": 3.25,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.204,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 37,
+      "thumb": "thumbs/HE402.jpg",
+      "full": "thumbs_full/HE402.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HE405",
+      "hex": "#BFC5C1",
+      "rgb": [
+        191,
+        197,
+        193
+      ],
+      "std": 2.6,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 0.9991,
+        "directionality": 0.452,
+        "edge_density": 0.02,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.465,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 37,
+      "thumb": "thumbs/HE405.jpg",
+      "full": "thumbs_full/HE405.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HE407",
+      "hex": "#FCFCFA",
+      "rgb": [
+        252,
+        252,
+        250
+      ],
+      "std": 0.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.11,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.653,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 37,
+      "thumb": "thumbs/HE407.jpg",
+      "full": "thumbs_full/HE407.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HE403",
+      "hex": "#F9F8F5",
+      "rgb": [
+        249,
+        248,
+        245
+      ],
+      "std": 1.8,
+      "texture": {
+        "glcm_contrast": 0.04,
+        "glcm_homogeneity": 0.978,
+        "glcm_energy": 0.9558,
+        "directionality": 0.003,
+        "edge_density": 0.45,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.347,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 37,
+      "thumb": "thumbs/HE403.jpg",
+      "full": "thumbs_full/HE403.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HE401",
+      "hex": "#F5F5F1",
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "std": 3.4,
+      "texture": {
+        "glcm_contrast": 0.16,
+        "glcm_homogeneity": 0.922,
+        "glcm_energy": 0.8139,
+        "directionality": 0.141,
+        "edge_density": 1.61,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.333,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 37,
+      "thumb": "thumbs/HE401.jpg",
+      "full": "thumbs_full/HE401.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HC801",
+      "hex": "#F5F4EF",
+      "rgb": [
+        245,
+        244,
+        239
+      ],
+      "std": 3.1,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.31,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.415,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "x",
+      "page": 41,
+      "thumb": "thumbs/HC801.jpg",
+      "full": "thumbs_full/HC801.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HL1851",
+      "hex": "#E4DBC9",
+      "rgb": [
+        228,
+        219,
+        201
+      ],
+      "std": 11.7,
+      "texture": {
+        "glcm_contrast": 0.37,
+        "glcm_homogeneity": 0.819,
+        "glcm_energy": 0.5439,
+        "directionality": 0.509,
+        "edge_density": 2.07,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.738,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HC801",
+      "page": 43,
+      "thumb": "thumbs/HL1851.jpg",
+      "full": "thumbs_full/HL1851.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HL1852",
+      "hex": "#DFCFB1",
+      "rgb": [
+        223,
+        207,
+        177
+      ],
+      "std": 19.9,
+      "texture": {
+        "glcm_contrast": 0.73,
+        "glcm_homogeneity": 0.744,
+        "glcm_energy": 0.4159,
+        "directionality": 0.442,
+        "edge_density": 3.39,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.655,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HC801",
+      "page": 43,
+      "thumb": "thumbs/HL1852.jpg",
+      "full": "thumbs_full/HL1852.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HC803",
+      "hex": "#4A4643",
+      "rgb": [
+        74,
+        70,
+        67
+      ],
+      "std": 2.8,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 0.999,
+        "glcm_energy": 0.9967,
+        "directionality": 0.354,
+        "edge_density": 0.07,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.392,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HC801",
+      "page": 43,
+      "thumb": "thumbs/HC803.jpg",
+      "full": "thumbs_full/HC803.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HC804",
+      "hex": "#1D334A",
+      "rgb": [
+        29,
+        51,
+        74
+      ],
+      "std": 18.0,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.18,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.369,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HC801",
+      "page": 43,
+      "thumb": "thumbs/HC804.jpg",
+      "full": "thumbs_full/HC804.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HC802",
+      "hex": "#C0BDBB",
+      "rgb": [
+        192,
+        189,
+        187
+      ],
+      "std": 2.4,
+      "texture": {
+        "glcm_contrast": 0.02,
+        "glcm_homogeneity": 0.99,
+        "glcm_energy": 0.9776,
+        "directionality": 0.194,
+        "edge_density": 0.35,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.36,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HC801",
+      "page": 43,
+      "thumb": "thumbs/HC802.jpg",
+      "full": "thumbs_full/HC802.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1083",
+      "hex": "#BEB7AA",
+      "rgb": [
+        190,
+        183,
+        170
+      ],
+      "std": 9.6,
+      "texture": {
+        "glcm_contrast": 0.72,
+        "glcm_homogeneity": 0.738,
+        "glcm_energy": 0.4572,
+        "directionality": 0.199,
+        "edge_density": 3.64,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.375,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Natural Wood",
+      "page": 45,
+      "thumb": "thumbs/HW1083.jpg",
+      "full": "thumbs_full/HW1083.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1084",
+      "hex": "#B0A89E",
+      "rgb": [
+        176,
+        168,
+        158
+      ],
+      "std": 7.7,
+      "texture": {
+        "glcm_contrast": 0.36,
+        "glcm_homogeneity": 0.826,
+        "glcm_energy": 0.5491,
+        "directionality": 0.351,
+        "edge_density": 1.87,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.598,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 47,
+      "thumb": "thumbs/HW1084.jpg",
+      "full": "thumbs_full/HW1084.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1078",
+      "hex": "#896D50",
+      "rgb": [
+        137,
+        109,
+        80
+      ],
+      "std": 23.7,
+      "texture": {
+        "glcm_contrast": 0.18,
+        "glcm_homogeneity": 0.919,
+        "glcm_energy": 0.814,
+        "directionality": 0.292,
+        "edge_density": 1.44,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.537,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 49,
+      "thumb": "thumbs/HW1078.jpg",
+      "full": "thumbs_full/HW1078.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1079",
+      "hex": "#665142",
+      "rgb": [
+        102,
+        81,
+        66
+      ],
+      "std": 15.2,
+      "texture": {
+        "glcm_contrast": 0.53,
+        "glcm_homogeneity": 0.792,
+        "glcm_energy": 0.5637,
+        "directionality": 0.237,
+        "edge_density": 2.72,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.352,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 49,
+      "thumb": "thumbs/HW1079.jpg",
+      "full": "thumbs_full/HW1079.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1077",
+      "hex": "#A18D67",
+      "rgb": [
+        161,
+        141,
+        103
+      ],
+      "std": 24.5,
+      "texture": {
+        "glcm_contrast": 0.6,
+        "glcm_homogeneity": 0.769,
+        "glcm_energy": 0.4221,
+        "directionality": 0.316,
+        "edge_density": 3.0,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.453,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 49,
+      "thumb": "thumbs/HW1077.jpg",
+      "full": "thumbs_full/HW1077.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1002",
+      "hex": "#F1EEE9",
+      "rgb": [
+        241,
+        238,
+        233
+      ],
+      "std": 4.9,
+      "texture": {
+        "glcm_contrast": 0.17,
+        "glcm_homogeneity": 0.92,
+        "glcm_energy": 0.7647,
+        "directionality": 0.54,
+        "edge_density": 1.47,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.843,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Natural Wood",
+      "page": 50,
+      "thumb": "thumbs/HW1002.jpg",
+      "full": "thumbs_full/HW1002.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1001",
+      "hex": "#DEDBD7",
+      "rgb": [
+        222,
+        219,
+        215
+      ],
+      "std": 6.9,
+      "texture": {
+        "glcm_contrast": 0.77,
+        "glcm_homogeneity": 0.771,
+        "glcm_energy": 0.474,
+        "directionality": 0.494,
+        "edge_density": 3.38,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.655,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 50,
+      "thumb": "thumbs/HW1001.jpg",
+      "full": "thumbs_full/HW1001.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1071",
+      "hex": "#C5BCA7",
+      "rgb": [
+        197,
+        188,
+        167
+      ],
+      "std": 14.5,
+      "texture": {
+        "glcm_contrast": 1.15,
+        "glcm_homogeneity": 0.673,
+        "glcm_energy": 0.3151,
+        "directionality": 0.453,
+        "edge_density": 4.37,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.641,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 50,
+      "thumb": "thumbs/HW1071.jpg",
+      "full": "thumbs_full/HW1071.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1010",
+      "hex": "#D7C096",
+      "rgb": [
+        215,
+        192,
+        150
+      ],
+      "std": 26.9,
+      "texture": {
+        "glcm_contrast": 0.1,
+        "glcm_homogeneity": 0.95,
+        "glcm_energy": 0.7537,
+        "directionality": 0.381,
+        "edge_density": 0.76,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.605,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Natural Wood",
+      "page": 50,
+      "thumb": "thumbs/HW1010.jpg",
+      "full": "thumbs_full/HW1010.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1069",
+      "hex": "#E2DECE",
+      "rgb": [
+        226,
+        222,
+        206
+      ],
+      "std": 10.9,
+      "texture": {
+        "glcm_contrast": 0.83,
+        "glcm_homogeneity": 0.725,
+        "glcm_energy": 0.3838,
+        "directionality": 0.522,
+        "edge_density": 3.87,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.661,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1069",
+      "page": 51,
+      "thumb": "thumbs/HW1069.jpg",
+      "full": "thumbs_full/HW1069.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1068",
+      "hex": "#AF9F7D",
+      "rgb": [
+        175,
+        159,
+        125
+      ],
+      "std": 22.3,
+      "texture": {
+        "glcm_contrast": 0.83,
+        "glcm_homogeneity": 0.747,
+        "glcm_energy": 0.3464,
+        "directionality": 0.585,
+        "edge_density": 3.95,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.75,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1069",
+      "page": 51,
+      "thumb": "thumbs/HW1068.jpg",
+      "full": "thumbs_full/HW1068.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1070",
+      "hex": "#B19B76",
+      "rgb": [
+        177,
+        155,
+        118
+      ],
+      "std": 26.2,
+      "texture": {
+        "glcm_contrast": 2.09,
+        "glcm_homogeneity": 0.59,
+        "glcm_energy": 0.2519,
+        "directionality": 0.544,
+        "edge_density": 6.45,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.701,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1069",
+      "page": 51,
+      "thumb": "thumbs/HW1070.jpg",
+      "full": "thumbs_full/HW1070.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1073",
+      "hex": "#B69C7A",
+      "rgb": [
+        182,
+        156,
+        122
+      ],
+      "std": 26.3,
+      "texture": {
+        "glcm_contrast": 1.87,
+        "glcm_homogeneity": 0.621,
+        "glcm_energy": 0.2747,
+        "directionality": 0.55,
+        "edge_density": 5.76,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.784,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1069",
+      "page": 51,
+      "thumb": "thumbs/HW1073.jpg",
+      "full": "thumbs_full/HW1073.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1009",
+      "hex": "#C0B49D",
+      "rgb": [
+        192,
+        180,
+        157
+      ],
+      "std": 15.9,
+      "texture": {
+        "glcm_contrast": 0.82,
+        "glcm_homogeneity": 0.745,
+        "glcm_energy": 0.4206,
+        "directionality": 0.439,
+        "edge_density": 3.62,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.578,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 52,
+      "thumb": "thumbs/HW1009.jpg",
+      "full": "thumbs_full/HW1009.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1004",
+      "hex": "#AE9B87",
+      "rgb": [
+        174,
+        155,
+        135
+      ],
+      "std": 16.9,
+      "texture": {
+        "glcm_contrast": 0.48,
+        "glcm_homogeneity": 0.8,
+        "glcm_energy": 0.4452,
+        "directionality": 0.498,
+        "edge_density": 2.9,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.678,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 52,
+      "thumb": "thumbs/HW1004.jpg",
+      "full": "thumbs_full/HW1004.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1072",
+      "hex": "#B59C7F",
+      "rgb": [
+        181,
+        156,
+        127
+      ],
+      "std": 24.1,
+      "texture": {
+        "glcm_contrast": 2.32,
+        "glcm_homogeneity": 0.587,
+        "glcm_energy": 0.2421,
+        "directionality": 0.531,
+        "edge_density": 6.61,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.699,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 52,
+      "thumb": "thumbs/HW1072.jpg",
+      "full": "thumbs_full/HW1072.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1067",
+      "hex": "#C3B49F",
+      "rgb": [
+        195,
+        180,
+        159
+      ],
+      "std": 15.6,
+      "texture": {
+        "glcm_contrast": 0.49,
+        "glcm_homogeneity": 0.806,
+        "glcm_energy": 0.4471,
+        "directionality": 0.548,
+        "edge_density": 2.96,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.756,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 52,
+      "thumb": "thumbs/HW1067.jpg",
+      "full": "thumbs_full/HW1067.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1025",
+      "hex": "#D3C7A8",
+      "rgb": [
+        211,
+        199,
+        168
+      ],
+      "std": 19.7,
+      "texture": {
+        "glcm_contrast": 1.0,
+        "glcm_homogeneity": 0.698,
+        "glcm_energy": 0.3175,
+        "directionality": 0.403,
+        "edge_density": 3.97,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.568,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1025",
+      "page": 53,
+      "thumb": "thumbs/HW1025.jpg",
+      "full": "thumbs_full/HW1025.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1016",
+      "hex": "#D6C5A5",
+      "rgb": [
+        214,
+        197,
+        165
+      ],
+      "std": 23.1,
+      "texture": {
+        "glcm_contrast": 1.87,
+        "glcm_homogeneity": 0.638,
+        "glcm_energy": 0.2526,
+        "directionality": 0.546,
+        "edge_density": 5.76,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.659,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1025",
+      "page": 53,
+      "thumb": "thumbs/HW1016.jpg",
+      "full": "thumbs_full/HW1016.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1019",
+      "hex": "#A79174",
+      "rgb": [
+        167,
+        145,
+        116
+      ],
+      "std": 22.9,
+      "texture": {
+        "glcm_contrast": 2.14,
+        "glcm_homogeneity": 0.599,
+        "glcm_energy": 0.2766,
+        "directionality": 0.494,
+        "edge_density": 5.85,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.696,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 54,
+      "thumb": "thumbs/HW1019.jpg",
+      "full": "thumbs_full/HW1019.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1020",
+      "hex": "#A59178",
+      "rgb": [
+        165,
+        145,
+        120
+      ],
+      "std": 20.2,
+      "texture": {
+        "glcm_contrast": 1.51,
+        "glcm_homogeneity": 0.664,
+        "glcm_energy": 0.3241,
+        "directionality": 0.447,
+        "edge_density": 5.06,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.548,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Natural Wood",
+      "page": 54,
+      "thumb": "thumbs/HW1020.jpg",
+      "full": "thumbs_full/HW1020.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1021",
+      "hex": "#B49C6E",
+      "rgb": [
+        180,
+        156,
+        110
+      ],
+      "std": 31.1,
+      "texture": {
+        "glcm_contrast": 2.42,
+        "glcm_homogeneity": 0.574,
+        "glcm_energy": 0.2231,
+        "directionality": 0.522,
+        "edge_density": 6.56,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.724,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 54,
+      "thumb": "thumbs/HW1021.jpg",
+      "full": "thumbs_full/HW1021.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1031",
+      "hex": "#AFA381",
+      "rgb": [
+        175,
+        163,
+        129
+      ],
+      "std": 20.6,
+      "texture": {
+        "glcm_contrast": 0.94,
+        "glcm_homogeneity": 0.719,
+        "glcm_energy": 0.3545,
+        "directionality": 0.44,
+        "edge_density": 3.94,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.591,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 54,
+      "thumb": "thumbs/HW1031.jpg",
+      "full": "thumbs_full/HW1031.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1024",
+      "hex": "#A19479",
+      "rgb": [
+        161,
+        148,
+        121
+      ],
+      "std": 19.0,
+      "texture": {
+        "glcm_contrast": 2.03,
+        "glcm_homogeneity": 0.589,
+        "glcm_energy": 0.2607,
+        "directionality": 0.548,
+        "edge_density": 6.32,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.719,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1024",
+      "page": 55,
+      "thumb": "thumbs/HW1024.jpg",
+      "full": "thumbs_full/HW1024.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1035",
+      "hex": "#AD9372",
+      "rgb": [
+        173,
+        147,
+        114
+      ],
+      "std": 25.2,
+      "texture": {
+        "glcm_contrast": 1.12,
+        "glcm_homogeneity": 0.678,
+        "glcm_energy": 0.3795,
+        "directionality": 0.514,
+        "edge_density": 4.3,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.781,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1024",
+      "page": 55,
+      "thumb": "thumbs/HW1035.jpg",
+      "full": "thumbs_full/HW1035.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1023",
+      "hex": "#BFA87A",
+      "rgb": [
+        191,
+        168,
+        122
+      ],
+      "std": 29.7,
+      "texture": {
+        "glcm_contrast": 0.81,
+        "glcm_homogeneity": 0.74,
+        "glcm_energy": 0.3361,
+        "directionality": 0.495,
+        "edge_density": 3.74,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.65,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1024",
+      "page": 55,
+      "thumb": "thumbs/HW1023.jpg",
+      "full": "thumbs_full/HW1023.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1059",
+      "hex": "#856E5B",
+      "rgb": [
+        133,
+        110,
+        91
+      ],
+      "std": 19.5,
+      "texture": {
+        "glcm_contrast": 1.11,
+        "glcm_homogeneity": 0.686,
+        "glcm_energy": 0.2764,
+        "directionality": 0.416,
+        "edge_density": 4.48,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.52,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HW1024",
+      "page": 55,
+      "thumb": "thumbs/HW1059.jpg",
+      "full": "thumbs_full/HW1059.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1041",
+      "hex": "#B28E66",
+      "rgb": [
+        178,
+        142,
+        102
+      ],
+      "std": 31.2,
+      "texture": {
+        "glcm_contrast": 0.28,
+        "glcm_homogeneity": 0.876,
+        "glcm_energy": 0.657,
+        "directionality": 0.45,
+        "edge_density": 1.8,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.694,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 56,
+      "thumb": "thumbs/HW1041.jpg",
+      "full": "thumbs_full/HW1041.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1028",
+      "hex": "#A58961",
+      "rgb": [
+        165,
+        137,
+        97
+      ],
+      "std": 28.8,
+      "texture": {
+        "glcm_contrast": 0.76,
+        "glcm_homogeneity": 0.741,
+        "glcm_energy": 0.383,
+        "directionality": 0.472,
+        "edge_density": 3.61,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.609,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1028",
+      "page": 57,
+      "thumb": "thumbs/HW1028.jpg",
+      "full": "thumbs_full/HW1028.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1055",
+      "hex": "#796952",
+      "rgb": [
+        121,
+        105,
+        82
+      ],
+      "std": 17.5,
+      "texture": {
+        "glcm_contrast": 0.52,
+        "glcm_homogeneity": 0.803,
+        "glcm_energy": 0.4112,
+        "directionality": 0.365,
+        "edge_density": 2.54,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.538,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HW1028",
+      "page": 57,
+      "thumb": "thumbs/HW1055.jpg",
+      "full": "thumbs_full/HW1055.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1036",
+      "hex": "#7D6A54",
+      "rgb": [
+        125,
+        106,
+        84
+      ],
+      "std": 18.8,
+      "texture": {
+        "glcm_contrast": 1.42,
+        "glcm_homogeneity": 0.634,
+        "glcm_energy": 0.2709,
+        "directionality": 0.356,
+        "edge_density": 5.06,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.434,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HW1028",
+      "page": 57,
+      "thumb": "thumbs/HW1036.jpg",
+      "full": "thumbs_full/HW1036.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1046",
+      "hex": "#B8895C",
+      "rgb": [
+        184,
+        137,
+        92
+      ],
+      "std": 38.1,
+      "texture": {
+        "glcm_contrast": 1.29,
+        "glcm_homogeneity": 0.659,
+        "glcm_energy": 0.3432,
+        "directionality": 0.435,
+        "edge_density": 4.7,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.577,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1028",
+      "page": 57,
+      "thumb": "thumbs/HW1046.jpg",
+      "full": "thumbs_full/HW1046.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1045",
+      "hex": "#99784D",
+      "rgb": [
+        153,
+        120,
+        77
+      ],
+      "std": 32.8,
+      "texture": {
+        "glcm_contrast": 2.53,
+        "glcm_homogeneity": 0.571,
+        "glcm_energy": 0.2163,
+        "directionality": 0.514,
+        "edge_density": 6.99,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.603,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 58,
+      "thumb": "thumbs/HW1045.jpg",
+      "full": "thumbs_full/HW1045.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1044",
+      "hex": "#AA8558",
+      "rgb": [
+        170,
+        133,
+        88
+      ],
+      "std": 34.0,
+      "texture": {
+        "glcm_contrast": 1.2,
+        "glcm_homogeneity": 0.675,
+        "glcm_energy": 0.3468,
+        "directionality": 0.487,
+        "edge_density": 4.48,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.692,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 58,
+      "thumb": "thumbs/HW1044.jpg",
+      "full": "thumbs_full/HW1044.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1040",
+      "hex": "#6E513C",
+      "rgb": [
+        110,
+        81,
+        60
+      ],
+      "std": 21.0,
+      "texture": {
+        "glcm_contrast": 0.64,
+        "glcm_homogeneity": 0.756,
+        "glcm_energy": 0.4106,
+        "directionality": 0.394,
+        "edge_density": 3.16,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.557,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 58,
+      "thumb": "thumbs/HW1040.jpg",
+      "full": "thumbs_full/HW1040.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1050",
+      "hex": "#6C625A",
+      "rgb": [
+        108,
+        98,
+        90
+      ],
+      "std": 7.8,
+      "texture": {
+        "glcm_contrast": 0.27,
+        "glcm_homogeneity": 0.876,
+        "glcm_energy": 0.7176,
+        "directionality": 0.246,
+        "edge_density": 1.74,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.418,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Natural Wood",
+      "page": 58,
+      "thumb": "thumbs/HW1050.jpg",
+      "full": "thumbs_full/HW1050.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1033",
+      "hex": "#8A775C",
+      "rgb": [
+        138,
+        119,
+        92
+      ],
+      "std": 19.8,
+      "texture": {
+        "glcm_contrast": 1.01,
+        "glcm_homogeneity": 0.687,
+        "glcm_energy": 0.3649,
+        "directionality": 0.431,
+        "edge_density": 4.18,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.559,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1033",
+      "page": 59,
+      "thumb": "thumbs/HW1033.jpg",
+      "full": "thumbs_full/HW1033.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1039",
+      "hex": "#916B4B",
+      "rgb": [
+        145,
+        107,
+        75
+      ],
+      "std": 28.8,
+      "texture": {
+        "glcm_contrast": 0.5,
+        "glcm_homogeneity": 0.795,
+        "glcm_energy": 0.4502,
+        "directionality": 0.428,
+        "edge_density": 2.71,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.619,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1033",
+      "page": 59,
+      "thumb": "thumbs/HW1039.jpg",
+      "full": "thumbs_full/HW1039.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1038",
+      "hex": "#7B5647",
+      "rgb": [
+        123,
+        86,
+        71
+      ],
+      "std": 22.3,
+      "texture": {
+        "glcm_contrast": 0.42,
+        "glcm_homogeneity": 0.815,
+        "glcm_energy": 0.5311,
+        "directionality": 0.401,
+        "edge_density": 2.38,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.625,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1033",
+      "page": 59,
+      "thumb": "thumbs/HW1038.jpg",
+      "full": "thumbs_full/HW1038.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1065",
+      "hex": "#624C38",
+      "rgb": [
+        98,
+        76,
+        56
+      ],
+      "std": 18.5,
+      "texture": {
+        "glcm_contrast": 1.2,
+        "glcm_homogeneity": 0.66,
+        "glcm_energy": 0.3591,
+        "directionality": 0.396,
+        "edge_density": 4.32,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.505,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HW1033",
+      "page": 59,
+      "thumb": "thumbs/HW1065.jpg",
+      "full": "thumbs_full/HW1065.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1060",
+      "hex": "#5C4938",
+      "rgb": [
+        92,
+        73,
+        56
+      ],
+      "std": 15.6,
+      "texture": {
+        "glcm_contrast": 0.59,
+        "glcm_homogeneity": 0.769,
+        "glcm_energy": 0.4297,
+        "directionality": 0.327,
+        "edge_density": 2.75,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.478,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Natural Wood",
+      "page": 60,
+      "thumb": "thumbs/HW1060.jpg",
+      "full": "thumbs_full/HW1060.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1056",
+      "hex": "#736049",
+      "rgb": [
+        115,
+        96,
+        73
+      ],
+      "std": 19.5,
+      "texture": {
+        "glcm_contrast": 1.71,
+        "glcm_homogeneity": 0.611,
+        "glcm_energy": 0.2598,
+        "directionality": 0.416,
+        "edge_density": 5.54,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.491,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Natural Wood",
+      "page": 60,
+      "thumb": "thumbs/HW1056.jpg",
+      "full": "thumbs_full/HW1056.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1058",
+      "hex": "#4A3C2E",
+      "rgb": [
+        74,
+        60,
+        46
+      ],
+      "std": 12.2,
+      "texture": {
+        "glcm_contrast": 0.46,
+        "glcm_homogeneity": 0.807,
+        "glcm_energy": 0.558,
+        "directionality": 0.312,
+        "edge_density": 2.59,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.455,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Natural Wood",
+      "page": 60,
+      "thumb": "thumbs/HW1058.jpg",
+      "full": "thumbs_full/HW1058.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1066",
+      "hex": "#41372E",
+      "rgb": [
+        65,
+        55,
+        46
+      ],
+      "std": 8.1,
+      "texture": {
+        "glcm_contrast": 0.33,
+        "glcm_homogeneity": 0.837,
+        "glcm_energy": 0.5614,
+        "directionality": 0.352,
+        "edge_density": 1.26,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.572,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Natural Wood",
+      "page": 60,
+      "thumb": "thumbs/HW1066.jpg",
+      "full": "thumbs_full/HW1066.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1049",
+      "hex": "#513D34",
+      "rgb": [
+        81,
+        61,
+        52
+      ],
+      "std": 12.2,
+      "texture": {
+        "glcm_contrast": 0.27,
+        "glcm_homogeneity": 0.868,
+        "glcm_energy": 0.5765,
+        "directionality": 0.292,
+        "edge_density": 1.52,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.471,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 61,
+      "thumb": "thumbs/HW1049.jpg",
+      "full": "thumbs_full/HW1049.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1047",
+      "hex": "#2B241D",
+      "rgb": [
+        43,
+        36,
+        29
+      ],
+      "std": 6.2,
+      "texture": {
+        "glcm_contrast": 0.05,
+        "glcm_homogeneity": 0.975,
+        "glcm_energy": 0.9433,
+        "directionality": 0.318,
+        "edge_density": 1.07,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.688,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 61,
+      "thumb": "thumbs/HW1047.jpg",
+      "full": "thumbs_full/HW1047.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1081",
+      "hex": "#B8A786",
+      "rgb": [
+        184,
+        167,
+        134
+      ],
+      "std": 21.9,
+      "texture": {
+        "glcm_contrast": 1.07,
+        "glcm_homogeneity": 0.704,
+        "glcm_energy": 0.3448,
+        "directionality": 0.55,
+        "edge_density": 4.36,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.732,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 63,
+      "thumb": "thumbs/HW1081.jpg",
+      "full": "thumbs_full/HW1081.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1082",
+      "hex": "#92806B",
+      "rgb": [
+        146,
+        128,
+        107
+      ],
+      "std": 16.6,
+      "texture": {
+        "glcm_contrast": 0.41,
+        "glcm_homogeneity": 0.823,
+        "glcm_energy": 0.4931,
+        "directionality": 0.472,
+        "edge_density": 2.35,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.692,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 63,
+      "thumb": "thumbs/HW1082.jpg",
+      "full": "thumbs_full/HW1082.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1080",
+      "hex": "#DDD4C1",
+      "rgb": [
+        221,
+        212,
+        193
+      ],
+      "std": 12.7,
+      "texture": {
+        "glcm_contrast": 0.49,
+        "glcm_homogeneity": 0.804,
+        "glcm_energy": 0.4676,
+        "directionality": 0.485,
+        "edge_density": 2.82,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.691,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 63,
+      "thumb": "thumbs/HW1080.jpg",
+      "full": "thumbs_full/HW1080.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1007",
+      "hex": "#E6DACB",
+      "rgb": [
+        230,
+        218,
+        203
+      ],
+      "std": 12.6,
+      "texture": {
+        "glcm_contrast": 0.43,
+        "glcm_homogeneity": 0.815,
+        "glcm_energy": 0.4731,
+        "directionality": 0.581,
+        "edge_density": 2.91,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.803,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 64,
+      "thumb": "thumbs/HW1007.jpg",
+      "full": "thumbs_full/HW1007.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1008",
+      "hex": "#E8E0D3",
+      "rgb": [
+        232,
+        224,
+        211
+      ],
+      "std": 11.4,
+      "texture": {
+        "glcm_contrast": 0.75,
+        "glcm_homogeneity": 0.742,
+        "glcm_energy": 0.3633,
+        "directionality": 0.571,
+        "edge_density": 3.89,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.818,
+        "label": "선형결(가로결)",
+        "direction": "가로결"
+      },
+      "category": "Natural Wood",
+      "page": 64,
+      "thumb": "thumbs/HW1008.jpg",
+      "full": "thumbs_full/HW1008.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1003",
+      "hex": "#D6C4AE",
+      "rgb": [
+        214,
+        196,
+        174
+      ],
+      "std": 17.2,
+      "texture": {
+        "glcm_contrast": 0.76,
+        "glcm_homogeneity": 0.748,
+        "glcm_energy": 0.4011,
+        "directionality": 0.516,
+        "edge_density": 3.56,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.71,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1003",
+      "page": 65,
+      "thumb": "thumbs/HW1003.jpg",
+      "full": "thumbs_full/HW1003.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1076",
+      "hex": "#D2C3A0",
+      "rgb": [
+        210,
+        195,
+        160
+      ],
+      "std": 22.0,
+      "texture": {
+        "glcm_contrast": 1.04,
+        "glcm_homogeneity": 0.719,
+        "glcm_energy": 0.3511,
+        "directionality": 0.584,
+        "edge_density": 4.35,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.781,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1003",
+      "page": 65,
+      "thumb": "thumbs/HW1076.jpg",
+      "full": "thumbs_full/HW1076.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1011",
+      "hex": "#DBCBA4",
+      "rgb": [
+        219,
+        203,
+        164
+      ],
+      "std": 23.1,
+      "texture": {
+        "glcm_contrast": 0.04,
+        "glcm_homogeneity": 0.982,
+        "glcm_energy": 0.9472,
+        "directionality": 0.278,
+        "edge_density": 0.51,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.518,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HW1003",
+      "page": 65,
+      "thumb": "thumbs/HW1011.jpg",
+      "full": "thumbs_full/HW1011.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1062",
+      "hex": "#A69370",
+      "rgb": [
+        166,
+        147,
+        112
+      ],
+      "std": 24.2,
+      "texture": {
+        "glcm_contrast": 1.43,
+        "glcm_homogeneity": 0.658,
+        "glcm_energy": 0.2823,
+        "directionality": 0.506,
+        "edge_density": 4.93,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.687,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1003",
+      "page": 65,
+      "thumb": "thumbs/HW1062.jpg",
+      "full": "thumbs_full/HW1062.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1061",
+      "hex": "#BFAA95",
+      "rgb": [
+        191,
+        170,
+        149
+      ],
+      "std": 20.3,
+      "texture": {
+        "glcm_contrast": 2.01,
+        "glcm_homogeneity": 0.623,
+        "glcm_energy": 0.2469,
+        "directionality": 0.586,
+        "edge_density": 6.07,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.752,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 66,
+      "thumb": "thumbs/HW1061.jpg",
+      "full": "thumbs_full/HW1061.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1017",
+      "hex": "#C8B491",
+      "rgb": [
+        200,
+        180,
+        145
+      ],
+      "std": 23.2,
+      "texture": {
+        "glcm_contrast": 0.51,
+        "glcm_homogeneity": 0.803,
+        "glcm_energy": 0.4604,
+        "directionality": 0.523,
+        "edge_density": 2.78,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.692,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 66,
+      "thumb": "thumbs/HW1017.jpg",
+      "full": "thumbs_full/HW1017.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1015",
+      "hex": "#D5C6A2",
+      "rgb": [
+        213,
+        198,
+        162
+      ],
+      "std": 23.1,
+      "texture": {
+        "glcm_contrast": 1.26,
+        "glcm_homogeneity": 0.666,
+        "glcm_energy": 0.2832,
+        "directionality": 0.571,
+        "edge_density": 5.33,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.755,
+        "label": "선형결(가로결)",
+        "direction": "가로결"
+      },
+      "category": "Natural Wood",
+      "page": 66,
+      "thumb": "thumbs/HW1015.jpg",
+      "full": "thumbs_full/HW1015.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1014",
+      "hex": "#D3C39C",
+      "rgb": [
+        211,
+        195,
+        156
+      ],
+      "std": 24.0,
+      "texture": {
+        "glcm_contrast": 0.82,
+        "glcm_homogeneity": 0.727,
+        "glcm_energy": 0.3429,
+        "directionality": 0.614,
+        "edge_density": 4.18,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.771,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 66,
+      "thumb": "thumbs/HW1014.jpg",
+      "full": "thumbs_full/HW1014.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1005",
+      "hex": "#E2D6BF",
+      "rgb": [
+        226,
+        214,
+        191
+      ],
+      "std": 15.5,
+      "texture": {
+        "glcm_contrast": 0.19,
+        "glcm_homogeneity": 0.905,
+        "glcm_energy": 0.5876,
+        "directionality": 0.446,
+        "edge_density": 1.32,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.699,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HW1005",
+      "page": 67,
+      "thumb": "thumbs/HW1005.jpg",
+      "full": "thumbs_full/HW1005.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1012",
+      "hex": "#CFBC94",
+      "rgb": [
+        207,
+        188,
+        148
+      ],
+      "std": 26.6,
+      "texture": {
+        "glcm_contrast": 1.66,
+        "glcm_homogeneity": 0.616,
+        "glcm_energy": 0.2535,
+        "directionality": 0.544,
+        "edge_density": 6.14,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.59,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1005",
+      "page": 67,
+      "thumb": "thumbs/HW1012.jpg",
+      "full": "thumbs_full/HW1012.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1013",
+      "hex": "#C9AE84",
+      "rgb": [
+        201,
+        174,
+        132
+      ],
+      "std": 29.5,
+      "texture": {
+        "glcm_contrast": 1.02,
+        "glcm_homogeneity": 0.703,
+        "glcm_energy": 0.3104,
+        "directionality": 0.585,
+        "edge_density": 4.49,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.779,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 68,
+      "thumb": "thumbs/HW1013.jpg",
+      "full": "thumbs_full/HW1013.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1018",
+      "hex": "#BBAE93",
+      "rgb": [
+        187,
+        174,
+        147
+      ],
+      "std": 18.6,
+      "texture": {
+        "glcm_contrast": 1.1,
+        "glcm_homogeneity": 0.687,
+        "glcm_energy": 0.3084,
+        "directionality": 0.5,
+        "edge_density": 4.58,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.613,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 68,
+      "thumb": "thumbs/HW1018.jpg",
+      "full": "thumbs_full/HW1018.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1034",
+      "hex": "#A18A67",
+      "rgb": [
+        161,
+        138,
+        103
+      ],
+      "std": 24.7,
+      "texture": {
+        "glcm_contrast": 0.55,
+        "glcm_homogeneity": 0.793,
+        "glcm_energy": 0.4207,
+        "directionality": 0.532,
+        "edge_density": 2.96,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.77,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1034",
+      "page": 69,
+      "thumb": "thumbs/HW1034.jpg",
+      "full": "thumbs_full/HW1034.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1029",
+      "hex": "#B79C76",
+      "rgb": [
+        183,
+        156,
+        118
+      ],
+      "std": 28.4,
+      "texture": {
+        "glcm_contrast": 1.08,
+        "glcm_homogeneity": 0.707,
+        "glcm_energy": 0.2807,
+        "directionality": 0.575,
+        "edge_density": 4.39,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.75,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1034",
+      "page": 69,
+      "thumb": "thumbs/HW1029.jpg",
+      "full": "thumbs_full/HW1029.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1030",
+      "hex": "#BCA680",
+      "rgb": [
+        188,
+        166,
+        128
+      ],
+      "std": 26.5,
+      "texture": {
+        "glcm_contrast": 1.29,
+        "glcm_homogeneity": 0.674,
+        "glcm_energy": 0.2892,
+        "directionality": 0.539,
+        "edge_density": 4.92,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.705,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1034",
+      "page": 69,
+      "thumb": "thumbs/HW1030.jpg",
+      "full": "thumbs_full/HW1030.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1022",
+      "hex": "#D2B785",
+      "rgb": [
+        210,
+        183,
+        133
+      ],
+      "std": 34.2,
+      "texture": {
+        "glcm_contrast": 3.48,
+        "glcm_homogeneity": 0.53,
+        "glcm_energy": 0.2101,
+        "directionality": 0.598,
+        "edge_density": 8.17,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.838,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1034",
+      "page": 69,
+      "thumb": "thumbs/HW1022.jpg",
+      "full": "thumbs_full/HW1022.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1027",
+      "hex": "#B69B74",
+      "rgb": [
+        182,
+        155,
+        116
+      ],
+      "std": 28.1,
+      "texture": {
+        "glcm_contrast": 0.58,
+        "glcm_homogeneity": 0.779,
+        "glcm_energy": 0.4289,
+        "directionality": 0.429,
+        "edge_density": 2.99,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.637,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Natural Wood",
+      "page": 70,
+      "thumb": "thumbs/HW1027.jpg",
+      "full": "thumbs_full/HW1027.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1042",
+      "hex": "#A0815D",
+      "rgb": [
+        160,
+        129,
+        93
+      ],
+      "std": 28.8,
+      "texture": {
+        "glcm_contrast": 1.63,
+        "glcm_homogeneity": 0.63,
+        "glcm_energy": 0.2693,
+        "directionality": 0.453,
+        "edge_density": 5.36,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.558,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1042",
+      "page": 71,
+      "thumb": "thumbs/HW1042.jpg",
+      "full": "thumbs_full/HW1042.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1064",
+      "hex": "#765F43",
+      "rgb": [
+        118,
+        95,
+        67
+      ],
+      "std": 22.5,
+      "texture": {
+        "glcm_contrast": 1.98,
+        "glcm_homogeneity": 0.583,
+        "glcm_energy": 0.2773,
+        "directionality": 0.391,
+        "edge_density": 5.83,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.46,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HW1042",
+      "page": 71,
+      "thumb": "thumbs/HW1064.jpg",
+      "full": "thumbs_full/HW1064.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1063",
+      "hex": "#887460",
+      "rgb": [
+        136,
+        116,
+        96
+      ],
+      "std": 19.8,
+      "texture": {
+        "glcm_contrast": 2.68,
+        "glcm_homogeneity": 0.557,
+        "glcm_energy": 0.2236,
+        "directionality": 0.494,
+        "edge_density": 6.9,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.633,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "HW1042",
+      "page": 71,
+      "thumb": "thumbs/HW1063.jpg",
+      "full": "thumbs_full/HW1063.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HW1052",
+      "hex": "#504439",
+      "rgb": [
+        80,
+        68,
+        57
+      ],
+      "std": 11.7,
+      "texture": {
+        "glcm_contrast": 1.08,
+        "glcm_homogeneity": 0.685,
+        "glcm_energy": 0.3568,
+        "directionality": 0.423,
+        "edge_density": 4.29,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.517,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HW1042",
+      "page": 71,
+      "thumb": "thumbs/HW1052.jpg",
+      "full": "thumbs_full/HW1052.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HPW21",
+      "hex": "#C3AC85",
+      "rgb": [
+        195,
+        172,
+        133
+      ],
+      "std": 26.8,
+      "texture": {
+        "glcm_contrast": 1.29,
+        "glcm_homogeneity": 0.691,
+        "glcm_energy": 0.3182,
+        "directionality": 0.584,
+        "edge_density": 4.73,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.787,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 73,
+      "thumb": "thumbs/HPW21.jpg",
+      "full": "thumbs_full/HPW21.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HPW23",
+      "hex": "#563F34",
+      "rgb": [
+        86,
+        63,
+        52
+      ],
+      "std": 14.8,
+      "texture": {
+        "glcm_contrast": 0.43,
+        "glcm_homogeneity": 0.808,
+        "glcm_energy": 0.5653,
+        "directionality": 0.173,
+        "edge_density": 2.54,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.306,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 73,
+      "thumb": "thumbs/HPW23.jpg",
+      "full": "thumbs_full/HPW23.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HPW22",
+      "hex": "#AB9167",
+      "rgb": [
+        171,
+        145,
+        103
+      ],
+      "std": 29.1,
+      "texture": {
+        "glcm_contrast": 0.92,
+        "glcm_homogeneity": 0.713,
+        "glcm_energy": 0.341,
+        "directionality": 0.546,
+        "edge_density": 4.12,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.708,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 73,
+      "thumb": "thumbs/HPW22.jpg",
+      "full": "thumbs_full/HPW22.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HPW24",
+      "hex": "#A28B67",
+      "rgb": [
+        162,
+        139,
+        103
+      ],
+      "std": 25.9,
+      "texture": {
+        "glcm_contrast": 0.77,
+        "glcm_homogeneity": 0.734,
+        "glcm_energy": 0.2986,
+        "directionality": 0.488,
+        "edge_density": 3.78,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.531,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 73,
+      "thumb": "thumbs/HPW24.jpg",
+      "full": "thumbs_full/HPW24.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HO4302",
+      "hex": "#AA8A62",
+      "rgb": [
+        170,
+        138,
+        98
+      ],
+      "std": 31.7,
+      "texture": {
+        "glcm_contrast": 2.54,
+        "glcm_homogeneity": 0.567,
+        "glcm_energy": 0.2042,
+        "directionality": 0.439,
+        "edge_density": 7.1,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.517,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "친환경 PP 소재로 화재 시 유해가스가 전혀발생하지 않아 기능성과 디자인을 동시에 구현합니다.",
+      "page": 75,
+      "thumb": "thumbs/HO4302.jpg",
+      "full": "thumbs_full/HO4302.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HO4303",
+      "hex": "#4A3E37",
+      "rgb": [
+        74,
+        62,
+        55
+      ],
+      "std": 14.2,
+      "texture": {
+        "glcm_contrast": 1.76,
+        "glcm_homogeneity": 0.588,
+        "glcm_energy": 0.2183,
+        "directionality": 0.326,
+        "edge_density": 5.84,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.385,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Premium Wood",
+      "page": 76,
+      "thumb": "thumbs/HO4303.jpg",
+      "full": "thumbs_full/HO4303.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HO4301",
+      "hex": "#4B3A2E",
+      "rgb": [
+        75,
+        58,
+        46
+      ],
+      "std": 12.7,
+      "texture": {
+        "glcm_contrast": 0.31,
+        "glcm_homogeneity": 0.853,
+        "glcm_energy": 0.5134,
+        "directionality": 0.346,
+        "edge_density": 1.8,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.543,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Premium Wood",
+      "page": 76,
+      "thumb": "thumbs/HO4301.jpg",
+      "full": "thumbs_full/HO4301.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HU3301",
+      "hex": "#AF8B5B",
+      "rgb": [
+        175,
+        139,
+        91
+      ],
+      "std": 36.2,
+      "texture": {
+        "glcm_contrast": 1.91,
+        "glcm_homogeneity": 0.607,
+        "glcm_energy": 0.2563,
+        "directionality": 0.488,
+        "edge_density": 5.62,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.69,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 77,
+      "thumb": "thumbs/HU3301.jpg",
+      "full": "thumbs_full/HU3301.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HU3302",
+      "hex": "#8D7353",
+      "rgb": [
+        141,
+        115,
+        83
+      ],
+      "std": 25.5,
+      "texture": {
+        "glcm_contrast": 1.19,
+        "glcm_homogeneity": 0.677,
+        "glcm_energy": 0.2904,
+        "directionality": 0.435,
+        "edge_density": 4.7,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.502,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 77,
+      "thumb": "thumbs/HU3302.jpg",
+      "full": "thumbs_full/HU3302.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HU3303",
+      "hex": "#835A3D",
+      "rgb": [
+        131,
+        90,
+        61
+      ],
+      "std": 29.6,
+      "texture": {
+        "glcm_contrast": 0.51,
+        "glcm_homogeneity": 0.8,
+        "glcm_energy": 0.4101,
+        "directionality": 0.431,
+        "edge_density": 2.75,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.576,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Premium Wood",
+      "page": 78,
+      "thumb": "thumbs/HU3303.jpg",
+      "full": "thumbs_full/HU3303.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HU3304",
+      "hex": "#503F32",
+      "rgb": [
+        80,
+        63,
+        50
+      ],
+      "std": 13.6,
+      "texture": {
+        "glcm_contrast": 0.78,
+        "glcm_homogeneity": 0.726,
+        "glcm_energy": 0.3897,
+        "directionality": 0.387,
+        "edge_density": 3.5,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.524,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Premium Wood",
+      "page": 78,
+      "thumb": "thumbs/HU3304.jpg",
+      "full": "thumbs_full/HU3304.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HR3002",
+      "hex": "#E5D8C6",
+      "rgb": [
+        229,
+        216,
+        198
+      ],
+      "std": 13.8,
+      "texture": {
+        "glcm_contrast": 0.55,
+        "glcm_homogeneity": 0.784,
+        "glcm_energy": 0.4735,
+        "directionality": 0.463,
+        "edge_density": 2.84,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.737,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 79,
+      "thumb": "thumbs/HR3002.jpg",
+      "full": "thumbs_full/HR3002.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HR3004",
+      "hex": "#BEAA91",
+      "rgb": [
+        190,
+        170,
+        145
+      ],
+      "std": 20.1,
+      "texture": {
+        "glcm_contrast": 0.97,
+        "glcm_homogeneity": 0.72,
+        "glcm_energy": 0.3248,
+        "directionality": 0.428,
+        "edge_density": 3.79,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.6,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 79,
+      "thumb": "thumbs/HR3004.jpg",
+      "full": "thumbs_full/HR3004.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HR3007",
+      "hex": "#9D8E7E",
+      "rgb": [
+        157,
+        142,
+        126
+      ],
+      "std": 15.5,
+      "texture": {
+        "glcm_contrast": 1.94,
+        "glcm_homogeneity": 0.619,
+        "glcm_energy": 0.2789,
+        "directionality": 0.451,
+        "edge_density": 5.61,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.611,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Premium Wood",
+      "page": 80,
+      "thumb": "thumbs/HR3007.jpg",
+      "full": "thumbs_full/HR3007.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HR3008",
+      "hex": "#D7BA8C",
+      "rgb": [
+        215,
+        186,
+        140
+      ],
+      "std": 31.1,
+      "texture": {
+        "glcm_contrast": 0.25,
+        "glcm_homogeneity": 0.883,
+        "glcm_energy": 0.395,
+        "directionality": 0.402,
+        "edge_density": 1.65,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.589,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Premium Wood",
+      "page": 80,
+      "thumb": "thumbs/HR3008.jpg",
+      "full": "thumbs_full/HR3008.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HI4001",
+      "hex": "#F3F1EB",
+      "rgb": [
+        243,
+        241,
+        235
+      ],
+      "std": 8.2,
+      "texture": {
+        "glcm_contrast": 0.44,
+        "glcm_homogeneity": 0.873,
+        "glcm_energy": 0.5223,
+        "directionality": 0.481,
+        "edge_density": 1.91,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.608,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 81,
+      "thumb": "thumbs/HI4001.jpg",
+      "full": "thumbs_full/HI4001.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HI4002",
+      "hex": "#98918D",
+      "rgb": [
+        152,
+        145,
+        141
+      ],
+      "std": 7.3,
+      "texture": {
+        "glcm_contrast": 0.45,
+        "glcm_homogeneity": 0.88,
+        "glcm_energy": 0.6703,
+        "directionality": 0.491,
+        "edge_density": 1.86,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.606,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 81,
+      "thumb": "thumbs/HI4002.jpg",
+      "full": "thumbs_full/HI4002.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2010",
+      "hex": "#ECE9E3",
+      "rgb": [
+        236,
+        233,
+        227
+      ],
+      "std": 4.2,
+      "texture": {
+        "glcm_contrast": 0.19,
+        "glcm_homogeneity": 0.906,
+        "glcm_energy": 0.6342,
+        "directionality": 0.081,
+        "edge_density": 0.83,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.319,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 83,
+      "thumb": "thumbs/HN2010.jpg",
+      "full": "thumbs_full/HN2010.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2011",
+      "hex": "#DFDAC8",
+      "rgb": [
+        223,
+        218,
+        200
+      ],
+      "std": 10.4,
+      "texture": {
+        "glcm_contrast": 0.39,
+        "glcm_homogeneity": 0.83,
+        "glcm_energy": 0.6099,
+        "directionality": 0.099,
+        "edge_density": 2.33,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.262,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 83,
+      "thumb": "thumbs/HN2011.jpg",
+      "full": "thumbs_full/HN2011.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2012",
+      "hex": "#EDE5D5",
+      "rgb": [
+        237,
+        229,
+        213
+      ],
+      "std": 10.2,
+      "texture": {
+        "glcm_contrast": 0.04,
+        "glcm_homogeneity": 0.978,
+        "glcm_energy": 0.8125,
+        "directionality": 0.057,
+        "edge_density": 0.4,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.314,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 84,
+      "thumb": "thumbs/HN2012.jpg",
+      "full": "thumbs_full/HN2012.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2013",
+      "hex": "#E5DDCE",
+      "rgb": [
+        229,
+        221,
+        206
+      ],
+      "std": 9.7,
+      "texture": {
+        "glcm_contrast": 0.14,
+        "glcm_homogeneity": 0.94,
+        "glcm_energy": 0.8663,
+        "directionality": 0.111,
+        "edge_density": 1.1,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.312,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 84,
+      "thumb": "thumbs/HN2013.jpg",
+      "full": "thumbs_full/HN2013.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2009",
+      "hex": "#F7F1E7",
+      "rgb": [
+        247,
+        241,
+        231
+      ],
+      "std": 7.1,
+      "texture": {
+        "glcm_contrast": 0.05,
+        "glcm_homogeneity": 0.974,
+        "glcm_energy": 0.6873,
+        "directionality": 0.046,
+        "edge_density": 0.25,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.355,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "Stone",
+      "page": 84,
+      "thumb": "thumbs/HN2009.jpg",
+      "full": "thumbs_full/HN2009.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2001",
+      "hex": "#CFCCBB",
+      "rgb": [
+        207,
+        204,
+        187
+      ],
+      "std": 9.9,
+      "texture": {
+        "glcm_contrast": 0.34,
+        "glcm_homogeneity": 0.838,
+        "glcm_energy": 0.5121,
+        "directionality": 0.062,
+        "edge_density": 2.02,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.202,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HN2012",
+      "page": 85,
+      "thumb": "thumbs/HN2001.jpg",
+      "full": "thumbs_full/HN2001.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2005",
+      "hex": "#D6D4CF",
+      "rgb": [
+        214,
+        212,
+        207
+      ],
+      "std": 8.6,
+      "texture": {
+        "glcm_contrast": 1.45,
+        "glcm_homogeneity": 0.618,
+        "glcm_energy": 0.2783,
+        "directionality": 0.115,
+        "edge_density": 5.72,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.18,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HN2012",
+      "page": 85,
+      "thumb": "thumbs/HN2005.jpg",
+      "full": "thumbs_full/HN2005.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2007",
+      "hex": "#DAD6CE",
+      "rgb": [
+        218,
+        214,
+        206
+      ],
+      "std": 9.9,
+      "texture": {
+        "glcm_contrast": 0.73,
+        "glcm_homogeneity": 0.795,
+        "glcm_energy": 0.5702,
+        "directionality": 0.186,
+        "edge_density": 3.64,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.186,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HN2012",
+      "page": 85,
+      "thumb": "thumbs/HN2007.jpg",
+      "full": "thumbs_full/HN2007.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2002",
+      "hex": "#524C49",
+      "rgb": [
+        82,
+        76,
+        73
+      ],
+      "std": 4.8,
+      "texture": {
+        "glcm_contrast": 0.17,
+        "glcm_homogeneity": 0.914,
+        "glcm_energy": 0.731,
+        "directionality": 0.062,
+        "edge_density": 0.94,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.202,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HN2012",
+      "page": 85,
+      "thumb": "thumbs/HN2002.jpg",
+      "full": "thumbs_full/HN2002.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2006",
+      "hex": "#675F5C",
+      "rgb": [
+        103,
+        95,
+        92
+      ],
+      "std": 7.1,
+      "texture": {
+        "glcm_contrast": 0.7,
+        "glcm_homogeneity": 0.727,
+        "glcm_energy": 0.4011,
+        "directionality": 0.04,
+        "edge_density": 3.69,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.175,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HN2012",
+      "page": 85,
+      "thumb": "thumbs/HN2006.jpg",
+      "full": "thumbs_full/HN2006.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2008",
+      "hex": "#A29D9B",
+      "rgb": [
+        162,
+        157,
+        155
+      ],
+      "std": 12.7,
+      "texture": {
+        "glcm_contrast": 1.73,
+        "glcm_homogeneity": 0.674,
+        "glcm_energy": 0.3771,
+        "directionality": 0.176,
+        "edge_density": 5.59,
+        "dominant_angle_deg": 165.0,
+        "dominant_strength": 0.17,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "HN2012",
+      "page": 85,
+      "thumb": "thumbs/HN2008.jpg",
+      "full": "thumbs_full/HN2008.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2003",
+      "hex": "#DBD7CF",
+      "rgb": [
+        219,
+        215,
+        207
+      ],
+      "std": 6.8,
+      "texture": {
+        "glcm_contrast": 0.19,
+        "glcm_homogeneity": 0.906,
+        "glcm_energy": 0.5789,
+        "directionality": 0.062,
+        "edge_density": 1.17,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.226,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HN2012",
+      "page": 85,
+      "thumb": "thumbs/HN2003.jpg",
+      "full": "thumbs_full/HN2003.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HN2004",
+      "hex": "#C0B1A3",
+      "rgb": [
+        192,
+        177,
+        163
+      ],
+      "std": 12.0,
+      "texture": {
+        "glcm_contrast": 0.13,
+        "glcm_homogeneity": 0.934,
+        "glcm_energy": 0.6739,
+        "directionality": 0.089,
+        "edge_density": 0.91,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.218,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HN2012",
+      "page": 85,
+      "thumb": "thumbs/HN2004.jpg",
+      "full": "thumbs_full/HN2004.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HM2101",
+      "hex": "#FEF8F2",
+      "rgb": [
+        254,
+        248,
+        242
+      ],
+      "std": 5.4,
+      "texture": {
+        "glcm_contrast": 0.02,
+        "glcm_homogeneity": 0.991,
+        "glcm_energy": 0.8495,
+        "directionality": 0.083,
+        "edge_density": 0.15,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.301,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 87,
+      "thumb": "thumbs/HM2101.jpg",
+      "full": "thumbs_full/HM2101.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HM2103",
+      "hex": "#88817D",
+      "rgb": [
+        136,
+        129,
+        125
+      ],
+      "std": 18.9,
+      "texture": {
+        "glcm_contrast": 1.63,
+        "glcm_homogeneity": 0.621,
+        "glcm_energy": 0.1871,
+        "directionality": 0.155,
+        "edge_density": 5.95,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.192,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 87,
+      "thumb": "thumbs/HM2103.jpg",
+      "full": "thumbs_full/HM2103.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HM2102",
+      "hex": "#DDDAD2",
+      "rgb": [
+        221,
+        218,
+        210
+      ],
+      "std": 7.3,
+      "texture": {
+        "glcm_contrast": 0.13,
+        "glcm_homogeneity": 0.936,
+        "glcm_energy": 0.5632,
+        "directionality": 0.085,
+        "edge_density": 0.92,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.223,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 87,
+      "thumb": "thumbs/HM2102.jpg",
+      "full": "thumbs_full/HM2102.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HM2104",
+      "hex": "#1C1A1A",
+      "rgb": [
+        28,
+        26,
+        26
+      ],
+      "std": 10.9,
+      "texture": {
+        "glcm_contrast": 0.52,
+        "glcm_homogeneity": 0.921,
+        "glcm_energy": 0.8532,
+        "directionality": 0.448,
+        "edge_density": 1.72,
+        "dominant_angle_deg": 55.0,
+        "dominant_strength": 0.419,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 87,
+      "thumb": "thumbs/HM2104.jpg",
+      "full": "thumbs_full/HM2104.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HT2303",
+      "hex": "#8B837A",
+      "rgb": [
+        139,
+        131,
+        122
+      ],
+      "std": 7.6,
+      "texture": {
+        "glcm_contrast": 0.18,
+        "glcm_homogeneity": 0.914,
+        "glcm_energy": 0.7963,
+        "directionality": 0.501,
+        "edge_density": 1.53,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.86,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 89,
+      "thumb": "thumbs/HT2303.jpg",
+      "full": "thumbs_full/HT2303.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HT2306",
+      "hex": "#60584D",
+      "rgb": [
+        96,
+        88,
+        77
+      ],
+      "std": 8.3,
+      "texture": {
+        "glcm_contrast": 0.34,
+        "glcm_homogeneity": 0.836,
+        "glcm_energy": 0.6045,
+        "directionality": 0.507,
+        "edge_density": 1.57,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.856,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 89,
+      "thumb": "thumbs/HT2306.jpg",
+      "full": "thumbs_full/HT2306.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HT2304",
+      "hex": "#574F4B",
+      "rgb": [
+        87,
+        79,
+        75
+      ],
+      "std": 5.7,
+      "texture": {
+        "glcm_contrast": 0.34,
+        "glcm_homogeneity": 0.829,
+        "glcm_energy": 0.5805,
+        "directionality": 0.511,
+        "edge_density": 1.46,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.855,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 89,
+      "thumb": "thumbs/HT2304.jpg",
+      "full": "thumbs_full/HT2304.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HT2305",
+      "hex": "#545156",
+      "rgb": [
+        84,
+        81,
+        86
+      ],
+      "std": 3.5,
+      "texture": {
+        "glcm_contrast": 0.21,
+        "glcm_homogeneity": 0.9,
+        "glcm_energy": 0.7624,
+        "directionality": 0.497,
+        "edge_density": 1.68,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.848,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": null,
+      "page": 89,
+      "thumb": "thumbs/HT2305.jpg",
+      "full": "thumbs_full/HT2305.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HT2309",
+      "hex": "#977925",
+      "rgb": [
+        151,
+        121,
+        37
+      ],
+      "std": 48.4,
+      "texture": {
+        "glcm_contrast": 0.25,
+        "glcm_homogeneity": 0.876,
+        "glcm_energy": 0.6231,
+        "directionality": 0.461,
+        "edge_density": 0.98,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.794,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HT2302",
+      "page": 91,
+      "thumb": "thumbs/HT2309.jpg",
+      "full": "thumbs_full/HT2309.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HT2308",
+      "hex": "#393638",
+      "rgb": [
+        57,
+        54,
+        56
+      ],
+      "std": 1.4,
+      "texture": {
+        "glcm_contrast": 0.31,
+        "glcm_homogeneity": 0.846,
+        "glcm_energy": 0.5935,
+        "directionality": 0.287,
+        "edge_density": 0.4,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.471,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HT2302",
+      "page": 91,
+      "thumb": "thumbs/HT2308.jpg",
+      "full": "thumbs_full/HT2308.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HT2301",
+      "hex": "#504C4E",
+      "rgb": [
+        80,
+        76,
+        78
+      ],
+      "std": 1.7,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.04,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.503,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HT2302",
+      "page": 91,
+      "thumb": "thumbs/HT2301.jpg",
+      "full": "thumbs_full/HT2301.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HT2307",
+      "hex": "#6E5E50",
+      "rgb": [
+        110,
+        94,
+        80
+      ],
+      "std": 12.6,
+      "texture": {
+        "glcm_contrast": 0.23,
+        "glcm_homogeneity": 0.883,
+        "glcm_energy": 0.6609,
+        "directionality": 0.471,
+        "edge_density": 0.85,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.777,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "HT2302",
+      "page": 91,
+      "thumb": "thumbs/HT2307.jpg",
+      "full": "thumbs_full/HT2307.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HT2302",
+      "hex": "#CFAF70",
+      "rgb": [
+        207,
+        175,
+        112
+      ],
+      "std": 39.9,
+      "texture": {
+        "glcm_contrast": 0.0,
+        "glcm_homogeneity": 1.0,
+        "glcm_energy": 1.0,
+        "directionality": 0.0,
+        "edge_density": 0.1,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.641,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": "HT2302",
+      "page": 91,
+      "thumb": "thumbs/HT2302.jpg",
+      "full": "thumbs_full/HT2302.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HF2209",
+      "hex": "#F5F0E5",
+      "rgb": [
+        245,
+        240,
+        229
+      ],
+      "std": 6.8,
+      "texture": {
+        "glcm_contrast": 0.02,
+        "glcm_homogeneity": 0.995,
+        "glcm_energy": 0.9915,
+        "directionality": 0.278,
+        "edge_density": 0.26,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.318,
+        "label": "무지/플레인",
+        "direction": null
+      },
+      "category": null,
+      "page": 93,
+      "thumb": "thumbs/HF2209.jpg",
+      "full": "thumbs_full/HF2209.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HF2210",
+      "hex": "#978E8A",
+      "rgb": [
+        151,
+        142,
+        138
+      ],
+      "std": 8.9,
+      "texture": {
+        "glcm_contrast": 2.11,
+        "glcm_homogeneity": 0.593,
+        "glcm_energy": 0.3753,
+        "directionality": 0.28,
+        "edge_density": 7.51,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.195,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 93,
+      "thumb": "thumbs/HF2210.jpg",
+      "full": "thumbs_full/HF2210.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HF2207",
+      "hex": "#B6B0A8",
+      "rgb": [
+        182,
+        176,
+        168
+      ],
+      "std": 6.9,
+      "texture": {
+        "glcm_contrast": 0.55,
+        "glcm_homogeneity": 0.776,
+        "glcm_energy": 0.4932,
+        "directionality": 0.369,
+        "edge_density": 2.83,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.602,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "Fabric",
+      "page": 94,
+      "thumb": "thumbs/HF2207.jpg",
+      "full": "thumbs_full/HF2207.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HF2208",
+      "hex": "#8D857A",
+      "rgb": [
+        141,
+        133,
+        122
+      ],
+      "std": 10.3,
+      "texture": {
+        "glcm_contrast": 1.49,
+        "glcm_homogeneity": 0.621,
+        "glcm_energy": 0.3365,
+        "directionality": 0.259,
+        "edge_density": 5.54,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.357,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "Fabric",
+      "page": 94,
+      "thumb": "thumbs/HF2208.jpg",
+      "full": "thumbs_full/HF2208.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HF2202",
+      "hex": "#BBAEA0",
+      "rgb": [
+        187,
+        174,
+        160
+      ],
+      "std": 11.6,
+      "texture": {
+        "glcm_contrast": 0.54,
+        "glcm_homogeneity": 0.772,
+        "glcm_energy": 0.5022,
+        "directionality": 0.033,
+        "edge_density": 3.01,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.185,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 95,
+      "thumb": "thumbs/HF2202.jpg",
+      "full": "thumbs_full/HF2202.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HF2205",
+      "hex": "#B7A885",
+      "rgb": [
+        183,
+        168,
+        133
+      ],
+      "std": 24.4,
+      "texture": {
+        "glcm_contrast": 5.46,
+        "glcm_homogeneity": 0.395,
+        "glcm_energy": 0.1806,
+        "directionality": 0.271,
+        "edge_density": 10.14,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.193,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 95,
+      "thumb": "thumbs/HF2205.jpg",
+      "full": "thumbs_full/HF2205.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HF2201",
+      "hex": "#807670",
+      "rgb": [
+        128,
+        118,
+        112
+      ],
+      "std": 8.1,
+      "texture": {
+        "glcm_contrast": 0.69,
+        "glcm_homogeneity": 0.724,
+        "glcm_energy": 0.4338,
+        "directionality": 0.037,
+        "edge_density": 3.46,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.177,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 95,
+      "thumb": "thumbs/HF2201.jpg",
+      "full": "thumbs_full/HF2201.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    },
+    {
+      "code": "HF2206",
+      "hex": "#51555A",
+      "rgb": [
+        81,
+        85,
+        90
+      ],
+      "std": 11.0,
+      "texture": {
+        "glcm_contrast": 3.82,
+        "glcm_homogeneity": 0.446,
+        "glcm_energy": 0.217,
+        "directionality": 0.394,
+        "edge_density": 7.51,
+        "dominant_angle_deg": 115.0,
+        "dominant_strength": 0.227,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 95,
+      "thumb": "thumbs/HF2206.jpg",
+      "full": "thumbs_full/HF2206.jpg",
+      "manufacturer": "예림도어",
+      "product_line": "인테리어필름 HEIM"
+    }
+  ]
+}

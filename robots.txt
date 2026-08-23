@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /admin.html
+Disallow: /app/film-match-7q2vk9/
 
 Sitemap: https://toryhome.kr/sitemap.xml

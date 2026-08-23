@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>필름 컬러 매칭</title>
+<style>
+  :root { color-scheme: dark; }
+  body { font-family: -apple-system, "Malgun Gothic", sans-serif; background:#121212; color:#eee; margin:0; padding:24px; }
+  h1 { font-size:20px; margin-bottom:4px; }
+  .sub { color:#999; font-size:13px; margin-bottom:20px; }
+  #dropzone {
+    border:2px dashed #555; border-radius:12px; padding:32px; text-align:center;
+    cursor:pointer; transition:border-color .2s; background:#1a1a1a;
+  }
+  #dropzone.drag { border-color:#6cf; background:#1e2630; }
+  #dropzone p { margin:6px 0; color:#aaa; font-size:14px; }
+  #fileInput { display:none; }
+  .preview-row { display:flex; gap:20px; align-items:flex-start; margin-top:20px; flex-wrap:wrap; }
+  #uploadPreview { max-width:220px; max-height:220px; border-radius:8px; display:none; }
+  #uploadInfo { font-size:13px; color:#ccc; line-height:1.7; }
+  #uploadInfo .swatch { display:inline-block; width:14px; height:14px; border-radius:3px; vertical-align:middle; margin-right:6px; border:1px solid #444; }
+  #results { display:flex; gap:16px; flex-wrap:wrap; margin-top:28px; }
+  .card {
+    width:180px; background:#1e1e1e; border-radius:10px; overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.3);
+  }
+  .card .thumb { width:100%; height:100px; object-fit:cover; display:block; background:#333; }
+  .card .swatch { height:34px; }
+  .card .meta { padding:10px; font-size:12.5px; line-height:1.6; }
+  .card .code { font-weight:600; font-size:14px; }
+  .card .rank { color:#6cf; font-size:11px; }
+  .card .tex { color:#9f9; }
+  .card .cat { color:#9cf; }
+  .card .de { color:#f99; }
+  .brand { color:#888; font-size:11px; }
+  .card .thumb, .card .swatch { cursor:zoom-in; }
+  #status { margin-top:14px; font-size:13px; color:#888; }
+  .weight-toggle { margin-top:12px; font-size:13px; color:#ccc; }
+
+  #lightbox {
+    display:none; position:fixed; inset:0; background:rgba(0,0,0,.82);
+    z-index:100; align-items:center; justify-content:center; padding:24px;
+  }
+  #lightbox.open { display:flex; }
+  #lightbox .box {
+    background:#1a1a1a; border-radius:12px; max-width:min(92vw, 700px);
+    overflow:hidden; box-shadow:0 10px 40px rgba(0,0,0,.5);
+  }
+  #lightbox img { width:100%; max-height:60vh; object-fit:contain; background:#333; display:block; }
+  #lightbox .lb-meta { padding:16px 20px; font-size:14px; line-height:1.8; }
+  #lightbox .lb-meta .code { font-size:20px; font-weight:700; }
+  #lightbox .lb-swatch { display:inline-block; width:18px; height:18px; border-radius:4px; vertical-align:middle; margin-right:8px; border:1px solid #444; }
+  #lightbox .lb-close {
+    position:absolute; top:20px; right:28px; font-size:28px; color:#eee;
+    cursor:pointer; background:none; border:none; line-height:1;
+  }
+</style>
+</head>
+<body>
+
+<h1>업로드 이미지로 가장 비슷한 필름 찾기</h1>
+<div class="sub" id="catalogSub">카탈로그 로딩 중...</div>
+
+<div id="dropzone">
+  <p><b>클릭하거나 이미지를 드래그해서 업로드</b></p>
+  <p>가능하면 색/재질이 화면 대부분을 차지하도록 크롭해서 올리면 정확도가 올라갑니다.</p>
+  <input type="file" id="fileInput" accept="image/*">
+</div>
+
+<div class="weight-toggle">
+  <label><input type="checkbox" id="texToggle" checked> 텍스처(결/패턴) 유사도도 반영해서 우선순위 조정</label>
+</div>
+
+<div class="preview-row">
+  <img id="uploadPreview">
+  <div id="uploadInfo"></div>
+</div>
+
+<div id="status"></div>
+<div id="results"></div>
+
+<div id="lightbox">
+  <button class="lb-close" id="lbClose">&times;</button>
+  <div class="box">
+    <img id="lbImg">
+    <div class="lb-meta" id="lbMeta"></div>
+  </div>
+</div>
+
+<script>
+let CATALOG = [];
+let CATALOG_META = {};
+
+fetch('colors.json').then(r => r.json()).then(data => {
+  CATALOG_META = data.meta || {};
+  CATALOG = data.items.map(d => ({ ...d, lab: rgbToLab(...d.rgb) }));
+  document.getElementById('status').textContent = `카탈로그 ${CATALOG.length}종 로드 완료`;
+  document.getElementById('catalogSub').textContent =
+    `${CATALOG_META.manufacturer || ''} · ${CATALOG_META.product_line || ''} 카탈로그 ${CATALOG.length}종 중 색상+텍스처가 가장 유사한 4종을 추천합니다.`;
+}).catch(err => {
+  document.getElementById('status').textContent = 'colors.json 로드 실패: ' + err;
+});
+
+// ---------- 색공간 변환 (sRGB -> Lab), ΔE76 ----------
+function srgbToLinear(c) { c /= 255; return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }
+function rgbToXyz(r, g, b) {
+  r = srgbToLinear(r); g = srgbToLinear(g); b = srgbToLinear(b);
+  return [
+    (r * 0.4124564 + g * 0.3575761 + b * 0.1804375) * 100,
+    (r * 0.2126729 + g * 0.7151522 + b * 0.0721750) * 100,
+    (r * 0.0193339 + g * 0.1191920 + b * 0.9503041) * 100,
+  ];
+}
+function rgbToLab(r, g, b) {
+  let [x, y, z] = rgbToXyz(r, g, b);
+  x /= 95.047; y /= 100.0; z /= 108.883;
+  const f = t => t > 0.008856 ? Math.cbrt(t) : (7.787 * t + 16 / 116);
+  const fx = f(x), fy = f(y), fz = f(z);
+  return [116 * fy - 16, 500 * (fx - fy), 200 * (fy - fz)];
+}
+function deltaE76(l1, l2) {
+  const dl = l1[0] - l2[0], da = l1[1] - l2[1], db = l1[2] - l2[2];
+  return Math.sqrt(dl * dl + da * da + db * db);
+}
+function rgbToHex(r, g, b) {
+  return '#' + [r, g, b].map(v => Math.round(v).toString(16).padStart(2, '0')).join('').toUpperCase();
+}
+
+// ---------- 텍스처 특징 (파이썬 추출 스크립트와 동일 로직/임계값) ----------
+function boxBlur(gray, w, h, radius) {
+  const out = new Float32Array(w * h);
+  const tmp = new Float32Array(w * h);
+  // horizontal pass
+  for (let y = 0; y < h; y++) {
+    let sum = 0, count = 0;
+    for (let x = -radius; x <= radius; x++) {
+      const xx = Math.min(w - 1, Math.max(0, x));
+      sum += gray[y * w + xx]; count++;
+    }
+    tmp[y * w] = sum / count;
+    for (let x = 1; x < w; x++) {
+      const addX = Math.min(w - 1, x + radius);
+      const remX = Math.max(0, x - radius - 1);
+      sum += gray[y * w + addX] - gray[y * w + remX];
+      tmp[y * w + x] = sum / (2 * radius + 1);
+    }
+  }
+  // vertical pass
+  for (let x = 0; x < w; x++) {
+    let sum = 0, count = 0;
+    for (let y = -radius; y <= radius; y++) {
+      const yy = Math.min(h - 1, Math.max(0, y));
+      sum += tmp[yy * w + x]; count++;
+    }
+    out[x] = sum / count;
+    for (let y = 1; y < h; y++) {
+      const addY = Math.min(h - 1, y + radius);
+      const remY = Math.max(0, y - radius - 1);
+      sum += tmp[addY * w + x] - tmp[remY * w + x];
+      out[y * w + x] = sum / (2 * radius + 1);
+    }
+  }
+  return out;
+}
+
+function textureFeatures(gray, w, h) {
+  const blur = boxBlur(gray, w, h, 7);
+  const residual = new Float32Array(w * h);
+  for (let i = 0; i < w * h; i++) residual[i] = gray[i] - blur[i];
+
+  const gx = new Float32Array(w * h), gy = new Float32Array(w * h), mag = new Float32Array(w * h);
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      const xl = Math.max(0, x - 1), xr = Math.min(w - 1, x + 1);
+      const yt = Math.max(0, y - 1), yb = Math.min(h - 1, y + 1);
+      const dx = (residual[y * w + xr] - residual[y * w + xl]) / (xr - xl || 1);
+      const dy = (residual[yb * w + x] - residual[yt * w + x]) / (yb - yt || 1);
+      gx[y * w + x] = dx; gy[y * w + x] = dy;
+      mag[y * w + x] = Math.sqrt(dx * dx + dy * dy);
+    }
+  }
+
+  const bins = new Float32Array(18);
+  let total = 0;
+  for (let i = 0; i < w * h; i++) {
+    let ang = Math.atan2(gy[i], gx[i]) * 180 / Math.PI;
+    ang = ((ang % 180) + 180) % 180;
+    const bin = Math.min(17, Math.floor(ang / 10));
+    bins[bin] += mag[i];
+    total += mag[i];
+  }
+  let edgeDensity = 0;
+  for (let i = 0; i < w * h; i++) edgeDensity += mag[i];
+  edgeDensity /= (w * h);
+
+  let domAngle = null, domStrength = 0;
+  if (total > 1e-6) {
+    let idx = 0, best = -1;
+    for (let i = 0; i < 18; i++) if (bins[i] > best) { best = bins[i]; idx = i; }
+    const window = bins[(idx + 17) % 18] + bins[idx] + bins[(idx + 1) % 18];
+    domStrength = window / total;
+    domAngle = idx * 10 + 5;
+  }
+  return { edgeDensity, domAngle, domStrength };
+}
+
+function classifyTexture(feat) {
+  const { edgeDensity: ed, domAngle: ang, domStrength: ds } = feat;
+  if (ed < 0.4) return { label: '무지/플레인', direction: null };
+  const lineAngle = ang !== null ? (ang + 90) % 180 : null;
+  if (ed >= 1.5 && ds >= 0.55) {
+    let direction = null;
+    if (lineAngle !== null) {
+      if (lineAngle < 22.5 || lineAngle > 157.5) direction = '가로결';
+      else if (lineAngle >= 67.5 && lineAngle <= 112.5) direction = '세로결';
+      else direction = '사선결';
+    }
+    return { label: direction ? `선형결(${direction})` : '선형결', direction };
+  }
+  if (ed >= 1.5) return { label: '입자형/거친텍스처', direction: null };
+  return { label: '미세텍스처', direction: null };
+}
+
+// ---------- 업로드 처리 ----------
+const dropzone = document.getElementById('dropzone');
+const fileInput = document.getElementById('fileInput');
+
+dropzone.addEventListener('click', () => fileInput.click());
+dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('drag'); });
+dropzone.addEventListener('dragleave', () => dropzone.classList.remove('drag'));
+dropzone.addEventListener('drop', e => {
+  e.preventDefault(); dropzone.classList.remove('drag');
+  if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+});
+fileInput.addEventListener('change', e => { if (e.target.files.length) handleFile(e.target.files[0]); });
+document.getElementById('texToggle').addEventListener('change', () => {
+  if (window.__lastAnalysis) renderResults(window.__lastAnalysis.rgb, window.__lastAnalysis.tex);
+});
+
+function handleFile(file) {
+  const reader = new FileReader();
+  reader.onload = e => {
+    const img = new Image();
+    img.onload = () => analyzeImage(img);
+    img.src = e.target.result;
+    document.getElementById('uploadPreview').src = e.target.result;
+    document.getElementById('uploadPreview').style.display = 'block';
+  };
+  reader.readAsDataURL(file);
+}
+
+function analyzeImage(img) {
+  document.getElementById('status').textContent = '분석 중...';
+  const maxDim = 400;
+  const scale = Math.min(1, maxDim / Math.max(img.width, img.height));
+  const w = Math.max(1, Math.round(img.width * scale));
+  const h = Math.max(1, Math.round(img.height * scale));
+
+  const canvas = document.createElement('canvas');
+  canvas.width = w; canvas.height = h;
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(img, 0, 0, w, h);
+  const data = ctx.getImageData(0, 0, w, h).data;
+
+  const rs = [], gs = [], bs = [];
+  const gray = new Float32Array(w * h);
+  for (let i = 0, p = 0; i < data.length; i += 4, p++) {
+    rs.push(data[i]); gs.push(data[i + 1]); bs.push(data[i + 2]);
+    gray[p] = (data[i] + data[i + 1] + data[i + 2]) / 3;
+  }
+  const median = arr => { const s = [...arr].sort((a, b) => a - b); return s[Math.floor(s.length / 2)]; };
+  const rgb = [median(rs), median(gs), median(bs)];
+
+  const tex = textureFeatures(gray, w, h);
+  const texClass = classifyTexture(tex);
+
+  window.__lastAnalysis = { rgb, tex: texClass };
+
+  const info = document.getElementById('uploadInfo');
+  info.innerHTML = `
+    <span class="swatch" style="background:${rgbToHex(...rgb)}"></span> ${rgbToHex(...rgb)}<br>
+    텍스처: <b>${texClass.label}</b> (edge=${tex.edgeDensity.toFixed(2)}, 방향성=${tex.domStrength.toFixed(2)})`;
+
+  renderResults(rgb, texClass);
+}
+
+function renderResults(rgb, texClass) {
+  if (!CATALOG.length) { document.getElementById('status').textContent = '카탈로그 로딩 대기 중...'; return; }
+  const lab = rgbToLab(...rgb);
+  const useTexture = document.getElementById('texToggle').checked;
+
+  const scored = CATALOG.map(item => {
+    const de = deltaE76(lab, item.lab);
+    const texMatch = useTexture && item.texture && item.texture.label === texClass.label;
+    const score = texMatch ? de * 0.85 : de;
+    return { ...item, de, score, texMatch };
+  });
+  scored.sort((a, b) => a.score - b.score);
+  const top = scored.slice(0, 4);
+
+  document.getElementById('status').textContent = `상위 4종 추천 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`;
+
+  window.__lastTop = top;
+
+  const results = document.getElementById('results');
+  results.innerHTML = top.map((r, i) => `
+    <div class="card" data-idx="${i}">
+      <img class="thumb" src="${r.thumb || ''}" onerror="this.style.display='none'">
+      <div class="swatch" style="background:${r.hex}"></div>
+      <div class="meta">
+        <span class="rank">#${i + 1}</span> <span class="code">${r.code}</span><br>
+        ${r.hex} · <span class="de">ΔE ${r.de.toFixed(1)}</span><br>
+        <span class="tex">${r.texture.label}${r.texMatch ? ' ✓일치' : ''}</span><br>
+        <span class="cat">${r.category || ''}</span> · p.${r.page}<br>
+        <span class="brand">${r.manufacturer || ''} ${r.product_line || ''}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ---------- 라이트박스(크게 보기) ----------
+const lightbox = document.getElementById('lightbox');
+document.getElementById('results').addEventListener('click', e => {
+  const card = e.target.closest('.card');
+  if (!card) return;
+  const r = window.__lastTop[Number(card.dataset.idx)];
+  document.getElementById('lbImg').src = r.full || r.thumb || '';
+  document.getElementById('lbMeta').innerHTML = `
+    <span class="lb-swatch" style="background:${r.hex}"></span>
+    <span class="code">${r.code}</span><br>
+    ${r.hex} · ΔE ${r.de.toFixed(1)}<br>
+    텍스처: ${r.texture.label}${r.texMatch ? ' (업로드 이미지와 일치)' : ''}<br>
+    ${r.category ? r.category + ' · ' : ''}카탈로그 p.${r.page}<br>
+    <span class="brand">제조사: ${r.manufacturer || ''} (${r.product_line || ''})</span>`;
+  lightbox.classList.add('open');
+});
+document.getElementById('lbClose').addEventListener('click', () => lightbox.classList.remove('open'));
+lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
+</script>
+</body>
+</html>
