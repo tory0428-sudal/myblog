@@ -34,6 +34,9 @@
   }
   .more-btn:hover { border-color:#6cf; color:#fff; }
   .more-row { margin-top:12px; padding-top:12px; border-top:1px dashed #333; }
+  /* .cards-row는 display:flex를 강제하는 규칙이라 특정도가 같으면 뒤에 오는 쪽이 이겨서
+     [hidden]의 기본값(display:none)을 덮어써버린다 — 이 선택자로 확실히 숨긴다. */
+  .more-row[hidden] { display: none; }
   .select-btn {
     margin-top:8px; width:100%; padding:6px 0; font-size:11.5px;
     border:1px solid #444; background:#252525; color:#ccc; border-radius:6px; cursor:pointer;
@@ -608,6 +611,8 @@ document.getElementById('results').addEventListener('click', e => {
     if (row) {
       const willShow = row.hidden;
       row.hidden = !willShow;
+      // hidden 속성만으로는 .cards-row의 display:flex에 밀릴 수 있어 인라인 스타일로도 확실히 고정.
+      row.style.display = willShow ? 'flex' : 'none';
       moreBtn.textContent = willShow
         ? moreBtn.textContent.replace('더 많은 자재 보기', '접기')
         : moreBtn.textContent.replace('접기', '더 많은 자재 보기');
