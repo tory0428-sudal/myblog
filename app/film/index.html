@@ -37,6 +37,28 @@
   .card-selected { outline:2px solid #4a4; }
   .hint { margin-top:20px; font-size:13px; color:#999; }
   .summary-card .meta { text-align:center; }
+
+  .mockup {
+    position:relative; width:100%; max-width:520px; aspect-ratio:4/3;
+    border-radius:14px; overflow:hidden; margin-top:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.45); background:#333;
+  }
+  .mockup-wall { position:absolute; inset:0; bottom:38%; background-size:cover; background-position:center; }
+  .mockup-floor { position:absolute; left:0; right:0; bottom:0; height:38%; background-size:cover; background-position:center; }
+  .mockup-baseboard { position:absolute; left:0; right:0; bottom:38%; height:4px; background:rgba(0,0,0,.4); z-index:2; }
+  .mockup-door {
+    position:absolute; bottom:38%; right:12%; width:15%; height:52%;
+    background-size:cover; background-position:center;
+    border:3px solid rgba(255,255,255,.55); border-radius:2px;
+    box-shadow:0 8px 20px rgba(0,0,0,.4); z-index:1;
+  }
+  .mockup-door::after {
+    content:''; position:absolute; right:8%; top:46%; width:7px; height:7px;
+    border-radius:50%; background:rgba(255,255,255,.8);
+  }
+  .mockup-legend { display:flex; gap:18px; margin-top:10px; font-size:12px; color:#ccc; flex-wrap:wrap; }
+  .mockup-legend i { display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:5px; vertical-align:middle; border:1px solid #444; }
+  .mockup-note { font-size:11.5px; color:#777; margin-top:6px; }
   #results { display:flex; flex-direction:column; gap:8px; }
   .cards-row { display:flex; gap:16px; flex-wrap:wrap; }
   .card {
@@ -455,11 +477,24 @@ function renderSummary() {
   const { film, wallpaper, flooring } = SELECTION;
   if (!(film && wallpaper && flooring)) { panel.innerHTML = ''; return; }
   const items = [film, wallpaper, flooring];
+  const img = r => r.full || r.thumb || '';
   panel.innerHTML = `
     <div class="material-group">
-      <h1 class="material-title">선택 완료</h1>
-      <div class="section-note">필름·벽지·마루를 모두 선택했습니다. (선택한 조합을 한 이미지로 보여주는 목업 합성은 다음 단계에서 추가될 예정입니다)</div>
-      <div class="cards-row">
+      <h1 class="material-title">선택 완료 — 목업 미리보기</h1>
+      <div class="section-note">필름·벽지·마루를 매핑한 간단한 목업입니다. 아래 마루 목록에서 다른 걸 선택하면 바닥이 바로 바뀝니다.</div>
+      <div class="mockup">
+        <div class="mockup-wall" style="background-image:url('${img(wallpaper)}')"></div>
+        <div class="mockup-baseboard"></div>
+        <div class="mockup-floor" style="background-image:url('${img(flooring)}')"></div>
+        <div class="mockup-door" style="background-image:url('${img(film)}')"></div>
+      </div>
+      <div class="mockup-legend">
+        <span><i style="background:${wallpaper.hex}"></i>벽지 ${wallpaper.code} (${wallpaper.manufacturer})</span>
+        <span><i style="background:${film.hex}"></i>필름/도어 ${film.code} (${film.manufacturer})</span>
+        <span><i style="background:${flooring.hex}"></i>마루 ${flooring.code} (${flooring.manufacturer})</span>
+      </div>
+      <div class="mockup-note">※ 실사 방 사진이 아닌 단순화한 평면 목업입니다 (벽=벽지, 도어=필름, 바닥=마루).</div>
+      <div class="cards-row" style="margin-top:16px;">
         ${items.map(r => `
           <div class="card summary-card">
             <img class="thumb" src="${r.thumb || ''}" onerror="this.style.display='none'">
