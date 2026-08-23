@@ -355,6 +355,25 @@ function scoreItems(lab, texClass, useTexture, items) {
   }).sort((a, b) => a.score - b.score);
 }
 
+const DIVERSITY_MIN_DE = 8; // 추천 안에서 서로 이 정도(ΔE) 이상 달라야 "다른 색"으로 침
+// 카탈로그에 거의 같은 색(예: 같은 색의 다른 텍스처 variant)이 많으면 단순 최근접 top-N은
+// 서로 구분 안 되는 것들로 채워질 수 있다 — 점수 순서를 지키되, 이미 뽑은 것과 너무 가까운
+// 후보는 건너뛰어 "그럴듯하게 가까우면서도 서로 다른" 4개가 뽑히게 한다.
+function pickDiverseTop(sortedItems, n) {
+  const picked = [];
+  for (const item of sortedItems) {
+    if (picked.length >= n) break;
+    if (picked.every(p => deltaE76(p.lab, item.lab) >= DIVERSITY_MIN_DE)) picked.push(item);
+  }
+  if (picked.length < n) {
+    for (const item of sortedItems) {
+      if (picked.length >= n) break;
+      if (!picked.includes(item)) picked.push(item);
+    }
+  }
+  return picked;
+}
+
 // ---------- 선택 상태 (필름을 고르면 그 필름을 기준으로 벽지/마루를 추천) ----------
 let SELECTION = { film: null, wallpaper: null, flooring: null };
 const MATERIAL_SLOT = { '필름': 'film', '벽지': 'wallpaper', '마루': 'flooring' };
@@ -400,8 +419,9 @@ function renderBrandGroups(scoredItems, materialName, opts) {
 
   return brandOrder.map(brandName => {
     const all = byBrand.get(brandName);
-    const top = all.slice(0, RESULTS_PER_BRAND);
-    const rest = opts.showAll ? all.slice(RESULTS_PER_BRAND) : [];
+    const top = pickDiverseTop(all, RESULTS_PER_BRAND);
+    const topSet = new Set(top);
+    const rest = opts.showAll ? all.filter(x => !topSet.has(x)) : [];
     const productLine = all[0] ? all[0].product_line : '';
 
     const topCards = top.map((r, i) => cardHtml(r, { rank: i + 1, slot })).join('');
