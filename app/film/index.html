@@ -38,13 +38,22 @@
   .hint { margin-top:20px; font-size:13px; color:#999; }
   .summary-card .meta { text-align:center; }
 
+  .mockup-row { display:flex; gap:28px; flex-wrap:wrap; align-items:flex-start; margin-top:16px; }
   .mockup {
     position:relative; width:100%; max-width:520px; aspect-ratio:4/3;
-    border-radius:14px; overflow:hidden; margin-top:16px;
+    border-radius:14px; overflow:hidden; flex:0 0 auto;
     box-shadow:0 10px 30px rgba(0,0,0,.45); background:#333;
   }
-  .mockup-wall { position:absolute; inset:0; bottom:38%; background-size:cover; background-position:center; }
-  .mockup-floor { position:absolute; left:0; right:0; bottom:0; height:38%; background-size:cover; background-position:center; }
+  /* 벽/바닥은 사진 한 장을 늘려 채우면(cover) 원본 비율과 안 맞아 확대돼 보이므로
+     타일처럼 반복(repeat)해서 실제 마감재 느낌에 가깝게 보여준다. */
+  .mockup-wall {
+    position:absolute; inset:0; bottom:38%;
+    background-repeat:repeat; background-size:150px 150px; background-position:0 0;
+  }
+  .mockup-floor {
+    position:absolute; left:0; right:0; bottom:0; height:38%;
+    background-repeat:repeat; background-size:150px 150px; background-position:0 0;
+  }
   .mockup-baseboard { position:absolute; left:0; right:0; bottom:38%; height:4px; background:rgba(0,0,0,.4); z-index:2; }
   .mockup-door {
     position:absolute; bottom:38%; right:12%; width:15%; height:52%;
@@ -59,6 +68,20 @@
   .mockup-legend { display:flex; gap:18px; margin-top:10px; font-size:12px; color:#ccc; flex-wrap:wrap; }
   .mockup-legend i { display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:5px; vertical-align:middle; border:1px solid #444; }
   .mockup-note { font-size:11.5px; color:#777; margin-top:6px; }
+
+  .wallpaper-picker { flex:1 1 280px; min-width:260px; }
+  .wallpaper-picker h3 { font-size:14px; margin:0 0 10px; color:#fff; }
+  .picker-row { margin-bottom:10px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .picker-label { font-size:12px; color:#888; width:34px; flex:0 0 auto; }
+  .chip {
+    padding:5px 12px; border-radius:999px; border:1px solid #444; background:#222;
+    color:#ccc; font-size:12px; cursor:pointer;
+  }
+  .chip:hover { border-color:#6cf; color:#fff; }
+  .chip.active { background:#2d4d5a; border-color:#6cf; color:#dff; }
+  .wallpaper-picker .cards-row { margin-top:12px; }
+  .wallpaper-picker .card { width:140px; }
+  .wallpaper-picker .card .thumb { height:70px; }
   #results { display:flex; flex-direction:column; gap:8px; }
   .cards-row { display:flex; gap:16px; flex-wrap:wrap; }
   .card {
@@ -376,6 +399,7 @@ function pickDiverseTop(sortedItems, n) {
 
 // ---------- 선택 상태 (필름을 고르면 그 필름을 기준으로 벽지/마루를 추천) ----------
 let SELECTION = { film: null, wallpaper: null, flooring: null };
+let WALLPAPER_FILTER = { tone: null, finish: null }; // 벽지는 톤/마감을 직접 골라서 후보를 좁힌다
 const MATERIAL_SLOT = { '필름': 'film', '벽지': 'wallpaper', '마루': 'flooring' };
 const RENDERED = new Map(); // "material::code" -> 현재 화면에 그려진 스코어 포함 아이템 (라이트박스/선택 조회용)
 
@@ -463,17 +487,10 @@ function renderAll() {
       byMaterialAll.get(key).push(item);
     }
     // 벽지는 색상 유사도 자동추천에서 뺐다(카탈로그가 흰색 쪽으로 쏠려있어 앵커 매칭 자체의
-    // 효용이 낮았음) — 대신 룩북 학습으로 뽑은 tone(화이트/웜/그레이/다크톤)·finish(스톤/미장,
-    // 페브릭, 페인트/스무스) 태그를 colors.json에 넣어뒀고, "느낌 선택형" UI는 다음 단계에서 추가.
+    // 효용이 낮았음) — 대신 톤/마감 느낌을 직접 고르는 선택기를 목업 옆에 둔다(renderSummary 안).
     const materialOrder = CATALOG_META.categories
       ? CATALOG_META.categories.map(c => c.name).filter(n => n !== '필름' && n !== '벽지' && byMaterialAll.has(n))
       : [...byMaterialAll.keys()].filter(n => n !== '필름' && n !== '벽지');
-
-    sections.push(`
-      <div class="material-group">
-        <h1 class="material-title">벽지</h1>
-        <div class="section-note">벽지는 색상 유사도 자동추천 대신, 화이트톤·웜톤·그레이톤 / 스톤·페브릭·페인트 같은 느낌을 직접 골라 추천받는 방식으로 준비 중입니다.</div>
-      </div>`);
 
     for (const matName of materialOrder) {
       const items = byMaterialAll.get(matName);
@@ -500,6 +517,40 @@ function renderAll() {
     : `필름 후보를 확인하고 선택해주세요 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`;
 }
 
+function renderWallpaperPicker() {
+  const anchor = SELECTION.film;
+  const wallItems = CATALOG.filter(i => i.material === '벽지');
+  const toneOptions = [...new Set(wallItems.map(i => i.tone))].filter(Boolean);
+  const finishOptions = [...new Set(wallItems.map(i => i.finish))].filter(Boolean);
+
+  const chip = (val, active, group) =>
+    `<button type="button" class="chip ${active ? 'active' : ''}" data-group="${group}" data-val="${val}">${val}</button>`;
+
+  let filtered = wallItems;
+  if (WALLPAPER_FILTER.tone) filtered = filtered.filter(i => i.tone === WALLPAPER_FILTER.tone);
+  if (WALLPAPER_FILTER.finish) filtered = filtered.filter(i => i.finish === WALLPAPER_FILTER.finish);
+
+  let resultHtml;
+  if (!WALLPAPER_FILTER.tone && !WALLPAPER_FILTER.finish) {
+    resultHtml = `<div class="hint" style="margin-top:12px;">톤이나 마감을 선택하면 어울리는 벽지 4가지가 나옵니다.</div>`;
+  } else if (!filtered.length) {
+    resultHtml = `<div class="hint" style="margin-top:12px;">해당 느낌의 벽지가 없습니다. 다른 조합을 선택해보세요.</div>`;
+  } else {
+    const useTexture = document.getElementById('texToggle').checked;
+    const scored = anchor ? scoreItems(anchor.lab, anchor.texture, useTexture, filtered) : filtered.map(i => ({ ...i, de: 0, score: 0, texMatch: false }));
+    const top = pickDiverseTop(scored, RESULTS_PER_BRAND);
+    resultHtml = `<div class="cards-row">${top.map((r, i) => cardHtml(r, { rank: i + 1, slot: 'wallpaper' })).join('')}</div>`;
+  }
+
+  return `
+    <div class="wallpaper-picker">
+      <h3>벽지 — 톤·마감으로 찾기</h3>
+      <div class="picker-row"><span class="picker-label">톤</span>${toneOptions.map(t => chip(t, WALLPAPER_FILTER.tone === t, 'tone')).join('')}</div>
+      <div class="picker-row"><span class="picker-label">마감</span>${finishOptions.map(f => chip(f, WALLPAPER_FILTER.finish === f, 'finish')).join('')}</div>
+      ${resultHtml}
+    </div>`;
+}
+
 function renderSummary() {
   const panel = document.getElementById('summaryPanel');
   if (!panel) return;
@@ -507,17 +558,20 @@ function renderSummary() {
   if (!(film && flooring)) { panel.innerHTML = ''; return; }
   const items = [film, wallpaper, flooring].filter(Boolean);
   const img = r => r && (r.full || r.thumb || '');
-  // 벽지는 아직 선택 단계가 없어서(느낌 선택형 UI 준비 중) 고르기 전엔 목업 벽면을 무지 배경으로 둔다.
+  // 벽지를 아직 고르지 않았으면 목업 벽면을 무지 배경으로 둔다.
   const wallStyle = wallpaper ? `background-image:url('${img(wallpaper)}')` : `background:#3a3a3a`;
   panel.innerHTML = `
     <div class="material-group">
       <h1 class="material-title">목업 미리보기</h1>
-      <div class="section-note">필름·마루를 매핑한 간단한 목업입니다 (벽지는 느낌 선택 UI가 준비되면 반영됩니다). 아래 마루 목록에서 다른 걸 선택하면 바닥이 바로 바뀝니다.</div>
-      <div class="mockup">
-        <div class="mockup-wall" style="${wallStyle}"></div>
-        <div class="mockup-baseboard"></div>
-        <div class="mockup-floor" style="background-image:url('${img(flooring)}')"></div>
-        <div class="mockup-door" style="background-image:url('${img(film)}')"></div>
+      <div class="section-note">필름·마루를 매핑한 간단한 목업입니다. 오른쪽에서 벽지를 고르면 벽면에 반영되고, 마루 목록에서 다른 걸 선택하면 바닥이 바로 바뀝니다.</div>
+      <div class="mockup-row">
+        <div class="mockup">
+          <div class="mockup-wall" style="${wallStyle}"></div>
+          <div class="mockup-baseboard"></div>
+          <div class="mockup-floor" style="background-image:url('${img(flooring)}')"></div>
+          <div class="mockup-door" style="background-image:url('${img(film)}')"></div>
+        </div>
+        ${renderWallpaperPicker()}
       </div>
       <div class="mockup-legend">
         ${wallpaper ? `<span><i style="background:${wallpaper.hex}"></i>벽지 ${wallpaper.code} (${wallpaper.manufacturer})</span>` : `<span>벽지 미선택</span>`}
@@ -539,6 +593,14 @@ function renderSummary() {
 // ---------- 카드 클릭: 선택 버튼 / 라이트박스(크게 보기) ----------
 const lightbox = document.getElementById('lightbox');
 document.getElementById('results').addEventListener('click', e => {
+  const chip = e.target.closest('.chip');
+  if (chip) {
+    const group = chip.dataset.group; // 'tone' | 'finish'
+    const val = chip.dataset.val;
+    WALLPAPER_FILTER[group] = WALLPAPER_FILTER[group] === val ? null : val;
+    renderSummary();
+    return;
+  }
   const selectBtn = e.target.closest('.select-btn');
   if (selectBtn) {
     const item = RENDERED.get(selectBtn.dataset.key);
