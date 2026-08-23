@@ -28,7 +28,18 @@
       },
       {
         "name": "마루",
-        "manufacturers": []
+        "manufacturers": [
+          {
+            "name": "동화마루 진그란데",
+            "product_line": "JIN GRANDE / JIN GRANDE SQUARE",
+            "count": 16
+          },
+          {
+            "name": "동화마루 Jin Texture",
+            "product_line": "JIN TEXTURE",
+            "count": 16
+          }
+        ]
       }
     ]
   },
@@ -13834,6 +13845,934 @@
       "material": "벽지",
       "manufacturer": "LOHAS+",
       "product_line": "로하스 벽지"
+    },
+    {
+      "code": "62P",
+      "name": "MONTE WHITE",
+      "hex": "#D3CDC4",
+      "rgb": [
+        211,
+        205,
+        196
+      ],
+      "std": 7.4,
+      "texture": {
+        "glcm_contrast": 0.42,
+        "glcm_homogeneity": 0.814,
+        "glcm_energy": 0.5836,
+        "directionality": 0.079,
+        "edge_density": 2.68,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.198,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "MONTE WHITE",
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_62P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_62P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "65P",
+      "name": "COZY GRAY",
+      "hex": "#D5D0CF",
+      "rgb": [
+        213,
+        208,
+        207
+      ],
+      "std": 6.6,
+      "texture": {
+        "glcm_contrast": 1.18,
+        "glcm_homogeneity": 0.655,
+        "glcm_energy": 0.3668,
+        "directionality": 0.06,
+        "edge_density": 5.05,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.178,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "COZY GRAY",
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_65P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_65P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "60P",
+      "name": "MONTE GRAY",
+      "hex": "#BFBCB6",
+      "rgb": [
+        191,
+        188,
+        182
+      ],
+      "std": 6.0,
+      "texture": {
+        "glcm_contrast": 0.5,
+        "glcm_homogeneity": 0.787,
+        "glcm_energy": 0.5124,
+        "directionality": 0.091,
+        "edge_density": 3.03,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.18,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "MONTE GRAY",
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_60P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_60P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "56P",
+      "name": null,
+      "hex": "#CEC9C4",
+      "rgb": [
+        206,
+        201,
+        196
+      ],
+      "std": 4.9,
+      "texture": {
+        "glcm_contrast": 0.29,
+        "glcm_homogeneity": 0.857,
+        "glcm_energy": 0.6049,
+        "directionality": 0.092,
+        "edge_density": 1.59,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.205,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_56P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_56P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "48P",
+      "name": null,
+      "hex": "#E9E5E1",
+      "rgb": [
+        233,
+        229,
+        225
+      ],
+      "std": 4.9,
+      "texture": {
+        "glcm_contrast": 0.33,
+        "glcm_homogeneity": 0.853,
+        "glcm_energy": 0.6419,
+        "directionality": 0.076,
+        "edge_density": 2.23,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.205,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_48P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_48P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "44P",
+      "name": null,
+      "hex": "#D5CDC4",
+      "rgb": [
+        213,
+        205,
+        196
+      ],
+      "std": 8.3,
+      "texture": {
+        "glcm_contrast": 0.6,
+        "glcm_homogeneity": 0.764,
+        "glcm_energy": 0.4712,
+        "directionality": 0.086,
+        "edge_density": 3.3,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.183,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_44P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_44P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "20P",
+      "name": null,
+      "hex": "#D1C7BD",
+      "rgb": [
+        209,
+        199,
+        189
+      ],
+      "std": 9.3,
+      "texture": {
+        "glcm_contrast": 0.65,
+        "glcm_homogeneity": 0.745,
+        "glcm_energy": 0.4546,
+        "directionality": 0.085,
+        "edge_density": 3.54,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.194,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_20P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_20P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "24P",
+      "name": null,
+      "hex": "#D3C9BF",
+      "rgb": [
+        211,
+        201,
+        191
+      ],
+      "std": 8.9,
+      "texture": {
+        "glcm_contrast": 0.42,
+        "glcm_homogeneity": 0.808,
+        "glcm_energy": 0.5104,
+        "directionality": 0.088,
+        "edge_density": 2.59,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.189,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_24P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_24P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "12P",
+      "name": null,
+      "hex": "#DBD6D0",
+      "rgb": [
+        219,
+        214,
+        208
+      ],
+      "std": 5.9,
+      "texture": {
+        "glcm_contrast": 0.32,
+        "glcm_homogeneity": 0.85,
+        "glcm_energy": 0.5994,
+        "directionality": 0.094,
+        "edge_density": 2.13,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.188,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_12P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_12P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "16P",
+      "name": null,
+      "hex": "#DBD6D0",
+      "rgb": [
+        219,
+        214,
+        208
+      ],
+      "std": 5.5,
+      "texture": {
+        "glcm_contrast": 0.35,
+        "glcm_homogeneity": 0.836,
+        "glcm_energy": 0.6099,
+        "directionality": 0.095,
+        "edge_density": 2.3,
+        "dominant_angle_deg": 95.0,
+        "dominant_strength": 0.185,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_16P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_16P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "52P",
+      "name": null,
+      "hex": "#F0EDE6",
+      "rgb": [
+        240,
+        237,
+        230
+      ],
+      "std": 5.3,
+      "texture": {
+        "glcm_contrast": 0.3,
+        "glcm_homogeneity": 0.859,
+        "glcm_energy": 0.6302,
+        "directionality": 0.103,
+        "edge_density": 2.12,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.193,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": null,
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_52P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_52P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "64P",
+      "name": "QUIET WAVE",
+      "hex": "#DCD6CC",
+      "rgb": [
+        220,
+        214,
+        204
+      ],
+      "std": 8.7,
+      "texture": {
+        "glcm_contrast": 0.64,
+        "glcm_homogeneity": 0.746,
+        "glcm_energy": 0.4229,
+        "directionality": 0.099,
+        "edge_density": 3.64,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.19,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "QUIET WAVE",
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_64P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_64P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "36P",
+      "name": "PORTLAND MOTIF",
+      "hex": "#E8E3D9",
+      "rgb": [
+        232,
+        227,
+        217
+      ],
+      "std": 6.9,
+      "texture": {
+        "glcm_contrast": 0.22,
+        "glcm_homogeneity": 0.892,
+        "glcm_energy": 0.6887,
+        "directionality": 0.173,
+        "edge_density": 1.34,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.334,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "PORTLAND MOTIF",
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_36P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_36P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "40P",
+      "name": "PORTLAND STILL",
+      "hex": "#F2EFEA",
+      "rgb": [
+        242,
+        239,
+        234
+      ],
+      "std": 5.3,
+      "texture": {
+        "glcm_contrast": 0.15,
+        "glcm_homogeneity": 0.928,
+        "glcm_energy": 0.6009,
+        "directionality": 0.222,
+        "edge_density": 1.06,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.291,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "PORTLAND STILL",
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_40P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_40P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "28P",
+      "name": "SLATE MOTIF",
+      "hex": "#E1DAD1",
+      "rgb": [
+        225,
+        218,
+        209
+      ],
+      "std": 7.0,
+      "texture": {
+        "glcm_contrast": 0.23,
+        "glcm_homogeneity": 0.885,
+        "glcm_energy": 0.6737,
+        "directionality": 0.081,
+        "edge_density": 1.39,
+        "dominant_angle_deg": 85.0,
+        "dominant_strength": 0.199,
+        "label": "미세텍스처",
+        "direction": null
+      },
+      "category": "SLATE MOTIF",
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_28P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_28P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "32P",
+      "name": "SLATE STILL",
+      "hex": "#DCD6CE",
+      "rgb": [
+        220,
+        214,
+        206
+      ],
+      "std": 6.7,
+      "texture": {
+        "glcm_contrast": 0.24,
+        "glcm_homogeneity": 0.881,
+        "glcm_energy": 0.6853,
+        "directionality": 0.078,
+        "edge_density": 1.77,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.208,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "SLATE STILL",
+      "page": 6,
+      "thumb": "thumbs/동화마루_진그란데_32P.jpg",
+      "full": "thumbs_full/동화마루_진그란데_32P.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 진그란데",
+      "product_line": "JIN GRANDE / JIN GRANDE SQUARE"
+    },
+    {
+      "code": "JT3032",
+      "name": "레노 피치 RENO PEACH",
+      "hex": "#D8B9A0",
+      "rgb": [
+        216,
+        185,
+        160
+      ],
+      "std": 23.1,
+      "texture": {
+        "glcm_contrast": 0.32,
+        "glcm_homogeneity": 0.868,
+        "glcm_energy": 0.639,
+        "directionality": 0.376,
+        "edge_density": 1.96,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.61,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "레노 피치 RENO PEACH",
+      "page": 22,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3032.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3032.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3029",
+      "name": "레노 라이트 RENO LIGHT",
+      "hex": "#C99F7A",
+      "rgb": [
+        201,
+        159,
+        122
+      ],
+      "std": 33.1,
+      "texture": {
+        "glcm_contrast": 0.82,
+        "glcm_homogeneity": 0.739,
+        "glcm_energy": 0.3335,
+        "directionality": 0.409,
+        "edge_density": 3.5,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.591,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "레노 라이트 RENO LIGHT",
+      "page": 22,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3029.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3029.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3033",
+      "name": "레노 샌드 RENO SAND",
+      "hex": "#CEAC8D",
+      "rgb": [
+        206,
+        172,
+        141
+      ],
+      "std": 27.1,
+      "texture": {
+        "glcm_contrast": 0.43,
+        "glcm_homogeneity": 0.833,
+        "glcm_energy": 0.5516,
+        "directionality": 0.391,
+        "edge_density": 2.14,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.619,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "레노 샌드 RENO SAND",
+      "page": 22,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3033.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3033.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3034",
+      "name": "리베로 그레이 LIBERO GRAY",
+      "hex": "#A18F7B",
+      "rgb": [
+        161,
+        143,
+        123
+      ],
+      "std": 17.4,
+      "texture": {
+        "glcm_contrast": 0.74,
+        "glcm_homogeneity": 0.781,
+        "glcm_energy": 0.3568,
+        "directionality": 0.389,
+        "edge_density": 2.91,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.576,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "리베로 그레이 LIBERO GRAY",
+      "page": 22,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3034.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3034.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3031",
+      "name": "레노 브라운 RENO BROWN",
+      "hex": "#856145",
+      "rgb": [
+        133,
+        97,
+        69
+      ],
+      "std": 27.4,
+      "texture": {
+        "glcm_contrast": 1.05,
+        "glcm_homogeneity": 0.693,
+        "glcm_energy": 0.3127,
+        "directionality": 0.392,
+        "edge_density": 4.09,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.546,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "레노 브라운 RENO BROWN",
+      "page": 22,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3031.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3031.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3035",
+      "name": "리베로 스모키 LIBERO SMOKY",
+      "hex": "#827566",
+      "rgb": [
+        130,
+        117,
+        102
+      ],
+      "std": 14.2,
+      "texture": {
+        "glcm_contrast": 0.95,
+        "glcm_homogeneity": 0.741,
+        "glcm_energy": 0.3412,
+        "directionality": 0.373,
+        "edge_density": 3.47,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.524,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "리베로 스모키 LIBERO SMOKY",
+      "page": 22,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3035.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3035.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3030",
+      "name": "레노 내추럴 RENO NATURAL",
+      "hex": "#BB906A",
+      "rgb": [
+        187,
+        144,
+        106
+      ],
+      "std": 34.1,
+      "texture": {
+        "glcm_contrast": 0.9,
+        "glcm_homogeneity": 0.73,
+        "glcm_energy": 0.3313,
+        "directionality": 0.42,
+        "edge_density": 3.66,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.608,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "레노 내추럴 RENO NATURAL",
+      "page": 22,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3030.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3030.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3036",
+      "name": "알토 내추럴 ALTO NATURAL",
+      "hex": "#C6A888",
+      "rgb": [
+        198,
+        168,
+        136
+      ],
+      "std": 26.2,
+      "texture": {
+        "glcm_contrast": 0.55,
+        "glcm_homogeneity": 0.803,
+        "glcm_energy": 0.4235,
+        "directionality": 0.334,
+        "edge_density": 2.6,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.492,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "알토 내추럴 ALTO NATURAL",
+      "page": 22,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3036.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3036.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3039",
+      "name": "아르보 내추럴 ARBOR NATURAL",
+      "hex": "#D3A472",
+      "rgb": [
+        211,
+        164,
+        114
+      ],
+      "std": 40.2,
+      "texture": {
+        "glcm_contrast": 0.5,
+        "glcm_homogeneity": 0.813,
+        "glcm_energy": 0.4638,
+        "directionality": 0.356,
+        "edge_density": 2.46,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.554,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "아르보 내추럴 ARBOR NATURAL",
+      "page": 23,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3039.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3039.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3037",
+      "name": "알토 모카 ALTO MOCHA",
+      "hex": "#AB8965",
+      "rgb": [
+        171,
+        137,
+        101
+      ],
+      "std": 29.6,
+      "texture": {
+        "glcm_contrast": 0.83,
+        "glcm_homogeneity": 0.738,
+        "glcm_energy": 0.3535,
+        "directionality": 0.406,
+        "edge_density": 3.65,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.564,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "알토 모카 ALTO MOCHA",
+      "page": 23,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3037.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3037.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3040",
+      "name": "실키 크리미 SILKY CREAMY",
+      "hex": "#E1DACE",
+      "rgb": [
+        225,
+        218,
+        206
+      ],
+      "std": 10.0,
+      "texture": {
+        "glcm_contrast": 0.72,
+        "glcm_homogeneity": 0.864,
+        "glcm_energy": 0.5491,
+        "directionality": 0.389,
+        "edge_density": 2.08,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.534,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "실키 크리미 SILKY CREAMY",
+      "page": 23,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3040.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3040.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3041",
+      "name": "소울 베이지 SOUL BEIGE",
+      "hex": "#CCB38E",
+      "rgb": [
+        204,
+        179,
+        142
+      ],
+      "std": 26.4,
+      "texture": {
+        "glcm_contrast": 0.43,
+        "glcm_homogeneity": 0.83,
+        "glcm_energy": 0.4918,
+        "directionality": 0.382,
+        "edge_density": 2.31,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.588,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "소울 베이지 SOUL BEIGE",
+      "page": 23,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3041.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3041.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3043",
+      "name": "레트로 그레이 RETRO GRAY",
+      "hex": "#BDB1A1",
+      "rgb": [
+        189,
+        177,
+        161
+      ],
+      "std": 14.0,
+      "texture": {
+        "glcm_contrast": 0.77,
+        "glcm_homogeneity": 0.766,
+        "glcm_energy": 0.412,
+        "directionality": 0.492,
+        "edge_density": 3.4,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.664,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "레트로 그레이 RETRO GRAY",
+      "page": 23,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3043.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3043.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3042",
+      "name": "소울 시에나 SOUL SIENNA",
+      "hex": "#8E6F4B",
+      "rgb": [
+        142,
+        111,
+        75
+      ],
+      "std": 28.2,
+      "texture": {
+        "glcm_contrast": 0.71,
+        "glcm_homogeneity": 0.754,
+        "glcm_energy": 0.4104,
+        "directionality": 0.375,
+        "edge_density": 3.25,
+        "dominant_angle_deg": 175.0,
+        "dominant_strength": 0.533,
+        "label": "입자형/거친텍스처",
+        "direction": null
+      },
+      "category": "소울 시에나 SOUL SIENNA",
+      "page": 23,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3042.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3042.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3044",
+      "name": "레트로 베이지 RETRO BEIGE",
+      "hex": "#C7A57F",
+      "rgb": [
+        199,
+        165,
+        127
+      ],
+      "std": 29.7,
+      "texture": {
+        "glcm_contrast": 0.48,
+        "glcm_homogeneity": 0.814,
+        "glcm_energy": 0.5083,
+        "directionality": 0.433,
+        "edge_density": 2.51,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.627,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "레트로 베이지 RETRO BEIGE",
+      "page": 23,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3044.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3044.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
+    },
+    {
+      "code": "JT3038",
+      "name": "아르보 라이트 ARBOR LIGHT",
+      "hex": "#D8B185",
+      "rgb": [
+        216,
+        177,
+        133
+      ],
+      "std": 34.7,
+      "texture": {
+        "glcm_contrast": 0.69,
+        "glcm_homogeneity": 0.774,
+        "glcm_energy": 0.3801,
+        "directionality": 0.391,
+        "edge_density": 2.83,
+        "dominant_angle_deg": 5.0,
+        "dominant_strength": 0.588,
+        "label": "선형결(세로결)",
+        "direction": "세로결"
+      },
+      "category": "아르보 라이트 ARBOR LIGHT",
+      "page": 23,
+      "thumb": "thumbs/동화마루_Jin_Texture_JT3038.jpg",
+      "full": "thumbs_full/동화마루_Jin_Texture_JT3038.jpg",
+      "material": "마루",
+      "manufacturer": "동화마루 Jin Texture",
+      "product_line": "JIN TEXTURE"
     }
   ]
 }
