@@ -22,6 +22,8 @@
   .material-group { margin-top:36px; padding-top:16px; border-top:1px solid #2a2a2a; }
   .material-group:first-child { border-top:none; padding-top:0; }
   .material-title { font-size:19px; margin:0; color:#fff; }
+  .section-note { font-size:12.5px; color:#888; margin-top:4px; }
+  .more-note { font-size:11.5px; color:#666; margin:8px 0 4px; }
   .brand-group { margin-top:20px; }
   .brand-group h2 { font-size:15px; margin:0 0 10px; color:#ddd; font-weight:600; }
   .brand-group h2 .count { color:#777; font-weight:400; font-size:12px; }
@@ -65,7 +67,7 @@
 </head>
 <body>
 
-<h1>업로드 이미지로 가장 비슷한 필름 찾기</h1>
+<h1>업로드 이미지로 어울리는 필름·벽지·마루 찾기</h1>
 <div class="sub" id="catalogSub">카탈로그 로딩 중...</div>
 
 <div id="dropzone">
@@ -299,82 +301,120 @@ function analyzeImage(img) {
   renderResults(rgb, texClass);
 }
 
-function renderResults(rgb, texClass) {
-  if (!CATALOG.length) { document.getElementById('status').textContent = '카탈로그 로딩 대기 중...'; return; }
-  const lab = rgbToLab(...rgb);
-  const useTexture = document.getElementById('texToggle').checked;
-
-  const scored = CATALOG.map(item => {
+function scoreItems(lab, texClass, useTexture, items) {
+  return items.map(item => {
     const de = deltaE76(lab, item.lab);
     const texMatch = useTexture && item.texture && item.texture.label === texClass.label;
     const score = texMatch ? de * 0.85 : de;
     return { ...item, de, score, texMatch };
-  });
+  }).sort((a, b) => a.score - b.score);
+}
 
-  // 재질(필름/벽지/마루) → 제조사 2단으로 그룹 지어 각 브랜드에서 상위 N개씩 추천.
-  // colors.json의 meta.categories 구조를 그대로 따라가므로, 새 재질이나 새 브랜드를
-  // 추가할 때도(items에 material/manufacturer만 채워서 합치면) 이 로직이 자동으로 대응한다.
-  const byMaterial = new Map();
-  for (const item of scored) {
-    const matKey = item.material || '기타';
-    const brandKey = item.manufacturer || '기타';
-    if (!byMaterial.has(matKey)) byMaterial.set(matKey, new Map());
-    const byBrand = byMaterial.get(matKey);
-    if (!byBrand.has(brandKey)) byBrand.set(brandKey, []);
-    byBrand.get(brandKey).push(item);
+function cardHtml(r, idx, rank) {
+  const rankBadge = rank != null ? `<span class="rank">#${rank}</span> ` : '';
+  return `
+    <div class="card" data-idx="${idx}">
+      <img class="thumb" src="${r.thumb || ''}" onerror="this.style.display='none'">
+      <div class="swatch" style="background:${r.hex}"></div>
+      <div class="meta">
+        ${rankBadge}<span class="code">${r.code}</span><br>
+        ${r.hex} · <span class="de">ΔE ${r.de.toFixed(1)}</span><br>
+        <span class="tex">${r.texture.label}${r.texMatch ? ' ✓일치' : ''}</span><br>
+        <span class="cat">${r.category || ''}</span> · p.${r.page}
+      </div>
+    </div>`;
+}
+
+function renderBrandGroups(byMaterialName, materialName, flatTop, opts) {
+  const byBrand = new Map();
+  for (const item of byMaterialName) {
+    const key = item.manufacturer || '기타';
+    if (!byBrand.has(key)) byBrand.set(key, []);
+    byBrand.get(key).push(item);
   }
-  for (const byBrand of byMaterial.values()) {
-    for (const list of byBrand.values()) list.sort((a, b) => a.score - b.score);
-  }
+  const catMeta = (CATALOG_META.categories || []).find(c => c.name === materialName);
+  const brandOrder = catMeta
+    ? catMeta.manufacturers.map(m => m.name).filter(name => byBrand.has(name))
+    : [...byBrand.keys()];
 
-  const materialOrder = CATALOG_META.categories
-    ? CATALOG_META.categories.map(c => c.name).filter(name => byMaterial.has(name))
-    : [...byMaterial.keys()];
+  return brandOrder.map(brandName => {
+    const all = byBrand.get(brandName);
+    const shown = opts.showAll ? all : all.slice(0, RESULTS_PER_BRAND);
+    const startIdx = flatTop.length;
+    flatTop.push(...shown);
+    const productLine = shown[0] ? shown[0].product_line : '';
 
-  document.getElementById('status').textContent = `재질/브랜드별 상위 ${RESULTS_PER_BRAND}종 추천 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`;
-
-  const flatTop = [];
-  const results = document.getElementById('results');
-  results.innerHTML = materialOrder.map(matName => {
-    const byBrand = byMaterial.get(matName);
-    const catMeta = (CATALOG_META.categories || []).find(c => c.name === matName);
-    const brandOrder = catMeta
-      ? catMeta.manufacturers.map(m => m.name).filter(name => byBrand.has(name))
-      : [...byBrand.keys()];
-
-    const brandBlocks = brandOrder.map(brandName => {
-      const top = byBrand.get(brandName).slice(0, RESULTS_PER_BRAND);
-      const startIdx = flatTop.length;
-      flatTop.push(...top);
-      const productLine = top[0] ? top[0].product_line : '';
-
-      const cards = top.map((r, i) => `
-        <div class="card" data-idx="${startIdx + i}">
-          <img class="thumb" src="${r.thumb || ''}" onerror="this.style.display='none'">
-          <div class="swatch" style="background:${r.hex}"></div>
-          <div class="meta">
-            <span class="rank">#${i + 1}</span> <span class="code">${r.code}</span><br>
-            ${r.hex} · <span class="de">ΔE ${r.de.toFixed(1)}</span><br>
-            <span class="tex">${r.texture.label}${r.texMatch ? ' ✓일치' : ''}</span><br>
-            <span class="cat">${r.category || ''}</span> · p.${r.page}
-          </div>
-        </div>
-      `).join('');
-
-      return `
-        <div class="brand-group">
-          <h2>${brandName} <span class="count">${productLine} · ${top.length}종</span></h2>
-          <div class="cards-row">${cards}</div>
-        </div>`;
-    }).join('');
+    const cards = shown.map((r, i) => cardHtml(r, startIdx + i, opts.showAll ? (i < RESULTS_PER_BRAND ? i + 1 : null) : i + 1)).join('');
+    const extraNote = opts.showAll && all.length > RESULTS_PER_BRAND
+      ? `<div class="more-note">상위 ${RESULTS_PER_BRAND}개는 추천순, 나머지 ${all.length - RESULTS_PER_BRAND}개는 전체 목록입니다.</div>` : '';
 
     return `
-      <div class="material-group">
-        <h1 class="material-title">${matName}</h1>
-        ${brandBlocks}
+      <div class="brand-group">
+        <h2>${brandName} <span class="count">${productLine} · ${shown.length}${opts.showAll ? `/${all.length}` : ''}종</span></h2>
+        ${extraNote}
+        <div class="cards-row">${cards}</div>
       </div>`;
   }).join('');
+}
 
+function renderResults(rgb, texClass) {
+  if (!CATALOG.length) { document.getElementById('status').textContent = '카탈로그 로딩 대기 중...'; return; }
+  const uploadLab = rgbToLab(...rgb);
+  const useTexture = document.getElementById('texToggle').checked;
+
+  const byMaterialAll = new Map();
+  for (const item of CATALOG) {
+    const key = item.material || '기타';
+    if (!byMaterialAll.has(key)) byMaterialAll.set(key, []);
+    byMaterialAll.get(key).push(item);
+  }
+  const materialOrder = CATALOG_META.categories
+    ? CATALOG_META.categories.map(c => c.name).filter(name => byMaterialAll.has(name))
+    : [...byMaterialAll.keys()];
+
+  const flatTop = [];
+  const sections = [];
+
+  // 1) 필름: 업로드 사진과 비슷한 것을 그대로 매칭 (기존 방식 유지)
+  const filmScored = scoreItems(uploadLab, texClass, useTexture, byMaterialAll.get('필름') || []);
+  const anchor = filmScored[0]; // 가장 잘 맞은 필름을 다른 재질 추천의 기준(앵커)으로 사용
+  if (filmScored.length) {
+    sections.push(`
+      <div class="material-group">
+        <h1 class="material-title">필름</h1>
+        <div class="section-note">업로드 이미지와 색상+텍스처가 가장 비슷한 필름입니다.</div>
+        ${renderBrandGroups(filmScored, '필름', flatTop, { showAll: false })}
+      </div>`);
+  }
+
+  // 2) 벽지/마루 등: "업로드 사진"이 아니라 "위에서 매칭된 필름(앵커)"과 어울리는 것을 추천.
+  //    실제 인테리어 룩북/매치업 자료 학습 결과 색상 궁합이 톤온톤(비슷한 밝기·톤) 위주라
+  //    ΔE(색+텍스처 유사도)를 그대로 재사용하되 기준점만 필름 쪽 색으로 바꾼다.
+  const anchorLab = anchor ? anchor.lab : uploadLab;
+  const anchorTex = anchor ? anchor.texture : texClass;
+
+  for (const matName of materialOrder) {
+    if (matName === '필름') continue;
+    const items = byMaterialAll.get(matName);
+    if (!items || !items.length) continue;
+    const scored = scoreItems(anchorLab, anchorTex, useTexture, items);
+    const showAll = matName === '마루'; // 마루는 추천 외 다른 옵션도 다 보이게
+    const noteText = anchor
+      ? `<b>${anchor.code}</b> 필름과 어울리는 순서로 추천합니다${showAll ? ' (그 아래는 전체 목록)' : ''}.`
+      : '필름을 먼저 찾아야 어울림 추천이 가능합니다.';
+    sections.push(`
+      <div class="material-group">
+        <h1 class="material-title">${matName}</h1>
+        <div class="section-note">${noteText}</div>
+        ${renderBrandGroups(scored, matName, flatTop, { showAll })}
+      </div>`);
+  }
+
+  document.getElementById('status').textContent = anchor
+    ? `필름 매칭 → 벽지/마루는 "${anchor.code}" 필름과 어울리는 순으로 추천 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`
+    : `상위 ${RESULTS_PER_BRAND}종 추천 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`;
+
+  document.getElementById('results').innerHTML = sections.join('');
   window.__lastTop = flatTop;
 }
 
