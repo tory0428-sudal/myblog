@@ -449,7 +449,7 @@ function renderAll() {
   sections.push(`
     <div class="material-group">
       <h1 class="material-title">필름</h1>
-      <div class="section-note">업로드 이미지와 색상+텍스처가 가장 비슷한 필름입니다. 원하는 걸 <b>선택</b>하면 아래에 어울리는 벽지·마루가 추천됩니다.</div>
+      <div class="section-note">업로드 이미지와 색상+텍스처가 가장 비슷한 필름입니다. 원하는 걸 <b>선택</b>하면 아래에 어울리는 마루가 추천됩니다.</div>
       ${renderBrandGroups(window.__filmScored, '필름', { showAll: false })}
     </div>`);
 
@@ -462,9 +462,18 @@ function renderAll() {
       if (!byMaterialAll.has(key)) byMaterialAll.set(key, []);
       byMaterialAll.get(key).push(item);
     }
+    // 벽지는 색상 유사도 자동추천에서 뺐다(카탈로그가 흰색 쪽으로 쏠려있어 앵커 매칭 자체의
+    // 효용이 낮았음) — 대신 룩북 학습으로 뽑은 tone(화이트/웜/그레이/다크톤)·finish(스톤/미장,
+    // 페브릭, 페인트/스무스) 태그를 colors.json에 넣어뒀고, "느낌 선택형" UI는 다음 단계에서 추가.
     const materialOrder = CATALOG_META.categories
-      ? CATALOG_META.categories.map(c => c.name).filter(n => n !== '필름' && byMaterialAll.has(n))
-      : [...byMaterialAll.keys()].filter(n => n !== '필름');
+      ? CATALOG_META.categories.map(c => c.name).filter(n => n !== '필름' && n !== '벽지' && byMaterialAll.has(n))
+      : [...byMaterialAll.keys()].filter(n => n !== '필름' && n !== '벽지');
+
+    sections.push(`
+      <div class="material-group">
+        <h1 class="material-title">벽지</h1>
+        <div class="section-note">벽지는 색상 유사도 자동추천 대신, 화이트톤·웜톤·그레이톤 / 스톤·페브릭·페인트 같은 느낌을 직접 골라 추천받는 방식으로 준비 중입니다.</div>
+      </div>`);
 
     for (const matName of materialOrder) {
       const items = byMaterialAll.get(matName);
@@ -487,7 +496,7 @@ function renderAll() {
   renderSummary();
 
   document.getElementById('status').textContent = SELECTION.film
-    ? `"${SELECTION.film.code}" 필름 기준으로 벽지·마루 추천 중 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`
+    ? `"${SELECTION.film.code}" 필름 기준으로 마루 추천 중 · 벽지는 느낌 선택형 준비 중 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`
     : `필름 후보를 확인하고 선택해주세요 (텍스처 반영: ${useTexture ? 'ON' : 'OFF'})`;
 }
 
@@ -495,21 +504,23 @@ function renderSummary() {
   const panel = document.getElementById('summaryPanel');
   if (!panel) return;
   const { film, wallpaper, flooring } = SELECTION;
-  if (!(film && wallpaper && flooring)) { panel.innerHTML = ''; return; }
-  const items = [film, wallpaper, flooring];
-  const img = r => r.full || r.thumb || '';
+  if (!(film && flooring)) { panel.innerHTML = ''; return; }
+  const items = [film, wallpaper, flooring].filter(Boolean);
+  const img = r => r && (r.full || r.thumb || '');
+  // 벽지는 아직 선택 단계가 없어서(느낌 선택형 UI 준비 중) 고르기 전엔 목업 벽면을 무지 배경으로 둔다.
+  const wallStyle = wallpaper ? `background-image:url('${img(wallpaper)}')` : `background:#3a3a3a`;
   panel.innerHTML = `
     <div class="material-group">
-      <h1 class="material-title">선택 완료 — 목업 미리보기</h1>
-      <div class="section-note">필름·벽지·마루를 매핑한 간단한 목업입니다. 아래 마루 목록에서 다른 걸 선택하면 바닥이 바로 바뀝니다.</div>
+      <h1 class="material-title">목업 미리보기</h1>
+      <div class="section-note">필름·마루를 매핑한 간단한 목업입니다 (벽지는 느낌 선택 UI가 준비되면 반영됩니다). 아래 마루 목록에서 다른 걸 선택하면 바닥이 바로 바뀝니다.</div>
       <div class="mockup">
-        <div class="mockup-wall" style="background-image:url('${img(wallpaper)}')"></div>
+        <div class="mockup-wall" style="${wallStyle}"></div>
         <div class="mockup-baseboard"></div>
         <div class="mockup-floor" style="background-image:url('${img(flooring)}')"></div>
         <div class="mockup-door" style="background-image:url('${img(film)}')"></div>
       </div>
       <div class="mockup-legend">
-        <span><i style="background:${wallpaper.hex}"></i>벽지 ${wallpaper.code} (${wallpaper.manufacturer})</span>
+        ${wallpaper ? `<span><i style="background:${wallpaper.hex}"></i>벽지 ${wallpaper.code} (${wallpaper.manufacturer})</span>` : `<span>벽지 미선택</span>`}
         <span><i style="background:${film.hex}"></i>필름/도어 ${film.code} (${film.manufacturer})</span>
         <span><i style="background:${flooring.hex}"></i>마루 ${flooring.code} (${flooring.manufacturer})</span>
       </div>
