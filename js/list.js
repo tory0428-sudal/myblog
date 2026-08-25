@@ -2,6 +2,36 @@
   var listEl = document.getElementById("post-list");
   var headingEl = document.getElementById("list-heading");
   var manifestPromise = null;
+  var PAGE_SIZE = 8;
+
+  // Renders the first PAGE_SIZE items into containerEl and, if there are more,
+  // inserts a "전체글보기" button right after containerEl that reveals the rest
+  // in place when clicked. wrapId must be unique per container so repeated
+  // renders replace the previous button instead of stacking duplicates.
+  function renderWithMore(containerEl, itemsHtml, wrapId) {
+    var oldWrap = document.getElementById(wrapId);
+    if (oldWrap) oldWrap.remove();
+
+    containerEl.innerHTML = itemsHtml.slice(0, PAGE_SIZE).join("");
+
+    if (itemsHtml.length <= PAGE_SIZE) return;
+
+    var wrap = document.createElement("div");
+    wrap.id = wrapId;
+    wrap.className = "list-more-wrap";
+
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "list-more-btn";
+    btn.textContent = "전체글보기 (" + itemsHtml.length + "개)";
+    btn.addEventListener("click", function () {
+      containerEl.innerHTML = itemsHtml.join("");
+      wrap.remove();
+    });
+
+    wrap.appendChild(btn);
+    containerEl.insertAdjacentElement("afterend", wrap);
+  }
 
   function getManifest() {
     if (!manifestPromise) {
@@ -50,6 +80,8 @@
 
   function renderProjectCases() {
     if (headingEl) headingEl.textContent = "";
+    var oldWrap = document.getElementById("post-list-more-wrap");
+    if (oldWrap) oldWrap.remove();
     getProjectsManifest()
       .then(function (projects) {
         if (headingEl) headingEl.textContent = "주택시공프로젝트 (" + projects.length + "개)";
@@ -57,9 +89,11 @@
           listEl.innerHTML = '<li class="empty-state">아직 등록된 프로젝트가 없습니다.</li>';
           return;
         }
-        listEl.innerHTML = projects.map(projectCardHtml).join("");
+        renderWithMore(listEl, projects.map(projectCardHtml), "post-list-more-wrap");
       })
       .catch(function () {
+        var wrap = document.getElementById("post-list-more-wrap");
+        if (wrap) wrap.remove();
         listEl.innerHTML = '<li class="empty-state">프로젝트를 불러오지 못했습니다.</li>';
       });
   }
@@ -78,7 +112,7 @@
     getProjectsManifest()
       .then(function (projects) {
         if (!projects.length) return;
-        appListEl.innerHTML = projects.map(projectCardHtml).join("");
+        renderWithMore(appListEl, projects.map(projectCardHtml), "app-list-more-wrap");
         appListEl.dataset.loaded = "1";
       })
       .catch(function () {});
@@ -87,6 +121,8 @@
   function render(catSlug) {
     markActiveCategory(catSlug);
     updateAppSection(catSlug);
+    var staleWrap = document.getElementById("post-list-more-wrap");
+    if (staleWrap) staleWrap.remove();
     listEl.innerHTML = '<li class="empty-state">불러오는 중...</li>';
 
     if (catSlug === "project-cases") {
@@ -113,30 +149,32 @@
           return new Date(b.date) - new Date(a.date);
         });
 
-        listEl.innerHTML = posts
-          .map(function (post) {
-            var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(post.category) : null;
-            var badge = cat
-              ? '<a class="post-item-category" href="index.html?cat=' + encodeURIComponent(cat.slug) + '" data-cat="' + escapeHtml(cat.slug) + '">' + escapeHtml(cat.label) + "</a>"
-              : "";
-            var image = post.image || (cat && cat.image) || "";
-            var href = "post.html?slug=" + encodeURIComponent(post.slug);
-            return (
-              '<li class="post-item">' +
-              '<a class="post-item-image" href="' + href + '" tabindex="-1" aria-hidden="true">' +
-              (image ? '<img src="' + image + '" alt="">' : "") +
-              "</a>" +
-              '<div class="post-item-body">' +
-              '<div class="post-item-meta">' + badge + '<span class="post-item-date">' + formatDate(post.date) + "</span></div>" +
-              '<h2 class="post-item-title"><a href="' + href + '">' + escapeHtml(post.title) + "</a></h2>" +
-              '<p class="post-item-excerpt">' + escapeHtml(post.excerpt || "") + "</p>" +
-              "</div>" +
-              "</li>"
-            );
-          })
-          .join("");
+        var postsHtml = posts.map(function (post) {
+          var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(post.category) : null;
+          var badge = cat
+            ? '<a class="post-item-category" href="index.html?cat=' + encodeURIComponent(cat.slug) + '" data-cat="' + escapeHtml(cat.slug) + '">' + escapeHtml(cat.label) + "</a>"
+            : "";
+          var image = post.image || (cat && cat.image) || "";
+          var href = "post.html?slug=" + encodeURIComponent(post.slug);
+          return (
+            '<li class="post-item">' +
+            '<a class="post-item-image" href="' + href + '" tabindex="-1" aria-hidden="true">' +
+            (image ? '<img src="' + image + '" alt="">' : "") +
+            "</a>" +
+            '<div class="post-item-body">' +
+            '<div class="post-item-meta">' + badge + '<span class="post-item-date">' + formatDate(post.date) + "</span></div>" +
+            '<h2 class="post-item-title"><a href="' + href + '">' + escapeHtml(post.title) + "</a></h2>" +
+            '<p class="post-item-excerpt">' + escapeHtml(post.excerpt || "") + "</p>" +
+            "</div>" +
+            "</li>"
+          );
+        });
+
+        renderWithMore(listEl, postsHtml, "post-list-more-wrap");
       })
       .catch(function () {
+        var wrap = document.getElementById("post-list-more-wrap");
+        if (wrap) wrap.remove();
         listEl.innerHTML = '<li class="empty-state">글 목록을 불러오지 못했습니다.</li>';
       });
   }
