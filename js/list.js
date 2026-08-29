@@ -35,7 +35,7 @@
 
   function getManifest() {
     if (!manifestPromise) {
-      manifestPromise = fetch("posts/manifest.json").then(function (res) {
+      manifestPromise = fetch("posts/manifest.json", { cache: "no-store" }).then(function (res) {
         if (!res.ok) throw new Error("manifest load failed");
         return res.json();
       });
@@ -52,7 +52,7 @@
 
   function getProjectsManifest() {
     if (!projectsManifestPromise) {
-      projectsManifestPromise = fetch("projects/manifest.json").then(function (res) {
+      projectsManifestPromise = fetch("projects/manifest.json", { cache: "no-store" }).then(function (res) {
         if (!res.ok) throw new Error("projects manifest load failed");
         return res.json();
       });

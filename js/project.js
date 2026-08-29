@@ -164,7 +164,7 @@
     return;
   }
 
-  fetch("projects/" + encodeURIComponent(slug) + ".json")
+  fetch("projects/" + encodeURIComponent(slug) + ".json", { cache: "no-store" })
     .then(function (res) {
       if (!res.ok) throw new Error("not found");
       return res.json();

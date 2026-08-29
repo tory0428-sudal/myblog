@@ -16,7 +16,7 @@
     return;
   }
 
-  fetch("posts/manifest.json")
+  fetch("posts/manifest.json", { cache: "no-store" })
     .then(function (res) {
       return res.json();
     })
@@ -48,7 +48,7 @@
         categoryEl.style.display = "none";
       }
 
-      return fetch("posts/" + encodeURIComponent(slug) + ".md")
+      return fetch("posts/" + encodeURIComponent(slug) + ".md", { cache: "no-store" })
         .then(function (res) {
           if (!res.ok) throw new Error("md load failed");
           return res.text();

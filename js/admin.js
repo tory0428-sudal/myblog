@@ -215,7 +215,7 @@
       GH.ghPutText(currentPath, textarea.value, currentSha, "관리자 페이지: " + select.value + " 본문 수정")
         .then(function (res) {
           currentSha = res.content.sha;
-          setStatus(statusEl, "저장 완료! 1~3분 후 사이트에 반영됩니다.");
+          setStatus(statusEl, "저장 완료! GitHub에 반영됐습니다. 사이트(toryhome.kr)는 배포에 1~3분 걸리며, 그 뒤 새로고침하면 보입니다.");
         })
         .catch(function (err) {
           setStatus(statusEl, "저장 실패: " + err.message, true);
@@ -372,7 +372,7 @@
       GH.ghPutText(currentPath, text, currentSha, "관리자 페이지: " + select.value + " 소개글/스펙/공정코멘트 수정")
         .then(function (res) {
           currentSha = res.content.sha;
-          setStatus(statusEl, "저장 완료! 1~3분 후 사이트에 반영됩니다.");
+          setStatus(statusEl, "저장 완료! GitHub에 반영됐습니다. 사이트(toryhome.kr)는 배포에 1~3분 걸리며, 그 뒤 새로고침하면 보입니다.");
         })
         .catch(function (err) {
           setStatus(statusEl, "저장 실패: " + err.message, true);
