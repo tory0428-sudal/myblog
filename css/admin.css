@@ -130,6 +130,19 @@
 .admin-status {
   font-size: 0.85rem;
   color: var(--accent);
+  white-space: pre-line;
+}
+
+.admin-gate-error {
+  margin: 0.8rem 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e0b4b4;
+  background: rgba(192, 57, 43, 0.08);
+  border-radius: 8px;
+  color: #c0392b;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  white-space: pre-line;
 }
 
 /* spec editor */
@@ -210,6 +223,7 @@
 .img-replacer-status {
   font-size: 0.7rem;
   color: var(--accent);
+  white-space: pre-line;
 }
 
 .image-group {

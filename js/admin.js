@@ -6,21 +6,61 @@
   var app = document.getElementById("admin-app");
   var tokenInput = document.getElementById("admin-token-input");
   var logoutBtn = document.getElementById("admin-logout");
+  var gateError = document.getElementById("admin-gate-error");
+  var loginForm = document.getElementById("admin-login-form");
+  var loginBtn = loginForm.querySelector("button");
+  var appInitialized = false;
+
+  function setGateError(msg) {
+    if (!gateError) return;
+    gateError.textContent = msg || "";
+    gateError.hidden = !msg;
+  }
 
   function showApp() {
     gate.hidden = true;
     app.hidden = false;
+    if (appInitialized) return;
+    appInitialized = true;
     initPosts();
     initProjects();
     initCategories();
   }
 
-  document.getElementById("admin-login-form").addEventListener("submit", function (e) {
+  var GATE_MESSAGES = {
+    invalid: "토큰이 올바르지 않거나 만료됐습니다. GitHub에서 새 토큰을 발급해 다시 시도하세요.",
+    "no-repo": "이 토큰이 저장소(myblog)에 접근할 수 없습니다. 토큰 설정에서 Repository access에 이 저장소를 포함시켜 다시 발급하세요.",
+    readonly: "이 토큰은 읽기 전용입니다. GitHub 토큰 설정에서 Repository permissions → Contents를 \"Read and write\"로 바꿔 다시 발급하세요. (지금 이대로 저장하면 403 오류가 납니다)",
+    network: "GitHub에 연결하지 못했습니다. 네트워크 상태를 확인하고 다시 시도하세요.",
+    http: "GitHub 응답 오류로 토큰을 확인하지 못했습니다. 잠시 후 다시 시도하세요."
+  };
+
+  // Verify the token can actually write before letting the user in.
+  function attemptLogin(token, opts) {
+    opts = opts || {};
+    setGateError("");
+    if (loginBtn) { loginBtn.disabled = true; loginBtn.textContent = "확인 중..."; }
+    GH.setToken(token);
+    return GH.verifyAccess().then(function (r) {
+      if (r.ok) {
+        showApp();
+        return true;
+      }
+      GH.clearToken();
+      if (!opts.silent) {
+        setGateError(GATE_MESSAGES[r.reason] || GATE_MESSAGES.http);
+      }
+      return false;
+    }).finally(function () {
+      if (loginBtn) { loginBtn.disabled = false; loginBtn.textContent = "로그인"; }
+    });
+  }
+
+  loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
     var v = tokenInput.value.trim();
     if (!v) return;
-    GH.setToken(v);
-    showApp();
+    attemptLogin(v);
   });
 
   logoutBtn.addEventListener("click", function () {
@@ -29,7 +69,7 @@
   });
 
   if (GH.getToken()) {
-    showApp();
+    attemptLogin(GH.getToken());
   }
 
   // ---------- tabs ----------
