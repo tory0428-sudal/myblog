@@ -11,9 +11,17 @@
 <meta property="og:image" id="meta-og-image" content="https://toryhome.kr/images/hero.jpg">
 <meta property="og:url" id="meta-og-url" content="https://toryhome.kr/post.html">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="css/style.css?v=21">
-<script src="js/theme.js?v=21"></script>
+<link rel="stylesheet" href="css/style.css?v=22">
+<script src="js/theme.js?v=22"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  (function () {
+    var s = new URLSearchParams(location.search).get("slug");
+    window.goatcounter = { path: s ? "/post/" + s : location.pathname };
+  })();
+</script>
+<script data-goatcounter="https://toryhome.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -35,7 +43,10 @@
     <header class="post-header">
       <a id="post-category" class="post-category" href="index.html"></a>
       <h1 id="post-title" class="post-title"></h1>
-      <div id="post-date" class="post-date"></div>
+      <div class="post-meta">
+        <span id="post-date" class="post-date"></span>
+        <span id="post-views" class="post-views" hidden></span>
+      </div>
     </header>
     <div id="post-content" class="post-content"></div>
   </article>
@@ -54,7 +65,7 @@
 <footer class="site-footer">
   <p class="footer-text"><a href="mailto:tory0428@gmail.com">tory0428@gmail.com</a> · Design by Tory(Claude)</p>
 </footer>
-<script src="js/categories.js?v=21"></script>
-<script src="js/post.js?v=21"></script>
+<script src="js/categories.js?v=22"></script>
+<script src="js/post.js?v=22"></script>
 </body>
 </html>

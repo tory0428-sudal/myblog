@@ -11,9 +11,17 @@
 <meta property="og:image" id="meta-og-image" content="https://toryhome.kr/images/hero.jpg">
 <meta property="og:url" id="meta-og-url" content="https://toryhome.kr/project.html">
 <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="css/style.css?v=21">
-<link rel="stylesheet" href="css/project.css?v=21">
-<script src="js/theme.js?v=21"></script>
+<link rel="stylesheet" href="css/style.css?v=22">
+<link rel="stylesheet" href="css/project.css?v=22">
+<script src="js/theme.js?v=22"></script>
+<script>
+  (function () {
+    var s = new URLSearchParams(location.search).get("slug");
+    window.goatcounter = { path: s ? "/project/" + s : location.pathname };
+  })();
+</script>
+<script data-goatcounter="https://toryhome.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -38,6 +46,6 @@
 <footer class="site-footer">
   <p class="footer-text"><a href="mailto:tory0428@gmail.com">tory0428@gmail.com</a> · Design by Tory(Claude)</p>
 </footer>
-<script src="js/project.js?v=21"></script>
+<script src="js/project.js?v=22"></script>
 </body>
 </html>

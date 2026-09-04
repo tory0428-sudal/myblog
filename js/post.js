@@ -34,6 +34,7 @@
       titleEl.textContent = meta.title;
       updateMeta(meta);
       dateEl.textContent = formatDate(meta.date);
+      renderViews(meta.slug);
       renderNav(posts, meta);
 
       var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(meta.category) : null;
@@ -62,6 +63,26 @@
     .catch(function () {
       showNotFound();
     });
+
+  function renderViews(slug) {
+    var el = document.getElementById("post-views");
+    if (!el) return;
+    var url = "https://toryhome.goatcounter.com/counter//post/" + encodeURIComponent(slug) + ".json";
+    fetch(url)
+      .then(function (res) {
+        if (!res.ok) throw new Error("no data");
+        return res.json();
+      })
+      .then(function (data) {
+        var n = data && data.count != null ? String(data.count).trim() : "0";
+        el.textContent = "조회 " + n;
+        el.hidden = false;
+      })
+      .catch(function () {
+        el.textContent = "조회 0";
+        el.hidden = false;
+      });
+  }
 
   function renderNav(posts, currentMeta) {
     if (!prevEl || !nextEl) return;
