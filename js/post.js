@@ -92,6 +92,17 @@
         host.parentNode.removeChild(host);
       }
     });
+
+    // 같은 캡션이 여러 장에 걸쳐 있으면 마지막 사진에만 남기고 나머지는 제거
+    var figs = contentEl.querySelectorAll("figure.post-figure");
+    var kept = {};
+    for (var i = figs.length - 1; i >= 0; i--) {
+      var cap = figs[i].querySelector("figcaption");
+      if (!cap) continue;
+      var key = cap.textContent;
+      if (kept[key]) cap.parentNode.removeChild(cap);
+      else kept[key] = true;
+    }
   }
 
   function renderViews(slug) {
