@@ -8,11 +8,11 @@
 
 주택을 시공하다 보면 완공하고 나서 가끔, 아니 자주, 건축주분들이 태양광 패널 설치를 원하시는 경우가 많습니다. 그래서 예전부터 "마감도 주택과 잘 어울리고 태양광 패널의 용량적 한계를 좀 극복할 수 있는 제품이 없을까" 하고 최근까지 눈여겨보던 제품이 바로 **테슬라의 솔라루프(Solar Roof)** 였습니다.
 
-![테슬라 솔라루프](posts/images/tesla-solar-roof/01-solar-roof-house.jpg)
+![<테슬라 솔라루프>](posts/images/tesla-solar-roof/01-solar-roof-house.jpg)
 
-![테슬라 솔라루프](posts/images/tesla-solar-roof/02-solar-roof-house-dusk.jpg)
+![<테슬라 솔라루프>](posts/images/tesla-solar-roof/02-solar-roof-house-dusk.jpg)
 
-![테슬라 CEO 일론 머스크](posts/images/tesla-solar-roof/03-elon-musk.jpg)
+![<테슬라의 CEO 일론 머스크>](posts/images/tesla-solar-roof/03-elon-musk.jpg "small")
 
 ## 지붕재와 태양전지를 하나로, 건물일체형 태양광
 
@@ -26,15 +26,15 @@
 
 개인적으로는 마감이 기존의 어떤 자재보다 우수하다고 봅니다.
 
-![솔라루프 구조 — 텍스처드 타일 / 배선이 포함된 타일 / 방수 언더레이먼트](posts/images/tesla-solar-roof/04-solar-roof-layers.jpg)
+![<솔라루프 마감 이미지>](posts/images/tesla-solar-roof/04-solar-roof-layers.jpg)
 
-![솔라루프 타일 근접 — 텍스처드 강화유리와 모서리 마감](posts/images/tesla-solar-roof/05-solar-roof-tile-closeup.jpg)
+![<솔라루프 마감 이미지>](posts/images/tesla-solar-roof/05-solar-roof-tile-closeup.jpg)
 
-![솔라루프 지붕면 질감](posts/images/tesla-solar-roof/06-solar-roof-surface.jpg)
+![<솔라루프 마감 이미지>](posts/images/tesla-solar-roof/06-solar-roof-surface.jpg)
 
-![용마루와 골(밸리) 마감 디테일](posts/images/tesla-solar-roof/07-solar-roof-ridge-detail.jpg)
+![<솔라루프 마감 이미지>](posts/images/tesla-solar-roof/07-solar-roof-ridge-detail.jpg)
 
-![환기구·연통·천창 등 지붕 관통부 마감 자재](posts/images/tesla-solar-roof/08-solar-roof-penetrations.jpg)
+![<솔라루프 마감 이미지>](posts/images/tesla-solar-roof/08-solar-roof-penetrations.jpg)
 
 위 사진들을 보니까 어떠신지요? 주택 마감을 하시는 분들이라면 모두 혹할 만한 마감 자재와 디자인입니다. 가장 신경 쓰이는 천창과 굴뚝 마감 자재도 함께 계획된 만큼, 테슬라에서 개발한 제품답게 그 디테일이 상당히 괜찮은 자재라고 생각합니다.
 
@@ -44,11 +44,11 @@
 
 아래는 실제 솔라루프로 시공된 주택의 모습입니다.
 
-![솔라루프로 시공된 주택 — 항공 뷰](posts/images/tesla-solar-roof/09-installed-house-aerial.jpg)
+![<솔라루프로 시공된 주택>](posts/images/tesla-solar-roof/09-installed-house-aerial.jpg)
 
-![솔라루프로 시공된 주택 — 지붕면 근접](posts/images/tesla-solar-roof/10-installed-house-closeup.jpg)
+![<솔라루프로 시공된 주택>](posts/images/tesla-solar-roof/10-installed-house-closeup.jpg)
 
-![솔라루프로 시공된 주택 — 박공·처마 디테일](posts/images/tesla-solar-roof/11-installed-house-detail.jpg)
+![<솔라루프로 시공된 주택>](posts/images/tesla-solar-roof/11-installed-house-detail.jpg)
 
 외국식 모임지붕에 아스팔트 슁글 느낌의 태양광으로 시공된 주택입니다. 그냥 보면 태양광 패널이라는 느낌이 없는, 정말 깔끔한 지붕이라고 생각됩니다.
 

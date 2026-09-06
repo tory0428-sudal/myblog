@@ -58,11 +58,41 @@
           contentEl.innerHTML = marked.parse(md);
           var firstH1 = contentEl.querySelector("h1:first-child");
           if (firstH1) firstH1.remove();
+          decorateImages();
         });
     })
     .catch(function () {
       showNotFound();
     });
+
+  function decorateImages() {
+    var imgs = contentEl.querySelectorAll("img");
+    Array.prototype.forEach.call(imgs, function (img) {
+      var fig = document.createElement("figure");
+      fig.className = "post-figure";
+
+      var size = img.getAttribute("title");
+      if (size) {
+        fig.classList.add("post-figure--" + size.replace(/[^a-z0-9-]/gi, ""));
+        img.removeAttribute("title");
+      }
+
+      var host = img.closest("p") || img.parentNode;
+      host.parentNode.insertBefore(fig, host);
+      fig.appendChild(img);
+
+      var alt = (img.getAttribute("alt") || "").trim();
+      if (alt) {
+        var cap = document.createElement("figcaption");
+        cap.textContent = alt;
+        fig.appendChild(cap);
+      }
+
+      if (host.tagName === "P" && !host.textContent.trim() && !host.querySelector("img")) {
+        host.parentNode.removeChild(host);
+      }
+    });
+  }
 
   function renderViews(slug) {
     var el = document.getElementById("post-views");
