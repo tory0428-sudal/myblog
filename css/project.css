@@ -26,7 +26,7 @@ html[data-theme="dark"] {
 }
 
 .project-page {
-  font-family: Georgia, "Noto Serif KR", "Nanum Myeongjo", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .project-cover {
