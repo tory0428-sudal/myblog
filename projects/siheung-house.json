@@ -1,0 +1,231 @@
+{
+  "slug": "siheung-house",
+  "title": "시흥 목조주택프로젝트",
+  "cover": "projects/images/siheung-house/cover.jpg",
+  "specs": [
+    { "label": "구조", "value": "목조주택" },
+    { "label": "외장마감", "value": "스터코, 롱브릭 / 아스팔트슁글" },
+    { "label": "평수", "value": "1층 30.0평 / 2층 11.2평 / 총 41.2평" },
+    { "label": "특징", "value": "스터코와 롱브릭으로 포인트를 준 목조주택" }
+  ],
+  "intro": "고향인 부산에 계신 노부모님을 모시기 위해, 건설일을 직접 하시는 아드님이 설계부터 시공까지 참여하신 주택입니다. 두 분이 편안하게 지내시기에 넉넉한 평수로, 1층은 안방과 멀티룸, 2층은 소거실과 방·펜트리로 구성해 실사용에 초점을 맞췄습니다. 아드님이 저희와 정말 많은 소통을 하며 하나하나 정성을 쏟으신 주택이라 더욱 기억에 남습니다.",
+  "conditions": [
+    "두 분이 편안하게 거주하실 수 있는 주택",
+    "짐이 많으신 편이라 넉넉한 수납공간과 펜트리 구성",
+    "2층 소거실은 전망이 가장 좋은 위치에 배치",
+    "노부부님이지만 인테리어는 최대한 모던하게 시공",
+    "소거실에 윈도우 시트와 유사한 창대목 설치"
+  ],
+  "phases": [
+    {
+      "key": "before-site",
+      "label": "공사 전 현장사진",
+      "desc": "공사 전 현장을 찾아 대지 형태와 주변 환경을 확인. 두 분이 편안하게 지내실 수 있도록 향과 배치를 먼저 살피는 것으로 시작.",
+      "images": [
+        "projects/images/siheung-house/before-site/01.jpg",
+        "projects/images/siheung-house/before-site/02.jpg",
+        "projects/images/siheung-house/before-site/03.jpg",
+        "projects/images/siheung-house/before-site/04.jpg",
+        "projects/images/siheung-house/before-site/05.jpg",
+        "projects/images/siheung-house/before-site/06.jpg",
+        "projects/images/siheung-house/before-site/07.jpg",
+        "projects/images/siheung-house/before-site/08.jpg"
+      ]
+    },
+    {
+      "key": "drawings",
+      "label": "도면",
+      "desc": "1층은 안방과 멀티룸, 2층은 소거실과 방·펜트리로 구성한 평면. 2층 소거실은 전망이 가장 좋은 위치에 배치하고, 두 분이 사용하시기 넉넉한 수납공간을 곳곳에 계획.",
+      "images": [
+        "projects/images/siheung-house/drawings/01.jpg",
+        "projects/images/siheung-house/drawings/02.jpg",
+        "projects/images/siheung-house/drawings/03.jpg",
+        "projects/images/siheung-house/drawings/04.jpg"
+      ],
+      "captions": ["1층평면도", "2층평면도", "정면도", "종단면도"]
+    },
+    {
+      "key": "foundation",
+      "label": "기초공사",
+      "desc": "터파기 후 철근 배근과 거푸집 설치, 콘크리트 타설로 기초를 완성. 목조주택인 만큼 기초 단계부터 정확한 치수와 수평을 꼼꼼히 확인.",
+      "images": [
+        "projects/images/siheung-house/foundation/01.jpg",
+        "projects/images/siheung-house/foundation/02.jpg",
+        "projects/images/siheung-house/foundation/03.jpg",
+        "projects/images/siheung-house/foundation/04.jpg",
+        "projects/images/siheung-house/foundation/05.jpg",
+        "projects/images/siheung-house/foundation/06.jpg",
+        "projects/images/siheung-house/foundation/07.jpg",
+        "projects/images/siheung-house/foundation/08.jpg"
+      ]
+    },
+    {
+      "key": "frame",
+      "label": "골조공사",
+      "desc": "목구조로 벽체와 지붕 트러스를 세워 골조를 완성. 타이벡 방습지로 전체를 감싸 마감하고, 2층 소거실 방향으로 낼 창의 위치를 미리 잡아둠.",
+      "images": [
+        "projects/images/siheung-house/frame/01.jpg",
+        "projects/images/siheung-house/frame/02.jpg",
+        "projects/images/siheung-house/frame/03.jpg",
+        "projects/images/siheung-house/frame/04.jpg",
+        "projects/images/siheung-house/frame/05.jpg",
+        "projects/images/siheung-house/frame/06.jpg",
+        "projects/images/siheung-house/frame/07.jpg",
+        "projects/images/siheung-house/frame/08.jpg"
+      ]
+    },
+    {
+      "key": "electrical-wiring",
+      "label": "전기배선공사",
+      "desc": "골조 사이로 전기 배선을 매립하는 공사. 조명과 콘센트 위치를 미리 계획해 배선을 정리.",
+      "images": [
+        "projects/images/siheung-house/electrical-wiring/01.jpg",
+        "projects/images/siheung-house/electrical-wiring/02.jpg",
+        "projects/images/siheung-house/electrical-wiring/03.jpg",
+        "projects/images/siheung-house/electrical-wiring/04.jpg",
+        "projects/images/siheung-house/electrical-wiring/05.jpg",
+        "projects/images/siheung-house/electrical-wiring/06.jpg",
+        "projects/images/siheung-house/electrical-wiring/07.jpg",
+        "projects/images/siheung-house/electrical-wiring/08.jpg"
+      ]
+    },
+    {
+      "key": "mep",
+      "label": "설비공사",
+      "desc": "1층 바닥에 난방 배관을 깔아 복사난방을 위한 설비 공사를 진행. 두 분이 겨울에도 따뜻하게 지내실 수 있도록 꼼꼼히 시공.",
+      "images": [
+        "projects/images/siheung-house/mep/01.jpg",
+        "projects/images/siheung-house/mep/02.jpg",
+        "projects/images/siheung-house/mep/03.jpg",
+        "projects/images/siheung-house/mep/04.jpg",
+        "projects/images/siheung-house/mep/05.jpg",
+        "projects/images/siheung-house/mep/06.jpg",
+        "projects/images/siheung-house/mep/07.jpg",
+        "projects/images/siheung-house/mep/08.jpg"
+      ]
+    },
+    {
+      "key": "exterior-wall",
+      "label": "외벽공사",
+      "desc": "스터코와 롱브릭으로 포인트를 준 외벽 마감. 지붕은 아스팔트슁글로 마감해 목조주택 특유의 따뜻한 느낌을 살림.",
+      "images": [
+        "projects/images/siheung-house/exterior-wall/01.jpg",
+        "projects/images/siheung-house/exterior-wall/02.jpg",
+        "projects/images/siheung-house/exterior-wall/03.jpg",
+        "projects/images/siheung-house/exterior-wall/04.jpg",
+        "projects/images/siheung-house/exterior-wall/05.jpg",
+        "projects/images/siheung-house/exterior-wall/06.jpg",
+        "projects/images/siheung-house/exterior-wall/07.jpg",
+        "projects/images/siheung-house/exterior-wall/08.jpg"
+      ]
+    },
+    {
+      "key": "interior-carpentry",
+      "label": "내부 목공사",
+      "desc": "석고보드 마감과 계단 목공을 진행. 2층 소거실 창가에는 윈도우 시트와 유사한 분위기를 낼 수 있도록 창대목을 짜 넣어 앉아서 전망을 즐길 수 있는 공간을 마련.",
+      "images": [
+        "projects/images/siheung-house/interior-carpentry/01.jpg",
+        "projects/images/siheung-house/interior-carpentry/02.jpg",
+        "projects/images/siheung-house/interior-carpentry/03.jpg",
+        "projects/images/siheung-house/interior-carpentry/04.jpg",
+        "projects/images/siheung-house/interior-carpentry/05.jpg",
+        "projects/images/siheung-house/interior-carpentry/06.jpg",
+        "projects/images/siheung-house/interior-carpentry/07.jpg",
+        "projects/images/siheung-house/interior-carpentry/08.jpg"
+      ]
+    },
+    {
+      "key": "tile",
+      "label": "타일공사",
+      "desc": "욕실 바닥과 벽면 타일 시공. 두 분이 사용하시기 편하도록 밝고 깔끔한 톤으로 마감.",
+      "images": [
+        "projects/images/siheung-house/tile/01.jpg",
+        "projects/images/siheung-house/tile/02.jpg",
+        "projects/images/siheung-house/tile/03.jpg",
+        "projects/images/siheung-house/tile/04.jpg",
+        "projects/images/siheung-house/tile/05.jpg",
+        "projects/images/siheung-house/tile/06.jpg",
+        "projects/images/siheung-house/tile/07.jpg"
+      ]
+    },
+    {
+      "key": "wallpaper",
+      "label": "도배공사",
+      "desc": "전체 도배 마감. 노부부님이지만 최대한 모던한 분위기를 원하신 요청에 맞춰 차분하고 깔끔한 톤으로 선택.",
+      "images": [
+        "projects/images/siheung-house/wallpaper/01.jpg",
+        "projects/images/siheung-house/wallpaper/02.jpg",
+        "projects/images/siheung-house/wallpaper/03.jpg",
+        "projects/images/siheung-house/wallpaper/04.jpg",
+        "projects/images/siheung-house/wallpaper/05.jpg",
+        "projects/images/siheung-house/wallpaper/06.jpg",
+        "projects/images/siheung-house/wallpaper/07.jpg",
+        "projects/images/siheung-house/wallpaper/08.jpg"
+      ]
+    },
+    {
+      "key": "lighting",
+      "label": "전기공사·조명",
+      "desc": "실내 조명 설치. 은은한 매입조명으로 모던하면서도 따뜻한 분위기를 연출.",
+      "images": [
+        "projects/images/siheung-house/lighting/01.jpg",
+        "projects/images/siheung-house/lighting/02.jpg",
+        "projects/images/siheung-house/lighting/03.jpg",
+        "projects/images/siheung-house/lighting/04.jpg",
+        "projects/images/siheung-house/lighting/05.jpg"
+      ]
+    },
+    {
+      "key": "exterior-utility",
+      "label": "외부인입공사",
+      "desc": "상하수도, 가스 등 외부 인입 배관 공사. 도로변 포장을 걷어내고 배관을 매설한 뒤 다시 복구.",
+      "images": [
+        "projects/images/siheung-house/exterior-utility/01.jpg",
+        "projects/images/siheung-house/exterior-utility/02.jpg",
+        "projects/images/siheung-house/exterior-utility/03.jpg",
+        "projects/images/siheung-house/exterior-utility/04.jpg",
+        "projects/images/siheung-house/exterior-utility/05.jpg",
+        "projects/images/siheung-house/exterior-utility/06.jpg",
+        "projects/images/siheung-house/exterior-utility/07.jpg",
+        "projects/images/siheung-house/exterior-utility/08.jpg"
+      ]
+    },
+    {
+      "key": "furniture",
+      "label": "가구공사",
+      "desc": "주방 가구와 붙박이장을 시공. 짐이 많으신 두 분을 위해 수납과 펜트리 공간을 넉넉하게 구성.",
+      "images": [
+        "projects/images/siheung-house/furniture/01.jpg",
+        "projects/images/siheung-house/furniture/02.jpg",
+        "projects/images/siheung-house/furniture/03.jpg",
+        "projects/images/siheung-house/furniture/04.jpg",
+        "projects/images/siheung-house/furniture/05.jpg",
+        "projects/images/siheung-house/furniture/06.jpg",
+        "projects/images/siheung-house/furniture/07.jpg",
+        "projects/images/siheung-house/furniture/08.jpg"
+      ]
+    },
+    {
+      "key": "exterior",
+      "label": "외부공사",
+      "desc": "마당 배수관 매설과 경계석·포장 공사에 이어 조경까지 마무리. 화단과 잔디를 가꿔 완성도를 높임.",
+      "images": [
+        "projects/images/siheung-house/exterior/01.jpg",
+        "projects/images/siheung-house/exterior/02.jpg",
+        "projects/images/siheung-house/exterior/03.jpg",
+        "projects/images/siheung-house/exterior/04.jpg",
+        "projects/images/siheung-house/exterior/05.jpg",
+        "projects/images/siheung-house/exterior/06.jpg",
+        "projects/images/siheung-house/exterior/07.jpg",
+        "projects/images/siheung-house/exterior/08.jpg"
+      ]
+    }
+  ],
+  "gallery": {
+    "label": "완성 후 내외부",
+    "desc": "정성 가득한 시공 끝에 완공된 시흥 목조주택. 스터코와 롱브릭으로 포인트를 준 외관과, 노부부님을 위해 모던하게 꾸민 실내가 돋보임.",
+    "images": [
+      "projects/images/siheung-house/finished/01.jpg","projects/images/siheung-house/finished/02.jpg","projects/images/siheung-house/finished/03.jpg","projects/images/siheung-house/finished/04.jpg","projects/images/siheung-house/finished/05.jpg","projects/images/siheung-house/finished/06.jpg","projects/images/siheung-house/finished/07.jpg","projects/images/siheung-house/finished/08.jpg","projects/images/siheung-house/finished/09.jpg","projects/images/siheung-house/finished/10.jpg","projects/images/siheung-house/finished/11.jpg","projects/images/siheung-house/finished/12.jpg","projects/images/siheung-house/finished/13.jpg","projects/images/siheung-house/finished/14.jpg","projects/images/siheung-house/finished/15.jpg","projects/images/siheung-house/finished/16.jpg","projects/images/siheung-house/finished/17.jpg","projects/images/siheung-house/finished/18.jpg","projects/images/siheung-house/finished/19.jpg","projects/images/siheung-house/finished/20.jpg","projects/images/siheung-house/finished/21.jpg","projects/images/siheung-house/finished/22.jpg","projects/images/siheung-house/finished/23.jpg","projects/images/siheung-house/finished/24.jpg","projects/images/siheung-house/finished/25.jpg","projects/images/siheung-house/finished/26.jpg","projects/images/siheung-house/finished/27.jpg","projects/images/siheung-house/finished/28.jpg","projects/images/siheung-house/finished/29.jpg","projects/images/siheung-house/finished/30.jpg","projects/images/siheung-house/finished/31.jpg","projects/images/siheung-house/finished/32.jpg","projects/images/siheung-house/finished/33.jpg","projects/images/siheung-house/finished/34.jpg","projects/images/siheung-house/finished/35.jpg","projects/images/siheung-house/finished/36.jpg","projects/images/siheung-house/finished/37.jpg","projects/images/siheung-house/finished/38.jpg","projects/images/siheung-house/finished/39.jpg","projects/images/siheung-house/finished/40.jpg","projects/images/siheung-house/finished/41.jpg","projects/images/siheung-house/finished/42.jpg","projects/images/siheung-house/finished/43.jpg","projects/images/siheung-house/finished/44.jpg","projects/images/siheung-house/finished/45.jpg","projects/images/siheung-house/finished/46.jpg","projects/images/siheung-house/finished/47.jpg","projects/images/siheung-house/finished/48.jpg","projects/images/siheung-house/finished/49.jpg","projects/images/siheung-house/finished/50.jpg","projects/images/siheung-house/finished/51.jpg","projects/images/siheung-house/finished/52.jpg","projects/images/siheung-house/finished/53.jpg","projects/images/siheung-house/finished/54.jpg","projects/images/siheung-house/finished/55.jpg","projects/images/siheung-house/finished/56.jpg","projects/images/siheung-house/finished/57.jpg","projects/images/siheung-house/finished/58.jpg","projects/images/siheung-house/finished/59.jpg"
+    ]
+  }
+}
