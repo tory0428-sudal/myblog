@@ -101,3 +101,12 @@
 잊혀진 자재라고 표현한 만큼 요즈음 많이 쓰진 않지만, 선택은 우리들 몫입니다. 그럼 다음 외장자재 소개 때 다시 뵙겠습니다. 감사합니다.
 
 위 사진들은 국내에 최근 사이딩 마감 주택이 없어 해외 사진 위주라 좀 어색할 수 있으니 참고 부탁드립니다 ^^;
+
+---
+
+**참고자료**
+
+- [Wikipedia — Vinyl siding](https://en.wikipedia.org/wiki/Vinyl_siding) (PVC 소재 특성, 자외선에 의한 변색·경화 현상)
+- [Wikipedia — Fiber cement siding](https://en.wikipedia.org/wiki/Fiber_cement_siding) (시멘트+셀룰로오스 섬유 복합재 구성, 내구성·방화성)
+- [Building Science Corporation — BSD-030: Rain Control Theory](https://buildingscience.com/documents/digests/bsd030-rain-control-theory) (사이딩 뒤 공기층을 두는 띄움시공·레인스크린 원리)
+- [Building and Environment — An investigation of moisture buffering performance of wood paneling at room level](https://www.sciencedirect.com/science/article/abs/pii/S0360132311002356) (목재의 흡습·방습을 통한 실내 습도 완충 성능 연구)
