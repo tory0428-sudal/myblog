@@ -98,6 +98,48 @@
       });
   }
 
+  function recentItemHtml(post) {
+    var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(post.category) : null;
+    var image = post.image || (cat && cat.image) || "";
+    var href = "post.html?slug=" + encodeURIComponent(post.slug);
+    return (
+      '<li><a class="recent-item" href="' + href + '">' +
+      '<span class="recent-item-thumb">' + (image ? '<img src="' + image + '" alt="">' : "") + "</span>" +
+      '<span class="recent-item-body">' +
+      '<span class="recent-item-title">' + escapeHtml(post.title) + "</span>" +
+      '<span class="recent-item-meta">' +
+      (cat ? '<span class="recent-item-cat">' + escapeHtml(cat.label) + "</span>" : "") +
+      "<span>" + formatDate(post.date) + "</span>" +
+      "</span>" +
+      "</span>" +
+      "</a></li>"
+    );
+  }
+
+  function renderRecentUpdates() {
+    var el = document.getElementById("recent-list");
+    if (!el) return;
+    getManifest()
+      .then(function (allPosts) {
+        var posts = allPosts
+          .slice()
+          .sort(function (a, b) {
+            return new Date(b.date) - new Date(a.date);
+          })
+          .slice(0, 3);
+
+        if (!posts.length) {
+          el.innerHTML = '<li class="empty-state">아직 작성된 글이 없습니다.</li>';
+          return;
+        }
+
+        el.innerHTML = posts.map(recentItemHtml).join("");
+      })
+      .catch(function () {
+        el.innerHTML = '<li class="empty-state">최근 글을 불러오지 못했습니다.</li>';
+      });
+  }
+
   var appSectionEl = document.querySelector(".app-section");
 
   function updateAppSection(catSlug) {
@@ -180,6 +222,7 @@
   }
 
   render(currentSlug());
+  renderRecentUpdates();
 
   document.addEventListener("click", function (e) {
     var link = e.target.closest("a[data-cat]");
