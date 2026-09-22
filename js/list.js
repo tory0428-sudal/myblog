@@ -98,18 +98,15 @@
       });
   }
 
-  function recentItemHtml(post) {
-    var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(post.category) : null;
-    var image = post.image || (cat && cat.image) || "";
-    var href = "post.html?slug=" + encodeURIComponent(post.slug);
+  function recentItemHtml(item) {
     return (
-      '<li><a class="recent-item" href="' + href + '">' +
-      '<span class="recent-item-thumb">' + (image ? '<img src="' + image + '" alt="">' : "") + "</span>" +
+      '<li><a class="recent-item" href="' + item.href + '">' +
+      '<span class="recent-item-thumb">' + (item.image ? '<img src="' + item.image + '" alt="">' : "") + "</span>" +
       '<span class="recent-item-body">' +
-      '<span class="recent-item-title">' + escapeHtml(post.title) + "</span>" +
+      '<span class="recent-item-title">' + escapeHtml(item.title) + "</span>" +
       '<span class="recent-item-meta">' +
-      (cat ? '<span class="recent-item-cat">' + escapeHtml(cat.label) + "</span>" : "") +
-      "<span>" + formatDate(post.date) + "</span>" +
+      (item.catLabel ? '<span class="recent-item-cat">' + escapeHtml(item.catLabel) + "</span>" : "") +
+      "<span>" + formatDate(item.date) + "</span>" +
       "</span>" +
       "</span>" +
       "</a></li>"
@@ -119,21 +116,42 @@
   function renderRecentUpdates() {
     var el = document.getElementById("recent-list");
     if (!el) return;
-    getManifest()
-      .then(function (allPosts) {
-        var posts = allPosts
-          .slice()
+    Promise.all([getManifest(), getProjectsManifest()])
+      .then(function (results) {
+        var posts = results[0].map(function (post) {
+          var cat = typeof getCategoryBySlug === "function" ? getCategoryBySlug(post.category) : null;
+          return {
+            date: post.date,
+            title: post.title,
+            href: "post.html?slug=" + encodeURIComponent(post.slug),
+            image: post.image || (cat && cat.image) || "",
+            catLabel: cat ? cat.label : ""
+          };
+        });
+
+        var projects = results[1].map(function (project) {
+          return {
+            date: project.date,
+            title: project.title,
+            href: "project.html?slug=" + encodeURIComponent(project.slug),
+            image: project.cover,
+            catLabel: "주택시공프로젝트"
+          };
+        });
+
+        var items = posts
+          .concat(projects)
           .sort(function (a, b) {
             return new Date(b.date) - new Date(a.date);
           })
           .slice(0, 3);
 
-        if (!posts.length) {
+        if (!items.length) {
           el.innerHTML = '<li class="empty-state">아직 작성된 글이 없습니다.</li>';
           return;
         }
 
-        el.innerHTML = posts.map(recentItemHtml).join("");
+        el.innerHTML = items.map(recentItemHtml).join("");
       })
       .catch(function () {
         el.innerHTML = '<li class="empty-state">최근 글을 불러오지 못했습니다.</li>';

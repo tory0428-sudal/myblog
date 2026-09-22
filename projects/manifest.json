@@ -2,6 +2,7 @@
   {
     "slug": "siheung-house",
     "title": "시흥 목조주택프로젝트",
+    "date": "2026-09-21",
     "completedDate": "2025년 11월",
     "cover": "projects/images/siheung-house/cover.jpg",
     "excerpt": "목구조에 스터코·롱브릭 외장, 총 41.2평 규모로 아드님이 직접 설계·시공한 노부모님을 위한 주택."
@@ -9,6 +10,7 @@
   {
     "slug": "seworri-house",
     "title": "세월리 단층 주택프로젝트",
+    "date": "2026-08-21",
     "completedDate": "2024년 10월",
     "cover": "projects/images/seworri-house/cover.jpg",
     "excerpt": "목구조에 롱브릭·아스팔트슁글 외장, 1층 53평 규모의 중정 형태 단층 전원주택."
@@ -16,6 +18,7 @@
   {
     "slug": "yangju-okjeong-rc-house",
     "title": "옥정 RC구조 주택프로젝트",
+    "date": "2026-08-20",
     "completedDate": "2026년 7월",
     "cover": "projects/images/yangju-okjeong-rc-house/cover.jpg",
     "excerpt": "철근콘크리트 구조에 롱브릭파벽 외장, 총 84.4평 규모의 비내력벽 구조로 지은 고급 주택."
@@ -23,6 +26,7 @@
   {
     "slug": "dongpaedong-two-family-house",
     "title": "동패동 2세대 주택프로젝트",
+    "date": "2026-08-20",
     "completedDate": "2025년 2월",
     "cover": "projects/images/dongpaedong-two-family-house/cover.jpg",
     "excerpt": "목구조에 세라믹·징크 외장, 총 95.7평 규모의 부모님 세대와 따님 세대가 함께 사는 2세대 주택."
@@ -30,6 +34,7 @@
   {
     "slug": "gyeryong-passive-house",
     "title": "계룡패시브하우스",
+    "date": "2026-08-19",
     "completedDate": "2025년 11월",
     "cover": "projects/images/gyeryong-passive-house/cover.jpg",
     "excerpt": "목구조에 롱브릭타일·징크 외장, 총 72.6평 규모의 패시브하우스 복사냉난방시스템 주택."
