@@ -100,8 +100,9 @@
       '<img src="' + data.cover + '" alt="' + escapeHtml(data.title) + '">' +
       "</figure>" +
       '<header class="project-header">' +
-      "<h1>" + escapeHtml(data.title) + "</h1>" +
-      '<p id="project-views" class="project-views" hidden></p>' +
+      "<h1>" + escapeHtml(data.title) +
+      '<span id="project-views" class="project-views" hidden></span>' +
+      "</h1>" +
       '<div class="project-specs">' + specs + "</div>" +
       "</header>" +
       '<section class="project-intro">' +
