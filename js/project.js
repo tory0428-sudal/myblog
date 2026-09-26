@@ -101,6 +101,7 @@
       "</figure>" +
       '<header class="project-header">' +
       "<h1>" + escapeHtml(data.title) + "</h1>" +
+      '<p id="project-views" class="project-views" hidden></p>' +
       '<div class="project-specs">' + specs + "</div>" +
       "</header>" +
       '<section class="project-intro">' +
@@ -109,6 +110,28 @@
       '<ol class="conditions-list">' + conditions + "</ol>" +
       "</section>" +
       '<div class="phase-list">' + phases + gallerySection(data.gallery) + "</div>";
+
+    renderViews(slug);
+  }
+
+  function renderViews(slug) {
+    var el = document.getElementById("project-views");
+    if (!el) return;
+    var url = "https://toryhome.goatcounter.com/counter//project/" + encodeURIComponent(slug) + ".json";
+    fetch(url)
+      .then(function (res) {
+        if (!res.ok) throw new Error("no data");
+        return res.json();
+      })
+      .then(function (data) {
+        var n = data && data.count != null ? String(data.count).trim() : "0";
+        el.textContent = "조회 " + n;
+        el.hidden = false;
+      })
+      .catch(function () {
+        el.textContent = "조회 0";
+        el.hidden = false;
+      });
   }
 
   function setupLightbox() {

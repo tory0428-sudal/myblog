@@ -53,6 +53,13 @@ html[data-theme="dark"] {
   letter-spacing: -0.01em;
 }
 
+.project-views {
+  margin: -0.2rem 0 0.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .project-specs {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
