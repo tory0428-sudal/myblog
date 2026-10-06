@@ -1,0 +1,410 @@
+{
+  "slug": "sejong-haemil-house",
+  "title": "세종 해밀동 주택프로젝트",
+  "cover": "projects/images/sejong-haemil-house/cover.jpg",
+  "specs": [
+    {
+      "label": "구조",
+      "value": "목조주택"
+    },
+    {
+      "label": "외장마감",
+      "value": "사비석(원석)타일"
+    },
+    {
+      "label": "평수",
+      "value": "1층 33.0평 / 2층 19.6평 / 주차장 5.9평 / 총 58.5평"
+    },
+    {
+      "label": "특징",
+      "value": "징크와 사비석으로 외장을 마감하고 내부에 웜루프 시공과 내부 타이벡으로 기밀시공을 하여 준패시브 하우스로 시공된 주택"
+    }
+  ],
+  "intro": "세종에 주택을 꼭 짓고 살고 싶다는 꿈을 가지고 계신 건축주님의 주택을 지어드린 집입니다. 외장마감을 고급스러운 사비석으로 업그레이드 하셨고, 내부는 내부 타이벡 웜루프 시공 방식으로 시공하여 준패시브하우스로 시공된 주택입니다. 특별히 조경까지 맡겨주셔서 가장 잘 어울리는 조경으로 시공해 드린 가장 최근에 시공된 주택입니다.",
+  "conditions": [
+    "두 분이 거주하시기 편하고 관리가 필요 없는 주택",
+    "고급스러운 외관과 기능적으로도 효율적인 패시브하우스 시공",
+    "별동의 주차장이 꼭 필요, 외관에 잘 어울리게 시공",
+    "주택에 잘 어울리는 조경 — 큰 돈이 드는 화려한 조경보다는 가성비 좋고 깔끔하고 편안한 조경"
+  ],
+  "phases": [
+    {
+      "key": "before-site",
+      "label": "공사 전 현장사진",
+      "desc": "공사 전에 현장을 방문해 대지 경계와 주변 환경, 향과 뷰를 확인하고 건축주와 주택 배치에 관해 논의.",
+      "images": [
+        "projects/images/sejong-haemil-house/before-site/01.jpg",
+        "projects/images/sejong-haemil-house/before-site/02.jpg",
+        "projects/images/sejong-haemil-house/before-site/03.jpg",
+        "projects/images/sejong-haemil-house/before-site/04.jpg",
+        "projects/images/sejong-haemil-house/before-site/05.jpg",
+        "projects/images/sejong-haemil-house/before-site/06.jpg",
+        "projects/images/sejong-haemil-house/before-site/07.jpg",
+        "projects/images/sejong-haemil-house/before-site/08.jpg"
+      ]
+    },
+    {
+      "key": "drawings",
+      "label": "도면",
+      "desc": "건축주와 논의한 내용을 바탕으로 배치도와 1층·2층 평면도, 별동 주차장 도면 작성.",
+      "images": [
+        "projects/images/sejong-haemil-house/drawings/01-site-plan.jpg",
+        "projects/images/sejong-haemil-house/drawings/02-1f-plan.jpg",
+        "projects/images/sejong-haemil-house/drawings/03-2f-plan.jpg",
+        "projects/images/sejong-haemil-house/drawings/04-annex-parking.jpg"
+      ],
+      "captions": [
+        "배치도",
+        "1층평면도",
+        "2층평면도",
+        "부속동주차장도면"
+      ]
+    },
+    {
+      "key": "foundation",
+      "label": "기초공사",
+      "desc": "도면의 배치대로 터파기와 지중 배관을 마친 뒤 거푸집과 철근 배근, 콘크리트 타설 순서로 기초 시공.",
+      "images": [
+        "projects/images/sejong-haemil-house/foundation/01.jpg",
+        "projects/images/sejong-haemil-house/foundation/02.jpg",
+        "projects/images/sejong-haemil-house/foundation/03.jpg",
+        "projects/images/sejong-haemil-house/foundation/04.jpg",
+        "projects/images/sejong-haemil-house/foundation/05.jpg",
+        "projects/images/sejong-haemil-house/foundation/06.jpg",
+        "projects/images/sejong-haemil-house/foundation/07.jpg",
+        "projects/images/sejong-haemil-house/foundation/08.jpg"
+      ]
+    },
+    {
+      "key": "frame",
+      "label": "골조공사",
+      "desc": "2×6 목조주택 공법으로 골조를 시공하고 지붕틀까지 올린 뒤 외벽에 타이벡을 시공. 욕실 등 물을 쓰는 공간은 골조 단계에서 바닥 방수시트까지 먼저 시공.",
+      "images": [
+        "projects/images/sejong-haemil-house/frame/01.jpg",
+        "projects/images/sejong-haemil-house/frame/02.jpg",
+        "projects/images/sejong-haemil-house/frame/03.jpg",
+        "projects/images/sejong-haemil-house/frame/04.jpg",
+        "projects/images/sejong-haemil-house/frame/05.jpg",
+        "projects/images/sejong-haemil-house/frame/06.jpg",
+        "projects/images/sejong-haemil-house/frame/07.jpg",
+        "projects/images/sejong-haemil-house/frame/08.jpg"
+      ]
+    },
+    {
+      "key": "mep",
+      "label": "전기·설비 배관공사",
+      "desc": "골조 단계에서 전기 배관·배선과 급배수 설비 배관을 먼저 시공하고 각 공간별 위치를 확인.",
+      "images": [
+        "projects/images/sejong-haemil-house/mep/01.jpg",
+        "projects/images/sejong-haemil-house/mep/02.jpg",
+        "projects/images/sejong-haemil-house/mep/03.jpg",
+        "projects/images/sejong-haemil-house/mep/04.jpg",
+        "projects/images/sejong-haemil-house/mep/05.jpg",
+        "projects/images/sejong-haemil-house/mep/06.jpg",
+        "projects/images/sejong-haemil-house/mep/07.jpg",
+        "projects/images/sejong-haemil-house/mep/08.jpg"
+      ]
+    },
+    {
+      "key": "windows",
+      "label": "창호공사",
+      "desc": "골조에 창호를 설치하고 외부 타이벡과 창호 주변 방수 테이프 처리까지 마무리.",
+      "images": [
+        "projects/images/sejong-haemil-house/windows/01.jpg",
+        "projects/images/sejong-haemil-house/windows/02.jpg",
+        "projects/images/sejong-haemil-house/windows/03.jpg",
+        "projects/images/sejong-haemil-house/windows/04.jpg",
+        "projects/images/sejong-haemil-house/windows/05.jpg",
+        "projects/images/sejong-haemil-house/windows/06.jpg",
+        "projects/images/sejong-haemil-house/windows/07.jpg",
+        "projects/images/sejong-haemil-house/windows/08.jpg"
+      ]
+    },
+    {
+      "key": "hvac",
+      "label": "공조시스템공사",
+      "desc": "환기·공조 장비와 덕트를 천장과 벽체 사이에 배치해 시공.",
+      "images": [
+        "projects/images/sejong-haemil-house/hvac/01.jpg",
+        "projects/images/sejong-haemil-house/hvac/02.jpg",
+        "projects/images/sejong-haemil-house/hvac/03.jpg",
+        "projects/images/sejong-haemil-house/hvac/04.jpg",
+        "projects/images/sejong-haemil-house/hvac/05.jpg",
+        "projects/images/sejong-haemil-house/hvac/06.jpg",
+        "projects/images/sejong-haemil-house/hvac/07.jpg",
+        "projects/images/sejong-haemil-house/hvac/08.jpg"
+      ]
+    },
+    {
+      "key": "exterior-wall",
+      "label": "외장공사",
+      "desc": "외벽 바탕을 정리한 뒤 사비석(원석)타일로 외장 마감. 징크 지붕과 어울리는 고급스러운 외관으로 업그레이드.",
+      "images": [
+        "projects/images/sejong-haemil-house/exterior-wall/01.jpg",
+        "projects/images/sejong-haemil-house/exterior-wall/02.jpg",
+        "projects/images/sejong-haemil-house/exterior-wall/03.jpg",
+        "projects/images/sejong-haemil-house/exterior-wall/04.jpg",
+        "projects/images/sejong-haemil-house/exterior-wall/05.jpg",
+        "projects/images/sejong-haemil-house/exterior-wall/06.jpg",
+        "projects/images/sejong-haemil-house/exterior-wall/07.jpg",
+        "projects/images/sejong-haemil-house/exterior-wall/08.jpg"
+      ]
+    },
+    {
+      "key": "heating",
+      "label": "난방공사",
+      "desc": "바닥 단열과 난방 배관을 깔고 보양한 뒤 몰탈 타설로 바닥 마감 준비.",
+      "images": [
+        "projects/images/sejong-haemil-house/heating/01.jpg",
+        "projects/images/sejong-haemil-house/heating/02.jpg",
+        "projects/images/sejong-haemil-house/heating/03.jpg",
+        "projects/images/sejong-haemil-house/heating/04.jpg",
+        "projects/images/sejong-haemil-house/heating/05.jpg",
+        "projects/images/sejong-haemil-house/heating/06.jpg",
+        "projects/images/sejong-haemil-house/heating/07.jpg",
+        "projects/images/sejong-haemil-house/heating/08.jpg"
+      ]
+    },
+    {
+      "key": "roof",
+      "label": "지붕공사",
+      "desc": "징크로 지붕을 마감하고 처마와 별동 주차장 지붕까지 함께 시공.",
+      "images": [
+        "projects/images/sejong-haemil-house/roof/01.jpg",
+        "projects/images/sejong-haemil-house/roof/02.jpg",
+        "projects/images/sejong-haemil-house/roof/03.jpg",
+        "projects/images/sejong-haemil-house/roof/04.jpg",
+        "projects/images/sejong-haemil-house/roof/05.jpg",
+        "projects/images/sejong-haemil-house/roof/06.jpg",
+        "projects/images/sejong-haemil-house/roof/07.jpg",
+        "projects/images/sejong-haemil-house/roof/08.jpg"
+      ]
+    },
+    {
+      "key": "interior-carpentry",
+      "label": "내장목공사",
+      "desc": "벽·천장 단열과 내부 타이벡 기밀시공 후 합판과 석고보드로 면을 만들고, 보·선반 등 목공 작업 진행.",
+      "images": [
+        "projects/images/sejong-haemil-house/interior-carpentry/01.jpg",
+        "projects/images/sejong-haemil-house/interior-carpentry/02.jpg",
+        "projects/images/sejong-haemil-house/interior-carpentry/03.jpg",
+        "projects/images/sejong-haemil-house/interior-carpentry/04.jpg",
+        "projects/images/sejong-haemil-house/interior-carpentry/05.jpg",
+        "projects/images/sejong-haemil-house/interior-carpentry/06.jpg",
+        "projects/images/sejong-haemil-house/interior-carpentry/07.jpg",
+        "projects/images/sejong-haemil-house/interior-carpentry/08.jpg"
+      ]
+    },
+    {
+      "key": "electrical-tapping",
+      "label": "전기공사(타공)",
+      "desc": "천장과 벽에 조명·스위치·콘센트 위치를 확인하며 타공.",
+      "images": [
+        "projects/images/sejong-haemil-house/electrical-tapping/01.jpg",
+        "projects/images/sejong-haemil-house/electrical-tapping/02.jpg",
+        "projects/images/sejong-haemil-house/electrical-tapping/03.jpg",
+        "projects/images/sejong-haemil-house/electrical-tapping/04.jpg",
+        "projects/images/sejong-haemil-house/electrical-tapping/05.jpg",
+        "projects/images/sejong-haemil-house/electrical-tapping/06.jpg",
+        "projects/images/sejong-haemil-house/electrical-tapping/07.jpg",
+        "projects/images/sejong-haemil-house/electrical-tapping/08.jpg"
+      ]
+    },
+    {
+      "key": "waterproofing-paint",
+      "label": "방수 및 도장공사",
+      "desc": "욕실 바닥·벽 방수와 계단 보양, 외부 처마 도장 진행.",
+      "images": [
+        "projects/images/sejong-haemil-house/waterproofing-paint/01.jpg",
+        "projects/images/sejong-haemil-house/waterproofing-paint/02.jpg",
+        "projects/images/sejong-haemil-house/waterproofing-paint/03.jpg",
+        "projects/images/sejong-haemil-house/waterproofing-paint/04.jpg",
+        "projects/images/sejong-haemil-house/waterproofing-paint/05.jpg",
+        "projects/images/sejong-haemil-house/waterproofing-paint/06.jpg",
+        "projects/images/sejong-haemil-house/waterproofing-paint/07.jpg",
+        "projects/images/sejong-haemil-house/waterproofing-paint/08.jpg"
+      ]
+    },
+    {
+      "key": "film",
+      "label": "필름공사",
+      "desc": "천장 보와 책장·선반, 슬랫 등 목재 느낌이 필요한 부분을 필름으로 마감.",
+      "images": [
+        "projects/images/sejong-haemil-house/film/01.jpg",
+        "projects/images/sejong-haemil-house/film/02.jpg",
+        "projects/images/sejong-haemil-house/film/03.jpg",
+        "projects/images/sejong-haemil-house/film/04.jpg",
+        "projects/images/sejong-haemil-house/film/05.jpg",
+        "projects/images/sejong-haemil-house/film/06.jpg",
+        "projects/images/sejong-haemil-house/film/07.jpg",
+        "projects/images/sejong-haemil-house/film/08.jpg"
+      ]
+    },
+    {
+      "key": "tile",
+      "label": "타일공사",
+      "desc": "욕실 바닥·벽 타일을 레벨 맞춰 시공하고 욕조 주변까지 마감.",
+      "images": [
+        "projects/images/sejong-haemil-house/tile/01.jpg",
+        "projects/images/sejong-haemil-house/tile/02.jpg",
+        "projects/images/sejong-haemil-house/tile/03.jpg",
+        "projects/images/sejong-haemil-house/tile/04.jpg",
+        "projects/images/sejong-haemil-house/tile/05.jpg",
+        "projects/images/sejong-haemil-house/tile/06.jpg",
+        "projects/images/sejong-haemil-house/tile/07.jpg",
+        "projects/images/sejong-haemil-house/tile/08.jpg"
+      ]
+    },
+    {
+      "key": "wallpaper",
+      "label": "도배공사",
+      "desc": "초배 작업을 마친 뒤 퍼티로 면을 정리하고 도배로 마감.",
+      "images": [
+        "projects/images/sejong-haemil-house/wallpaper/01.jpg",
+        "projects/images/sejong-haemil-house/wallpaper/02.jpg",
+        "projects/images/sejong-haemil-house/wallpaper/03.jpg",
+        "projects/images/sejong-haemil-house/wallpaper/04.jpg",
+        "projects/images/sejong-haemil-house/wallpaper/05.jpg",
+        "projects/images/sejong-haemil-house/wallpaper/06.jpg",
+        "projects/images/sejong-haemil-house/wallpaper/07.jpg",
+        "projects/images/sejong-haemil-house/wallpaper/08.jpg"
+      ]
+    },
+    {
+      "key": "exterior-plumbing",
+      "label": "외부배관공사",
+      "desc": "오배수·우수 배관과 맨홀, 집수정 등을 외부에 매립해 시공.",
+      "images": [
+        "projects/images/sejong-haemil-house/exterior-plumbing/01.jpg",
+        "projects/images/sejong-haemil-house/exterior-plumbing/02.jpg",
+        "projects/images/sejong-haemil-house/exterior-plumbing/03.jpg",
+        "projects/images/sejong-haemil-house/exterior-plumbing/04.jpg",
+        "projects/images/sejong-haemil-house/exterior-plumbing/05.jpg",
+        "projects/images/sejong-haemil-house/exterior-plumbing/06.jpg",
+        "projects/images/sejong-haemil-house/exterior-plumbing/07.jpg",
+        "projects/images/sejong-haemil-house/exterior-plumbing/08.jpg"
+      ]
+    },
+    {
+      "key": "sanitary",
+      "label": "설비공사(도기설치)",
+      "desc": "욕실 도기(양변기·세면대)와 욕조 설치.",
+      "images": [
+        "projects/images/sejong-haemil-house/sanitary/01.jpg",
+        "projects/images/sejong-haemil-house/sanitary/02.jpg",
+        "projects/images/sejong-haemil-house/sanitary/03.jpg",
+        "projects/images/sejong-haemil-house/sanitary/04.jpg"
+      ]
+    },
+    {
+      "key": "lighting",
+      "label": "전기공사(조명설치)",
+      "desc": "다운라이트와 간접조명, 펜던트, 거울 조명까지 설치하고 점등 상태를 확인.",
+      "images": [
+        "projects/images/sejong-haemil-house/lighting/01.jpg",
+        "projects/images/sejong-haemil-house/lighting/02.jpg",
+        "projects/images/sejong-haemil-house/lighting/03.jpg",
+        "projects/images/sejong-haemil-house/lighting/04.jpg",
+        "projects/images/sejong-haemil-house/lighting/05.jpg",
+        "projects/images/sejong-haemil-house/lighting/06.jpg",
+        "projects/images/sejong-haemil-house/lighting/07.jpg",
+        "projects/images/sejong-haemil-house/lighting/08.jpg"
+      ]
+    },
+    {
+      "key": "landscape",
+      "label": "외부조경공사",
+      "desc": "옹벽·데크 기초와 보강토 쌓기, 주차장 방수·마감, 데크와 잔디·식재까지 외부 마감.",
+      "images": [
+        "projects/images/sejong-haemil-house/landscape/01.jpg",
+        "projects/images/sejong-haemil-house/landscape/02.jpg",
+        "projects/images/sejong-haemil-house/landscape/03.jpg",
+        "projects/images/sejong-haemil-house/landscape/04.jpg",
+        "projects/images/sejong-haemil-house/landscape/05.jpg",
+        "projects/images/sejong-haemil-house/landscape/06.jpg",
+        "projects/images/sejong-haemil-house/landscape/07.jpg",
+        "projects/images/sejong-haemil-house/landscape/08.jpg"
+      ]
+    },
+    {
+      "key": "furniture",
+      "label": "가구공사",
+      "desc": "주방과 수납 가구 설치.",
+      "images": [
+        "projects/images/sejong-haemil-house/furniture/01.jpg",
+        "projects/images/sejong-haemil-house/furniture/02.jpg",
+        "projects/images/sejong-haemil-house/furniture/03.jpg",
+        "projects/images/sejong-haemil-house/furniture/04.jpg",
+        "projects/images/sejong-haemil-house/furniture/05.jpg",
+        "projects/images/sejong-haemil-house/furniture/06.jpg",
+        "projects/images/sejong-haemil-house/furniture/07.jpg",
+        "projects/images/sejong-haemil-house/furniture/08.jpg"
+      ]
+    },
+    {
+      "key": "railing-shower",
+      "label": "내부 단조공사·샤워부스공사",
+      "desc": "계단 난간(단조) 제작·설치, 욕실 유리 샤워부스 설치.",
+      "images": [
+        "projects/images/sejong-haemil-house/railing-shower/01.jpg",
+        "projects/images/sejong-haemil-house/railing-shower/02.jpg",
+        "projects/images/sejong-haemil-house/railing-shower/03.jpg",
+        "projects/images/sejong-haemil-house/railing-shower/04.jpg",
+        "projects/images/sejong-haemil-house/railing-shower/05.jpg",
+        "projects/images/sejong-haemil-house/railing-shower/06.jpg",
+        "projects/images/sejong-haemil-house/railing-shower/07.jpg",
+        "projects/images/sejong-haemil-house/railing-shower/08.jpg"
+      ]
+    },
+    {
+      "key": "final-cleaning",
+      "label": "준공청소",
+      "desc": "준공 전 내부 전체 청소와 마감 점검.",
+      "images": [
+        "projects/images/sejong-haemil-house/final-cleaning/01.jpg",
+        "projects/images/sejong-haemil-house/final-cleaning/02.jpg",
+        "projects/images/sejong-haemil-house/final-cleaning/03.jpg",
+        "projects/images/sejong-haemil-house/final-cleaning/04.jpg",
+        "projects/images/sejong-haemil-house/final-cleaning/05.jpg",
+        "projects/images/sejong-haemil-house/final-cleaning/06.jpg",
+        "projects/images/sejong-haemil-house/final-cleaning/07.jpg",
+        "projects/images/sejong-haemil-house/final-cleaning/08.jpg"
+      ]
+    }
+  ],
+  "gallery": {
+    "label": "완성 후 내외부",
+    "images": [
+      "projects/images/sejong-haemil-house/finished/01.jpg",
+      "projects/images/sejong-haemil-house/finished/02.jpg",
+      "projects/images/sejong-haemil-house/finished/03.jpg",
+      "projects/images/sejong-haemil-house/finished/04.jpg",
+      "projects/images/sejong-haemil-house/finished/05.jpg",
+      "projects/images/sejong-haemil-house/finished/06.jpg",
+      "projects/images/sejong-haemil-house/finished/07.jpg",
+      "projects/images/sejong-haemil-house/finished/08.jpg",
+      "projects/images/sejong-haemil-house/finished/09.jpg",
+      "projects/images/sejong-haemil-house/finished/10.jpg",
+      "projects/images/sejong-haemil-house/finished/11.jpg",
+      "projects/images/sejong-haemil-house/finished/12.jpg",
+      "projects/images/sejong-haemil-house/finished/13.jpg",
+      "projects/images/sejong-haemil-house/finished/14.jpg",
+      "projects/images/sejong-haemil-house/finished/15.jpg",
+      "projects/images/sejong-haemil-house/finished/16.jpg",
+      "projects/images/sejong-haemil-house/finished/17.jpg",
+      "projects/images/sejong-haemil-house/finished/18.jpg",
+      "projects/images/sejong-haemil-house/finished/19.jpg",
+      "projects/images/sejong-haemil-house/finished/20.jpg",
+      "projects/images/sejong-haemil-house/finished/21.jpg",
+      "projects/images/sejong-haemil-house/finished/22.jpg",
+      "projects/images/sejong-haemil-house/finished/23.jpg",
+      "projects/images/sejong-haemil-house/finished/24.jpg",
+      "projects/images/sejong-haemil-house/finished/25.jpg",
+      "projects/images/sejong-haemil-house/finished/26.jpg"
+    ]
+  },
+  "videoLink": {
+    "label": "내부 동영상을 보고 싶다면 클릭",
+    "url": "post.html?slug=sejong-haemil-house-tour"
+  }
+}

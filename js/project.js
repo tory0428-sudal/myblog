@@ -55,6 +55,15 @@
     );
   }
 
+  function videoLinkSection(link) {
+    if (!link || !link.url) return "";
+    return (
+      '<div class="project-video-link">' +
+      '<a class="project-video-btn" href="' + escapeHtml(link.url) + '">&#9654; ' + escapeHtml(link.label || "동영상 보기") + "</a>" +
+      "</div>"
+    );
+  }
+
   function updateMeta(data) {
     var imageUrl = "https://toryhome.kr/" + data.cover;
     var pageUrl = "https://toryhome.kr/project.html?slug=" + encodeURIComponent(data.slug);
@@ -110,7 +119,8 @@
       '<h3 class="conditions-title">건축주의 조건</h3>' +
       '<ol class="conditions-list">' + conditions + "</ol>" +
       "</section>" +
-      '<div class="phase-list">' + phases + gallerySection(data.gallery) + "</div>";
+      '<div class="phase-list">' + phases + gallerySection(data.gallery) + "</div>" +
+      videoLinkSection(data.videoLink);
 
     renderViews(slug);
   }

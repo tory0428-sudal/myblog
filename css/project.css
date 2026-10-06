@@ -336,3 +336,23 @@ html[data-theme="dark"] {
 .lightbox-close:hover {
   background: rgba(255, 255, 255, 0.3);
 }
+
+.project-video-link {
+  margin: 2.5rem 0 1rem;
+  text-align: center;
+}
+
+.project-video-btn {
+  display: inline-block;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  background: var(--proj-accent);
+  color: var(--bg);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.project-video-btn:hover {
+  opacity: 0.88;
+}
