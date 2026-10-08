@@ -662,19 +662,16 @@ main {
 
 .post-item-meta {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 0.25rem 0.5rem;
+  gap: 0.5rem;
 }
 
 .post-item-date {
-  white-space: nowrap;
   font-size: 0.8rem;
   color: var(--muted);
 }
 
 .post-item-category {
-  white-space: nowrap;
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--accent);
